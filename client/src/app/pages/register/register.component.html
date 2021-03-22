@@ -1,0 +1,103 @@
+<div class="form-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Register</mat-card-title>
+      <mat-card-subtitle>
+        Ya tiene una cuenta, <a [routerLink]="['/login']"><strong>ir al Login</strong></a>
+      </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-vertical-stepper linear #stepper>
+
+      <mat-step [stepControl]="nameFormGroup">
+        <form [formGroup]="nameFormGroup">
+          <ng-template matStepLabel>Enter your Name</ng-template>
+
+          <mat-form-field class="field-full-width">            
+            <input matInput formControlName="name" placeholder="Enter your Name">            
+            
+            <mat-error>
+              This field is required
+            </mat-error>
+          </mat-form-field>          
+          
+          <button mat-raised-button color="primary" matStepperNext>Next</button>
+        </form>
+      </mat-step>
+
+      <mat-step [stepControl]="emailFormGroup">
+        <form [formGroup]="emailFormGroup">
+          <ng-template matStepLabel>Enter your Email</ng-template>
+
+          <mat-form-field class="field-full-width">            
+            <input matInput formControlName="email" placeholder="Enter your Email">            
+            <mat-hint>user@email.com</mat-hint>
+
+            <mat-error *ngIf="emailFormGroup.controls.email.hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="emailFormGroup.controls.email.hasError('pattern')">
+              Enter a valid Email
+            </mat-error>  
+          </mat-form-field>          
+          
+          <!-- <button mat-raised-button color="accent" matStepperPrevious>Back</button> -->
+          <button mat-raised-button color="primary" matStepperNext>Next</button>
+        </form>
+      </mat-step>
+      
+      <mat-step [stepControl]="passFormGroup">
+        <form [formGroup]="passFormGroup">          
+          <ng-template matStepLabel>Enter your Password</ng-template>
+
+          <mat-form-field class="field-full-width">            
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Enter your Password">
+            
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+
+            <mat-error *ngIf="passFormGroup.controls.password.hasError('required')">
+              Password is <strong>required</strong>
+            </mat-error>            
+            <mat-error *ngIf="passFormGroup.controls.password.hasError('minlength')">
+              Password must has at least 6 characters
+            </mat-error>
+            <mat-error *ngIf="passFormGroup.controls.password.hasError('pattern')">
+              Password must contain at least a letter
+            </mat-error>
+
+          </mat-form-field>         
+          
+          <!-- <button mat-raised-button color="accent" matStepperPrevious>Back</button> -->
+          <button mat-raised-button color="primary" matStepperNext>Next</button>          
+
+        </form>
+      </mat-step>
+
+      <mat-step [stepControl]="confirmPassFormGroup">
+        <form [formGroup]="confirmPassFormGroup">          
+          <ng-template matStepLabel>Confirm your Password</ng-template>
+
+          <mat-form-field class="field-full-width">            
+            <input matInput [type]="hideConfirm ? 'password' : 'text'" formControlName="confirmPass" placeholder="Confirm your Password">
+            
+            <button mat-icon-button matSuffix (click)="hideConfirm = !hideConfirm" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideConfirm">
+              <mat-icon>{{hideConfirm ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>            
+ 
+            <mat-error>              
+              Passwords doesn't match
+            </mat-error>            
+          </mat-form-field>
+          
+          <button mat-raised-button color="accent" matStepperPrevious (click)="goToLogin()">Cancel</button>
+          <button mat-raised-button color="primary" (click)="onSubmitRegister()">Submit</button>          
+
+        </form>
+      </mat-step>
+
+    </mat-vertical-stepper>
+
+  </mat-card>
+</div>

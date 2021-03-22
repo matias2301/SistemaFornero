@@ -1,0 +1,13 @@
+.mat-card-title {
+  font-size: 1.6rem;
+}
+mat-card-subtitle {
+  padding-top: .5rem;  
+}
+.mat-form-field {
+    margin-top: 16px;
+}
+button {  
+  margin-top: 1rem;
+  width: 100%;
+}
