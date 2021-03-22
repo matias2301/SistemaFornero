@@ -1,0 +1,19 @@
+.mat-form-field {
+    margin-top: 16px;
+}
+.mat-checkbox {
+  margin-top: 1rem;
+  margin-left: .5rem;
+}
+p {
+  margin-top: 2rem;
+}
+button {  
+  width: 100%;
+}
+.buttons {
+  margin-top: 2rem;
+}
+.arrowBack {
+  margin-top: 1rem;
+}
