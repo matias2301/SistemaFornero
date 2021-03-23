@@ -7,7 +7,7 @@
     <mat-horizontal-stepper linear #stepper>
 
       <mat-step [stepControl]="emailFormGroup">
-        <form fxLayout="column" [formGroup]="emailFormGroup" (ngSubmit)="onSubmitEmail()">
+        <form fxLayout="column" [formGroup]="emailFormGroup">
           <ng-template matStepLabel>Enter your Email</ng-template>
 
           <mat-form-field class="field-full-width">
@@ -24,19 +24,19 @@
 
           </mat-form-field>
 
-          <mat-checkbox color="primary">Recordar Usuario</mat-checkbox>
+          <mat-checkbox formControlName="remember" color="primary">Recordar Usuario</mat-checkbox>
           <p>Cree una cuenta nueva <a [routerLink]="['/register']"><strong>aqui</strong></a></p>
 
           <div class="buttons">
             <!-- <button mat-raised-button color="primary" matStepperNext>Next</button> -->
-            <button mat-raised-button color="primary">Next</button>
+            <button mat-raised-button color="primary" matStepperNext>Next</button>
           </div>
 
         </form>
       </mat-step> 
 
       <mat-step [stepControl]="passFormGroup">
-        <form fxLayout="column" [formGroup]="passFormGroup" (ngSubmit)="onSubmitEmail()">          
+        <form fxLayout="column" [formGroup]="passFormGroup">          
           <ng-template matStepLabel>Enter your Password</ng-template>
 
 
@@ -70,7 +70,7 @@
           
           <div class="buttons">
             <!-- <button mat-raised-button color="accent" matStepperPrevious>Back</button> -->
-            <button mat-raised-button color="primary">Submit</button>          
+            <button mat-raised-button color="primary" (click)="onSubmitLogin()">Submit</button>          
           </div>
 
         </form>

@@ -3,7 +3,7 @@ import { Sequelize } from 'sequelize';
 
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_DIALEC } = process.env;
 
-const connection = new Sequelize(
+const sequelize = new Sequelize(
   `${DB_DIALEC}://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`,
   {
     logging: false, // set to console.log to see the raw SQL queries
@@ -11,4 +11,4 @@ const connection = new Sequelize(
   }
 );
 
-export default connection
+export default sequelize

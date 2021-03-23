@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { HomeMaterialModule } from './home-material.module';
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 
@@ -9,7 +12,9 @@ import { HomeComponent } from './home.component';
   declarations: [HomeComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    HomeMaterialModule,
+    FlexLayoutModule
   ]
 })
 export class HomeModule { }
