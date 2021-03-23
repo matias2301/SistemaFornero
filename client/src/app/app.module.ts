@@ -2,6 +2,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AngularMaterialModule } from './angular-material.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
@@ -18,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularMaterialModule,
-    FlexLayoutModule     
+    FlexLayoutModule,
+    HttpClientModule     
   ],
   providers: [],
   bootstrap: [AppComponent],

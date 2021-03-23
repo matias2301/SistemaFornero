@@ -1,7 +1,13 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup, Validators, FormControl, FormBuilder } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, Validators, FormControl } from '@angular/forms';
+
+import { AuthService } from '../../services/auth.service';
+import { AlertsService } from '../../services/alerts.service';
+
 import { PasswordValidator } from '../../validators/password.validator';
 import { Router } from '@angular/router';
+
+import { UserRegister, RegisterResponse } from '../../interfaces/authUser';
 
 @Component({
   selector: 'app-register',
@@ -17,18 +23,18 @@ export class RegisterComponent implements OnInit {
   confirmPassFormGroup: FormGroup; 
   matchingPassGroup: FormGroup;
   hide: boolean = true;
-  hideConfirm: boolean = true;
+  hideConfirm: boolean = true;  
 
-  // @ViewChild('stepper') private stepper: { next: () => void; };
-
-  constructor(
-    public _formBuilder: FormBuilder,
-    private router: Router,   
+  constructor(    
+    private router: Router,
+    private _authService: AuthService,  
+    private _alertsService: AlertsService,
   ){
     this.createForms();
   }
 
   ngOnInit() {
+    this.checkRegisterState();
   }
 
   createForms() {
@@ -60,29 +66,54 @@ export class RegisterComponent implements OnInit {
     });
   }
 
-  onSubmitRegister(){
+  onSubmitRegister(){    
     
-    console.log(this.confirmPassFormGroup)
+    if( this.confirmPassFormGroup.value.confirmPass == "" ) {      
+      this.confirmPassFormGroup.controls.confirmPass.setErrors({ error: true });
+    }
 
-    // console.log('nameFormGroup', this.nameFormGroup.value.name);
-    // console.log('emailFormGroup', this.emailFormGroup.value.email);
-    // console.log('passFormGroup', this.passFormGroup.value.password);    
-    // console.log('confirmPassFormGroup', this.confirmPassFormGroup.value.confirmPass);
+    if( !this.confirmPassFormGroup.controls.confirmPass.errors ) {
 
-    // if( this.emailFormGroup.invalid ){
-    //   Object.values( this.emailFormGroup.controls ).forEach( control => {
-    //     control.markAsTouched();
-    //   });
-    // } else {
-    //   this.stepper.next();
-    //   const user = {        
-    //     email: values.email,        
-    //   }       
-    
-    // // this.error = false;
-    // }
+      const user: UserRegister = {
+        name: this.nameFormGroup.value.name,
+        email: this.emailFormGroup.value.email,
+        password: this.passFormGroup.value.password
+      } 
+
+      this._authService.register(user)
+        .subscribe((res: RegisterResponse) => {
+
+          if( res.success ){            
+            this._alertsService.alertToast(`${res.msg} Please Log In`, 'success');            
+            this.router.navigateByUrl('login');
+          }
+
+        }, ( err ) => {
+          
+            let errorMsg = '';
+            if( err.error.errors){
+              errorMsg = err.error.errors[0].msg
+            } else {
+              errorMsg = 'Something went wrong'
+            }
+            
+            this._alertsService.alertToast(errorMsg, 'error');
+          }                        
+        );
+    }
+  
   }
 
+  // CHECK REGISTER STATE
+  checkRegisterState(){
+    this._authService.authSubject.subscribe( state => {
+      if (state) {
+        this.router.navigateByUrl('home');
+      }
+    });
+  }
+
+  // GO TO LOGIN PAGE
   goToLogin(){    
     this.router.navigateByUrl('login');
   }
