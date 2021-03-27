@@ -15,7 +15,10 @@ export class AuthService {
 
   AUTH_SERVER_ADDRESS: string = 'http://localhost:8000';
   ACCESS_TOKEN = 'auth-token';
-  authSubject = new BehaviorSubject(false);
+  authSubject = new BehaviorSubject({
+    name: "",
+    logged: true
+  });
 
   constructor(
     private httpClient: HttpClient,
@@ -28,7 +31,10 @@ export class AuthService {
   checkToken() {
     
     if ( localStorage.getItem(this.ACCESS_TOKEN) ) {
-      this.authSubject.next(true);
+      this.authSubject.next({
+        name: "",
+        logged: true
+      });
     }    
   }
 
@@ -49,7 +55,10 @@ export class AuthService {
       map( res => {                
         if (res.success) {                  
           localStorage.setItem(this.ACCESS_TOKEN, res.token);
-          this.authSubject.next(true);                            
+          this.authSubject.next({
+            name: res.user.name,
+            logged: true
+          });                            
         }  
         return res 
       }),
@@ -59,16 +68,19 @@ export class AuthService {
   logout() {
 
     localStorage.removeItem(this.ACCESS_TOKEN)
-    this.authSubject.next(false);
+    this.authSubject.next({
+      name: "",
+      logged: false
+    });
     this.router.navigateByUrl('login');    
   }
 
   isAuthenticated() {
 
-    if (!this.authSubject.value) {
+    if (!this.authSubject.value.logged) {
       this.router.navigateByUrl('login');
     }
-    return this.authSubject.value;
+    return this.authSubject.value.logged;
   }
 
 }

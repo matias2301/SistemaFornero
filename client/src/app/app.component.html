@@ -1,10 +1,25 @@
-<!-- Toolbar -->
+
 <mat-toolbar color="primary" class="app-header">
-    <div>Sistema Fornero</div>
-    <span class="nav-tool-items">
+    <div>
+      <button *ngIf="logged" mat-icon-button (click)="toggleMenu()"><mat-icon>menu</mat-icon></button>
+            
+      <span>Sistema Fornero</span>
+    </div>
+
+    <div *ngIf="!logged" class="nav-tool-items">
+    <span>
       <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
       <a mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
     </span>
+    </div>
+
+    <div *ngIf="logged" class="nav-tool-items">
+      <span>
+        Welcome {{ userName }}
+      </span>      
+      <button mat-raised-button color="primary" (click)="logout()">Logout</button>          
+    </div>
+
 </mat-toolbar>
 
 <router-outlet></router-outlet>
