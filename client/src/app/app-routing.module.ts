@@ -2,12 +2,16 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
 
+import { HomeComponent } from './pages/home/home.component';
+import { HOME_CHILDREN } from './pages/home/home-routing.module';
+
+
 const routes: Routes = [
   {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
-  },
+  },  
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginModule)
@@ -22,15 +26,16 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    canActivate: [AuthGuard],   
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomeModule)
-  },
+    component: HomeComponent,
+    canActivate: [AuthGuard],
+    children: HOME_CHILDREN
+    // loadChildren: () => import('./pages/home/home.module').then( m => m.HomeModule),
+  },    
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-    // RouterModule.forRoot(routes, { useHash: true })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })    
   ],
   exports: [RouterModule]
 })

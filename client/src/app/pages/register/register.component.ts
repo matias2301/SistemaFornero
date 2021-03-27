@@ -107,7 +107,7 @@ export class RegisterComponent implements OnInit {
   // CHECK REGISTER STATE
   checkRegisterState(){
     this._authService.authSubject.subscribe( state => {
-      if (state) {
+      if (state.logged) {
         this.router.navigateByUrl('home');
       }
     });

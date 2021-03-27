@@ -1,7 +1,23 @@
-<div class="form-wrapper" fxLayout="row" fxLayoutAlign="center center">
-    <p>home works!</p>
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  
+    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="56">
+      <mat-sidenav [opened]="sideState" [mode]="mobileQuery.matches ? 'over' : 'side'"
+                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+          <mat-nav-list>
 
-    <div class="buttons">    
-        <button mat-raised-button color="primary" (click)="logout()">Logout</button>          
-    </div>
-</div>
+          <mat-list-item [routerLink]="'/home/clients'">Clients</mat-list-item>
+          <mat-list-item [routerLink]="'/home/providers'">Providers</mat-list-item>
+          <mat-list-item [routerLink]="'/home/products'">Products</mat-list-item>
+          <mat-list-item [routerLink]="'/home/repairs'">Repairs</mat-list-item>
+          <mat-list-item [routerLink]="'/home/articles'">Articles</mat-list-item>
+          <!-- <mat-list-item [routerLink]="'#'">Others</mat-list-item> -->
+        </mat-nav-list>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+
+        <router-outlet></router-outlet>
+        
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>

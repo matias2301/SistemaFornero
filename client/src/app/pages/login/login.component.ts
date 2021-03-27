@@ -77,7 +77,8 @@ export class LoginComponent implements OnInit {
         }, ( err ) => {
           
             let errorMsg = '';
-            if( err.error){
+            
+            if( err.error.msg ){
               errorMsg = err.error.msg
             } else {
               errorMsg = 'Something went wrong'
@@ -93,7 +94,7 @@ export class LoginComponent implements OnInit {
     checkLoginState(){
 
       const email = localStorage.getItem('remember');
-      console.log(email)
+      
       if ( email ) {        
         this.emailFormGroup.reset({
           email,
@@ -102,7 +103,7 @@ export class LoginComponent implements OnInit {
       }
       
       this._authService.authSubject.subscribe( state => {
-        if (state) {
+        if (state.logged) {
           this.router.navigateByUrl('home');
         }
       });
