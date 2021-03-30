@@ -4,8 +4,6 @@ import { CommonModule } from '@angular/common';
 import { HomeMaterialModule } from './home-material.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
-// import { HomeRoutingModule } from './home-routing.module';
-
 import { HomeComponent } from './home.component';
 
 @NgModule({
@@ -13,8 +11,7 @@ import { HomeComponent } from './home.component';
     HomeComponent,
   ],
   imports: [
-    CommonModule,
-    // HomeRoutingModule,
+    CommonModule,    
     HomeMaterialModule,
     FlexLayoutModule
   ],

@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { ManageProvidersComponent } from './manage-providers/manage-providers.component';
+import { ListProvidersComponent } from './list-providers/list-providers.component';
 
-const routes: Routes = [];
+export const routes = [  
+  { path: 'list-providers', component: ListProvidersComponent },  
+  { path: 'manage-providers', component: ManageProvidersComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

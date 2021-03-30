@@ -1,20 +1,15 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-
 import { HttpClientModule } from '@angular/common/http';
 
+import { AppRoutingModule } from './app-routing.module';
+import { BreadcrumbModule } from './components/breadcrumb/breadcrumb.module';
 import { AngularMaterialModule } from './angular-material.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
-import { HomeComponent } from './pages/home/home.component';
-import { ClientsComponent } from './pages/clients/clients.component';
-import { ArticlesComponent } from './pages/articles/articles.component';
-import { ProductsComponent } from './pages/products/products.component';
-import { ProvidersComponent } from './pages/providers/providers.component';
-import { RepairsComponent } from './pages/repairs/repairs.component';
-
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+import { MenuListItemComponent } from './components/menu-list-item/menu-list-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -22,11 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,    
     HomeComponent,
-    ClientsComponent,
-    ArticlesComponent,
-    ProductsComponent,
-    ProvidersComponent,
-    RepairsComponent,    
+    MenuListItemComponent  
   ],
   imports: [
     BrowserModule,
@@ -34,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     AngularMaterialModule,
     FlexLayoutModule,
-    HttpClientModule,         
+    HttpClientModule,  
+    BreadcrumbModule       
   ],
   providers: [],
   bootstrap: [AppComponent],

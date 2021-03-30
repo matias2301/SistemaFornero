@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ClientsRoutingModule } from './clients-routing.module';
-import { ClientsComponent } from './clients.component';
-
+import { ListClientsComponent } from './list-clients/list-clients.component';
+import { ManageClientsComponent } from './manage-clients/manage-clients.component';
 
 @NgModule({
-  declarations: [ClientsComponent],
+  declarations: [ListClientsComponent, ManageClientsComponent],
   imports: [
     CommonModule,
-    ClientsRoutingModule
+    ClientsRoutingModule,    
   ]
 })
 export class ClientsModule { }
