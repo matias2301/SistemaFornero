@@ -16,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 // import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
+import { MatDialogModule } from '@angular/material/dialog';
 // import { MatMenuModule } from '@angular/material/menu';
 // import { MatPaginatorModule } from '@angular/material/paginator';
 // import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -42,6 +43,7 @@ const materialModules = [
   // MatCheckboxModule,
   // MatChipsModule,
   // MatDividerModule,
+  MatDialogModule,
   // MatExpansionModule,
   MatIconModule,
   // MatInputModule,

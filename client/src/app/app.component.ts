@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthService } from './services/auth.service';
-import { ControlsService } from './services/controls.service';
 
 @Component({
   selector: 'app-root',
@@ -9,28 +7,8 @@ import { ControlsService } from './services/controls.service';
 })
 export class AppComponent {
 
-  logged: boolean = false;
-  userName: string = "";  
+  title = 'Sistema Fornero';
 
-  constructor(
-    private _authService: AuthService,
-    private _controlsService: ControlsService,
-  ){
-    this.initializeApp();
-  }
+  constructor() { }    
 
-  initializeApp() {
-    this._authService.authSubject.subscribe( state => {
-      this.logged = state.logged;
-      this.userName = state.name;
-    }); 
-  }
-
-  toggleMenu() {
-    this._controlsService.toggleSide();  
-  }
-
-  logout() {
-    this._authService.logout();    
-  }
 }

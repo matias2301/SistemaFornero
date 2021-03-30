@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ProvidersRoutingModule } from './providers-routing.module';
-import { ProvidersComponent } from './providers.component';
+import { ListProvidersComponent } from './list-providers/list-providers.component';
+import { ManageProvidersComponent } from './manage-providers/manage-providers.component';
 
 
 @NgModule({
-  declarations: [ProvidersComponent],
+  declarations: [ListProvidersComponent, ManageProvidersComponent],
   imports: [
     CommonModule,
     ProvidersRoutingModule

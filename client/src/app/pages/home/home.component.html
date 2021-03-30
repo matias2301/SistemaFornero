@@ -1,23 +1,17 @@
-<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
-  
-    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="56">
-      <mat-sidenav [opened]="sideState" [mode]="mobileQuery.matches ? 'over' : 'side'"
-                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-          <mat-nav-list>
-
-          <mat-list-item [routerLink]="'/home/clients'">Clients</mat-list-item>
-          <mat-list-item [routerLink]="'/home/providers'">Providers</mat-list-item>
-          <mat-list-item [routerLink]="'/home/products'">Products</mat-list-item>
-          <mat-list-item [routerLink]="'/home/repairs'">Repairs</mat-list-item>
-          <mat-list-item [routerLink]="'/home/articles'">Articles</mat-list-item>
-          <!-- <mat-list-item [routerLink]="'#'">Others</mat-list-item> -->
-        </mat-nav-list>
-      </mat-sidenav>
-  
-      <mat-sidenav-content>
-
-        <router-outlet></router-outlet>
-        
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-  </div>
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()" class="menu-button" fxHide fxShow.lt-md>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Sistema Fornero</span>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" [opened]="opened">
+    <mat-nav-list>
+      <app-menu-list-item *ngFor="let item of menu" [item]="item"></app-menu-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-breadcrumb></app-breadcrumb>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

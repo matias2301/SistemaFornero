@@ -70,7 +70,7 @@ export class LoginComponent implements OnInit {
                 } else {
                   localStorage.removeItem('remember');
                 }
-                this.router.navigateByUrl('home');
+                this.router.navigateByUrl('dashboard');
               });
           }
 
@@ -104,7 +104,7 @@ export class LoginComponent implements OnInit {
       
       this._authService.authSubject.subscribe( state => {
         if (state.logged) {
-          this.router.navigateByUrl('home');
+          this.router.navigateByUrl('dashboard');
         }
       });
     }

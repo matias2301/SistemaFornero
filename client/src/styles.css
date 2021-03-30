@@ -11,11 +11,9 @@ a {
 .form-wrapper {
     height: 100%;
 }
-
 .field-full-width {
   width: 100%;
-}
-  
+}  
 .box:before {
     content: "";
     width: 100%;
@@ -29,20 +27,28 @@ a {
     -webkit-transform: scale(.95);
     -ms-transform: scale(.95);
     z-index: -1;
-}
-  
+}  
 .form-wrapper mat-card-header {
     text-align: center;
     width: 100%;
     display: block;
     font-weight: 700;
 }
-
 .form-wrapper .mat-card {
     padding: 40px 50px 50px;
 }
-
 .position-absolute {
     position: absolute;
     margin-top: 50px;
-  }
+}
+
+/* Prevents horizontal scrollbar from appearing on left nav side bar */
+/* Gotta account for the left-hand padding in child menu items */
+
+.menu-child a.mat-list-item {
+  box-sizing: border-box;
+}
+mat-sidenav-content {
+  padding-left: 10px;
+  padding-right: 10px;
+}
