@@ -8,14 +8,26 @@ import cors from 'cors';
 
 import userRoute from '../routes/userRoute';
 import authRoute from '../routes/authRoute';
+import clientRoute from '../routes/clientRoute';
+import articleRoute from '../routes/articleRoute';
+import productRoute from '../routes/productRoute';
+import providerRoute from '../routes/providerRoute';
+import repairRoute from '../routes/repairRoute';
+import observationRoute from '../routes/observationRoute';
 
 class Server {
 
     private app: Application;
     private port: string;
-    private apiPaths = {
+    private apiPaths = {        
+        auth: '/api/auth',
         users: '/api/users',
-        auth: '/api/auth'
+        clients: '/api/clients',
+        articles: '/api/articles',
+        products: '/api/products',
+        providers: '/api/providers',
+        repairs: '/api/repairs',
+        observations: '/api/observations',        
     }   
 
     constructor() {
@@ -53,10 +65,15 @@ class Server {
         this.app.use( express.static(publicPath) );
     }
 
-
-    routes() {
-        this.app.use( this.apiPaths.users, userRoute );
+    routes() {        
         this.app.use( this.apiPaths.auth, authRoute );        
+        this.app.use( this.apiPaths.users, userRoute );
+        this.app.use( this.apiPaths.clients, clientRoute );
+        this.app.use( this.apiPaths.articles, articleRoute );
+        this.app.use( this.apiPaths.products, productRoute );
+        this.app.use( this.apiPaths.providers, providerRoute );
+        this.app.use( this.apiPaths.repairs, repairRoute );
+        this.app.use( this.apiPaths.observations, observationRoute );
     }
 
     listen() {

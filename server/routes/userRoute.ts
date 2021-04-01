@@ -8,8 +8,8 @@ import { checkEmail } from '../helpers/dbValidators';
 
 const router = Router();
 
-router.get('/',       getUser );
-router.get('/:id',    getUsers );
+router.get('/:id',       getUser );
+router.get('/',    getUsers );
 
 router.post('/', [
     check('name', 'Field "name" is required').not().isEmpty(),

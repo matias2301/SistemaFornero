@@ -17,7 +17,7 @@ export class AuthService {
   ACCESS_TOKEN = 'auth-token';
   authSubject = new BehaviorSubject({
     name: "",
-    logged: true
+    logged: false
   });
 
   constructor(
