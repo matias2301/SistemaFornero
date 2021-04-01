@@ -1,4 +1,4 @@
-import { Users } from '../models/Users';
+import Users from '../models/Users';
 
 export const checkEmail = async( email = '' ) => {
 

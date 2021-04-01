@@ -1,16 +1,8 @@
 import Sequelize, { DataTypes } from 'sequelize';
 import sequelize from '../db/db';
 
-export interface UserAddModel {
-  id?: number;        
-  name: string;
-  email: string;
-  password: string;
-  role: string;
-  state: string
-  createdAt?: Date;
-  updatedAt?: Date;
-}
+import { UserAddModel } from '../interface/user.interface';
+import Repairs from './Repairs'
 
 export interface UserModel extends Sequelize.Model<UserModel, UserAddModel> {
   id?: number;        
@@ -23,7 +15,7 @@ export interface UserModel extends Sequelize.Model<UserModel, UserAddModel> {
   updatedAt?: Date;
 }
 
-export const Users = sequelize.define<UserModel, UserAddModel>('Users', {
+const Users = sequelize.define<UserModel, UserAddModel>('Users', {
 
   name: {
     type: DataTypes.STRING,
@@ -52,3 +44,13 @@ export const Users = sequelize.define<UserModel, UserAddModel>('Users', {
     defaultValue: 'active',
   },
 })
+
+Repairs.belongsTo(Users, {  
+  as: 'taken'
+});
+
+Repairs.belongsTo(Users, {  
+  as: 'assigned'
+});
+
+export default Users
