@@ -92,9 +92,12 @@ export const deleteUser = async( req: Request , res: Response ) => {
         });
     }
 
-    await user.update({ state: false });
-
-    // await usuario.destroy();
-
+    await user.update({ state: "inactive" });
     res.json(user);
+    
+    // await user.destroy();
+    // res.json({
+    //     success: true,
+    //     msg: "user borrado con exito"
+    // });
 }

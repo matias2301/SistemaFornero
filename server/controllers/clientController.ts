@@ -7,3 +7,88 @@ export const getClients = async( req: Request , res: Response ) => {
 
     res.json({ clients });
 }
+
+
+export const getClient = async( req: Request , res: Response ) => {
+
+    const { id } = req.params;
+
+    const client = await Clients.findByPk( id );
+
+    if( client ) {
+        res.json(client);
+    } else {
+        res.status(404).json({
+            msg: `No existe un cliente con el id ${ id }`
+        });
+    }
+}
+
+
+export const createClient = async( req: Request , res: Response ) => {
+
+    const { body } = req;
+
+    const client = new Clients(body);
+
+    client.save()
+        .then( () => {                        
+            res.json({
+                success: true,
+                msg: 'cliente creado con exito',
+                client
+            });
+        })
+        .catch( (err: any) => console.log(err))    
+}
+
+
+export const updateClient = async( req: Request , res: Response ) => {
+
+    const { id }   = req.params;
+    const { body } = req;
+
+    try {
+        
+        const client = await Clients.findByPk( id );
+        if ( !client ) {
+            return res.status(404).json({
+                msg: 'No existe un cliente con el id ' + id
+            });
+        }
+
+        await client.update( body );
+
+        res.json( client );
+
+    } catch (error) {
+
+        console.log(error);
+        res.status(500).json({
+            msg: 'Something went wrong'
+        })    
+    }   
+}
+
+
+export const deleteClient = async( req: Request , res: Response ) => {
+
+    const { id } = req.params;
+
+    const client = await Clients.findByPk( id );
+    if ( !client ) {
+        return res.status(404).json({
+            msg: 'No existe un cliente con el id ' + id
+        });
+    }
+
+    // await client.update({ state: false });
+    // res.json(client);
+
+    await client.destroy();
+    res.json({
+        success: true,
+        msg: "client borrado con exito"
+    });
+    
+}

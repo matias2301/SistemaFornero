@@ -3,13 +3,15 @@ import { check } from 'express-validator';
 import { getUser, getUsers, createUser, updateUser, deleteUser } from '../controllers/userController';
 
 import { validateFields } from '../middlewares/validateFields';
+import { validateJWT } from '../middlewares/validateJwt';
+import { isAdminRole, hasRole } from '../middlewares/validateRole';
 import { checkEmail } from '../helpers/dbValidators';
 
 
 const router = Router();
 
-router.get('/:id',       getUser );
-router.get('/',    getUsers );
+router.get('/:id', getUser );
+router.get('/', getUsers );
 
 router.post('/', [
     check('name', 'Field "name" is required').not().isEmpty(),
@@ -19,8 +21,17 @@ router.post('/', [
     validateFields
 ], createUser );
 
-router.put('/:id',    updateUser );
-router.delete('/:id', deleteUser );
+router.put('/:id', [
+    validateJWT,
+    isAdminRole,
+    validateFields
+], updateUser );
+
+router.delete('/:id', [
+    validateJWT,
+    isAdminRole,
+    validateFields
+], deleteUser );
 
 
 export default router;

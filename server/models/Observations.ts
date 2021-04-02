@@ -2,6 +2,7 @@ import Sequelize, { DataTypes } from 'sequelize';
 import sequelize from '../db/db';
 
 import { ObservationAddModel } from '../interface/observation.interface';
+import Repairs from './Repairs'
 
 export interface ObservationModel extends Sequelize.Model<ObservationModel, ObservationAddModel> {
     id?: number;
@@ -22,5 +23,10 @@ const Observations = sequelize.define<ObservationModel, ObservationAddModel>('Ob
         allowNull: true,       
     },
 })
+
+Observations.belongsTo(Repairs, {
+    foreignKey: 'repairId',    
+});
+
 
 export default Observations
