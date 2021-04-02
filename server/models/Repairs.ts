@@ -40,8 +40,4 @@ Clients.hasMany(Repairs, {
     foreignKey: 'clientId',    
 });
 
-Observations.hasMany(Repairs, {
-    foreignKey: 'observationId',    
-});
-
 export default Repairs
