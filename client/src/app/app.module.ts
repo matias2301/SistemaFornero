@@ -12,12 +12,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuListItemComponent } from './components/menu-list-item/menu-list-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 @NgModule({
   declarations: [
     AppComponent,    
     HomeComponent,
-    MenuListItemComponent  
+    MenuListItemComponent,    
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,16 @@
-<p>list-products works!</p>
+<div *ngIf="!loading">
+    <app-table
+        [tableData]="productsRows"
+        [tableColumns]="productsColumns"
+        [isFilterable]="true"
+        [isPageable]="true"
+        [paginationSizes]="[2,4,6]"
+        [defaultPageSize]="4"
+        (sort)="sortData($event)"
+        [rowAction]="'actions'"     
+        (rowActionAdd)="addProduct($event)"   
+        (rowActionEdit)="editProduct($event)"
+        (rowActionDelete)="deleteProduct($event)"
+    >
+    </app-table>
+</div>

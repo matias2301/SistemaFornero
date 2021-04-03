@@ -1,1 +1,16 @@
-<p>list-clients works!</p>
+<div *ngIf="!loading">
+    <app-table
+        [tableData]="clientsRows"
+        [tableColumns]="clientsColumns"
+        [isFilterable]="true"
+        [isPageable]="true"
+        [paginationSizes]="[2,4,6]"
+        [defaultPageSize]="4"
+        (sort)="sortData($event)"
+        [rowAction]="'actions'"  
+        (rowActionAdd)="addClient($event)"      
+        (rowActionEdit)="editClient($event)"
+        (rowActionDelete)="deleteClient($event)"
+    >
+    </app-table>
+</div>
