@@ -1,1 +1,16 @@
-<p>list-articles works!</p>
+<div *ngIf="!loading">
+    <app-table
+        [tableData]="articlesRows"
+        [tableColumns]="articlesColumns"
+        [isFilterable]="true"
+        [isPageable]="true"
+        [paginationSizes]="[2,4,6]"
+        [defaultPageSize]="4"
+        (sort)="sortData($event)"
+        [rowAction]="'actions'"
+        (rowActionAdd)="addArticle($event)"
+        (rowActionEdit)="editArticle($event)"
+        (rowActionDelete)="deleteArticle($event)"
+    >
+    </app-table>
+</div>
