@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import {Sort} from "@angular/material/sort";
 
 import { ManageDataService } from '../../../services/manage-data.service';
+import { AlertsService } from '../../../services/alerts.service';
+
 import { ColumnTable } from '../../../interfaces/columnTable';
 import { Client } from '../../../interfaces/client.interface';
 
@@ -20,6 +22,7 @@ export class ListClientsComponent implements OnInit {
 
   constructor(
     private _manageDataService: ManageDataService,
+    private _alertsService: AlertsService,
     private router: Router,
   ) {}
 
@@ -43,12 +46,35 @@ export class ListClientsComponent implements OnInit {
     this.router.navigateByUrl('clients/manage-clients');
   }
   editClient(client: Client) {
-    // this.clientsRows = this.clientsRows.filter(item => item.id !== client.id)
-    console.log('editClient',client)
+    this._manageDataService.getDataById('clients', client.id)
+      .subscribe((res: Client) => {        
+          this.router.navigate(['clients/manage-clients', res]);        
+      }, ( err ) => {        
+        console.log(err)
+      }
+    );
   }
   deleteClient(client: Client) {
-    // this.clientsRows = this.clientsRows.filter(item => item.id !== client.id)
-    console.log('deleteClient',client)
+    
+    this._manageDataService.deleteRecord('clients', client.id)
+      .subscribe((res: any) => {
+
+        if( res.success ){            
+          this._alertsService.alertToast(res.msg, 'success')
+          this.clientsRows = this.clientsRows.filter(item => item.id !== client.id)    
+        }
+      }, ( err ) => {
+        
+          let errorMsg = '';          
+          if( err.error ){
+            errorMsg = err.error.msg
+          } else {
+            errorMsg = 'Something went wrong'
+          }
+
+          this._alertsService.alertToast(errorMsg, 'error');
+      }
+    );    
   }
 
   initializeColumns(): void {

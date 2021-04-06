@@ -26,7 +26,7 @@ const Providers = sequelize.define<ProviderModel, ProviderAddModel>('Providers',
     },
     lastName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },   
     email: {
         type: DataTypes.STRING,        

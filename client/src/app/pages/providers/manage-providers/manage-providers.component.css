@@ -1,0 +1,29 @@
+.form {
+    /* margin-top: 25px; */
+    max-width: 750px;
+}
+.row-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;          
+}
+.row-input {
+    flex-grow: 1;
+    margin-right: 15px;
+}
+.row-input:last-of-type {
+    margin-right: 0;
+}
+::ng-deep .lastname{
+    width:100% !important;
+    text-align:center !important;
+}
+.checkCity {
+    margin: 0 10px;
+    margin-top: -5px;
+}
+.cityField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;    
+}

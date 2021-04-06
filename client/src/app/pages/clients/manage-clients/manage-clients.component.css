@@ -1,0 +1,28 @@
+.form {
+    margin-top: 25px;
+    max-width: 750px;
+}
+.row-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;          
+}
+.row-input {
+    flex-grow: 1;
+    margin-right: 15px;
+}
+.row-input:last-of-type {
+    margin-right: 0;
+}
+.stNumber {
+    max-width: 125px;
+}
+.checkCity {
+    margin: 0 10px;
+    margin-top: -5px;
+}
+.cityField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;    
+}

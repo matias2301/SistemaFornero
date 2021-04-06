@@ -1,1 +1,207 @@
-<p>manage-clients works!</p>
+<form
+    class="mat-elevation-z8 form"
+    [formGroup]="clientForm"    
+>
+    <div class="text-divider">Client Name Info</div> 
+    <div class="row-form">
+        <mat-form-field
+            appearance="outline"
+            class="row-input"            
+        >   
+        <mat-label>First Name</mat-label>
+        <input
+            matInput
+            formControlName="firstName"
+            placeholder="First Name"                    
+        >
+        <mat-error *ngIf="clientForm.controls['firstName'].invalid">
+            Field First Name is <strong>required</strong>
+        </mat-error>
+        </mat-form-field>
+
+        <mat-form-field
+            appearance="outline"
+            class="row-input"             
+        >
+            <mat-label>Last Name</mat-label>
+            <input
+                matInput
+                formControlName="lastName"
+                placeholder="Last Name"                
+            >
+            <mat-error *ngIf="clientForm.controls['lastName'].invalid">
+                Field Last Name is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+    </div>
+
+
+    <div class="text-divider">Email Info</div>
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input
+            matInput            
+            formControlName="email"
+            placeholder="client@email.com"            
+        >        
+        <mat-error *ngIf="clientForm.controls['email'].invalid">
+            Field Email is <strong>required</strong>
+        </mat-error>   
+    </mat-form-field>
+
+
+    <div class="text-divider">Phone Number Info</div>
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Phone Number</mat-label>
+        <input
+            matInput 
+            formControlName="phone"
+            placeholder="Enter phone number"
+        >
+        <mat-icon matSuffix>phone</mat-icon>
+        <mat-hint>Include area code</mat-hint>
+        <mat-error *ngIf="clientForm.controls['phone'].invalid">
+            Field Phone Number is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+
+
+    <div class="text-divider">Street Name and Number Info</div> 
+    <div class="row-form">
+        <mat-form-field
+            appearance="outline"
+            class="row-input"             
+        >   
+        <mat-label>Street Name</mat-label>
+        <input
+            matInput
+            formControlName="streetName"
+            placeholder="Street Name"            
+        >
+        <mat-error *ngIf="clientForm.controls['streetName'].invalid">
+            Field Street Name is <strong>required</strong>
+        </mat-error>
+        </mat-form-field>
+
+        <mat-form-field
+            appearance="outline"
+            class="stNumber"            
+        >
+            <mat-label>Street Number</mat-label>
+            <input
+                matInput
+                formControlName="streetNumber"
+                placeholder="Street Number"                
+            >
+            <mat-error *ngIf="clientForm.controls['streetNumber'].invalid">
+                Field Street Number is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+    </div>
+
+
+    <div class="text-divider">Location Info</div> 
+    <div class="row-form">
+        <mat-form-field
+            appearance="outline" 
+            class="row-input"             
+        >
+            <mat-label>Select Country</mat-label>
+            <mat-select
+                formControlName="country"                               
+            >
+                <mat-option>--</mat-option>
+                <mat-option
+                    *ngFor="let country of countries; let i = index"                    
+                    [value]="country.CountryName"
+                    (click)="setStates(i)"
+                >
+                    {{country.CountryName}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="clientForm.controls['country'].invalid">
+                Field Country is <strong>required</strong>
+            </mat-error>              
+        </mat-form-field>
+        
+        <mat-form-field
+            appearance="outline" 
+            class="row-input"             
+        >
+            <mat-label>Select State</mat-label>
+            <mat-select
+                formControlName="state"
+            >
+                <mat-option>--</mat-option>
+                <mat-option
+                    *ngFor="let state of states; let i = index"
+                    [value]="state.StateName"
+                    (click)="setCities(i)"
+                >
+                    {{state.StateName}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="clientForm.controls['state'].invalid">
+                Field State is <strong>required</strong>
+            </mat-error>               
+        </mat-form-field>
+
+        <div class="cityField">
+            <mat-form-field
+                appearance="outline" 
+                class="row-input"
+                *ngIf="!checkValue"             
+            >                
+                <mat-label>Select City</mat-label>
+                <mat-select
+                    formControlName="city"                
+                >
+                    <mat-option>--</mat-option>
+                    <mat-option
+                        *ngFor="let city of cities"
+                        [value]="city"
+                    >
+                        {{city}}
+                    </mat-option>
+                </mat-select>                
+                <mat-error *ngIf="clientForm.controls['city'].invalid">
+                    Field City is <strong>required</strong>
+                </mat-error>        
+            </mat-form-field>
+
+            <mat-form-field
+                appearance="outline" 
+                class="row-input"
+                *ngIf="checkValue"             
+            >  
+            <mat-label>Enter a City</mat-label>
+            <input
+                matInput
+                formControlName="city"
+                placeholder="Enter a City"                
+            >
+            <mat-error *ngIf="clientForm.controls['city'].invalid">
+                Field City is <strong>required</strong>
+            </mat-error>        
+            </mat-form-field>
+
+            <mat-checkbox
+                class="checkCity"
+                [value]="checkValue"
+                (click)="checkValue = !checkValue"
+            >
+                Enter a City
+            </mat-checkbox>
+        </div> 
+    </div>
+
+    <button
+        mat-raised-button
+        type="button"
+        color="primary"
+        class="btn-submit full-width"  
+        (click)="onSubmit(clientForm.value)"         
+    >
+        {{ edit ? 'Update Client' : 'Create Client'}}
+    </button>
+</form>

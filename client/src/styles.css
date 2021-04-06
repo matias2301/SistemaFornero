@@ -8,6 +8,7 @@ body {
 a {
     text-decoration: none;
 }
+/* ---------- Card Login - Register ----------- */
 .form-wrapper {
     height: 100%;
 }
@@ -37,10 +38,14 @@ a {
 .form-wrapper .mat-card {
     padding: 40px 50px 50px;
 }
+/* ---------- Card Login - Register ----------- */
+
+/* ---------- Position Alert ----------- */
 .position-absolute {
     position: absolute;
     margin-top: 50px;
 }
+/* ---------- Position Alert ----------- */
 
 /* Prevents horizontal scrollbar from appearing on left nav side bar */
 /* Gotta account for the left-hand padding in child menu items */
@@ -52,3 +57,48 @@ mat-sidenav-content {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+/* ---------------- form styles ------------- */
+.right-align {
+    text-align: right;
+}
+input.right-align::-webkit-outer-spin-button,
+input.right-align::-webkit-inner-spin-button {
+    display: none;
+}
+.form {
+    display: flex;
+    flex-direction: column;    
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 25px;    
+    max-width: 500px;
+    border-radius: 10px;
+}
+.btn-submit {
+    margin-top: 15px;
+}
+.full-width {
+    width: 100%;
+}
+.text-divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    --text-divider-gap: 1rem;
+}
+.text-divider::before,
+.text-divider::after {
+    content: '';
+    height: 2px;
+    background-color: silver;
+    flex-grow: 1;
+}
+.text-divider::before {
+    margin-right: var(--text-divider-gap);
+}
+.text-divider::after {
+    margin-left: var(--text-divider-gap);
+}
+/* ---------------- form styles ------------- */
