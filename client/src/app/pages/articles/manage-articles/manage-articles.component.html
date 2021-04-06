@@ -1,1 +1,89 @@
-<p>manage-articles works!</p>
+
+<form
+    class="mat-elevation-z8 form"
+    [formGroup]="articleForm"    
+>
+
+    <div class="text-divider">Code - Description</div> 
+    <div class="code-descrip">
+        <mat-form-field
+            appearance="outline"
+            class="code"
+        >
+            <mat-label>Enter Code</mat-label>
+            <mat-select
+                formControlName="code"
+                (selectionChange)="setDescription()"
+            >
+                <mat-option>--</mat-option>
+                <mat-option
+                    *ngFor="let article of articles"
+                    [value]="article.descrip"
+                >
+                    {{article.code}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="articleForm.controls['code'].invalid">Select a code article</mat-error>                
+        </mat-form-field>
+
+        <mat-form-field
+            appearance="outline"
+            class="descrip"
+        >
+            <mat-label>Description</mat-label>
+            <input
+                matInput
+                formControlName="description"
+                placeholder="Description"
+                readonly
+            >
+            <mat-error *ngIf="articleForm.controls['description'].invalid">Enter a description</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div class="text-divider">Price</div>
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Price</mat-label>
+        <input
+            matInput
+            type="number"
+            formControlName="price"
+            placeholder="0"
+            class="right-align"
+        >
+        <span matPrefix>$&nbsp;</span>
+        <mat-error *ngIf="articleForm.controls['price'].invalid">
+            Price is <strong>required</strong>
+        </mat-error>   
+    </mat-form-field>
+
+    <div class="text-divider">Stock</div>
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Stock</mat-label>
+        <input
+            matInput
+            type="number"
+            formControlName="stock"
+            placeholder="0"
+            class="right-align"
+        >
+        <mat-error *ngIf="articleForm.controls['stock'].invalid">
+            Stock is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+
+    <button
+        mat-raised-button
+        type="button"
+        color="primary"
+        class="btn-submit full-width"           
+        (click)="onSubmit(articleForm.value)"
+    >        
+        {{ edit ? 'Update Article' : 'Create Article'}}
+    </button>
+
+</form>
+
+
+
+  

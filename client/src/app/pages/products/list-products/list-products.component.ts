@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import {Sort} from "@angular/material/sort";
 
 import { ManageDataService } from '../../../services/manage-data.service';
+import { AlertsService } from '../../../services/alerts.service';
+
 import { ColumnTable } from '../../../interfaces/columnTable';
 import { Product } from '../../../interfaces/product.interface';
 
@@ -20,6 +22,7 @@ export class ListProductsComponent implements OnInit {
 
   constructor(
     private _manageDataService: ManageDataService,
+    private _alertsService: AlertsService,
     private router: Router,
   ) {}
 
@@ -43,12 +46,34 @@ export class ListProductsComponent implements OnInit {
     this.router.navigateByUrl('products/manage-products');
   }
   editProduct(product: Product) {
-    // this.productsRows = this.productsRows.filter(item => item.id !== product.id)
-    console.log('editProduct',product)
+    this._manageDataService.getDataById('products', product.id)
+      .subscribe((res: Product) => {        
+          this.router.navigate(['products/manage-products', res]);        
+      }, ( err ) => {        
+        console.log(err)
+      }
+    );
   }
   deleteProduct(product: Product) {
-    // this.productsRows = this.productsRows.filter(item => item.id !== product.id)
-    console.log('deleteProduct',product)
+    this._manageDataService.deleteRecord('products', product.id)
+      .subscribe((res: any) => {
+
+        if( res.success ){            
+          this._alertsService.alertToast(res.msg, 'success')
+          this.productsRows = this.productsRows.filter(item => item.id !== product.id)    
+        }
+      }, ( err ) => {
+        
+          let errorMsg = '';          
+          if( err.error ){
+            errorMsg = err.error.msg
+          } else {
+            errorMsg = 'Something went wrong'
+          }
+
+          this._alertsService.alertToast(errorMsg, 'error');
+      }
+    );
   }
 
   initializeColumns(): void {

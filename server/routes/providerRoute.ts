@@ -12,8 +12,7 @@ router.get('/:id', getProvider );
 router.get('/', getProviders );
 
 router.post('/', [
-    check('name', 'Field "name" is required').not().isEmpty(),
-    check('lastName', 'Field "lastName" is required').not().isEmpty(),
+    check('name', 'Field "name" is required').not().isEmpty(),    
     check('email', 'Enter a valid email').isEmail(),
     check('phone', 'Field "phone" is required').not().isEmpty(),
     check('city', 'Field "city" is required').not().isEmpty(),

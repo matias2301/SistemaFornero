@@ -1,1 +1,172 @@
-<p>manage-providers works!</p>
+<form
+    class="mat-elevation-z8 form"
+    [formGroup]="providerForm"    
+>
+    <div class="text-divider">Provider Info</div> 
+    <div class="row-form">
+        <mat-form-field
+            appearance="outline"
+            class="row-input"
+        >   
+        <mat-label>Name</mat-label>
+        <input
+            matInput
+            formControlName="name"
+            placeholder="Name"                    
+        >
+        <mat-error *ngIf="providerForm.controls['name'].invalid">
+            Field Name is <strong>required</strong>
+        </mat-error>
+        </mat-form-field>
+
+        <mat-form-field
+            appearance="outline"
+            class="row-input"             
+        >
+            <mat-label>Last Name</mat-label>
+            <input
+                matInput
+                formControlName="lastName"
+                placeholder="Last Name"                
+            >
+            <mat-hint class="lastname">If Provider is a physic person</mat-hint>
+        </mat-form-field>
+    </div>
+
+
+    <div class="text-divider">Email Info</div>
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input
+            matInput            
+            formControlName="email"
+            placeholder="client@email.com"            
+        >        
+        <mat-error *ngIf="providerForm.controls['email'].invalid">
+            Field Email is <strong>required</strong>
+        </mat-error>   
+    </mat-form-field>
+
+
+    <div class="text-divider">Phone Number Info</div>
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Phone Number</mat-label>
+        <input
+            matInput 
+            formControlName="phone"
+            placeholder="Enter phone number"
+        >
+        <mat-icon matSuffix>phone</mat-icon>
+        <mat-hint>Include area code</mat-hint>
+        <mat-error *ngIf="providerForm.controls['phone'].invalid">
+            Field Phone Number is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+
+
+    <div class="text-divider">Location Info</div> 
+    <div class="row-form">
+        <mat-form-field
+            appearance="outline" 
+            class="row-input"             
+        >
+            <mat-label>Select Country</mat-label>
+            <mat-select
+                formControlName="country"                
+            >
+                <mat-option>--</mat-option>
+                <mat-option
+                    *ngFor="let country of countries; let i = index"
+                    [value]="country.CountryName"
+                    (click)="setStates(i)"
+                >
+                    {{country.CountryName}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="providerForm.controls['country'].invalid">
+                Field Country is <strong>required</strong>
+            </mat-error>              
+        </mat-form-field>
+
+        <mat-form-field
+            appearance="outline" 
+            class="row-input"             
+        >
+            <mat-label>Select State</mat-label>
+            <mat-select
+                formControlName="state"                
+            >
+                <mat-option>--</mat-option>
+                <mat-option
+                    *ngFor="let state of states; let i = index"
+                    [value]="state.StateName"
+                    (click)="setCities(i)"
+                >
+                    {{state.StateName}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="providerForm.controls['state'].invalid">
+                Field State is <strong>required</strong>
+            </mat-error>               
+        </mat-form-field>
+
+        <div class="cityField">
+            <mat-form-field
+                appearance="outline" 
+                class="row-input"
+                *ngIf="!checkValue"
+            >                
+                <mat-label>Select City</mat-label>
+                <mat-select
+                    formControlName="city"                
+                >
+                    <mat-option>--</mat-option>
+                    <mat-option
+                        *ngFor="let city of cities"
+                        [value]="city"
+                    >
+                        {{city}}
+                    </mat-option>
+                </mat-select>                
+                <mat-error *ngIf="providerForm.controls['city'].invalid">
+                    Field City is <strong>required</strong>
+                </mat-error>        
+            </mat-form-field>
+
+            <mat-form-field
+                appearance="outline" 
+                class="row-input"
+                *ngIf="checkValue"
+            >  
+            <mat-label>Enter a City</mat-label>
+            <input
+                matInput
+                formControlName="city"
+                placeholder="Enter a City"                
+            >
+            <mat-error *ngIf="providerForm.controls['city'].invalid">
+                Field City is <strong>required</strong>
+            </mat-error>        
+            </mat-form-field>
+
+            <mat-checkbox
+                class="checkCity"
+                [value]="checkValue"
+                (click)="checkValue = !checkValue"
+            >
+                Enter a City
+            </mat-checkbox>
+        </div> 
+    </div>
+
+    <button
+        mat-raised-button
+        type="button"
+        color="primary"
+        class="btn-submit full-width" 
+        (click)="onSubmit(providerForm.value)"             
+    >
+        {{ edit ? 'Update Provider' : 'Create Provider'}}
+    </button>
+
+</form>

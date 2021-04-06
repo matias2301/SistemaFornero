@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import {Sort} from "@angular/material/sort";
 
 import { ManageDataService } from '../../../services/manage-data.service';
+import { AlertsService } from '../../../services/alerts.service';
+
 import { ColumnTable } from '../../../interfaces/columnTable';
 import { Provider } from '../../../interfaces/provider.interface';
 
@@ -20,6 +22,7 @@ export class ListProvidersComponent implements OnInit {
 
   constructor(
     private _manageDataService: ManageDataService,
+    private _alertsService: AlertsService,
     private router: Router,
   ) {}
 
@@ -43,12 +46,35 @@ export class ListProvidersComponent implements OnInit {
     this.router.navigateByUrl('providers/manage-providers');
   }
   editProvider(provider: Provider) {
-    // this.providersRows = this.providersRows.filter(item => item.id !== provider.id)
-    console.log('editProvider', provider)
+    this._manageDataService.getDataById('providers', provider.id)
+      .subscribe((res: Provider) => {        
+          this.router.navigate(['providers/manage-providers', res]);        
+      }, ( err ) => {        
+        console.log(err)
+      }
+    );
   }
   deleteProvider(provider: Provider) {
-    // this.providersRows = this.providersRows.filter(item => item.id !== provider.id)
-    console.log('deleteProvider', provider)
+
+    this._manageDataService.deleteRecord('providers', provider.id)
+      .subscribe((res: any) => {
+
+        if( res.success ){            
+          this._alertsService.alertToast(res.msg, 'success')
+          this.providersRows = this.providersRows.filter(item => item.id !== provider.id)    
+        }
+      }, ( err ) => {
+
+          let errorMsg = '';          
+          if( err.error ){
+            errorMsg = err.error.msg
+          } else {
+            errorMsg = 'Something went wrong'
+          }
+
+          this._alertsService.alertToast(errorMsg, 'error');
+      }
+    ); 
   }
 
   initializeColumns(): void {
