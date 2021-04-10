@@ -4,9 +4,9 @@ export interface RepairAddModel{
     state: string;    
     // taken: string;
     // assigned: string;
-    estDate: Date;
+    estDate?: Date;
     // articles: string[];
-    // observations: string[];    
+    // observations: string[];
     createdAt?: Date;
     updatedAt?: Date;
 }

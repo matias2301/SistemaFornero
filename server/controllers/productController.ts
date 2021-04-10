@@ -36,7 +36,7 @@ export const createProduct = async( req: Request , res: Response ) => {
             res.json({
                 success: true,
                 msg: 'producto creado con exito',
-                Products
+                product
             });
         })
         .catch( (err: any) => console.log(err))    

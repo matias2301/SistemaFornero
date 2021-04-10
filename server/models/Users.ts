@@ -48,9 +48,15 @@ const Users = sequelize.define<UserModel, UserAddModel>('Users', {
 Repairs.belongsTo(Users, {  
   as: 'taken'
 });
+Users.hasMany(Repairs, {
+  foreignKey: 'takenId',    
+});
 
 Repairs.belongsTo(Users, {  
   as: 'assigned'
+});
+Users.hasMany(Repairs, {
+  foreignKey: 'assignedId',    
 });
 
 export default Users

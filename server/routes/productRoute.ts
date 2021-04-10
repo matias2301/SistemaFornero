@@ -22,13 +22,16 @@ router.post('/', [
 router.put('/:id', [
     validateJWT,
     isAdminRole,
+    check('code', 'Field "code" is required').not().isEmpty(),
+    check('description', 'Field "description" is required').not().isEmpty(),
+    check('price', 'Field "price" is required').not().isEmpty(),
+    check('stock', 'Field "stock" is required').not().isEmpty(),
     validateFields
 ], updateProduct );
 
 router.delete('/:id', [
     validateJWT,
-    isAdminRole,
-    validateFields
+    isAdminRole,    
 ], deleteProduct );
 
 export default router;
