@@ -24,13 +24,16 @@ router.post('/', [
 router.put('/:id', [
     validateJWT,
     isAdminRole,
+    check('name', 'Field "name" is required').not().isEmpty(),
+    check('password', 'Field "password" is required').not().isEmpty(),
+    check('email', 'Enter a valid email').isEmail(),
+    check('email').custom( checkEmail ),
     validateFields
 ], updateUser );
 
 router.delete('/:id', [
     validateJWT,
-    isAdminRole,
-    validateFields
+    isAdminRole,    
 ], deleteUser );
 
 

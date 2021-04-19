@@ -2,7 +2,7 @@ import Sequelize, { DataTypes } from 'sequelize';
 import sequelize from '../db/db';
 
 import { ClientAddModel } from '../interface/client.interface';
-import Products from './Products'
+import Products from './Products';
 
 export interface ClientModel extends Sequelize.Model<ClientModel, ClientAddModel> {
     id?: number;        

@@ -10,7 +10,7 @@ export interface RepairModel extends Sequelize.Model<RepairModel, RepairAddModel
     id?: number;        
     description: string;
     state: string;    
-    estDate: Date; 
+    estDate?: Date; 
     createdAt?: Date;
     updatedAt?: Date;
 }
@@ -28,7 +28,7 @@ const Repairs = sequelize.define<RepairModel, RepairAddModel>('Repairs', {
     },
     estDate: {
         type: DataTypes.DATE,
-        allowNull: false,
+        allowNull: true,
     },
 })
 
@@ -37,7 +37,8 @@ Articles.belongsToMany(Repairs, {
 })
 
 Clients.hasMany(Repairs, {
-    foreignKey: 'clientId',    
+    foreignKey: 'ClientId',    
 });
+Repairs.belongsTo(Clients);
 
 export default Repairs

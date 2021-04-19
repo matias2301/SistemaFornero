@@ -1,6 +1,5 @@
 export interface ObservationAddModel {
-    id?: number;
-    title: string;    
+    id?: number;       
     description: string;   
     createdAt?: Date;
     updatedAt?: Date;

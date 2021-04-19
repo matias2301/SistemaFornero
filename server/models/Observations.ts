@@ -5,8 +5,7 @@ import { ObservationAddModel } from '../interface/observation.interface';
 import Repairs from './Repairs'
 
 export interface ObservationModel extends Sequelize.Model<ObservationModel, ObservationAddModel> {
-    id?: number;
-    title: string;    
+    id?: number;    
     description: string;   
     createdAt?: Date;
     updatedAt?: Date;
@@ -14,19 +13,15 @@ export interface ObservationModel extends Sequelize.Model<ObservationModel, Obse
 
 const Observations = sequelize.define<ObservationModel, ObservationAddModel>('Observations', {
 
-    title: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
     description: {
         type: DataTypes.STRING,
         allowNull: true,       
     },
 })
 
-Observations.belongsTo(Repairs, {
-    foreignKey: 'repairId',    
+Repairs.hasMany(Observations, {
+    foreignKey: 'RepairId',    
 });
-
+Observations.belongsTo(Repairs);
 
 export default Observations
