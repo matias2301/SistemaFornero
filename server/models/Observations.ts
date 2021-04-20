@@ -6,7 +6,7 @@ import Repairs from './Repairs'
 
 export interface ObservationModel extends Sequelize.Model<ObservationModel, ObservationAddModel> {
     id?: number;    
-    description: string;   
+    description: string;       
     createdAt?: Date;
     updatedAt?: Date;
 }
@@ -16,7 +16,7 @@ const Observations = sequelize.define<ObservationModel, ObservationAddModel>('Ob
     description: {
         type: DataTypes.STRING,
         allowNull: true,       
-    },
+    },    
 })
 
 Repairs.hasMany(Observations, {
