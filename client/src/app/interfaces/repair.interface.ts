@@ -1,10 +1,11 @@
 export interface Repair{
-    id?: number;        
+    id?: number;
+    ClientId: number;        
     description: string;
     state: string;    
-    taken: string;
-    assigned: string;
-    estDate?: Date;
+    takenId: number;
+    assignedId: number;
+    estDate: Date;
     // articles: string[];
     observations: string[];    
 }

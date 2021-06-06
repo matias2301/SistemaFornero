@@ -16,7 +16,8 @@ export class AuthService {
   AUTH_SERVER_ADDRESS: string = 'http://localhost:8000';
   ACCESS_TOKEN = 'auth-token';
   authSubject = new BehaviorSubject({
-    name: "",
+    id: '',
+    name: '',
     logged: false
   });
 
@@ -31,8 +32,10 @@ export class AuthService {
   checkToken() {
     
     if ( localStorage.getItem(this.ACCESS_TOKEN) ) {
+      
       this.authSubject.next({
-        name: "",
+        id: localStorage.getItem('ID'),
+        name: localStorage.getItem('NAME'),
         logged: true
       });
     }    
@@ -55,8 +58,12 @@ export class AuthService {
       map( res => {                
         if (res.success) {                  
           localStorage.setItem(this.ACCESS_TOKEN, res.token);
+          localStorage.setItem('ID', `${res.user.id}`);
+          localStorage.setItem('NAME', `${res.user.name}`);
+          
           this.authSubject.next({
-            name: res.user.name,
+            id: localStorage.getItem('ID'),
+            name: localStorage.getItem('NAME'),
             logged: true
           });                            
         }  
@@ -69,6 +76,7 @@ export class AuthService {
 
     localStorage.removeItem(this.ACCESS_TOKEN)
     this.authSubject.next({
+      id: '',
       name: "",
       logged: false
     });

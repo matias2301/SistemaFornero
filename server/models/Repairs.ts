@@ -37,7 +37,7 @@ Articles.belongsToMany(Repairs, {
 })
 
 Clients.hasMany(Repairs, {
-    foreignKey: 'ClientId',    
+    foreignKey: 'clientId',    
 });
 Repairs.belongsTo(Clients);
 

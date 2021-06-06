@@ -4,7 +4,7 @@ import { getRepair, getRepairs, createRepair, updateRepair, deleteRepair } from 
 import { check } from 'express-validator';
 import { validateFields } from '../middlewares/validateFields';
 import { validateJWT } from '../middlewares/validateJwt';
-// import { isAdminRole, hasRole } from '../middlewares/validateRole';
+import { isAdminRole } from '../middlewares/validateRole';
 
 const router = Router();
 
@@ -19,15 +19,15 @@ router.post('/', [
 
 router.put('/:id', [
     validateJWT,
+    isAdminRole,
     check('description', 'Field "description" is required').not().isEmpty(),
-    check('state', 'Field "price" is required').not().isEmpty(),
-    // isAdminRole,
+    check('state', 'Field "price" is required').not().isEmpty(),    
     validateFields
 ], updateRepair );
 
 router.delete('/:id', [
     validateJWT,    
-    // isAdminRole,    
+    isAdminRole,    
 ], deleteRepair );
 
 export default router;

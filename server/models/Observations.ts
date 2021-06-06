@@ -20,7 +20,7 @@ const Observations = sequelize.define<ObservationModel, ObservationAddModel>('Ob
 })
 
 Repairs.hasMany(Observations, {
-    foreignKey: 'RepairId',    
+    foreignKey: 'repairId',    
 });
 Observations.belongsTo(Repairs);
 

@@ -19,7 +19,7 @@ export class ListRepairsComponent implements OnInit {
   repairsColumns: ColumnTable[];
   repairsRows: any[] = [];
   loading: boolean = true;
-  addRepair = {
+  newRepair = {
     idRepair: '',
     clientFirstName: '',
     clientLastName: '',
@@ -56,26 +56,21 @@ export class ListRepairsComponent implements OnInit {
     }
   }
 
-  addReapir() {    
+  addRepair() {    
     this.router.navigateByUrl('repairs/manage-repairs');
   }
-  editReapir(repair: any) {
-    this._manageDataService.getDataById('repairs', repair.id)
-      .subscribe((res: any) => {        
-          this.router.navigate(['repairs/manage-repairs', res]);        
-      }, ( err ) => {        
-        console.log(err)
-      }
-    );
+  editRepair(repair: any) {    
+    
+    this.router.navigate(['repairs/manage-repairs', repair]);
   }
-  deleteReapir(repair: any) {
+  deleteRepair(repair: any) {
 
-    this._manageDataService.deleteRecord('repairs', repair.id)
+    this._manageDataService.deleteRecord('repairs', repair.idRepair)
       .subscribe((res: any) => {
 
         if( res.success ){            
           this._alertsService.alertToast(res.msg, 'success')
-          this.repairsRows = this.repairsRows.filter(item => item.id !== repair.id)    
+          this.repairsRows = this.repairsRows.filter(item => item.idRepair !== repair.idRepair)    
         }
       }, ( err ) => {
 
@@ -136,8 +131,9 @@ export class ListRepairsComponent implements OnInit {
     this._manageDataService.getData('repairs')
     .subscribe((res: any) => {
       if( res.repairs.length > 0 ){
+        
         res.repairs.map( repair => {               
-            this.addRepair = {
+            this.newRepair = {
               idRepair: repair.id,
               clientFirstName: repair.Client.firstName,
               clientLastName: repair.Client.lastName,
@@ -151,7 +147,7 @@ export class ListRepairsComponent implements OnInit {
               createdAt: repair.createdAt.split('T')[0].split('-').reverse().join('-'),
               updatedAt: repair.updatedAt,
             } 
-            this.repairsRows.push(this.addRepair);              
+            this.repairsRows.push(this.newRepair);              
         });      
       }
       this.loading = false;

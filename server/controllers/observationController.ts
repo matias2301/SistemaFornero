@@ -6,7 +6,7 @@ export const createObservations = async( req: Request , res: Response ) => {
     const { body } = req;
 
     const obs = new Observations(body);
-
+    
     obs.save()
         .then( () => {                        
             res.json({

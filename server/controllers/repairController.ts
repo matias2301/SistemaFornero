@@ -67,17 +67,18 @@ export const createRepair = async( req: Request , res: Response ) => {
 
     const { clientId, description, state, estDate, takenId, assignedId, articles, observations } = req.body;
 
-    const repair = new Repairs({        
-        description,
-        state,
-        estDate: estDate || '',
+    const repair = new Repairs({
         clientId,
-        takenId,
+        description,        
+        estDate: estDate || '',
+        state,
         assignedId,
+        takenId,        
     });
 
     repair.save()
         .then( (repair: any) => {
+            
             if(observations){
                 const obs = new Observations({
                     description: observations,
@@ -98,51 +99,58 @@ export const createRepair = async( req: Request , res: Response ) => {
 
 export const updateRepair = async( req: Request , res: Response ) => {
 
-    // const { id }   = req.params;
-    // const { body } = req;
+    const { id }   = req.params;    
+    const { body } = req;
 
-    // try {
+    try {
         
-    //     const product = await Products.findByPk( id );
-    //     if ( !product ) {
-    //         return res.status(404).json({
-    //             msg: 'No existe un producto con el id ' + id
-    //         });
-    //     }
+        const repair = await Repairs.findByPk( id );
+        if ( !repair ) {
+            return res.status(404).json({
+                msg: 'No existe una reparacion con el id ' + id
+            });
+        }
 
-    //     await product.update( body );
+        await repair.update( body )
+            .then( () => {
+                if(body.observations){
+                    const obs = new Observations({
+                        description: body.observations,
+                        repairId: id
+                    })
+                    obs.save();
+                }
+                res.json( repair );
+            })        
 
-    //     res.json( product );
+    } catch (error) {
 
-
-    // } catch (error) {
-
-    //     console.log(error);
-    //     res.status(500).json({
-    //         msg: 'Something went wrong'
-    //     })    
-    // }   
+        console.log(error);
+        res.status(500).json({
+            msg: 'Something went wrong'
+        })    
+    }   
 }
 
 
 export const deleteRepair = async( req: Request , res: Response ) => {
 
-    // const { id } = req.params;
+    const { id } = req.params;
 
-    // const product = await Products.findByPk( id );
-    // if ( !product ) {
-    //     return res.status(404).json({
-    //         msg: 'No existe un producto con el id ' + id
-    //     });
-    // }
+    const repair = await Repairs.findByPk( id );
+    if ( !repair ) {
+        return res.status(404).json({
+            msg: 'No existe una reparacion con el id ' + id
+        });
+    }
 
-    // // await product.update({ state: false });
-    // // res.json(product);
+    // await repair.update({ state: false });
+    // res.json(repair);
 
-    // await product.destroy();
-    // res.json({
-    //     success: true,
-    //     msg: "product borrado con exito"
-    // });
+    await repair.destroy();
+    res.json({
+        success: true,
+        msg: "reparacion borrada con exito"
+    });
     
 }

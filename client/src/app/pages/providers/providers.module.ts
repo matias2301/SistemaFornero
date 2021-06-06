@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProvidersRoutingModule } from './providers-routing.module';
 import { ListProvidersComponent } from './list-providers/list-providers.component';
 import { ManageProvidersComponent } from './manage-providers/manage-providers.component';
+
 import { TableModule } from '../../components/table/table.module';
 import { AngularMaterialModule } from './provider-material.module'
 

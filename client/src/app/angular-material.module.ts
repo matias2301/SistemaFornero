@@ -28,11 +28,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 // import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 // import { MatTreeModule } from '@angular/material/tree';
-// import { MatBadgeModule } from '@angular/material/badge';
+import { MatBadgeModule } from '@angular/material/badge';
 // import { MatGridListModule } from '@angular/material/grid-list';
 // import { MatRadioModule } from '@angular/material/radio';
 // import { MatDatepickerModule } from '@angular/material/datepicker';
-// import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 const materialModules = [
@@ -64,11 +64,11 @@ const materialModules = [
   // MatTreeModule,
   // OverlayModule,
   // PortalModule,
-  // MatBadgeModule,
+  MatBadgeModule,
   // MatGridListModule,
   // MatRadioModule,
   // MatDatepickerModule,
-  // MatTooltipModule
+  MatTooltipModule
 ];
 
 @NgModule({

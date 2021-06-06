@@ -20,3 +20,12 @@
     border: none;
     outline: none;
   }
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .badges {
+    margin-right: 50px;
+  }
+  .tooltip-red {
+    background: #b71c1c;
+  }
