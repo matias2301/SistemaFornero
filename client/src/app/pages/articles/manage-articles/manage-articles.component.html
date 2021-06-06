@@ -12,13 +12,13 @@
         >
             <mat-label>Enter Code</mat-label>
             <mat-select
-                formControlName="code"
-                (selectionChange)="setDescription()"
+                formControlName="code"                
             >
                 <mat-option>--</mat-option>
                 <mat-option
                     *ngFor="let article of articles"
-                    [value]="article.descrip"
+                    [value]="article.code"
+                    (click)="setDescription(article.descrip)"
                 >
                     {{article.code}}
                 </mat-option>

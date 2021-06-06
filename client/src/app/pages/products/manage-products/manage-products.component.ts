@@ -71,8 +71,8 @@ export class ManageProductsComponent implements OnInit {
     });
   }
 
-  setDescription() {
-    this.productForm.controls.description.setValue(this.productForm.controls.code.value)    
+  setDescription(descrip: string) {
+    this.productForm.controls.description.setValue(descrip);  
   }
 
   onSubmit(values: Product) {

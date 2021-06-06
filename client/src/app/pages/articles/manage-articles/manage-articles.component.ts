@@ -70,8 +70,8 @@ export class ManageArticlesComponent implements OnInit {
     });
   }
 
-  setDescription() {
-    this.articleForm.controls.description.setValue(this.articleForm.controls.code.value)    
+  setDescription(descrip: string) {
+    this.articleForm.controls.description.setValue(descrip);
   }
 
   onSubmit(values: Article) {

@@ -1,0 +1,86 @@
+mat-form-field {
+  margin-right: 12px;
+}
+mat-panel-title {
+  font-size: 13px;
+  margin-left: 5px;
+}
+table {
+  margin: 5px 5px 15px 5px;
+  padding: 5px 25px;
+}
+.form {
+  margin-top: 25px;
+  max-width: 750px;
+}
+.row-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;          
+}
+.row-input {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+.row-input:last-of-type {
+  margin-right: 0;
+}
+.fieldTextarea {
+  width: 100%;  
+}
+textarea {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.obsContainer {
+  /* display: block; */
+  background-color: #d4d4d4; 
+  border-radius: 5px;; 
+  width: 100%;  
+  padding: 5px;
+  padding-bottom: 0;    
+}
+.infix {  
+  margin-bottom: -10px;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.btn-submit {
+  margin-top: 10px;
+}
+.btn-article {
+  height: 35px;
+  margin-top: 5px;
+}
+.btn-obs {   
+  width: 100px;
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  background-color: #d4d4d4;
+  height: 25px;  
+}
+.mat-chip{
+  background-color: rgb(152, 224, 152) !important; 
+  font-size: 10px;    
+  padding: 0px 5px;
+}
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}

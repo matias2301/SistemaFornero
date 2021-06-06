@@ -20,7 +20,7 @@ export interface UserLogin {
     email: string,
     password: string
 }
-interface UserResponse {
+export interface UserResponse {
     id: number,
     name: string,
     email: string,

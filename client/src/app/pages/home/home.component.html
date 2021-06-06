@@ -1,9 +1,38 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button (click)="sidenav.toggle()" class="menu-button" fxHide fxShow.lt-md>
+  <button
+    mat-icon-button
+    (click)="sidenav.toggle()"
+    class="menu-button"
+    fxHide fxShow.lt-md
+  >
     <mat-icon>menu</mat-icon>
-  </button>
+  </button>  
+
   <span>Sistema Fornero</span>
+  <span class="spacer"></span>
+
+  <div class="badges">
+    <mat-icon
+      matBadge="1"
+      matBadgeColor="warn"
+      matTooltip="Info about the articles stock"
+      matTooltipClass="tooltip-red"
+      [matTooltipShowDelay]="1000"
+      [matTooltipHideDelay]="2000"
+      aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
+    >alarm</mat-icon>    
+  </div>
+
+  <span>Hi {{ userName }}!</span>
+  <button
+    mat-raised-button
+    (click)="logout()"
+    [style.marginLeft.px]="25"
+    color="basic"
+    fxShow fxHide.lt-md
+  >LogOut</button>
 </mat-toolbar>
+
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="side" [opened]="opened">
     <mat-nav-list>
