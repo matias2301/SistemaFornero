@@ -9,6 +9,7 @@ export interface ArticleModel extends Sequelize.Model<ArticleModel, ArticleAddMo
     description: string;
     price: number;
     stock: number;    
+    poo: number; 
     createdAt?: Date;
     updatedAt?: Date;
 }
@@ -32,6 +33,11 @@ const Articles = sequelize.define<ArticleModel, ArticleAddModel>('Articles', {
         defaultValue: 0,        
         allowNull: false,  
     },
+    poo: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0,        
+        allowNull: false,  
+    }
 })
 
 export default Articles
