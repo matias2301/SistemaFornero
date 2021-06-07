@@ -4,6 +4,7 @@ export interface ArticleAddModel {
   description: string;
   price: number;
   stock: number;    
+  poo: number;  
   createdAt?: Date;
   updatedAt?: Date;
 }
