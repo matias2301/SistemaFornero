@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
-
-// import { Router } from '@angular/router';
+import { Observable, BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,10 +10,13 @@ export class ManageDataService {
 
   AUTH_SERVER_ADDRESS: string = 'http://localhost:8000';
 
+  stockWatcher = new BehaviorSubject(null);
+
   constructor(
-    private httpClient: HttpClient,
-    // private router: Router,
-  ) { }
+    private httpClient: HttpClient    
+  ) {
+    this.getData('articles')
+  }
 
 
   getData(route: string): Observable<any> {
@@ -23,7 +24,10 @@ export class ManageDataService {
     return this.httpClient
     .get<any>(`${this.AUTH_SERVER_ADDRESS}/api/${route}`)
     .pipe(
-      map( res => res ),
+      map( res => {        
+        if( route === 'articles') this.stockWatcher.next(res.articles)
+        return res 
+      }),
     )
   }
 
@@ -41,7 +45,10 @@ export class ManageDataService {
     return this.httpClient
     .post<any>(`${this.AUTH_SERVER_ADDRESS}/api/${route}`, values)
     .pipe(
-      map( res => res ),
+      map( res => {        
+        if( route === 'articles') this.getData('articles')
+        return res 
+      }),      
     )
   }
 
@@ -73,7 +80,10 @@ export class ManageDataService {
     return this.httpClient
     .put<any>(`${this.AUTH_SERVER_ADDRESS}/api/${route}/${id}`, values, httpOptions)
     .pipe(
-      map( res => res ),
+      map( res => {        
+        if( route === 'articles') this.getData('articles')
+        return res 
+      }),      
     )
   }
 

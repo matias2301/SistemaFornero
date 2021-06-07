@@ -29,3 +29,6 @@
   .tooltip-red {
     background: #b71c1c;
   }
+  .mat-tooltip  {
+    white-space: pre-line    !important;
+  }

@@ -57,6 +57,7 @@ export class ManageArticlesComponent implements OnInit {
       description: new FormControl('', Validators.compose([Validators.required ])),
       price: new FormControl('', Validators.compose([Validators.required ])),
       stock: new FormControl('', Validators.compose([Validators.required ])),
+      poo: new FormControl('', Validators.compose([Validators.required ]))
     });
   }
 
@@ -67,6 +68,7 @@ export class ManageArticlesComponent implements OnInit {
       description: this.article.description,
       price: this.article.price,
       stock: this.article.stock,
+      poo: this.article.poo
     });
   }
 

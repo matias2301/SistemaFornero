@@ -8,7 +8,7 @@
     <div class="code-descrip">
         <mat-form-field
             appearance="outline"
-            class="code"
+            class="code marginRight"
         >
             <mat-label>Enter Code</mat-label>
             <mat-select
@@ -57,20 +57,35 @@
         </mat-error>   
     </mat-form-field>
 
-    <div class="text-divider">Stock</div>
-    <mat-form-field appearance="outline" class="full-width">
-        <mat-label>Stock</mat-label>
-        <input
-            matInput
-            type="number"
-            formControlName="stock"
-            placeholder="0"
-            class="right-align"
-        >
-        <mat-error *ngIf="articleForm.controls['stock'].invalid">
-            Stock is <strong>required</strong>
-        </mat-error>
-    </mat-form-field>
+    <div class="text-divider">Stock - Punto de Pedido</div>
+    <div class="code-descrip">
+        <mat-form-field appearance="outline" class="descrip marginRight">
+            <mat-label>Stock</mat-label>
+            <input
+                matInput
+                type="number"
+                formControlName="stock"
+                placeholder="0"
+                class="right-align"
+            >
+            <mat-error *ngIf="articleForm.controls['stock'].invalid">
+                Stock is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="descrip">
+            <mat-label>Point of Order</mat-label>
+            <input
+                matInput
+                type="number"
+                formControlName="poo"
+                placeholder="0"
+                class="right-align"
+            >
+            <mat-error *ngIf="articleForm.controls['poo'].invalid">
+                Point of Order is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+    </div>
 
     <button
         mat-raised-button

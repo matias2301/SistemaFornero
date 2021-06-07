@@ -11,14 +11,14 @@
   <span>Sistema Fornero</span>
   <span class="spacer"></span>
 
-  <div class="badges">
+  <div *ngIf="alertsMsg.length > 0" class="badges">
     <mat-icon
-      matBadge="1"
+      [matBadge]="alertsMsg.length"
       matBadgeColor="warn"
-      matTooltip="Info about the articles stock"
+      [matTooltip]="alertsMsg.join('\n')"
       matTooltipClass="tooltip-red"
-      [matTooltipShowDelay]="1000"
-      [matTooltipHideDelay]="2000"
+      matTooltipShowDelay="1000"
+      matTooltipHideDelay="2000"
       aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
     >alarm</mat-icon>    
   </div>

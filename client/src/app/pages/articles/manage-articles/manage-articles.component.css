@@ -1,12 +1,14 @@
 .code-descrip {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     flex-wrap: wrap;           
 }
 .code {
-    max-width: 125px;
-    margin-right: 15px;
+    max-width: 125px;    
 }
 .descrip {
     flex-grow: 1;    
+}
+.marginRight {
+    margin-right: 15px;
 }
