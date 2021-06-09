@@ -2,7 +2,6 @@ import Sequelize, { DataTypes } from 'sequelize';
 import sequelize from '../db/db';
 
 import { ProviderAddModel } from '../interface/provider.interface';
-import Articles from './Articles'
 import Products from './Products'
 
 export interface ProviderModel extends Sequelize.Model<ProviderModel, ProviderAddModel> {
@@ -49,10 +48,6 @@ const Providers = sequelize.define<ProviderModel, ProviderAddModel>('Providers',
         allowNull: false,      
     },
 })
-
-Articles.belongsToMany(Providers, {
-    through: "articleProviderTable"  
-});
 
 Products.belongsToMany(Providers, {
     through: 'productProviderTable',    
