@@ -1,10 +1,19 @@
 import { Request, Response } from 'express';
 import Articles from '../models/Articles';
+import Providers from '../models/Providers';
 
 export const getArticles = async( req: Request , res: Response ) => {
 
-    const articles = await Articles.findAll();
+    const articles = await Articles.findAll({
+        include: [
+            {
+                model: Providers,                
+                as: 'providerId'
+            }
+        ]
+    });
 
+    console.log(articles)
     res.json({ articles });
 }
 
@@ -27,12 +36,26 @@ export const getArticle = async( req: Request , res: Response ) => {
 
 export const createArticle = async( req: Request , res: Response ) => {
 
-    const { body } = req;
+    const { code, description, price, stock, poo, providers } = req.body;
 
-    const article = new Articles(body);
+    const article = new Articles({
+        code,
+        description,
+        price,
+        stock,
+        poo,
+        // providerId: providers
+    });
 
     article.save()
-        .then( () => {                        
+        .then( (article) => {
+            if( providers.length > 0 ){
+                providers.map( (provider: any) => {
+                    article.update({
+                        providerId: provider.id
+                    });
+                })
+            }                   
             res.json({
                 success: true,
                 msg: 'articulo creado con exito',

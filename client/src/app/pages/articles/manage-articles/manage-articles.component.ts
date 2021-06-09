@@ -6,6 +6,7 @@ import { ManageDataService } from '../../../services/manage-data.service';
 import { AlertsService } from '../../../services/alerts.service';
 
 import { Article } from '../../../interfaces/article.interface'
+import { Provider } from '../../../interfaces/provider.interface';
 
 interface codeArticle {
   code: string;
@@ -22,6 +23,7 @@ export class ManageArticlesComponent implements OnInit {
 
   articleForm: FormGroup; 
   article: any;
+  providers: Provider[];
   edit: boolean = false;
   articles: codeArticle[] = [
     {code: 'ar-60', descrip: 'arandela 60mm'},
@@ -40,6 +42,7 @@ export class ManageArticlesComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,    
   ) {
+    this.getProviders();
     this.createForm();
   }
 
@@ -56,6 +59,7 @@ export class ManageArticlesComponent implements OnInit {
       code: new FormControl('', Validators.compose([Validators.required ])),
       description: new FormControl('', Validators.compose([Validators.required ])),
       price: new FormControl('', Validators.compose([Validators.required ])),
+      providers: new FormControl(''),
       stock: new FormControl('', Validators.compose([Validators.required ])),
       poo: new FormControl('', Validators.compose([Validators.required ]))
     });
@@ -67,8 +71,16 @@ export class ManageArticlesComponent implements OnInit {
       code: this.article.code,
       description: this.article.description,
       price: this.article.price,
+      providers: this.article.provider,
       stock: this.article.stock,
       poo: this.article.poo
+    });
+  }
+
+  getProviders() {
+    this._manageDataService.getData('providers')
+    .subscribe((res: any) => {      
+      this.providers = res.providers;      
     });
   }
 
@@ -77,6 +89,7 @@ export class ManageArticlesComponent implements OnInit {
   }
 
   onSubmit(values: Article) {
+    
     if( this.articleForm.invalid ){
       Object.values( this.articleForm.controls ).forEach( control => {
         if ( control instanceof FormGroup ) {

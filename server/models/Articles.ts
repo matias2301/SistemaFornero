@@ -3,6 +3,8 @@ import sequelize from '../db/db';
 
 import { ArticleAddModel } from '../interface/article.interface';
 
+import Providers from './Providers'
+
 export interface ArticleModel extends Sequelize.Model<ArticleModel, ArticleAddModel> {
     id?: number;
     code: string;        
@@ -39,5 +41,12 @@ const Articles = sequelize.define<ArticleModel, ArticleAddModel>('Articles', {
         allowNull: false,  
     }
 })
+
+Providers.hasMany(Articles, {
+    foreignKey: 'providerId',    
+});
+Articles.belongsToMany(Providers, {
+    through: "articleProviderTable"  
+});
 
 export default Articles

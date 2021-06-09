@@ -107,6 +107,12 @@ export class ListArticlesComponent implements OnInit {
         dataKey: 'poo',
         position: 'left',
         isSortable: true
+      },
+      {
+        name: 'Providers',
+        dataKey: 'providers',
+        position: 'left',
+        isSortable: true
       }
     ];
   }
