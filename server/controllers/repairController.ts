@@ -160,7 +160,7 @@ export const updateRepair = async( req: Request , res: Response ) => {
                         remove = true;
                         let newStock = 0;
                         if( article.ArticlesRepairs.amount > updArticle.amount ){
-                          newStock = article.stock + (updArticle.amount - article.ArticlesRepairs.amount);
+                          newStock = article.stock + (article.ArticlesRepairs.amount - updArticle.amount);
                         } else if ( article.ArticlesRepairs.amount < updArticle.amount ){
                           newStock = article.stock - (updArticle.amount - article.ArticlesRepairs.amount);
                         }
