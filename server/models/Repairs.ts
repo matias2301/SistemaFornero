@@ -3,8 +3,8 @@ import sequelize from '../db/db';
 
 import { RepairAddModel } from '../interface/repair.interface';
 import Articles from './Articles'
+import Providers from './Providers'
 import Clients from './Clients'
-import Observations from './Observations'
 
 export interface RepairModel extends Sequelize.Model<RepairModel, RepairAddModel> {
     id?: number;        
@@ -32,12 +32,19 @@ const Repairs = sequelize.define<RepairModel, RepairAddModel>('Repairs', {
     },
 })
 
+const ArticlesRepairs = sequelize.define('ArticlesRepairs', {
+  amount: DataTypes.INTEGER
+}, { timestamps: false });
+
 Articles.belongsToMany(Repairs, {
-    through: 'articleRepairTable'   
-})
+  through: "ArticlesRepairs",
+});
+Repairs.belongsToMany(Articles, {
+  through: "ArticlesRepairs", 
+});
 
 Clients.hasMany(Repairs, {
-    foreignKey: 'clientId',    
+    foreignKey: 'ClientId',    
 });
 Repairs.belongsTo(Clients);
 

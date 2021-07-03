@@ -2,7 +2,6 @@ import Sequelize, { DataTypes } from 'sequelize';
 import sequelize from '../db/db';
 
 import { ArticleAddModel } from '../interface/article.interface';
-
 import Providers from './Providers'
 
 export interface ArticleModel extends Sequelize.Model<ArticleModel, ArticleAddModel> {
@@ -42,11 +41,15 @@ const Articles = sequelize.define<ArticleModel, ArticleAddModel>('Articles', {
     }
 })
 
-Providers.hasMany(Articles, {
-    foreignKey: 'providerId',    
-});
 Articles.belongsToMany(Providers, {
-    through: "articleProviderTable"  
+  through: "ArticlesProvider",  
+  // as: "providers",
+  // foreignKey: 'ProviderId', 
+});
+Providers.belongsToMany(Articles, {
+  through: "ArticlesProvider", 
+  // as: "articles",
+  // foreignKey: 'ArticleId',
 });
 
 export default Articles
