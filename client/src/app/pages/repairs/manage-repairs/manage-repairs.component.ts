@@ -62,8 +62,19 @@ export class ManageRepairsComponent implements OnInit {
     if( repair.idRepair ){
       this.edit = true;
       this._manageDataService.getDataById('repairs', repair.idRepair)
-      .subscribe((res: any) => {        
-        this.repair = res[0];        
+      .subscribe((res: any) => {
+        this.repair = res[0];
+
+        this.repair.Articles.map( art => {
+          let article = {
+            id: art.id,
+            code: art.code,
+            descrip: art.description,
+            amount: art.ArticlesRepairs.amount
+          }
+          this.articleRepair.push(article);
+        })
+
         this.loadForm();
       });
     }
@@ -135,9 +146,23 @@ export class ManageRepairsComponent implements OnInit {
       this.articlesForm.controls.amount.markAsTouched();
       return
     }
-    
-    this.articleRepair.push(values);
-    this.articleRepair = [...this.articleRepair];
+    if( this.articleRepair.length > 0 ){
+      let match = false;
+      this.articleRepair.map( art => {
+        if( art.id == values.id ) {
+          art.amount = Number(art.amount) + Number(values.amount);
+          match = true;
+        }
+      })
+      if( !match ) {
+        this.articleRepair.push(values);
+        this.articleRepair = [...this.articleRepair];
+      }
+    } else {
+      this.articleRepair.push(values);
+      this.articleRepair = [...this.articleRepair];
+    }
+
     this.cancelArticle();     
   }
 
@@ -157,7 +182,11 @@ export class ManageRepairsComponent implements OnInit {
       });
       return
     }
-    values.takenId = Number(this.takenId);    
+    values.takenId = Number(this.takenId);
+    values = {
+      ...values,
+      articles: this.articleRepair
+    }
 
     if( !this.edit) {
       this.addRepair(values)
@@ -166,7 +195,8 @@ export class ManageRepairsComponent implements OnInit {
     }
   }
 
-  addRepair(values) {
+  addRepair(values: Repair) {
+
     this._manageDataService.createRecord('repairs', values)
     .subscribe((res: any) => {    
 
@@ -194,7 +224,7 @@ export class ManageRepairsComponent implements OnInit {
     );
   }
 
-  updateRepair(values) {
+  updateRepair(values: Repair) {
     
     this._manageDataService.updateRecord('repairs', this.repair.id, values)
     .subscribe((res: any) => {
@@ -225,7 +255,7 @@ export class ManageRepairsComponent implements OnInit {
     if( this.repairForm.controls['observations'].value === null ) return;
 
     let values = {
-      repairId: this.repair.id,
+      RepairId: this.repair.id,
       description: this.repairForm.controls['observations'].value
     }
 

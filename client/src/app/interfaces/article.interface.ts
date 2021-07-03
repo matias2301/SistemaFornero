@@ -4,4 +4,6 @@ export interface Article {
     description: string;    
     price: number;
     stock: number;
+    poo: number;
+    providers: number;
 }
