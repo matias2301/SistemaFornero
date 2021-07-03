@@ -2,7 +2,6 @@ import Sequelize, { DataTypes } from 'sequelize';
 import sequelize from '../db/db';
 
 import { ClientAddModel } from '../interface/client.interface';
-import Products from './Products';
 
 export interface ClientModel extends Sequelize.Model<ClientModel, ClientAddModel> {
     id?: number;        
@@ -58,9 +57,5 @@ const Clients = sequelize.define<ClientModel, ClientAddModel>('Clients', {
         allowNull: false,      
     },
 })
-
-Products.belongsToMany(Clients, {
-    through: "productClientTable"    
-});
 
 export default Clients
