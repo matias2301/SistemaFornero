@@ -107,7 +107,7 @@
             class="row-input"             
         >
             <mat-label>Select Country</mat-label>
-            <mat-select
+            <!-- <mat-select
                 formControlName="country"                               
             >
                 <mat-option>--</mat-option>
@@ -118,7 +118,12 @@
                 >
                     {{country.CountryName}}
                 </mat-option>
-            </mat-select>
+            </mat-select> -->
+            <input
+              matInput
+              formControlName="country"
+              placeholder="Enter a City"                
+            >
             <mat-error *ngIf="clientForm.controls['country'].invalid">
                 Field Country is <strong>required</strong>
             </mat-error>              
@@ -129,7 +134,7 @@
             class="row-input"             
         >
             <mat-label>Select State</mat-label>
-            <mat-select
+            <!-- <mat-select
                 formControlName="state"
             >
                 <mat-option>--</mat-option>
@@ -140,7 +145,12 @@
                 >
                     {{state.StateName}}
                 </mat-option>
-            </mat-select>
+            </mat-select> -->
+            <input
+              matInput
+              formControlName="state"
+              placeholder="Enter a City"                
+            >
             <mat-error *ngIf="clientForm.controls['state'].invalid">
                 Field State is <strong>required</strong>
             </mat-error>               
@@ -185,13 +195,13 @@
             </mat-error>        
             </mat-form-field>
 
-            <mat-checkbox
+            <!-- <mat-checkbox
                 class="checkCity"
                 [value]="checkValue"
                 (click)="checkValue = !checkValue"
             >
                 Enter a City
-            </mat-checkbox>
+            </mat-checkbox> -->
         </div> 
     </div>
 

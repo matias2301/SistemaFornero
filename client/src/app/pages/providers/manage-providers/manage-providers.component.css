@@ -25,5 +25,12 @@
 .cityField {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
     margin-bottom: 5px;    
+}
+@media(min-width: 768px){
+  .cityField {
+    margin-left: 15px;
+    width: auto;
+  }  
 }

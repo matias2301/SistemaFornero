@@ -24,11 +24,11 @@ export class ManageDataService {
     return this.httpClient
     .get<any>(`${this.AUTH_SERVER_ADDRESS}/api/${route}`)
     .pipe(
-      map( res => {        
+      map( res => {
         if( route === 'articles') this.stockWatcher.next(res.articles)
         return res 
       }),
-    )
+    );
   }
 
   getDataById(route: string, id: number): Observable<any> {
@@ -45,8 +45,10 @@ export class ManageDataService {
     return this.httpClient
     .post<any>(`${this.AUTH_SERVER_ADDRESS}/api/${route}`, values)
     .pipe(
-      map( res => {        
-        if( route === 'articles') this.getData('articles')
+      map( res => {
+        if( route === 'articles' || route === 'repairs' ) {
+          this.getData('articles').subscribe( res => console.log(res) )
+        }
         return res 
       }),      
     )
@@ -64,7 +66,12 @@ export class ManageDataService {
     return this.httpClient
     .delete<any>(`${this.AUTH_SERVER_ADDRESS}/api/${route}/${id}`, httpOptions)
     .pipe(
-      map( res => res ),
+      map( res => {        
+        if( route === 'articles' || route === 'repairs' ) {
+          this.getData('articles').subscribe( res => console.log(res) )
+        }
+        return res 
+      }),  
     )
   }
 
@@ -81,7 +88,9 @@ export class ManageDataService {
     .put<any>(`${this.AUTH_SERVER_ADDRESS}/api/${route}/${id}`, values, httpOptions)
     .pipe(
       map( res => {        
-        if( route === 'articles') this.getData('articles')
+        if( route === 'articles' || route === 'repairs' ){
+          this.getData('articles').subscribe( res => console.log(res) )
+        }
         return res 
       }),      
     )

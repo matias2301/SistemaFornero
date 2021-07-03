@@ -110,7 +110,7 @@ export class ListArticlesComponent implements OnInit {
       },
       {
         name: 'Providers',
-        dataKey: 'providers',
+        dataKey: 'Providers',
         position: 'left',
         isSortable: true
       }
@@ -119,7 +119,7 @@ export class ListArticlesComponent implements OnInit {
 
   getArticles() {
     this._manageDataService.getData('articles')
-    .subscribe((res: any) => {      
+    .subscribe((res: any) => {
       this.articlesRows = res.articles;
       this.loading = false;
     });
