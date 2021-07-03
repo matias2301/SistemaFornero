@@ -21,7 +21,7 @@ export class ManageClientsComponent implements OnInit {
   states: any[] = [];
   cities: any[] = [];
   edit: boolean = false;
-  checkValue: boolean = false;
+  checkValue: boolean = true;
 
   constructor(
     public formBuilder: FormBuilder,

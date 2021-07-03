@@ -6,6 +6,6 @@ export interface Repair{
     takenId: number;
     assignedId: number;
     estDate: Date;
-    // articles: string[];
+    articles: string[];
     observations: string[];    
 }

@@ -7,7 +7,6 @@ export interface ProviderAddModel{
     city: string;
     state: string;
     country: string;
-    // articles: string[];
     createdAt?: Date;
     updatedAt?: Date;
 }

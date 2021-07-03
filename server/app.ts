@@ -9,5 +9,5 @@ const server = new Server();
 // server.listen();
 
 sequelize.sync({ force: false }).then( () => {
-    server.listen();    
+    server.listen();
 });

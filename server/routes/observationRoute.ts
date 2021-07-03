@@ -10,7 +10,7 @@ import { isAdminRole } from '../middlewares/validateRole';
 const router = Router();
 
 router.post('/', [
-    check('repairId', 'Field "repairId" is required').not().isEmpty(),
+    check('RepairId', 'Field "repairId" is required').not().isEmpty(),
     check('description', 'Field "description" is required').not().isEmpty(),
     validateFields
 ], createObservations );

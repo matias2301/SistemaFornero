@@ -7,13 +7,11 @@ export const getArticles = async( req: Request , res: Response ) => {
     const articles = await Articles.findAll({
         include: [
             {
-                model: Providers,                
-                as: 'providerId'
+                model: Providers,
             }
         ]
     });
 
-    console.log(articles)
     res.json({ articles });
 }
 
@@ -43,17 +41,16 @@ export const createArticle = async( req: Request , res: Response ) => {
         description,
         price,
         stock,
-        poo,
-        // providerId: providers
+        poo
     });
 
     article.save()
-        .then( (article) => {
+        .then( (article: any) => {
             if( providers.length > 0 ){
                 providers.map( (provider: any) => {
-                    article.update({
-                        providerId: provider.id
-                    });
+                  Providers.findByPk(provider).then( prov => {
+                    article.addProvider(prov)
+                  });              
                 })
             }                   
             res.json({
