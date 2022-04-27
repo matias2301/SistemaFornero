@@ -4,8 +4,8 @@
   <ng-container *ngIf="isFilterable" [matColumnDef]="this.rowActionIcon">
     <div fxLayout="row" fxLayoutAlign="space-between">
       <mat-form-field>
-        <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Enter a value">      
+        <mat-label>Filtrar</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ingresá tu búsqueda">      
       </mat-form-field>
 
       <button
@@ -14,7 +14,7 @@
         color="primary"
         class="button-add"
         (click)="emitRowActionAdd()"
-      >Add</button>
+      >Agregar</button>
     </div>
   </ng-container>
 
@@ -45,7 +45,7 @@
       <td mat-cell *matCellDef="let element" [class.text-right]="tableColumn.position == 'right'">
         <ng-container *ngIf="tableColumn.dataKey == 'Providers'; else notProviders">
           <mat-form-field appearance="fill">
-            <mat-label>Watch List</mat-label>
+            <mat-label>Ver lista</mat-label>
             <mat-select>
               <mat-option
                   *ngFor="let provider of element | dataPropertyGetter: tableColumn.dataKey"
@@ -80,7 +80,7 @@
         <div class="example-element-detail"
           [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
             <div *ngIf="element.observations" class="obsContainer">
-              <h5>Observations:</h5>
+              <h5>Observaciones:</h5>
               <p class="descrip">{{element.observations[0]?.description}}</p> 
             </div>
         </div>

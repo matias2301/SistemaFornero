@@ -2,20 +2,20 @@
     class="mat-elevation-z8 form"
     [formGroup]="clientForm"    
 >
-    <div class="text-divider">Client Name Info</div> 
+    <div class="text-divider">Información del cliente</div> 
     <div class="row-form">
         <mat-form-field
             appearance="outline"
             class="row-input"            
         >   
-        <mat-label>First Name</mat-label>
+        <mat-label>Nombre</mat-label>
         <input
             matInput
             formControlName="firstName"
-            placeholder="First Name"                    
+            placeholder="Ingresá el nombre"                    
         >
         <mat-error *ngIf="clientForm.controls['firstName'].invalid">
-            Field First Name is <strong>required</strong>
+            El nombre es <strong>requerido</strong>
         </mat-error>
         </mat-form-field>
 
@@ -23,63 +23,62 @@
             appearance="outline"
             class="row-input"             
         >
-            <mat-label>Last Name</mat-label>
+            <mat-label>Apellido</mat-label>
             <input
                 matInput
                 formControlName="lastName"
-                placeholder="Last Name"                
+                placeholder="Ingresá el apellido"                
             >
             <mat-error *ngIf="clientForm.controls['lastName'].invalid">
-                Field Last Name is <strong>required</strong>
+                El apellido es <strong>requerido</strong>
             </mat-error>
         </mat-form-field>
     </div>
 
 
-    <div class="text-divider">Email Info</div>
+    <div class="text-divider">Información de contacto</div>
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Email</mat-label>
         <input
             matInput            
             formControlName="email"
-            placeholder="client@email.com"            
+            placeholder="cliente@email.com"            
         >        
         <mat-error *ngIf="clientForm.controls['email'].invalid">
-            Field Email is <strong>required</strong>
+            El email es <strong>requerido</strong>
         </mat-error>   
     </mat-form-field>
 
-
-    <div class="text-divider">Phone Number Info</div>
+    <!-- <div class="text-divider">Phone Number Info</div> -->
     <mat-form-field appearance="outline" class="full-width">
-        <mat-label>Phone Number</mat-label>
+        <mat-label>Número de teléfono / celular</mat-label>
         <input
             matInput 
             formControlName="phone"
-            placeholder="Enter phone number"
+            placeholder="Ingresá un número de teléfono"
         >
         <mat-icon matSuffix>phone</mat-icon>
-        <mat-hint>Include area code</mat-hint>
+        <mat-hint>Incluir código de área</mat-hint>
         <mat-error *ngIf="clientForm.controls['phone'].invalid">
-            Field Phone Number is <strong>required</strong>
+            El número de teléfono es <strong>requerido</strong>
         </mat-error>
     </mat-form-field>
 
 
-    <div class="text-divider">Street Name and Number Info</div> 
+    <div class="text-divider">Información del domicilio</div> 
     <div class="row-form">
         <mat-form-field
             appearance="outline"
             class="row-input"             
         >   
-        <mat-label>Street Name</mat-label>
+        <mat-label>Calle</mat-label>
         <input
             matInput
             formControlName="streetName"
-            placeholder="Street Name"            
+            placeholder="Ingresá la calle"            
         >
         <mat-error *ngIf="clientForm.controls['streetName'].invalid">
-            Field Street Name is <strong>required</strong>
+            La calle es <strong>requerida</strong>
         </mat-error>
         </mat-form-field>
 
@@ -87,26 +86,26 @@
             appearance="outline"
             class="stNumber"            
         >
-            <mat-label>Street Number</mat-label>
+            <mat-label>Número</mat-label>
             <input
                 matInput
                 formControlName="streetNumber"
-                placeholder="Street Number"                
+                placeholder="Ingresá el número"                
             >
             <mat-error *ngIf="clientForm.controls['streetNumber'].invalid">
-                Field Street Number is <strong>required</strong>
+                El número es <strong>requerido</strong>
             </mat-error>
         </mat-form-field>
     </div>
 
 
-    <div class="text-divider">Location Info</div> 
+    <div class="text-divider">País - Provincia - Ciudad</div>
     <div class="row-form">
         <mat-form-field
             appearance="outline" 
             class="row-input"             
         >
-            <mat-label>Select Country</mat-label>
+            <mat-label>País</mat-label>
             <!-- <mat-select
                 formControlName="country"                               
             >
@@ -122,10 +121,10 @@
             <input
               matInput
               formControlName="country"
-              placeholder="Enter a City"                
+              placeholder="Ingresá el país"                
             >
             <mat-error *ngIf="clientForm.controls['country'].invalid">
-                Field Country is <strong>required</strong>
+                El país es <strong>requerido</strong>
             </mat-error>              
         </mat-form-field>
         
@@ -133,7 +132,7 @@
             appearance="outline" 
             class="row-input"             
         >
-            <mat-label>Select State</mat-label>
+            <mat-label>Provincia</mat-label>
             <!-- <mat-select
                 formControlName="state"
             >
@@ -149,10 +148,10 @@
             <input
               matInput
               formControlName="state"
-              placeholder="Enter a City"                
+              placeholder="Ingresá la provincia"                
             >
             <mat-error *ngIf="clientForm.controls['state'].invalid">
-                Field State is <strong>required</strong>
+                La provincia es <strong>requerida</strong>
             </mat-error>               
         </mat-form-field>
 
@@ -184,14 +183,14 @@
                 class="row-input"
                 *ngIf="checkValue"             
             >  
-            <mat-label>Enter a City</mat-label>
+            <mat-label>Ciudad</mat-label>
             <input
                 matInput
                 formControlName="city"
-                placeholder="Enter a City"                
+                placeholder="Ingresá la ciudad"                
             >
             <mat-error *ngIf="clientForm.controls['city'].invalid">
-                Field City is <strong>required</strong>
+                La ciudad es <strong>requerida</strong>
             </mat-error>        
             </mat-form-field>
 
@@ -212,6 +211,6 @@
         class="btn-submit full-width"  
         (click)="onSubmit(clientForm.value)"         
     >
-        {{ edit ? 'Update Client' : 'Create Client'}}
+        {{ edit ? 'Modificar cliente' : 'Agregar cliente'}}
     </button>
 </form>

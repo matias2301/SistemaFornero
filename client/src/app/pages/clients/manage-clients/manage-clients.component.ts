@@ -126,7 +126,7 @@ export class ManageClientsComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');
@@ -137,7 +137,7 @@ export class ManageClientsComponent implements OnInit {
   updateClient(values) {
     this._manageDataService.updateRecord('clients', this.client.id, values)
     .subscribe((res: any) => {
-        this._alertsService.alertToast('Client updated successfully', 'success')
+        this._alertsService.alertToast('¡El cliente se modificó con éxito!', 'success')
           .then( () => {
             this.router.navigateByUrl('clients/list-clients');
             this.clientForm.reset();
@@ -150,7 +150,7 @@ export class ManageClientsComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');

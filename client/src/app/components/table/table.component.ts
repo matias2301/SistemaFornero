@@ -40,6 +40,7 @@ export class TableComponent implements OnInit, AfterViewInit {
 
   // this property needs to have a setter, to dynamically get changes from parent component
   @Input() set tableData(data: any[]) {
+    console.log('tableData', data)
     this.setTableDataSource(data);
   }
 

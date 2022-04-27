@@ -130,6 +130,7 @@ export class ListRepairsComponent implements OnInit {
   getRepairs() {
     this._manageDataService.getData('repairs')
     .subscribe((res: any) => {
+      console.log('repairs', res)
       if( res.repairs.length > 0 ){
         
         res.repairs.map( repair => {               

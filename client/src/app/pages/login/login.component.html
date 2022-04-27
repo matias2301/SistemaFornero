@@ -1,35 +1,35 @@
 <div class="form-wrapper" fxLayout="row" fxLayoutAlign="center center">
   <mat-card class="box">
     <mat-card-header>
-      <mat-card-title>Login</mat-card-title>
+      <mat-card-title>Iniciar sesión</mat-card-title>
     </mat-card-header>
 
     <mat-horizontal-stepper linear #stepper>
 
       <mat-step [stepControl]="emailFormGroup">
         <form fxLayout="column" [formGroup]="emailFormGroup">
-          <ng-template matStepLabel>Enter your Email</ng-template>
+          <ng-template matStepLabel>Ingresá el email</ng-template>
 
           <mat-form-field class="field-full-width">
             <!-- <mat-label>Email</mat-label> -->
-            <input matInput formControlName="email" placeholder="Enter your Email">
-            <mat-hint>user@email.com</mat-hint>
+            <input matInput formControlName="email" placeholder="Ingresá tu email">
+            <mat-hint>usuario@email.com</mat-hint>
             
             <mat-error *ngIf="emailFormGroup.controls.email.hasError('required')">
-              Email is <strong>required</strong>
+              El email es <strong>requerido</strong>
             </mat-error>
             <mat-error *ngIf="emailFormGroup.controls.email.hasError('pattern')">
-              Enter a valid Email
+              Ingresá un email válido
             </mat-error>       
 
           </mat-form-field>
 
-          <mat-checkbox formControlName="remember" color="primary">Recordar Usuario</mat-checkbox>
-          <p>Cree una cuenta nueva <a [routerLink]="['/register']"><strong>aqui</strong></a></p>
+          <mat-checkbox formControlName="remember" color="primary">Recordar usuario</mat-checkbox>
+          <p>Creá una cuenta nueva <a [routerLink]="['/register']"><strong>aquí</strong></a></p>
 
           <div class="buttons">
             <!-- <button mat-raised-button color="primary" matStepperNext>Next</button> -->
-            <button mat-raised-button color="primary" matStepperNext>Next</button>
+            <button mat-raised-button color="primary" matStepperNext>Siguiente</button>
           </div>
 
         </form>
@@ -37,7 +37,7 @@
 
       <mat-step [stepControl]="passFormGroup">
         <form fxLayout="column" [formGroup]="passFormGroup">          
-          <ng-template matStepLabel>Enter your Password</ng-template>
+          <ng-template matStepLabel>Ingresá la contraseña</ng-template>
 
 
           <button fxLayoutAlign="start stretch" class="arrowBack" mat-icon-button matSuffix matStepperPrevious>
@@ -48,29 +48,29 @@
 
           <mat-form-field class="field-full-width">
             <!-- <mat-label>Password</mat-label> -->
-            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Enter your Password">
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Ingresá tu contraseña">
             
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
 
             <mat-error *ngIf="passFormGroup.controls.password.hasError('required')">
-              Password is <strong>required</strong>
+              La contraseña es <strong>requerida</strong>
             </mat-error>            
             <mat-error *ngIf="passFormGroup.controls.password.hasError('minlength')">
-              Password must has at least 6 characters
+              La contraseña debe contener al menos 6 caracteres
             </mat-error>
             <mat-error *ngIf="passFormGroup.controls.password.hasError('pattern')">
-              Password must contain at least a letter
+              La contraseña debe contener al menos una letra
             </mat-error>
 
           </mat-form-field>
 
-          <p>Olvido su contraseña <a href="#">pulse aqui</a></p>
+          <p>Si olvidaste la contraseña <a href="#">ingresá aquí</a></p>
           
           <div class="buttons">
             <!-- <button mat-raised-button color="accent" matStepperPrevious>Back</button> -->
-            <button mat-raised-button color="primary" (click)="onSubmitLogin()">Submit</button>          
+            <button mat-raised-button color="primary" (click)="onSubmitLogin()">Ingresar</button>          
           </div>
 
         </form>

@@ -94,7 +94,7 @@ export class RegisterComponent implements OnInit {
             if( err.error.errors){
               errorMsg = err.error.errors[0].msg
             } else {
-              errorMsg = 'Something went wrong'
+              errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
             }
             
             this._alertsService.alertToast(errorMsg, 'error');

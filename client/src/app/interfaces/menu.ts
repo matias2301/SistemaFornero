@@ -2,97 +2,97 @@ import { NavItem } from './navItem';;
 
 export let menu: NavItem[] = [
   {
-    displayName: 'Dashboard',
+    displayName: 'Panel de informes',
     iconName: 'dashboard',
     route: 'dashboard'
   },
   {
-    displayName: 'Clients',
+    displayName: 'Clientes',
     iconName: 'group',
     route: 'clients',
     children: [
       {
-        displayName: 'List Clients',
+        displayName: 'Listado de clientes',
         iconName: 'list',
         route: 'clients/list-clients'
       },
       {
-        displayName: 'Add Client',
+        displayName: 'Agregar cliente',
         iconName: 'add',
         route: 'clients/manage-clients'
       }
     ]
   },
   {
-    displayName: 'Providers',
+    displayName: 'Provedores',
     iconName: 'local_shipping',
     route: 'providers',
     children: [
       {
-        displayName: 'List Providers',
+        displayName: 'Listado de provedores',
         iconName: 'list',
         route: 'providers/list-providers'
       },
       {
-        displayName: 'Add Provider',
+        displayName: 'Agregar provedor',
         iconName: 'add',
         route: 'providers/manage-providers'
       }
     ]
   },
   {
-    displayName: 'Products',
+    displayName: 'Productos',
     iconName: 'shopping_cart',
     route: 'products',
     children: [
       {
-        displayName: 'List Products',
+        displayName: 'Listado de productos',
         iconName: 'list',
         route: 'products/list-products'
       },
       {
-        displayName: 'Add Product',
+        displayName: 'Agregar producto',
         iconName: 'add',
         route: 'products/manage-products'
       }
     ]
   },
   {
-    displayName: 'Articles',
+    displayName: 'Artículos',
     iconName: 'directions_bike',
     route: 'articles',
     children: [
       {
-        displayName: 'List Articles',
+        displayName: 'Listado de artículos',
         iconName: 'list',
         route: 'articles/list-articles'
       },
       {
-        displayName: 'Add Article',
+        displayName: 'Agregar artículo',
         iconName: 'add',
         route: 'articles/manage-articles'
       }
     ]
   },
   {
-    displayName: 'Repairs',
+    displayName: 'Reparaciones',
     iconName: 'build',
     route: 'repairs',
     children: [
       {
-        displayName: 'List Repairs',
+        displayName: 'Listado de reparaciones',
         iconName: 'list',
         route: 'repairs/list-repairs'
       },
       {
-        displayName: 'Add Repair',
+        displayName: 'Agregar reparación',
         iconName: 'add',
         route: 'repairs/manage-repairs'
       }
     ]
   },
   {
-      displayName: 'Sign Out',
+      displayName: 'Cerrar sesión',
       iconName: 'exit_to_app'
   }
 ];

@@ -67,7 +67,7 @@ export class MenuListItemComponent implements OnInit {
     }
 
     handleSpecial(item: NavItem) {
-        if (item.displayName == 'Sign Out') {
+        if (item.displayName == 'Cerrar sesión') {
             this.handleSignOut();
         }
     }

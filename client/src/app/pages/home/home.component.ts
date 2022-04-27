@@ -42,7 +42,7 @@ export class HomeComponent implements OnDestroy {
                 this.alertsMsg = [];
                 articles.map ( article => {
                     if( article.stock < article.poo ){
-                        this.alertsMsg.push(`Stock ${article.description} is under Point of Order(${article.poo})`);
+                        this.alertsMsg.push(`El stock de ${article.description} está debajo del punto de pedido(${article.poo})`);
                     }
                 });
             }

@@ -112,7 +112,7 @@ export class ManageArticlesComponent implements OnInit {
     .subscribe((res: any) => {    
 
       if( res.success){            
-        this._alertsService.alertToast('Article updated successfully', 'success')
+        this._alertsService.alertToast('¡El artículo se agregó con éxito!', 'success')
           .then( () => {
             this.articleForm.reset();
 
@@ -126,7 +126,7 @@ export class ManageArticlesComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');
@@ -137,7 +137,7 @@ export class ManageArticlesComponent implements OnInit {
   updateArticle(values) {
     this._manageDataService.updateRecord('articles', this.article.id, values)
     .subscribe((res: any) => {
-        this._alertsService.alertToast(res.msg, 'success')
+        this._alertsService.alertToast('¡El artículo se modificó con éxito!', 'success')
           .then( () => {
             this.router.navigateByUrl('articles/list-articles');
             this.articleForm.reset();
@@ -151,7 +151,7 @@ export class ManageArticlesComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');

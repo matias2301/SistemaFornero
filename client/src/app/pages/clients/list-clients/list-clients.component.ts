@@ -69,7 +69,7 @@ export class ListClientsComponent implements OnInit {
           if( err.error ){
             errorMsg = err.error.msg
           } else {
-            errorMsg = 'Something went wrong'
+            errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
           }
 
           this._alertsService.alertToast(errorMsg, 'error');
@@ -80,13 +80,13 @@ export class ListClientsComponent implements OnInit {
   initializeColumns(): void {
     this.clientsColumns = [
       {
-        name: 'FirstName',
+        name: 'Nombre',
         dataKey: 'firstName',
         position: 'left',
         isSortable: true
       },
       {
-        name: 'LastName',
+        name: 'Apellido',
         dataKey: 'lastName',
         position: 'left',
         isSortable: true
@@ -98,25 +98,25 @@ export class ListClientsComponent implements OnInit {
         isSortable: false
       },
       {
-        name: 'Phone',
+        name: 'Telefóno',
         dataKey: 'phone',
         position: 'left',
         isSortable: false
       },
       {
-        name: 'St.Name',
+        name: 'Calle',
         dataKey: 'streetName',
         position: 'left',
         isSortable: false
       },
       {
-        name: 'St.Number',
+        name: 'Número',
         dataKey: 'streetNumber',
         position: 'left',
         isSortable: false
       },
       {
-        name: 'City',
+        name: 'Ciudad',
         dataKey: 'city',
         position: 'left',
         isSortable: false

@@ -1,9 +1,9 @@
 <div class="form-wrapper" fxLayout="row" fxLayoutAlign="center center">
   <mat-card class="box">
     <mat-card-header>
-      <mat-card-title>Register</mat-card-title>
+      <mat-card-title>Crear una cuenta nueva</mat-card-title>
       <mat-card-subtitle>
-        Ya tiene una cuenta, <a [routerLink]="['/login']"><strong>ir al Login</strong></a>
+        Si ya tenés una cuenta, <a [routerLink]="['/login']"><strong>iniciá sesión</strong></a>
       </mat-card-subtitle>
     </mat-card-header>
 
@@ -11,88 +11,88 @@
 
       <mat-step [stepControl]="nameFormGroup">
         <form [formGroup]="nameFormGroup">
-          <ng-template matStepLabel>Enter your Name</ng-template>
+          <ng-template matStepLabel>Nombre</ng-template>
 
           <mat-form-field class="field-full-width">            
-            <input matInput formControlName="name" placeholder="Enter your Name">            
+            <input matInput formControlName="name" placeholder="Ingresá tu nombre">            
             
             <mat-error>
-              This field is required
+              Este campo es requerido
             </mat-error>
           </mat-form-field>          
           
-          <button mat-raised-button color="primary" matStepperNext>Next</button>
+          <button mat-raised-button color="primary" matStepperNext>Siguiente</button>
         </form>
       </mat-step>
 
       <mat-step [stepControl]="emailFormGroup">
         <form [formGroup]="emailFormGroup">
-          <ng-template matStepLabel>Enter your Email</ng-template>
+          <ng-template matStepLabel>Email</ng-template>
 
           <mat-form-field class="field-full-width">            
-            <input matInput formControlName="email" placeholder="Enter your Email">            
-            <mat-hint>user@email.com</mat-hint>
+            <input matInput formControlName="email" placeholder="Ingresá tu email">            
+            <mat-hint>usuario@email.com</mat-hint>
 
             <mat-error *ngIf="emailFormGroup.controls.email.hasError('required')">
-              Email is <strong>required</strong>
+              El email es <strong>requerido</strong>
             </mat-error>
             <mat-error *ngIf="emailFormGroup.controls.email.hasError('pattern')">
-              Enter a valid Email
+              Ingresá un valor válido para el email
             </mat-error>  
           </mat-form-field>          
           
           <!-- <button mat-raised-button color="accent" matStepperPrevious>Back</button> -->
-          <button mat-raised-button color="primary" matStepperNext>Next</button>
+          <button mat-raised-button color="primary" matStepperNext>Siguiente</button>
         </form>
       </mat-step>
       
       <mat-step [stepControl]="passFormGroup">
         <form [formGroup]="passFormGroup">          
-          <ng-template matStepLabel>Enter your Password</ng-template>
+          <ng-template matStepLabel>Contraseña</ng-template>
 
           <mat-form-field class="field-full-width">            
-            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Enter your Password">
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Ingresá una contraseña">
             
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
 
             <mat-error *ngIf="passFormGroup.controls.password.hasError('required')">
-              Password is <strong>required</strong>
+              La contraseña es <strong>requerida</strong>
             </mat-error>            
             <mat-error *ngIf="passFormGroup.controls.password.hasError('minlength')">
-              Password must has at least 6 characters
+              La contraseña debe contener al menos 6 caracteres
             </mat-error>
             <mat-error *ngIf="passFormGroup.controls.password.hasError('pattern')">
-              Password must contain at least a letter
+              La contraseña debe contener al menos una letra
             </mat-error>
 
           </mat-form-field>         
           
           <!-- <button mat-raised-button color="accent" matStepperPrevious>Back</button> -->
-          <button mat-raised-button color="primary" matStepperNext>Next</button>          
+          <button mat-raised-button color="primary" matStepperNext>Siguiente</button>          
 
         </form>
       </mat-step>
 
       <mat-step [stepControl]="confirmPassFormGroup">
         <form [formGroup]="confirmPassFormGroup">          
-          <ng-template matStepLabel>Confirm your Password</ng-template>
+          <ng-template matStepLabel>Repetir la contraseña</ng-template>
 
           <mat-form-field class="field-full-width">            
-            <input matInput [type]="hideConfirm ? 'password' : 'text'" formControlName="confirmPass" placeholder="Confirm your Password">
+            <input matInput [type]="hideConfirm ? 'password' : 'text'" formControlName="confirmPass" placeholder="Confirmar la contraseña">
             
             <button mat-icon-button matSuffix (click)="hideConfirm = !hideConfirm" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideConfirm">
               <mat-icon>{{hideConfirm ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>            
  
             <mat-error>              
-              Passwords doesn't match
+              Las contraseñas no coinciden
             </mat-error>            
           </mat-form-field>
           
-          <button mat-raised-button color="accent" matStepperPrevious (click)="goToLogin()">Cancel</button>
-          <button mat-raised-button color="primary" (click)="onSubmitRegister()">Submit</button>          
+          <button mat-raised-button color="accent" matStepperPrevious (click)="goToLogin()">Cancelar registro</button>
+          <button mat-raised-button color="primary" (click)="onSubmitRegister()">Crear cuenta</button>          
 
         </form>
       </mat-step>
