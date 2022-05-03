@@ -55,7 +55,7 @@ export const createArticle = async( req: Request , res: Response ) => {
             }                   
             res.json({
                 success: true,
-                msg: 'articulo creado con exito',
+                msg: '¡El artículo se agregó con éxito!',
                 article
             });
         })
@@ -86,7 +86,7 @@ export const updateArticle = async( req: Request , res: Response ) => {
 
         console.log(error);
         res.status(500).json({
-            msg: 'Something went wrong'
+          msg: 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         })    
     }   
 }
@@ -109,7 +109,7 @@ export const deleteArticle = async( req: Request , res: Response ) => {
     await article.destroy();
     res.json({
         success: true,
-        msg: "article borrado con exito"
+        msg: '¡El artículo se eliminó con éxito!'
     });
     
 }

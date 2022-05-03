@@ -111,7 +111,7 @@ export class ManageProductsComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');
@@ -122,7 +122,7 @@ export class ManageProductsComponent implements OnInit {
   updateProduct(values){
     this._manageDataService.updateRecord('products', this.product.id, values)
     .subscribe((res: any) => {
-        this._alertsService.alertToast('Product updated successfully', 'success')
+        this._alertsService.alertToast('¡El producto se agregó con éxito!', 'success')
           .then( () => {
             this.router.navigateByUrl('products/list-products');
             this.productForm.reset();
@@ -136,7 +136,7 @@ export class ManageProductsComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');

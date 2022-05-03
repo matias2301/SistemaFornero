@@ -161,7 +161,7 @@
                 class="row-input"
                 *ngIf="!checkValue"             
             >                
-                <mat-label>Select City</mat-label>
+                <mat-label>Seleccioná una ciudad</mat-label>
                 <mat-select
                     formControlName="city"                
                 >
@@ -174,7 +174,7 @@
                     </mat-option>
                 </mat-select>                
                 <mat-error *ngIf="clientForm.controls['city'].invalid">
-                    Field City is <strong>required</strong>
+                    La ciudad es <strong>requerida</strong>
                 </mat-error>        
             </mat-form-field>
 

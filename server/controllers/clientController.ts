@@ -35,7 +35,7 @@ export const createClient = async( req: Request , res: Response ) => {
         .then( () => {                        
             res.json({
                 success: true,
-                msg: 'cliente creado con exito',
+                msg: '¡El cliente se agregó con éxito!',
                 client
             });
         })
@@ -65,7 +65,7 @@ export const updateClient = async( req: Request , res: Response ) => {
 
         console.log(error);
         res.status(500).json({
-            msg: 'Something went wrong'
+            msg: 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         })    
     }   
 }
@@ -88,7 +88,7 @@ export const deleteClient = async( req: Request , res: Response ) => {
     await client.destroy();
     res.json({
         success: true,
-        msg: "client borrado con exito"
+        msg: '¡El cliente se eliminó con éxito!'
     });
     
 }

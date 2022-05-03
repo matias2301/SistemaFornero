@@ -108,7 +108,7 @@ export const createRepair = async( req: Request , res: Response ) => {
             
             res.json({
                 success: true,
-                msg: 'Orden de reparacion creada con exito',
+                msg: '¡La orden de reparacion se agregó con éxito!',
                 repair
             });
         })
@@ -271,7 +271,7 @@ export const updateRepair = async( req: Request , res: Response ) => {
 
         console.log(error);
         res.status(500).json({
-            msg: 'Something went wrong'
+          msg: 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         })    
     }   
 }
@@ -294,7 +294,7 @@ export const deleteRepair = async( req: Request , res: Response ) => {
     await repair.destroy();
     res.json({
         success: true,
-        msg: "reparacion borrada con exito"
+        msg: '¡La orden de reparacion se eliminó con éxito!'
     });
     
 }

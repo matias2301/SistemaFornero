@@ -216,7 +216,7 @@ export class ManageRepairsComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');
@@ -229,7 +229,7 @@ export class ManageRepairsComponent implements OnInit {
     this._manageDataService.updateRecord('repairs', this.repair.id, values)
     .subscribe((res: any) => {
       
-        this._alertsService.alertToast('Repair updated successfully', 'success')
+        this._alertsService.alertToast('¡La reparación se modificó con éxito!', 'success')
           .then( () => {
             this.router.navigateByUrl('repairs/list-repairs');
             this.repairForm.reset();
@@ -243,7 +243,7 @@ export class ManageRepairsComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');
@@ -273,7 +273,7 @@ export class ManageRepairsComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');

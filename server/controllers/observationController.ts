@@ -11,7 +11,7 @@ export const createObservations = async( req: Request , res: Response ) => {
         .then( () => {                        
             res.json({
                 success: true,
-                msg: 'observation creada con exito',
+                msg: '¡La observación se agregó con éxito!',
                 obs
             });
         })
@@ -25,7 +25,7 @@ export const deleteObservations = async( req: Request , res: Response ) => {
     const obs = await Observations.findByPk( id );
     if ( !obs ) {
         return res.status(404).json({
-            msg: 'No existe un observation con el id ' + id
+            msg: 'No existe una observación con el id ' + id
         });
     }
 
@@ -35,7 +35,7 @@ export const deleteObservations = async( req: Request , res: Response ) => {
     await obs.destroy();
     res.json({
         success: true,
-        msg: "observation borrado con exito"
+        msg: '¡La observación se eliminó con éxito!'
     });
     
 }

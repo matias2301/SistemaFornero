@@ -78,7 +78,7 @@ export class ListRepairsComponent implements OnInit {
           if( err.error ){
             errorMsg = err.error.msg
           } else {
-            errorMsg = 'Something went wrong'
+            errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
           }
 
           this._alertsService.alertToast(errorMsg, 'error');
@@ -89,37 +89,37 @@ export class ListRepairsComponent implements OnInit {
   initializeColumns(): void {
     this.repairsColumns = [
       {
-        name: 'ClientName',
+        name: 'Nombre cliente',
         dataKey: 'clientFirstName',
         position: 'left',
         isSortable: true
       },
       {
-        name: 'LastName',
+        name: 'Apellido cliente',
         dataKey: 'clientLastName',
         position: 'left',
         isSortable: true
       },
       {
-        name: 'Subject',
+        name: 'Motivo',
         dataKey: 'subject',
         position: 'left',
         isSortable: false
       },
       {
-        name: 'State',
+        name: 'Estado',
         dataKey: 'state',
         position: 'left',
         isSortable: false
       },
       {
-        name: 'Assigned',
+        name: 'Asignado a',
         dataKey: 'assigned',
         position: 'left',
         isSortable: false
       },
       {
-        name: 'Created',
+        name: 'Fecha ingreso',
         dataKey: 'createdAt',
         position: 'left',
         isSortable: false

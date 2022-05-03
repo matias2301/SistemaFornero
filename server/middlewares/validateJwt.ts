@@ -22,7 +22,7 @@ export const validateJWT = async ( req: Request, res: Response, next: NextFuncti
 
         if( !user ) {
             return res.status(401).json({
-                msg: 'Token no válido - usuario no existe DB'
+                msg: 'Token no válido - el usuario no existe'
             })
         }
 

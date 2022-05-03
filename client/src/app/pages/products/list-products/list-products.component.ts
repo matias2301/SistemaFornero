@@ -68,7 +68,7 @@ export class ListProductsComponent implements OnInit {
           if( err.error ){
             errorMsg = err.error.msg
           } else {
-            errorMsg = 'Something went wrong'
+            errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
           }
 
           this._alertsService.alertToast(errorMsg, 'error');
@@ -79,19 +79,19 @@ export class ListProductsComponent implements OnInit {
   initializeColumns(): void {
     this.productsColumns = [
       {
-        name: 'Code',
+        name: 'Código',
         dataKey: 'code',
         position: 'left',
         isSortable: false
       },
       {
-        name: 'Descrip.',
+        name: 'Descripción',
         dataKey: 'description',
         position: 'left',
         isSortable: true
       },
       {
-        name: 'Price',
+        name: 'Precio',
         dataKey: 'price',
         position: 'left',
         isSortable: true

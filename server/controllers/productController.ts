@@ -35,7 +35,7 @@ export const createProduct = async( req: Request , res: Response ) => {
         .then( () => {                        
             res.json({
                 success: true,
-                msg: 'producto creado con exito',
+                msg: '¡El producto se agregó con éxito!',
                 product
             });
         })
@@ -66,7 +66,7 @@ export const updateProduct = async( req: Request , res: Response ) => {
 
         console.log(error);
         res.status(500).json({
-            msg: 'Something went wrong'
+          msg: 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         })    
     }   
 }
@@ -89,7 +89,7 @@ export const deleteProduct = async( req: Request , res: Response ) => {
     await product.destroy();
     res.json({
         success: true,
-        msg: "product borrado con exito"
+        msg: '¡El producto se eliminó con éxito!',
     });
     
 }

@@ -121,7 +121,7 @@ export class ManageProvidersComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');
@@ -132,7 +132,7 @@ export class ManageProvidersComponent implements OnInit {
   updateProvider(values) {
     this._manageDataService.updateRecord('providers', this.provider.id, values)
     .subscribe((res: any) => {
-        this._alertsService.alertToast('Provider updated successfully', 'success')
+        this._alertsService.alertToast('¡El provedor se agregó con éxito!', 'success')
           .then( () => {
             this.router.navigateByUrl('providers/list-providers');
             this.providerForm.reset();
@@ -146,7 +146,7 @@ export class ManageProvidersComponent implements OnInit {
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
-          errorMsg = 'Something went wrong'
+          errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         }
 
         this._alertsService.alertToast(errorMsg, 'error');

@@ -7,7 +7,7 @@ export const isAdminRole = ( req: Request, res: Response, next: NextFunction ) =
 
     if ( !user ) {
         return res.status(500).json({
-            msg: 'Se quiere verificar el role sin validar el token primero'
+            msg: 'Se intentó verificar el role sin validar primero el token'
         });
     }
 
@@ -31,7 +31,7 @@ export const hasRole = ( ...roles: any[] ) => {
 
         if ( !user ) {
             return res.status(500).json({
-                msg: 'Se quiere verificar el role sin validar el token primero'
+              msg: 'Se intentó verificar el role sin validar primero el token'
             });
         }
 

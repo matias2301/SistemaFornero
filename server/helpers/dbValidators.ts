@@ -10,6 +10,6 @@ export const checkEmail = async( email = '' ) => {
     });
 
     if ( checkEmail ) {
-        throw new Error(`${email} is already registered`);
+        throw new Error(`${email} ya fue registrado`);
     }
 }

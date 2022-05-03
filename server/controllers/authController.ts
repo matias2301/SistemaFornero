@@ -20,14 +20,14 @@ export const login = async( req: Request , res: Response ) => {
         // Verify if email exists
         if ( !user ) {
             return res.status(400).json({
-                msg: 'Please verify email and password submitted'
+                msg: 'Verificá el email y la constraseña ingresada'
             });
         }
         
         // Verify if user is active
         if ( user.state !== 'active' ) {
             return res.status(400).json({
-                msg: 'Please verify email and password submitted'
+                msg: 'Verificá el email y la constraseña ingresada'
             });
         }
 
@@ -35,7 +35,7 @@ export const login = async( req: Request , res: Response ) => {
         const validPassword = bcryptjs.compareSync( password, user.password );
         if ( !validPassword ) {
             return res.status(400).json({
-                msg: 'Please verify email and password submitted'
+                msg: 'Verificá el email y la constraseña ingresada'
             });
         }
 
@@ -44,7 +44,7 @@ export const login = async( req: Request , res: Response ) => {
 
         res.json({
             success: true,
-            msg: 'User Logged In',
+            msg: 'Se ha iniciado sesión',
             user,
             token
         })
@@ -52,7 +52,7 @@ export const login = async( req: Request , res: Response ) => {
     } catch (error) {
         console.log(error)
         res.status(500).json({
-            msg: 'Sopmething went wrong'
+          msg: 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         });
     }   
 

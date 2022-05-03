@@ -2,20 +2,20 @@
     class="mat-elevation-z8 form"
     [formGroup]="providerForm"    
 >
-    <div class="text-divider">Provider Info</div> 
+    <div class="text-divider">Información del provedor</div> 
     <div class="row-form">
         <mat-form-field
             appearance="outline"
             class="row-input"
         >   
-        <mat-label>Name</mat-label>
+        <mat-label>Nombre</mat-label>
         <input
             matInput
             formControlName="name"
-            placeholder="Name"                    
+            placeholder="Ingresá el nombre"                    
         >
         <mat-error *ngIf="providerForm.controls['name'].invalid">
-            Field Name is <strong>required</strong>
+            El nombre es <strong>requerido</strong>
         </mat-error>
         </mat-form-field>
 
@@ -23,18 +23,18 @@
             appearance="outline"
             class="row-input"             
         >
-            <mat-label>Last Name</mat-label>
+          <mat-label>Apellido</mat-label>
             <input
                 matInput
                 formControlName="lastName"
-                placeholder="Last Name"                
+                placeholder="Ingresá el apellido"                
             >
-            <mat-hint class="lastname">If Provider is a physic person</mat-hint>
+            <mat-hint class="lastname">Si es una persona y no una razón social</mat-hint>
         </mat-form-field>
     </div>
 
 
-    <div class="text-divider">Email Info</div>
+    <div class="text-divider">Información de contacto</div>
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Email</mat-label>
         <input
@@ -43,34 +43,34 @@
             placeholder="client@email.com"            
         >        
         <mat-error *ngIf="providerForm.controls['email'].invalid">
-            Field Email is <strong>required</strong>
+            El email es <strong>requerido</strong>
         </mat-error>   
     </mat-form-field>
 
 
-    <div class="text-divider">Phone Number Info</div>
+    <!-- <div class="text-divider">Phone Number Info</div> -->
     <mat-form-field appearance="outline" class="full-width">
-        <mat-label>Phone Number</mat-label>
+        <mat-label>Número de teléfono / celular</mat-label>
         <input
             matInput 
             formControlName="phone"
-            placeholder="Enter phone number"
+            placeholder="Ingresá un número de teléfono"
         >
         <mat-icon matSuffix>phone</mat-icon>
-        <mat-hint>Include area code</mat-hint>
+        <mat-hint>Incluir código de área</mat-hint>
         <mat-error *ngIf="providerForm.controls['phone'].invalid">
-            Field Phone Number is <strong>required</strong>
+            El número de teléfono es <strong>requerido</strong>
         </mat-error>
     </mat-form-field>
 
 
-    <div class="text-divider">Location Info</div> 
+    <div class="text-divider">País - Provincia - Ciudad</div> 
     <div class="row-form">
         <mat-form-field
             appearance="outline" 
             class="row-input"             
         >
-            <mat-label>Select Country</mat-label>
+            <mat-label>País</mat-label>
             <!-- <mat-select
                 formControlName="country"                
             >
@@ -89,7 +89,7 @@
               placeholder="Enter a City"                
             >
             <mat-error *ngIf="providerForm.controls['country'].invalid">
-                Field Country is <strong>required</strong>
+                El país es <strong>requerido</strong>
             </mat-error>              
         </mat-form-field>
 
@@ -97,7 +97,7 @@
             appearance="outline" 
             class="row-input"             
         >
-            <mat-label>Select State</mat-label>
+            <mat-label>Provincia</mat-label>
             <!-- <mat-select
                 formControlName="state"                
             >
@@ -116,7 +116,7 @@
               placeholder="Enter a City"                
             >
             <mat-error *ngIf="providerForm.controls['state'].invalid">
-                Field State is <strong>required</strong>
+                La provincia es <strong>requerida</strong>
             </mat-error>               
         </mat-form-field>
 
@@ -126,7 +126,7 @@
                 class="row-input"
                 *ngIf="!checkValue"
             >                
-                <mat-label>Select City</mat-label>
+                <mat-label>Seleccioná una ciudad</mat-label>
                 <mat-select
                     formControlName="city"                
                 >
@@ -139,7 +139,7 @@
                     </mat-option>
                 </mat-select>                
                 <mat-error *ngIf="providerForm.controls['city'].invalid">
-                    Field City is <strong>required</strong>
+                    La ciudad es <strong>requerida</strong>
                 </mat-error>        
             </mat-form-field>
 
@@ -148,14 +148,14 @@
                 class="row-input"
                 *ngIf="checkValue"
             >  
-            <mat-label>Enter a City</mat-label>
+            <mat-label>Ciudad</mat-label>
             <input
                 matInput
                 formControlName="city"
                 placeholder="Enter a City"                
             >
             <mat-error *ngIf="providerForm.controls['city'].invalid">
-                Field City is <strong>required</strong>
+                La ciudad es <strong>requerida</strong>
             </mat-error>        
             </mat-form-field>
 
@@ -176,7 +176,7 @@
         class="btn-submit full-width" 
         (click)="onSubmit(providerForm.value)"             
     >
-        {{ edit ? 'Update Provider' : 'Create Provider'}}
+        {{ edit ? 'Modificar provedor' : 'Agregar provedor'}}
     </button>
 
 </form>

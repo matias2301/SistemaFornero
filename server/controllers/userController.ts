@@ -44,7 +44,7 @@ export const createUser = async( req: Request , res: Response ) => {
                 .then( () => {                        
                     res.json({
                         success: true,
-                        msg: 'User created successfully',
+                        msg: '¡El usuario se agregó con éxito!',
                         user
                     });
                 })
@@ -75,7 +75,7 @@ export const updateUser = async( req: Request , res: Response ) => {
 
         console.log(error);
         res.status(500).json({
-            msg: 'Something went wrong'
+          msg: 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         })    
     }   
 }

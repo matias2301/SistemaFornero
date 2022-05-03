@@ -3,13 +3,13 @@
     [formGroup]="productForm"    
 >
 
-    <div class="text-divider">Code - Description</div> 
+    <div class="text-divider">Código - Descripción</div> 
     <div class="code-descrip">
         <mat-form-field
             appearance="outline"
             class="code"
         >
-            <mat-label>Enter Code</mat-label>
+            <mat-label>Seleccioná el código</mat-label>
             <mat-select
                 formControlName="code"                
             >
@@ -22,27 +22,27 @@
                     {{product.code}}
                 </mat-option>
             </mat-select>
-            <mat-error *ngIf="productForm.controls['code'].invalid">Select a code product</mat-error>                
+            <mat-error *ngIf="productForm.controls['code'].invalid">Seleccióna una opción</mat-error>                
         </mat-form-field>
 
         <mat-form-field
             appearance="outline"
             class="descrip"
         >
-            <mat-label>Description</mat-label>
+            <mat-label>Descrición</mat-label>
             <input
                 matInput
                 formControlName="description"
-                placeholder="Description"
+                placeholder="Descripción"
                 readonly
             >
-            <mat-error *ngIf="productForm.controls['description'].invalid">Enter a description</mat-error>
+            <mat-error *ngIf="productForm.controls['description'].invalid">Ingresá una descripción</mat-error>
         </mat-form-field>
     </div>
 
-    <div class="text-divider">Price</div>
+    <div class="text-divider">Precio</div>
     <mat-form-field appearance="outline" class="full-width">
-        <mat-label>Price</mat-label>
+        <mat-label>Precio</mat-label>
         <input
             matInput
             type="number"
@@ -52,7 +52,7 @@
         >
         <span matPrefix>$&nbsp;</span>
         <mat-error *ngIf="productForm.controls['price'].invalid">
-            Price is <strong>required</strong>
+            El precio es <strong>requerido</strong>
         </mat-error>   
     </mat-form-field>
 
@@ -67,7 +67,7 @@
             class="right-align"
         >
         <mat-error *ngIf="productForm.controls['stock'].invalid">
-            Stock is <strong>required</strong>
+            El stock es <strong>requerido</strong>
         </mat-error>
     </mat-form-field>
 
@@ -78,7 +78,7 @@
         class="btn-submit full-width" 
         (click)="onSubmit(productForm.value)"          
     >
-        {{ edit ? 'Update Product' : 'Create Product'}}
+        {{ edit ? 'Modificar producto' : 'Agregar producto'}}
     </button>
 
 </form>

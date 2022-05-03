@@ -35,7 +35,7 @@ export const createProvider = async( req: Request , res: Response ) => {
         .then( () => {                        
             res.json({
                 success: true,
-                msg: 'proveedor creado con exito',
+                msg: '¡El proveedor se agregó con éxito!',
                 provider
             });
         })
@@ -66,7 +66,7 @@ export const updateProvider = async( req: Request , res: Response ) => {
 
         console.log(error);
         res.status(500).json({
-            msg: 'Something went wrong'
+          msg: 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
         })    
     }   
 }
@@ -89,7 +89,7 @@ export const deleteProvider = async( req: Request , res: Response ) => {
     await provider.destroy();
     res.json({
         success: true,
-        msg: "provider borrado con exito"
+        msg: '¡El proveedor se eliminó con éxito!'
     });
 
 }
