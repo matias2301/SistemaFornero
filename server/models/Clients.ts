@@ -29,8 +29,13 @@ const Clients = sequelize.define<ClientModel, ClientAddModel>('Clients', {
         allowNull: false,
     },   
     email: {
-        type: DataTypes.STRING,        
+        type: DataTypes.STRING,
+        unique: true,       
         allowNull: false,
+        validate: {
+          notEmpty: true,
+          isEmail: true,
+        },
     },
     phone: {
         type: DataTypes.STRING,

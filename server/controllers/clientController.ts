@@ -39,7 +39,20 @@ export const createClient = async( req: Request , res: Response ) => {
                 client
             });
         })
-        .catch( (err: any) => console.log(err))    
+        .catch( (err: any) => {
+          console.log(err)
+          // console.log(err.errors[0].type)
+          let msg = ''
+          if (err.errors[0].type == 'unique violation') {
+            msg = `Ya existe un cliente con el código ${body.email}`
+          } else {
+            msg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
+          }
+          res.json({
+            success: false,
+            msg
+          });
+        })   
 }
 
 

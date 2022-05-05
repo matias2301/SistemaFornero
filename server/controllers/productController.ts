@@ -39,7 +39,20 @@ export const createProduct = async( req: Request , res: Response ) => {
                 product
             });
         })
-        .catch( (err: any) => console.log(err))    
+        .catch( (err: any) => {
+          console.log(err)
+          // console.log(err.errors[0].type)
+          let msg = ''
+          if (err.errors[0].type == 'unique violation') {
+            msg = `Ya existe un producto con el código ${body.code}`
+          } else {
+            msg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
+          }
+          res.json({
+            success: false,
+            msg
+          });
+        })    
 }
 
 

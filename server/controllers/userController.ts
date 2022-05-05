@@ -48,7 +48,20 @@ export const createUser = async( req: Request , res: Response ) => {
                         user
                     });
                 })
-                .catch( (err: any) => console.log(err))
+                .catch( (err: any) => {
+                  console.log(err)
+                  // console.log(err.errors[0].type)
+                  let msg = ''
+                  if (err.errors[0].type == 'unique violation') {
+                    msg = `Ya existe un usuario con el email ${body.email}`
+                  } else {
+                    msg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
+                  }
+                  res.json({
+                    success: false,
+                    msg
+                  });
+                })  
         });
 }
 

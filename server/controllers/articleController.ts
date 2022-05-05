@@ -59,7 +59,19 @@ export const createArticle = async( req: Request , res: Response ) => {
                 article
             });
         })
-        .catch( (err: any) => console.log(err))    
+        .catch( (err: any) => {
+          console.log(err)
+          let msg = ''
+          if (err.errors[0].type == 'unique violation') {
+            msg = `Ya existe un artículo con el código ${code}`
+          } else {
+            msg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
+          }
+          res.json({
+            success: false,
+            msg
+          });
+        })    
 }
 
 

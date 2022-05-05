@@ -95,13 +95,15 @@ export class ManageProductsComponent implements OnInit {
 
   addProduct(values) {
     this._manageDataService.createRecord('products', values)
-    .subscribe((res: any) => {    
-
+    .subscribe((res: any) => {
+      
       if( res.success){            
         this._alertsService.alertToast(res.msg, 'success')
           .then( () => {
             this.productForm.reset();
           });
+      } else {
+        this._alertsService.alertToast(res.msg, 'error');
       }
 
     }, ( err ) => {

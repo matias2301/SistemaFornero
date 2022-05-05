@@ -21,7 +21,7 @@ export class ManageClientsComponent implements OnInit {
   states: any[] = [];
   cities: any[] = [];
   edit: boolean = false;
-  checkValue: boolean = true;
+  checkValue: boolean = false;
 
   constructor(
     public formBuilder: FormBuilder,
@@ -87,6 +87,7 @@ export class ManageClientsComponent implements OnInit {
   }
 
   setCities(i: number) {          
+    console.log(this.states[i])
     this.cities = this.states[i].Cities;    
   }
   
@@ -117,6 +118,8 @@ export class ManageClientsComponent implements OnInit {
           .then( () => {
             this.clientForm.reset();
           });
+      } else {
+        this._alertsService.alertToast(res.msg, 'error');
       }
 
     }, ( err ) => {

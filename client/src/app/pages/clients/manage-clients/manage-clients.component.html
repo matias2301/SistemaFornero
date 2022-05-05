@@ -106,7 +106,7 @@
             class="row-input"             
         >
             <mat-label>País</mat-label>
-            <!-- <mat-select
+            <mat-select
                 formControlName="country"                               
             >
                 <mat-option>--</mat-option>
@@ -117,12 +117,12 @@
                 >
                     {{country.CountryName}}
                 </mat-option>
-            </mat-select> -->
-            <input
+            </mat-select>
+            <!-- <input
               matInput
               formControlName="country"
               placeholder="Ingresá el país"                
-            >
+            > -->
             <mat-error *ngIf="clientForm.controls['country'].invalid">
                 El país es <strong>requerido</strong>
             </mat-error>              
@@ -133,7 +133,7 @@
             class="row-input"             
         >
             <mat-label>Provincia</mat-label>
-            <!-- <mat-select
+            <mat-select
                 formControlName="state"
             >
                 <mat-option>--</mat-option>
@@ -144,12 +144,12 @@
                 >
                     {{state.StateName}}
                 </mat-option>
-            </mat-select> -->
-            <input
+            </mat-select>
+            <!-- <input
               matInput
               formControlName="state"
               placeholder="Ingresá la provincia"                
-            >
+            > -->
             <mat-error *ngIf="clientForm.controls['state'].invalid">
                 La provincia es <strong>requerida</strong>
             </mat-error>               
@@ -194,13 +194,13 @@
             </mat-error>        
             </mat-form-field>
 
-            <!-- <mat-checkbox
+            <mat-checkbox
                 class="checkCity"
                 [value]="checkValue"
-                (click)="checkValue = !checkValue"
+                (change)="checkValue = !checkValue"
             >
-                Enter a City
-            </mat-checkbox> -->
+                No encuentro en la lista {{checkValue}}
+            </mat-checkbox>
         </div> 
     </div>
 

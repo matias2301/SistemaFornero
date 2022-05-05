@@ -19,6 +19,8 @@ const Articles = sequelize.define<ArticleModel, ArticleAddModel>('Articles', {
 
     code: {
         type: DataTypes.STRING,
+        unique: true,
+        
         allowNull: false,
     },
     description: {

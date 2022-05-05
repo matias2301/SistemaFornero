@@ -84,9 +84,12 @@ export class RegisterComponent implements OnInit {
         .subscribe((res: RegisterResponse) => {
 
           if( res.success ){            
-            this._alertsService.alertToast(`${res.msg} Please Log In`, 'success');            
+            this._alertsService.alertToast(`${res.msg} Iniciá sesión`, 'success');            
             this.router.navigateByUrl('login');
+          } else {
+            this._alertsService.alertToast(res.msg, 'error');
           }
+  
 
         }, ( err ) => {
           

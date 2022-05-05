@@ -115,8 +115,9 @@ export class ManageArticlesComponent implements OnInit {
         this._alertsService.alertToast('¡El artículo se agregó con éxito!', 'success')
           .then( () => {
             this.articleForm.reset();
-
           });
+      } else {
+        this._alertsService.alertToast(res.msg, 'error');
       }
 
     }, ( err ) => {

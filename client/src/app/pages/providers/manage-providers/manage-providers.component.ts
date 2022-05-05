@@ -21,7 +21,7 @@ export class ManageProvidersComponent implements OnInit {
   states: any[] = [];
   cities: any[] = [];
   edit: boolean = false;
-  checkValue: boolean = true;
+  checkValue: boolean = false;
 
   constructor(
     public formBuilder: FormBuilder,
@@ -113,6 +113,8 @@ export class ManageProvidersComponent implements OnInit {
           .then( () => {
             this.providerForm.reset();
           });
+      } else {
+        this._alertsService.alertToast(res.msg, 'error');
       }
 
     }, ( err ) => {
