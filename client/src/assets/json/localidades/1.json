@@ -1,0 +1,2538 @@
+[
+    {
+        "ID": 2522,
+        "Nombre": "12 de Octubre"
+    },
+    {
+        "ID": 2523,
+        "Nombre": "16 de Julio"
+    },
+    {
+        "ID": 2524,
+        "Nombre": "17 de Agosto"
+    },
+    {
+        "ID": 1,
+        "Nombre": "25 de Mayo"
+    },
+    {
+        "ID": 2,
+        "Nombre": "3 de febrero"
+    },
+    {
+        "ID": 2526,
+        "Nombre": "30 de Agosto"
+    },
+    {
+        "ID": 2407,
+        "Nombre": "9 de Abril"
+    },
+    {
+        "ID": 2527,
+        "Nombre": "9 de Julio"
+    },
+    {
+        "ID": 3,
+        "Nombre": "A. Alsina"
+    },
+    {
+        "ID": 4,
+        "Nombre": "A. Gonzáles Cháves"
+    },
+    {
+        "ID": 2528,
+        "Nombre": "Abbott"
+    },
+    {
+        "ID": 2529,
+        "Nombre": "Acevedo"
+    },
+    {
+        "ID": 5,
+        "Nombre": "Aguas Verdes"
+    },
+    {
+        "ID": 2530,
+        "Nombre": "Agustina"
+    },
+    {
+        "ID": 2531,
+        "Nombre": "Agustín Mosconi"
+    },
+    {
+        "ID": 2532,
+        "Nombre": "Agustín Roca"
+    },
+    {
+        "ID": 2533,
+        "Nombre": "Alberdi Viejo"
+    },
+    {
+        "ID": 6,
+        "Nombre": "Alberti"
+    },
+    {
+        "ID": 2534,
+        "Nombre": "Alejandro Petión"
+    },
+    {
+        "ID": 2535,
+        "Nombre": "Alfredo Demarchi "
+    },
+    {
+        "ID": 2536,
+        "Nombre": "Almirante Brown"
+    },
+    {
+        "ID": 2537,
+        "Nombre": "Altamirano"
+    },
+    {
+        "ID": 2538,
+        "Nombre": "Álvarez de Toledo"
+    },
+    {
+        "ID": 2539,
+        "Nombre": "Alvarez Jonte"
+    },
+    {
+        "ID": 2540,
+        "Nombre": "América"
+    },
+    {
+        "ID": 2541,
+        "Nombre": "Andant"
+    },
+    {
+        "ID": 2542,
+        "Nombre": "Antonio Carboni"
+    },
+    {
+        "ID": 2543,
+        "Nombre": "Aparicio"
+    },
+    {
+        "ID": 2544,
+        "Nombre": "Arboledas"
+    },
+    {
+        "ID": 2545,
+        "Nombre": "Arenas Verdes"
+    },
+    {
+        "ID": 2546,
+        "Nombre": "Arenaza"
+    },
+    {
+        "ID": 2547,
+        "Nombre": "Argerich"
+    },
+    {
+        "ID": 2548,
+        "Nombre": "Ariel"
+    },
+    {
+        "ID": 7,
+        "Nombre": "Arrecifes"
+    },
+    {
+        "ID": 2549,
+        "Nombre": "Arribeños"
+    },
+    {
+        "ID": 2550,
+        "Nombre": "Arroyo Corto"
+    },
+    {
+        "ID": 2551,
+        "Nombre": "Arroyo de la Cruz"
+    },
+    {
+        "ID": 2552,
+        "Nombre": "Arroyo Dulce"
+    },
+    {
+        "ID": 2553,
+        "Nombre": "Arroyo Venado"
+    },
+    {
+        "ID": 2554,
+        "Nombre": "Asamblea"
+    },
+    {
+        "ID": 2452,
+        "Nombre": "Ascensión"
+    },
+    {
+        "ID": 2555,
+        "Nombre": "Atalaya"
+    },
+    {
+        "ID": 2556,
+        "Nombre": "Avellaneda"
+    },
+    {
+        "ID": 8,
+        "Nombre": "Ayacucho"
+    },
+    {
+        "ID": 2557,
+        "Nombre": "Azcuénaga"
+    },
+    {
+        "ID": 2558,
+        "Nombre": "Azopardo"
+    },
+    {
+        "ID": 9,
+        "Nombre": "Azul"
+    },
+    {
+        "ID": 10,
+        "Nombre": "Bahía Blanca"
+    },
+    {
+        "ID": 2559,
+        "Nombre": "Bahía San Blas"
+    },
+    {
+        "ID": 2560,
+        "Nombre": "Baigorrita"
+    },
+    {
+        "ID": 2561,
+        "Nombre": "Bajo Hondo"
+    },
+    {
+        "ID": 11,
+        "Nombre": "Balcarce"
+    },
+    {
+        "ID": 2562,
+        "Nombre": "Balneario Laguna de Gómez"
+    },
+    {
+        "ID": 2563,
+        "Nombre": "Balneario Orense"
+    },
+    {
+        "ID": 2564,
+        "Nombre": "Balneario Pehuen-Có"
+    },
+    {
+        "ID": 2565,
+        "Nombre": "Balneario San Cayetano"
+    },
+    {
+        "ID": 2566,
+        "Nombre": "Balneario Sauce Grande"
+    },
+    {
+        "ID": 2567,
+        "Nombre": "Banderaló"
+    },
+    {
+        "ID": 12,
+        "Nombre": "Baradero"
+    },
+    {
+        "ID": 2568,
+        "Nombre": "Barker"
+    },
+    {
+        "ID": 2569,
+        "Nombre": "Barrio El Boquerón"
+    },
+    {
+        "ID": 2570,
+        "Nombre": "Barrio El Mirador"
+    },
+    {
+        "ID": 2571,
+        "Nombre": "Barrio El Taladro"
+    },
+    {
+        "ID": 2572,
+        "Nombre": "Barrio La Gloria"
+    },
+    {
+        "ID": 2573,
+        "Nombre": "Barrio Las Golondrinas"
+    },
+    {
+        "ID": 2574,
+        "Nombre": "Barrio Lomas Altas"
+    },
+    {
+        "ID": 2575,
+        "Nombre": "Barrio Los Bosquecitos"
+    },
+    {
+        "ID": 2576,
+        "Nombre": "Barrio Los Pioneros"
+    },
+    {
+        "ID": 2577,
+        "Nombre": "Barrio Parque Las Acacias"
+    },
+    {
+        "ID": 2578,
+        "Nombre": "Barrio Río Salado"
+    },
+    {
+        "ID": 2579,
+        "Nombre": "Barrio Santa Paula"
+    },
+    {
+        "ID": 2580,
+        "Nombre": "Barrio Santa Rosa"
+    },
+    {
+        "ID": 2581,
+        "Nombre": "Batán"
+    },
+    {
+        "ID": 2582,
+        "Nombre": "Bayauca"
+    },
+    {
+        "ID": 2583,
+        "Nombre": "Bellocq"
+    },
+    {
+        "ID": 2584,
+        "Nombre": "Benitez"
+    },
+    {
+        "ID": 13,
+        "Nombre": "Benito Juárez"
+    },
+    {
+        "ID": 2585,
+        "Nombre": "Berazategui"
+    },
+    {
+        "ID": 2586,
+        "Nombre": "Berdier"
+    },
+    {
+        "ID": 14,
+        "Nombre": "Berisso"
+    },
+    {
+        "ID": 2587,
+        "Nombre": "Bermúdez"
+    },
+    {
+        "ID": 2588,
+        "Nombre": "Berutti"
+    },
+    {
+        "ID": 2589,
+        "Nombre": "Blancagrande"
+    },
+    {
+        "ID": 2590,
+        "Nombre": "Blaquier"
+    },
+    {
+        "ID": 2591,
+        "Nombre": "Bocayuva"
+    },
+    {
+        "ID": 15,
+        "Nombre": "Bolívar"
+    },
+    {
+        "ID": 2592,
+        "Nombre": "Bordenave"
+    },
+    {
+        "ID": 16,
+        "Nombre": "Bragado"
+    },
+    {
+        "ID": 17,
+        "Nombre": "Brandsen"
+    },
+    {
+        "ID": 2437,
+        "Nombre": "CABA"
+    },
+    {
+        "ID": 2593,
+        "Nombre": "Cabildo"
+    },
+    {
+        "ID": 2594,
+        "Nombre": "Cacharí"
+    },
+    {
+        "ID": 2595,
+        "Nombre": "Cadret"
+    },
+    {
+        "ID": 18,
+        "Nombre": "Campana"
+    },
+    {
+        "ID": 2596,
+        "Nombre": "Campos de Roca"
+    },
+    {
+        "ID": 2597,
+        "Nombre": "Cañada Seca"
+    },
+    {
+        "ID": 19,
+        "Nombre": "Cañuelas"
+    },
+    {
+        "ID": 20,
+        "Nombre": "Capilla del Señor"
+    },
+    {
+        "ID": 2599,
+        "Nombre": "Capitán Castro"
+    },
+    {
+        "ID": 21,
+        "Nombre": "Capitán Sarmiento"
+    },
+    {
+        "ID": 22,
+        "Nombre": "Carapachay"
+    },
+    {
+        "ID": 2600,
+        "Nombre": "Cardenal Cagliero"
+    },
+    {
+        "ID": 23,
+        "Nombre": "Carhue"
+    },
+    {
+        "ID": 24,
+        "Nombre": "Cariló"
+    },
+    {
+        "ID": 2601,
+        "Nombre": "Carlos Beguerie"
+    },
+    {
+        "ID": 25,
+        "Nombre": "Carlos Casares"
+    },
+    {
+        "ID": 2602,
+        "Nombre": "Carlos Keen"
+    },
+    {
+        "ID": 2603,
+        "Nombre": "Carlos María Naón"
+    },
+    {
+        "ID": 2604,
+        "Nombre": "Carlos Salas"
+    },
+    {
+        "ID": 26,
+        "Nombre": "Carlos Tejedor"
+    },
+    {
+        "ID": 27,
+        "Nombre": "Carmen de Areco"
+    },
+    {
+        "ID": 28,
+        "Nombre": "Carmen de Patagones"
+    },
+    {
+        "ID": 2605,
+        "Nombre": "Casalins"
+    },
+    {
+        "ID": 2392,
+        "Nombre": "Casbas"
+    },
+    {
+        "ID": 2606,
+        "Nombre": "Cascadas"
+    },
+    {
+        "ID": 29,
+        "Nombre": "Castelli"
+    },
+    {
+        "ID": 2607,
+        "Nombre": "Castilla"
+    },
+    {
+        "ID": 2608,
+        "Nombre": "Cazón"
+    },
+    {
+        "ID": 2609,
+        "Nombre": "Centinela del Mar"
+    },
+    {
+        "ID": 2610,
+        "Nombre": "Centro Guerrero"
+    },
+    {
+        "ID": 2611,
+        "Nombre": "Cerro de la Gloria"
+    },
+    {
+        "ID": 30,
+        "Nombre": "Chacabuco"
+    },
+    {
+        "ID": 2612,
+        "Nombre": "Chacras del Río Luján"
+    },
+    {
+        "ID": 2613,
+        "Nombre": "Chapadmalal"
+    },
+    {
+        "ID": 31,
+        "Nombre": "Chascomús"
+    },
+    {
+        "ID": 2614,
+        "Nombre": "Chasicó"
+    },
+    {
+        "ID": 2615,
+        "Nombre": "Chillar"
+    },
+    {
+        "ID": 32,
+        "Nombre": "Chivilcoy"
+    },
+    {
+        "ID": 2488,
+        "Nombre": "City Bell"
+    },
+    {
+        "ID": 2616,
+        "Nombre": "Ciudad Autonoma de Buenos Aires"
+    },
+    {
+        "ID": 2617,
+        "Nombre": "Claraz"
+    },
+    {
+        "ID": 2618,
+        "Nombre": "Claromecó"
+    },
+    {
+        "ID": 2619,
+        "Nombre": "Club de Campo las Malvinas"
+    },
+    {
+        "ID": 2620,
+        "Nombre": "Club de Campo Los Puentes"
+    },
+    {
+        "ID": 2621,
+        "Nombre": "Colonia Mauricio"
+    },
+    {
+        "ID": 2622,
+        "Nombre": "Colonia Nievas"
+    },
+    {
+        "ID": 2623,
+        "Nombre": "Colonia San Adolfo"
+    },
+    {
+        "ID": 2624,
+        "Nombre": "Colonia San Martín"
+    },
+    {
+        "ID": 2625,
+        "Nombre": "Colonia San Miguel"
+    },
+    {
+        "ID": 2626,
+        "Nombre": "Colonia San Miguel Arcángel"
+    },
+    {
+        "ID": 2627,
+        "Nombre": "Colonia San Ricardo "
+    },
+    {
+        "ID": 2628,
+        "Nombre": "Colonia Seré"
+    },
+    {
+        "ID": 33,
+        "Nombre": "Colón"
+    },
+    {
+        "ID": 2629,
+        "Nombre": "Comandante Nicanor Otamendi"
+    },
+    {
+        "ID": 2630,
+        "Nombre": "Comodoro Py"
+    },
+    {
+        "ID": 2631,
+        "Nombre": "Conesa"
+    },
+    {
+        "ID": 2632,
+        "Nombre": "Copetonas"
+    },
+    {
+        "ID": 2633,
+        "Nombre": "Coronel Boerr"
+    },
+    {
+        "ID": 2634,
+        "Nombre": "Coronel Brandsen"
+    },
+    {
+        "ID": 2635,
+        "Nombre": "Coronel Charlone"
+    },
+    {
+        "ID": 34,
+        "Nombre": "Coronel Dorrego"
+    },
+    {
+        "ID": 2476,
+        "Nombre": "Coronel Granada"
+    },
+    {
+        "ID": 2636,
+        "Nombre": "Coronel Martínez de Hoz"
+    },
+    {
+        "ID": 35,
+        "Nombre": "Coronel Pringles"
+    },
+    {
+        "ID": 36,
+        "Nombre": "Coronel Rosales"
+    },
+    {
+        "ID": 2637,
+        "Nombre": "Coronel Seguí"
+    },
+    {
+        "ID": 37,
+        "Nombre": "Coronel Suarez"
+    },
+    {
+        "ID": 2639,
+        "Nombre": "Coronel Vidal"
+    },
+    {
+        "ID": 38,
+        "Nombre": "Costa Azul"
+    },
+    {
+        "ID": 39,
+        "Nombre": "Costa Chica"
+    },
+    {
+        "ID": 40,
+        "Nombre": "Costa del Este"
+    },
+    {
+        "ID": 41,
+        "Nombre": "Costa Esmeralda"
+    },
+    {
+        "ID": 2640,
+        "Nombre": "Country Club El Casco"
+    },
+    {
+        "ID": 2641,
+        "Nombre": "Country Club El Rodeo"
+    },
+    {
+        "ID": 2642,
+        "Nombre": "Country Los Medanos"
+    },
+    {
+        "ID": 2643,
+        "Nombre": "Crotto"
+    },
+    {
+        "ID": 2485,
+        "Nombre": "Cuartel V"
+    },
+    {
+        "ID": 2644,
+        "Nombre": "Culullú"
+    },
+    {
+        "ID": 2645,
+        "Nombre": "Cura Malal"
+    },
+    {
+        "ID": 2646,
+        "Nombre": "Curarú"
+    },
+    {
+        "ID": 42,
+        "Nombre": "Daireaux"
+    },
+    {
+        "ID": 43,
+        "Nombre": "Darregueira"
+    },
+    {
+        "ID": 2647,
+        "Nombre": "De Bary"
+    },
+    {
+        "ID": 2648,
+        "Nombre": "De la Canal"
+    },
+    {
+        "ID": 2649,
+        "Nombre": "De la Garma"
+    },
+    {
+        "ID": 2650,
+        "Nombre": "Del Carril"
+    },
+    {
+        "ID": 2652,
+        "Nombre": "Del Valle"
+    },
+    {
+        "ID": 44,
+        "Nombre": "Del Viso"
+    },
+    {
+        "ID": 2651,
+        "Nombre": "Delfín Huergo"
+    },
+    {
+        "ID": 2653,
+        "Nombre": "Diego Gaynor"
+    },
+    {
+        "ID": 45,
+        "Nombre": "Dolores"
+    },
+    {
+        "ID": 46,
+        "Nombre": "Don Torcuato"
+    },
+    {
+        "ID": 2654,
+        "Nombre": "D Orbigny"
+    },
+    {
+        "ID": 2655,
+        "Nombre": "Dudignac"
+    },
+    {
+        "ID": 2656,
+        "Nombre": "Dufaur"
+    },
+    {
+        "ID": 2657,
+        "Nombre": "Duggan"
+    },
+    {
+        "ID": 2658,
+        "Nombre": "El Divisorio"
+    },
+    {
+        "ID": 2659,
+        "Nombre": "El Dorado"
+    },
+    {
+        "ID": 2660,
+        "Nombre": "El Marquesado"
+    },
+    {
+        "ID": 2661,
+        "Nombre": "El Paraíso"
+    },
+    {
+        "ID": 2662,
+        "Nombre": "El Pensamiento"
+    },
+    {
+        "ID": 2663,
+        "Nombre": "El Perdido"
+    },
+    {
+        "ID": 2664,
+        "Nombre": "El Trigo"
+    },
+    {
+        "ID": 2500,
+        "Nombre": "El Triunfo"
+    },
+    {
+        "ID": 2665,
+        "Nombre": "Elvira"
+    },
+    {
+        "ID": 2666,
+        "Nombre": "Emilio Ayarza"
+    },
+    {
+        "ID": 2667,
+        "Nombre": "Emilio V. Bunge"
+    },
+    {
+        "ID": 2668,
+        "Nombre": "Energia"
+    },
+    {
+        "ID": 47,
+        "Nombre": "Ensenada"
+    },
+    {
+        "ID": 2669,
+        "Nombre": "Erézcano"
+    },
+    {
+        "ID": 2670,
+        "Nombre": "Ernestina"
+    },
+    {
+        "ID": 2671,
+        "Nombre": "Escalada"
+    },
+    {
+        "ID": 48,
+        "Nombre": "Escobar"
+    },
+    {
+        "ID": 2672,
+        "Nombre": "Espartillar"
+    },
+    {
+        "ID": 2673,
+        "Nombre": "Espigas"
+    },
+    {
+        "ID": 2674,
+        "Nombre": "Estación Arenales"
+    },
+    {
+        "ID": 2675,
+        "Nombre": "Estación Chapadmalal"
+    },
+    {
+        "ID": 2676,
+        "Nombre": "Esteban Agustín Gascón"
+    },
+    {
+        "ID": 2677,
+        "Nombre": "Esteban Echeverría"
+    },
+    {
+        "ID": 2678,
+        "Nombre": "Estela"
+    },
+    {
+        "ID": 49,
+        "Nombre": "Exaltación de la Cruz"
+    },
+    {
+        "ID": 2679,
+        "Nombre": "Ezeiza"
+    },
+    {
+        "ID": 2680,
+        "Nombre": "Faro"
+    },
+    {
+        "ID": 2681,
+        "Nombre": "Felipe Solá"
+    },
+    {
+        "ID": 2682,
+        "Nombre": "Ferré"
+    },
+    {
+        "ID": 2683,
+        "Nombre": "Florencio Varela"
+    },
+    {
+        "ID": 50,
+        "Nombre": "Florentino Ameghino"
+    },
+    {
+        "ID": 2684,
+        "Nombre": "Fontezuela"
+    },
+    {
+        "ID": 2685,
+        "Nombre": "Fortín Acha"
+    },
+    {
+        "ID": 2686,
+        "Nombre": "Fortín Olavarría"
+    },
+    {
+        "ID": 2687,
+        "Nombre": "Fortín Tiburcio"
+    },
+    {
+        "ID": 2688,
+        "Nombre": "Francisco Madero"
+    },
+    {
+        "ID": 2689,
+        "Nombre": "Franklin"
+    },
+    {
+        "ID": 2690,
+        "Nombre": "Gahan"
+    },
+    {
+        "ID": 2691,
+        "Nombre": "Gardey"
+    },
+    {
+        "ID": 2692,
+        "Nombre": "Garré"
+    },
+    {
+        "ID": 51,
+        "Nombre": "Garín"
+    },
+    {
+        "ID": 2693,
+        "Nombre": "General Conesa"
+    },
+    {
+        "ID": 2694,
+        "Nombre": "General Daniel Cerri"
+    },
+    {
+        "ID": 2695,
+        "Nombre": "General Hornos"
+    },
+    {
+        "ID": 2696,
+        "Nombre": "General Juan Madariaga"
+    },
+    {
+        "ID": 2697,
+        "Nombre": "General Mansilla"
+    },
+    {
+        "ID": 2698,
+        "Nombre": "General O Brien"
+    },
+    {
+        "ID": 2699,
+        "Nombre": "General Pirán"
+    },
+    {
+        "ID": 2700,
+        "Nombre": "General Rivas"
+    },
+    {
+        "ID": 2701,
+        "Nombre": "General Rojo"
+    },
+    {
+        "ID": 2702,
+        "Nombre": "General San Martín"
+    },
+    {
+        "ID": 2703,
+        "Nombre": "Germania"
+    },
+    {
+        "ID": 2704,
+        "Nombre": "Girodias"
+    },
+    {
+        "ID": 2705,
+        "Nombre": "Gobernador Castro"
+    },
+    {
+        "ID": 2706,
+        "Nombre": "Gobernador Udaondo"
+    },
+    {
+        "ID": 2707,
+        "Nombre": "Gobernador Ugarte"
+    },
+    {
+        "ID": 2708,
+        "Nombre": "Goldney"
+    },
+    {
+        "ID": 2709,
+        "Nombre": "Gómez"
+    },
+    {
+        "ID": 2710,
+        "Nombre": "González Moreno"
+    },
+    {
+        "ID": 2711,
+        "Nombre": "Gorchs"
+    },
+    {
+        "ID": 2712,
+        "Nombre": "Gorostiaga"
+    },
+    {
+        "ID": 2713,
+        "Nombre": "Gowland"
+    },
+    {
+        "ID": 2714,
+        "Nombre": "Goyena"
+    },
+    {
+        "ID": 52,
+        "Nombre": "Gral. Alvarado"
+    },
+    {
+        "ID": 53,
+        "Nombre": "Gral. Alvear"
+    },
+    {
+        "ID": 54,
+        "Nombre": "Gral. Arenales"
+    },
+    {
+        "ID": 55,
+        "Nombre": "Gral. Belgrano"
+    },
+    {
+        "ID": 56,
+        "Nombre": "Gral. Guido"
+    },
+    {
+        "ID": 57,
+        "Nombre": "Gral. Lamadrid"
+    },
+    {
+        "ID": 58,
+        "Nombre": "Gral. Las Heras"
+    },
+    {
+        "ID": 59,
+        "Nombre": "Gral. Lavalle"
+    },
+    {
+        "ID": 60,
+        "Nombre": "Gral. Madariaga"
+    },
+    {
+        "ID": 61,
+        "Nombre": "Gral. Pacheco"
+    },
+    {
+        "ID": 62,
+        "Nombre": "Gral. Paz"
+    },
+    {
+        "ID": 63,
+        "Nombre": "Gral. Pinto"
+    },
+    {
+        "ID": 64,
+        "Nombre": "Gral. Pueyrredón"
+    },
+    {
+        "ID": 65,
+        "Nombre": "Gral. Rodríguez"
+    },
+    {
+        "ID": 66,
+        "Nombre": "Gral. Viamonte"
+    },
+    {
+        "ID": 67,
+        "Nombre": "Gral. Villegas"
+    },
+    {
+        "ID": 68,
+        "Nombre": "Guaminí"
+    },
+    {
+        "ID": 69,
+        "Nombre": "Guernica"
+    },
+    {
+        "ID": 2715,
+        "Nombre": "Guerrico"
+    },
+    {
+        "ID": 2716,
+        "Nombre": "Gunther"
+    },
+    {
+        "ID": 2717,
+        "Nombre": "Hale"
+    },
+    {
+        "ID": 2428,
+        "Nombre": "Henderson"
+    },
+    {
+        "ID": 2718,
+        "Nombre": "Herrera Vegas"
+    },
+    {
+        "ID": 2719,
+        "Nombre": "Hilario Ascasubi"
+    },
+    {
+        "ID": 2720,
+        "Nombre": "Hinojo"
+    },
+    {
+        "ID": 70,
+        "Nombre": "Hipólito Yrigoyen"
+    },
+    {
+        "ID": 2721,
+        "Nombre": "Hortensia"
+    },
+    {
+        "ID": 2722,
+        "Nombre": "Huanguelén"
+    },
+    {
+        "ID": 2723,
+        "Nombre": "Hurlingham"
+    },
+    {
+        "ID": 2724,
+        "Nombre": "Ignacio Correas"
+    },
+    {
+        "ID": 2725,
+        "Nombre": "Indio Rico"
+    },
+    {
+        "ID": 2726,
+        "Nombre": "Inés Indart"
+    },
+    {
+        "ID": 71,
+        "Nombre": "Ing. Maschwitz"
+    },
+    {
+        "ID": 2727,
+        "Nombre": "Ingeniero Moneta"
+    },
+    {
+        "ID": 2728,
+        "Nombre": "Ingeniero Thompson"
+    },
+    {
+        "ID": 2729,
+        "Nombre": "Inocencio Sosa"
+    },
+    {
+        "ID": 2730,
+        "Nombre": "Irala"
+    },
+    {
+        "ID": 2731,
+        "Nombre": "Irene"
+    },
+    {
+        "ID": 2732,
+        "Nombre": "Irineo Portela"
+    },
+    {
+        "ID": 2733,
+        "Nombre": "Ituzaingó"
+    },
+    {
+        "ID": 2734,
+        "Nombre": "Jeppener"
+    },
+    {
+        "ID": 2735,
+        "Nombre": "Jorge Born"
+    },
+    {
+        "ID": 2736,
+        "Nombre": "José B. Casas"
+    },
+    {
+        "ID": 2737,
+        "Nombre": "José C. Paz"
+    },
+    {
+        "ID": 2738,
+        "Nombre": "José Juan Almeyra"
+    },
+    {
+        "ID": 2739,
+        "Nombre": "Juan A. de la Peña"
+    },
+    {
+        "ID": 2740,
+        "Nombre": "Juan Anchorena"
+    },
+    {
+        "ID": 2741,
+        "Nombre": "Juan A. Pradere"
+    },
+    {
+        "ID": 2742,
+        "Nombre": "Juan Bautista Alberdi "
+    },
+    {
+        "ID": 2743,
+        "Nombre": "Juan Cousté"
+    },
+    {
+        "ID": 2744,
+        "Nombre": "Juan E. Barra"
+    },
+    {
+        "ID": 2745,
+        "Nombre": "Juan F. Ibarra"
+    },
+    {
+        "ID": 2746,
+        "Nombre": "Juan José Paso"
+    },
+    {
+        "ID": 2747,
+        "Nombre": "Juan Nepomuceno Fernández"
+    },
+    {
+        "ID": 72,
+        "Nombre": "Junín"
+    },
+    {
+        "ID": 2748,
+        "Nombre": "La Angelita"
+    },
+    {
+        "ID": 2749,
+        "Nombre": "La Armonía"
+    },
+    {
+        "ID": 2750,
+        "Nombre": "La Aurora"
+    },
+    {
+        "ID": 2751,
+        "Nombre": "Labardén"
+    },
+    {
+        "ID": 2752,
+        "Nombre": "La Beba"
+    },
+    {
+        "ID": 2753,
+        "Nombre": "La Carreta"
+    },
+    {
+        "ID": 2754,
+        "Nombre": "La Choza"
+    },
+    {
+        "ID": 2755,
+        "Nombre": "La Colina"
+    },
+    {
+        "ID": 2756,
+        "Nombre": "La Constancia"
+    },
+    {
+        "ID": 2757,
+        "Nombre": "La Delfina"
+    },
+    {
+        "ID": 2758,
+        "Nombre": "La Emilia"
+    },
+    {
+        "ID": 2759,
+        "Nombre": "La Gruta "
+    },
+    {
+        "ID": 2760,
+        "Nombre": "Laguna Alsina"
+    },
+    {
+        "ID": 2762,
+        "Nombre": "Laguna Vitel"
+    },
+    {
+        "ID": 2761,
+        "Nombre": "Laguna de Lobos"
+    },
+    {
+        "ID": 2763,
+        "Nombre": "La Invencible"
+    },
+    {
+        "ID": 2764,
+        "Nombre": "La Larga"
+    },
+    {
+        "ID": 2765,
+        "Nombre": "La Limpia"
+    },
+    {
+        "ID": 2766,
+        "Nombre": "La Luisa"
+    },
+    {
+        "ID": 2767,
+        "Nombre": "Lanús"
+    },
+    {
+        "ID": 2494,
+        "Nombre": "La Matanza"
+    },
+    {
+        "ID": 2768,
+        "Nombre": "La Pala"
+    },
+    {
+        "ID": 2769,
+        "Nombre": "Laplacette"
+    },
+    {
+        "ID": 73,
+        "Nombre": "La Plata"
+    },
+    {
+        "ID": 74,
+        "Nombre": "Laprida"
+    },
+    {
+        "ID": 2770,
+        "Nombre": "La Rica"
+    },
+    {
+        "ID": 2771,
+        "Nombre": "Lartigau"
+    },
+    {
+        "ID": 2772,
+        "Nombre": "Las Armas"
+    },
+    {
+        "ID": 2773,
+        "Nombre": "Las Bahamas"
+    },
+    {
+        "ID": 2774,
+        "Nombre": "Las Carabelas"
+    },
+    {
+        "ID": 2775,
+        "Nombre": "Las Encadenadas"
+    },
+    {
+        "ID": 75,
+        "Nombre": "Las Flores"
+    },
+    {
+        "ID": 2776,
+        "Nombre": "Las Marianas"
+    },
+    {
+        "ID": 2777,
+        "Nombre": "Las Martinetas"
+    },
+    {
+        "ID": 2778,
+        "Nombre": "La Sofía"
+    },
+    {
+        "ID": 76,
+        "Nombre": "Las Toninas"
+    },
+    {
+        "ID": 2779,
+        "Nombre": "Las Toscas"
+    },
+    {
+        "ID": 2780,
+        "Nombre": "La Trinidad"
+    },
+    {
+        "ID": 2781,
+        "Nombre": "La Violeta"
+    },
+    {
+        "ID": 77,
+        "Nombre": "Leandro N. Alem"
+    },
+    {
+        "ID": 2431,
+        "Nombre": "Libertad"
+    },
+    {
+        "ID": 2782,
+        "Nombre": "Líbano"
+    },
+    {
+        "ID": 2783,
+        "Nombre": "Licenciado Matienzo"
+    },
+    {
+        "ID": 2784,
+        "Nombre": "Lima"
+    },
+    {
+        "ID": 78,
+        "Nombre": "Lincoln"
+    },
+    {
+        "ID": 79,
+        "Nombre": "Loberia"
+    },
+    {
+        "ID": 80,
+        "Nombre": "Lobos"
+    },
+    {
+        "ID": 2785,
+        "Nombre": "Lomas de Copello"
+    },
+    {
+        "ID": 2786,
+        "Nombre": "Lomas del Río Luján"
+    },
+    {
+        "ID": 2787,
+        "Nombre": "Lomas de Zamora"
+    },
+    {
+        "ID": 2788,
+        "Nombre": "Loma Verde"
+    },
+    {
+        "ID": 2789,
+        "Nombre": "López"
+    },
+    {
+        "ID": 2790,
+        "Nombre": "López Lecube"
+    },
+    {
+        "ID": 2791,
+        "Nombre": "Los Ángeles"
+    },
+    {
+        "ID": 81,
+        "Nombre": "Los Cardales"
+    },
+    {
+        "ID": 2792,
+        "Nombre": "Los Indios"
+    },
+    {
+        "ID": 2793,
+        "Nombre": "Los Naranjos"
+    },
+    {
+        "ID": 2794,
+        "Nombre": "Los Pinos"
+    },
+    {
+        "ID": 82,
+        "Nombre": "Los Toldos"
+    },
+    {
+        "ID": 2795,
+        "Nombre": "Lucas Monteverde"
+    },
+    {
+        "ID": 83,
+        "Nombre": "Lucila del Mar"
+    },
+    {
+        "ID": 84,
+        "Nombre": "Luján"
+    },
+    {
+        "ID": 2796,
+        "Nombre": "Magdala"
+    },
+    {
+        "ID": 85,
+        "Nombre": "Magdalena"
+    },
+    {
+        "ID": 86,
+        "Nombre": "Maipú"
+    },
+    {
+        "ID": 2797,
+        "Nombre": "Malvinas Argentinas"
+    },
+    {
+        "ID": 2798,
+        "Nombre": "Manuel B. Gonnet"
+    },
+    {
+        "ID": 2799,
+        "Nombre": "Manuel J. Cobo"
+    },
+    {
+        "ID": 2800,
+        "Nombre": "Manuel Ocampo"
+    },
+    {
+        "ID": 2801,
+        "Nombre": "Mar Azul"
+    },
+    {
+        "ID": 2802,
+        "Nombre": "Marcelino Ugarte"
+    },
+    {
+        "ID": 87,
+        "Nombre": "Mar Chiquita"
+    },
+    {
+        "ID": 88,
+        "Nombre": "Mar de Ajó"
+    },
+    {
+        "ID": 2803,
+        "Nombre": "Mar de Cobo"
+    },
+    {
+        "ID": 89,
+        "Nombre": "Mar de las Pampas"
+    },
+    {
+        "ID": 90,
+        "Nombre": "Mar del Plata"
+    },
+    {
+        "ID": 2804,
+        "Nombre": "Mar del Sur"
+    },
+    {
+        "ID": 91,
+        "Nombre": "Mar del Tuyú"
+    },
+    {
+        "ID": 92,
+        "Nombre": "Marcos Paz"
+    },
+    {
+        "ID": 2805,
+        "Nombre": "María Ignacia"
+    },
+    {
+        "ID": 2806,
+        "Nombre": "Mariano Benítez"
+    },
+    {
+        "ID": 2807,
+        "Nombre": "Mariano H. Alfonzo"
+    },
+    {
+        "ID": 2808,
+        "Nombre": "Marisol"
+    },
+    {
+        "ID": 2809,
+        "Nombre": "Massey"
+    },
+    {
+        "ID": 2410,
+        "Nombre": "Matheu"
+    },
+    {
+        "ID": 2810,
+        "Nombre": "Mauricio Hirsch"
+    },
+    {
+        "ID": 2811,
+        "Nombre": "Máximo Fernández"
+    },
+    {
+        "ID": 2812,
+        "Nombre": "Máximo Paz "
+    },
+    {
+        "ID": 2813,
+        "Nombre": "Mayor Buratovich"
+    },
+    {
+        "ID": 2814,
+        "Nombre": "Maza"
+    },
+    {
+        "ID": 2815,
+        "Nombre": "Mechita"
+    },
+    {
+        "ID": 2816,
+        "Nombre": "Mechongué"
+    },
+    {
+        "ID": 2817,
+        "Nombre": "Médanos"
+    },
+    {
+        "ID": 93,
+        "Nombre": "Mercedes"
+    },
+    {
+        "ID": 2818,
+        "Nombre": "Merlo"
+    },
+    {
+        "ID": 2819,
+        "Nombre": "Micaela Cascallares "
+    },
+    {
+        "ID": 2820,
+        "Nombre": "Mira Pampa"
+    },
+    {
+        "ID": 94,
+        "Nombre": "Miramar"
+    },
+    {
+        "ID": 2821,
+        "Nombre": "Moctezuma"
+    },
+    {
+        "ID": 2822,
+        "Nombre": "Mones Cazón"
+    },
+    {
+        "ID": 95,
+        "Nombre": "Monte"
+    },
+    {
+        "ID": 96,
+        "Nombre": "Monte Hermoso"
+    },
+    {
+        "ID": 2823,
+        "Nombre": "Moquehuá"
+    },
+    {
+        "ID": 2824,
+        "Nombre": "Morea"
+    },
+    {
+        "ID": 2825,
+        "Nombre": "Moreno"
+    },
+    {
+        "ID": 2826,
+        "Nombre": "Morón"
+    },
+    {
+        "ID": 2827,
+        "Nombre": "Morse"
+    },
+    {
+        "ID": 97,
+        "Nombre": "Munro"
+    },
+    {
+        "ID": 2828,
+        "Nombre": "Napaleofú "
+    },
+    {
+        "ID": 98,
+        "Nombre": "Navarro"
+    },
+    {
+        "ID": 99,
+        "Nombre": "Necochea"
+    },
+    {
+        "ID": 2829,
+        "Nombre": "Nicanor Olivera"
+    },
+    {
+        "ID": 2830,
+        "Nombre": "Norberto de la Riestra"
+    },
+    {
+        "ID": 2831,
+        "Nombre": "Norumbega"
+    },
+    {
+        "ID": 2832,
+        "Nombre": "Nueva Plata"
+    },
+    {
+        "ID": 2833,
+        "Nombre": "Obligado"
+    },
+    {
+        "ID": 2834,
+        "Nombre": "Ochandío"
+    },
+    {
+        "ID": 2835,
+        "Nombre": "Olascoaga"
+    },
+    {
+        "ID": 100,
+        "Nombre": "Olavarría"
+    },
+    {
+        "ID": 2837,
+        "Nombre": "Oliden"
+    },
+    {
+        "ID": 2838,
+        "Nombre": "Olivera"
+    },
+    {
+        "ID": 2839,
+        "Nombre": "Ordoqui"
+    },
+    {
+        "ID": 2840,
+        "Nombre": "Orense"
+    },
+    {
+        "ID": 2841,
+        "Nombre": "Oriente"
+    },
+    {
+        "ID": 2422,
+        "Nombre": "O Higgins"
+    },
+    {
+        "ID": 2842,
+        "Nombre": "Pago Chico"
+    },
+    {
+        "ID": 2843,
+        "Nombre": "Parada Orlando"
+    },
+    {
+        "ID": 2844,
+        "Nombre": "Parada Robles"
+    },
+    {
+        "ID": 2845,
+        "Nombre": "Paraje La Agraria"
+    },
+    {
+        "ID": 2846,
+        "Nombre": "Paraje la Ruta"
+    },
+    {
+        "ID": 2847,
+        "Nombre": "Pardo"
+    },
+    {
+        "ID": 101,
+        "Nombre": "Partido de la Costa"
+    },
+    {
+        "ID": 2848,
+        "Nombre": "Pasman"
+    },
+    {
+        "ID": 2849,
+        "Nombre": "Pasteur"
+    },
+    {
+        "ID": 2850,
+        "Nombre": "Patricios"
+    },
+    {
+        "ID": 2851,
+        "Nombre": "Paula"
+    },
+    {
+        "ID": 2852,
+        "Nombre": "Pavón"
+    },
+    {
+        "ID": 2853,
+        "Nombre": "Pearson"
+    },
+    {
+        "ID": 2854,
+        "Nombre": "Pedernales"
+    },
+    {
+        "ID": 2855,
+        "Nombre": "Pedro Luro"
+    },
+    {
+        "ID": 102,
+        "Nombre": "Pehuajó"
+    },
+    {
+        "ID": 103,
+        "Nombre": "Pellegrini"
+    },
+    {
+        "ID": 2856,
+        "Nombre": "Pérez Millán"
+    },
+    {
+        "ID": 104,
+        "Nombre": "Pergamino"
+    },
+    {
+        "ID": 2857,
+        "Nombre": "Pichincha"
+    },
+    {
+        "ID": 2858,
+        "Nombre": "Piedritas"
+    },
+    {
+        "ID": 2859,
+        "Nombre": "Pieres"
+    },
+    {
+        "ID": 105,
+        "Nombre": "Pigüé"
+    },
+    {
+        "ID": 106,
+        "Nombre": "Pila"
+    },
+    {
+        "ID": 107,
+        "Nombre": "Pilar"
+    },
+    {
+        "ID": 108,
+        "Nombre": "Pinamar"
+    },
+    {
+        "ID": 109,
+        "Nombre": "Pinar del Sol"
+    },
+    {
+        "ID": 2860,
+        "Nombre": "Pinzón"
+    },
+    {
+        "ID": 2861,
+        "Nombre": "Pipinas"
+    },
+    {
+        "ID": 2862,
+        "Nombre": "Pirovano"
+    },
+    {
+        "ID": 2863,
+        "Nombre": "Pla"
+    },
+    {
+        "ID": 2864,
+        "Nombre": "Plomer"
+    },
+    {
+        "ID": 2865,
+        "Nombre": "Polvaredas"
+    },
+    {
+        "ID": 110,
+        "Nombre": "Polvorines"
+    },
+    {
+        "ID": 2866,
+        "Nombre": "Pontaut"
+    },
+    {
+        "ID": 2867,
+        "Nombre": "Porvenir"
+    },
+    {
+        "ID": 2868,
+        "Nombre": "Posada de Los Lagos"
+    },
+    {
+        "ID": 111,
+        "Nombre": "Pte. Perón"
+    },
+    {
+        "ID": 2869,
+        "Nombre": "Puan"
+    },
+    {
+        "ID": 2870,
+        "Nombre": "Pueblo Doyle"
+    },
+    {
+        "ID": 2871,
+        "Nombre": "Pueblo Gouin"
+    },
+    {
+        "ID": 2872,
+        "Nombre": "Pueblo Nuevo"
+    },
+    {
+        "ID": 2873,
+        "Nombre": "Pueblo San Jorge"
+    },
+    {
+        "ID": 2874,
+        "Nombre": "Punta Alta"
+    },
+    {
+        "ID": 112,
+        "Nombre": "Puán"
+    },
+    {
+        "ID": 113,
+        "Nombre": "Punta Indio"
+    },
+    {
+        "ID": 2875,
+        "Nombre": "Quenumá"
+    },
+    {
+        "ID": 2876,
+        "Nombre": "Quilmes"
+    },
+    {
+        "ID": 2877,
+        "Nombre": "Rafael Obligado"
+    },
+    {
+        "ID": 114,
+        "Nombre": "Ramallo"
+    },
+    {
+        "ID": 2878,
+        "Nombre": "Ramón Biaus"
+    },
+    {
+        "ID": 2879,
+        "Nombre": "Ramón Santamarina"
+    },
+    {
+        "ID": 2880,
+        "Nombre": "Ramos Otero"
+    },
+    {
+        "ID": 2881,
+        "Nombre": "Rancagua"
+    },
+    {
+        "ID": 2882,
+        "Nombre": "Ranchos"
+    },
+    {
+        "ID": 115,
+        "Nombre": "Rauch"
+    },
+    {
+        "ID": 2883,
+        "Nombre": "Rawson"
+    },
+    {
+        "ID": 2884,
+        "Nombre": "Recalde"
+    },
+    {
+        "ID": 2885,
+        "Nombre": "Reta"
+    },
+    {
+        "ID": 2886,
+        "Nombre": "Río Tala"
+    },
+    {
+        "ID": 116,
+        "Nombre": "Rivadavia"
+    },
+    {
+        "ID": 2887,
+        "Nombre": "Rivera"
+    },
+    {
+        "ID": 2888,
+        "Nombre": "Roberto Cano"
+    },
+    {
+        "ID": 2889,
+        "Nombre": "Roberto J. Payró"
+    },
+    {
+        "ID": 2890,
+        "Nombre": "Roberts"
+    },
+    {
+        "ID": 117,
+        "Nombre": "Rojas"
+    },
+    {
+        "ID": 2891,
+        "Nombre": "Roosevelt"
+    },
+    {
+        "ID": 118,
+        "Nombre": "Roque Pérez"
+    },
+    {
+        "ID": 2892,
+        "Nombre": "Ruta Sol"
+    },
+    {
+        "ID": 119,
+        "Nombre": "Saavedra"
+    },
+    {
+        "ID": 2893,
+        "Nombre": "Saforcada"
+    },
+    {
+        "ID": 120,
+        "Nombre": "Saladillo"
+    },
+    {
+        "ID": 2894,
+        "Nombre": "Salazar"
+    },
+    {
+        "ID": 2895,
+        "Nombre": "Saldungaray"
+    },
+    {
+        "ID": 121,
+        "Nombre": "Salliqueló"
+    },
+    {
+        "ID": 122,
+        "Nombre": "Salto"
+    },
+    {
+        "ID": 2896,
+        "Nombre": "Salvador María"
+    },
+    {
+        "ID": 2897,
+        "Nombre": "Samborombón"
+    },
+    {
+        "ID": 2898,
+        "Nombre": "San Agustín"
+    },
+    {
+        "ID": 123,
+        "Nombre": "San Andrés de Giles"
+    },
+    {
+        "ID": 124,
+        "Nombre": "San Antonio de Areco"
+    },
+    {
+        "ID": 125,
+        "Nombre": "San Antonio de Padua"
+    },
+    {
+        "ID": 126,
+        "Nombre": "San Bernardo"
+    },
+    {
+        "ID": 2899,
+        "Nombre": "San Carlos de Bolívar"
+    },
+    {
+        "ID": 127,
+        "Nombre": "San Cayetano"
+    },
+    {
+        "ID": 128,
+        "Nombre": "San Clemente del Tuyú"
+    },
+    {
+        "ID": 2900,
+        "Nombre": "San Emilio"
+    },
+    {
+        "ID": 2901,
+        "Nombre": "San Enrique"
+    },
+    {
+        "ID": 2902,
+        "Nombre": "San Esteban"
+    },
+    {
+        "ID": 2903,
+        "Nombre": "San Fernando"
+    },
+    {
+        "ID": 2904,
+        "Nombre": "San Francisco de Bellocq"
+    },
+    {
+        "ID": 2905,
+        "Nombre": "San Germán"
+    },
+    {
+        "ID": 2906,
+        "Nombre": "San Isidro"
+    },
+    {
+        "ID": 2907,
+        "Nombre": "San José"
+    },
+    {
+        "ID": 2908,
+        "Nombre": "San Manuel"
+    },
+    {
+        "ID": 2909,
+        "Nombre": "San Mauricio"
+    },
+    {
+        "ID": 2910,
+        "Nombre": "San Mayol"
+    },
+    {
+        "ID": 2911,
+        "Nombre": "San Miguel"
+    },
+    {
+        "ID": 2912,
+        "Nombre": "San Miguel del Monte"
+    },
+    {
+        "ID": 129,
+        "Nombre": "San Nicolás"
+    },
+    {
+        "ID": 130,
+        "Nombre": "San Pedro"
+    },
+    {
+        "ID": 2913,
+        "Nombre": "San Román"
+    },
+    {
+        "ID": 2914,
+        "Nombre": "San Sebastián"
+    },
+    {
+        "ID": 131,
+        "Nombre": "San Vicente"
+    },
+    {
+        "ID": 2915,
+        "Nombre": "Sansinena"
+    },
+    {
+        "ID": 2916,
+        "Nombre": "Santa Clara del Mar"
+    },
+    {
+        "ID": 2917,
+        "Nombre": "Santa Coloma"
+    },
+    {
+        "ID": 2918,
+        "Nombre": "Santa Eleodora"
+    },
+    {
+        "ID": 2919,
+        "Nombre": "Santa Lucía"
+    },
+    {
+        "ID": 2920,
+        "Nombre": "Santa Luisa"
+    },
+    {
+        "ID": 2921,
+        "Nombre": "Santa María"
+    },
+    {
+        "ID": 2922,
+        "Nombre": "Santa Regina"
+    },
+    {
+        "ID": 2923,
+        "Nombre": "Santa Rosa"
+    },
+    {
+        "ID": 132,
+        "Nombre": "Santa Teresita"
+    },
+    {
+        "ID": 2924,
+        "Nombre": "Santa Trinidad"
+    },
+    {
+        "ID": 2925,
+        "Nombre": "Santo Domingo"
+    },
+    {
+        "ID": 2926,
+        "Nombre": "Santo Tomas"
+    },
+    {
+        "ID": 2928,
+        "Nombre": "Sarasa"
+    },
+    {
+        "ID": 2929,
+        "Nombre": "Sevigne"
+    },
+    {
+        "ID": 2930,
+        "Nombre": "Sierra Chica"
+    },
+    {
+        "ID": 2931,
+        "Nombre": "Sierra de la Ventana"
+    },
+    {
+        "ID": 2932,
+        "Nombre": "Sierra de los Padres"
+    },
+    {
+        "ID": 2933,
+        "Nombre": "Sierras Bayas"
+    },
+    {
+        "ID": 2934,
+        "Nombre": "Smith"
+    },
+    {
+        "ID": 2935,
+        "Nombre": "Solanet"
+    },
+    {
+        "ID": 2936,
+        "Nombre": "Sol de Mayo"
+    },
+    {
+        "ID": 2937,
+        "Nombre": "Solís"
+    },
+    {
+        "ID": 2938,
+        "Nombre": "Stroeder"
+    },
+    {
+        "ID": 133,
+        "Nombre": "Suipacha"
+    },
+    {
+        "ID": 2939,
+        "Nombre": "Sundblad"
+    },
+    {
+        "ID": 2940,
+        "Nombre": "Tamangueyú"
+    },
+    {
+        "ID": 134,
+        "Nombre": "Tandil"
+    },
+    {
+        "ID": 135,
+        "Nombre": "Tapalqué"
+    },
+    {
+        "ID": 2941,
+        "Nombre": "Tedín Uriburu"
+    },
+    {
+        "ID": 2942,
+        "Nombre": "Teniente Origone"
+    },
+    {
+        "ID": 2943,
+        "Nombre": "Tigre"
+    },
+    {
+        "ID": 2944,
+        "Nombre": "Timote"
+    },
+    {
+        "ID": 2945,
+        "Nombre": "Todd"
+    },
+    {
+        "ID": 136,
+        "Nombre": "Tordillo"
+    },
+    {
+        "ID": 137,
+        "Nombre": "Tornquist"
+    },
+    {
+        "ID": 2946,
+        "Nombre": "Torres"
+    },
+    {
+        "ID": 138,
+        "Nombre": "Trenque Lauquen"
+    },
+    {
+        "ID": 2947,
+        "Nombre": "Tres Algarrobos"
+    },
+    {
+        "ID": 2512,
+        "Nombre": "Tres Arroyos"
+    },
+    {
+        "ID": 2948,
+        "Nombre": "Tres de Febrero"
+    },
+    {
+        "ID": 139,
+        "Nombre": "Tres Lomas"
+    },
+    {
+        "ID": 2949,
+        "Nombre": "Tres Picos"
+    },
+    {
+        "ID": 2950,
+        "Nombre": "Tres Sargentos"
+    },
+    {
+        "ID": 2951,
+        "Nombre": "Triunvirato"
+    },
+    {
+        "ID": 2952,
+        "Nombre": "Trongé"
+    },
+    {
+        "ID": 2953,
+        "Nombre": "Udaquiola"
+    },
+    {
+        "ID": 2954,
+        "Nombre": "Urdampilleta"
+    },
+    {
+        "ID": 2955,
+        "Nombre": "Uribelarrea"
+    },
+    {
+        "ID": 2956,
+        "Nombre": "Valdés"
+    },
+    {
+        "ID": 2957,
+        "Nombre": "Vásquez"
+    },
+    {
+        "ID": 2464,
+        "Nombre": "Vedia"
+    },
+    {
+        "ID": 2958,
+        "Nombre": "Velloso"
+    },
+    {
+        "ID": 2959,
+        "Nombre": "Verónica"
+    },
+    {
+        "ID": 2960,
+        "Nombre": "Vicente Casares"
+    },
+    {
+        "ID": 2961,
+        "Nombre": "Vicente López"
+    },
+    {
+        "ID": 2962,
+        "Nombre": "Vieytes"
+    },
+    {
+        "ID": 2963,
+        "Nombre": "Villa Alfredo Fortabat"
+    },
+    {
+        "ID": 2964,
+        "Nombre": "Villa Alsina"
+    },
+    {
+        "ID": 2965,
+        "Nombre": "Villa Angélica"
+    },
+    {
+        "ID": 2479,
+        "Nombre": "Villa Cacique"
+    },
+    {
+        "ID": 2966,
+        "Nombre": "Villa Castelar"
+    },
+    {
+        "ID": 2446,
+        "Nombre": "Villa Elisa"
+    },
+    {
+        "ID": 2967,
+        "Nombre": "Villa Esperanza"
+    },
+    {
+        "ID": 2968,
+        "Nombre": "Villa Espil"
+    },
+    {
+        "ID": 2969,
+        "Nombre": "Villa Fournier"
+    },
+    {
+        "ID": 2970,
+        "Nombre": "Villa Francia"
+    },
+    {
+        "ID": 2971,
+        "Nombre": "Villa General Arias"
+    },
+    {
+        "ID": 2972,
+        "Nombre": "Villa General Savio"
+    },
+    {
+        "ID": 140,
+        "Nombre": "Villa Gesell"
+    },
+    {
+        "ID": 2973,
+        "Nombre": "Villa Grisolía "
+    },
+    {
+        "ID": 2974,
+        "Nombre": "Villa Iris"
+    },
+    {
+        "ID": 2975,
+        "Nombre": "Villa La Arcadia"
+    },
+    {
+        "ID": 2976,
+        "Nombre": "Villa Laguna La Brava"
+    },
+    {
+        "ID": 2977,
+        "Nombre": "Villa La Serranía"
+    },
+    {
+        "ID": 2978,
+        "Nombre": "Villa Lía"
+    },
+    {
+        "ID": 2979,
+        "Nombre": "Villalonga"
+    },
+    {
+        "ID": 2980,
+        "Nombre": "Villa Lynch Pueyrredón"
+    },
+    {
+        "ID": 2981,
+        "Nombre": "Villa Manuel Pomar"
+    },
+    {
+        "ID": 2982,
+        "Nombre": "Villa María"
+    },
+    {
+        "ID": 2983,
+        "Nombre": "Villa Moll"
+    },
+    {
+        "ID": 2984,
+        "Nombre": "Villanueva"
+    },
+    {
+        "ID": 2985,
+        "Nombre": "Villa Ortiz"
+    },
+    {
+        "ID": 2986,
+        "Nombre": "Villa Parque Girado"
+    },
+    {
+        "ID": 2987,
+        "Nombre": "Villa Ramallo"
+    },
+    {
+        "ID": 2988,
+        "Nombre": "Villa Rodríguez"
+    },
+    {
+        "ID": 2989,
+        "Nombre": "Villa Roth"
+    },
+    {
+        "ID": 2990,
+        "Nombre": "Villars"
+    },
+    {
+        "ID": 2991,
+        "Nombre": "Villa Ruiz"
+    },
+    {
+        "ID": 2992,
+        "Nombre": "Villa Saboya"
+    },
+    {
+        "ID": 2993,
+        "Nombre": "Villa San José"
+    },
+    {
+        "ID": 2994,
+        "Nombre": "Villa Sauze"
+    },
+    {
+        "ID": 2995,
+        "Nombre": "Villa Ventana"
+    },
+    {
+        "ID": 141,
+        "Nombre": "Villarino"
+    },
+    {
+        "ID": 2996,
+        "Nombre": "Viña"
+    },
+    {
+        "ID": 2997,
+        "Nombre": "Vivoratá"
+    },
+    {
+        "ID": 2998,
+        "Nombre": "Warnes"
+    },
+    {
+        "ID": 2999,
+        "Nombre": "Yutuyaco"
+    },
+    {
+        "ID": 142,
+        "Nombre": "Zárate"
+    },
+    {
+        "ID": 3000,
+        "Nombre": "Zavalía"
+    },
+    {
+        "ID": 3001,
+        "Nombre": "Zenón Videla Dorn"
+    }
+]

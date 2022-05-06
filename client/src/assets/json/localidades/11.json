@@ -1,0 +1,602 @@
+[
+    {
+        "ID": 1280,
+        "Nombre": "Abdon Castro Tolay"
+    },
+    {
+        "ID": 1281,
+        "Nombre": "Abra Pampa"
+    },
+    {
+        "ID": 1282,
+        "Nombre": "Abralaite"
+    },
+    {
+        "ID": 4500,
+        "Nombre": "Agua de Castilla"
+    },
+    {
+        "ID": 1283,
+        "Nombre": "Aguas Calientes"
+    },
+    {
+        "ID": 4501,
+        "Nombre": "Aparzo"
+    },
+    {
+        "ID": 1284,
+        "Nombre": "Arrayanal"
+    },
+    {
+        "ID": 4502,
+        "Nombre": "Arroyo Colorado"
+    },
+    {
+        "ID": 4503,
+        "Nombre": "Bananal"
+    },
+    {
+        "ID": 4504,
+        "Nombre": "Bárcena"
+    },
+    {
+        "ID": 4505,
+        "Nombre": "Barrio El Milagro"
+    },
+    {
+        "ID": 4506,
+        "Nombre": "Barrio La Unión"
+    },
+    {
+        "ID": 1285,
+        "Nombre": "Barrios"
+    },
+    {
+        "ID": 4507,
+        "Nombre": "Bermejito"
+    },
+    {
+        "ID": 1286,
+        "Nombre": "Caimancito"
+    },
+    {
+        "ID": 1287,
+        "Nombre": "Calilegua"
+    },
+    {
+        "ID": 1288,
+        "Nombre": "Cangrejillos"
+    },
+    {
+        "ID": 4508,
+        "Nombre": "Carahunco"
+    },
+    {
+        "ID": 4509,
+        "Nombre": "Casabindo"
+    },
+    {
+        "ID": 4510,
+        "Nombre": "Casa Colorada"
+    },
+    {
+        "ID": 4511,
+        "Nombre": "Casira"
+    },
+    {
+        "ID": 1289,
+        "Nombre": "Caspala"
+    },
+    {
+        "ID": 1290,
+        "Nombre": "Catuá"
+    },
+    {
+        "ID": 4512,
+        "Nombre": "Centro Forestal"
+    },
+    {
+        "ID": 4513,
+        "Nombre": "Chalicán"
+    },
+    {
+        "ID": 4514,
+        "Nombre": "Cianzo"
+    },
+    {
+        "ID": 1291,
+        "Nombre": "Cieneguillas"
+    },
+    {
+        "ID": 4515,
+        "Nombre": "Ciénega de Paicone"
+    },
+    {
+        "ID": 4516,
+        "Nombre": "Cochinoca"
+    },
+    {
+        "ID": 4517,
+        "Nombre": "Coctaca"
+    },
+    {
+        "ID": 4518,
+        "Nombre": "Colonia San José"
+    },
+    {
+        "ID": 1292,
+        "Nombre": "Coranzulli"
+    },
+    {
+        "ID": 4519,
+        "Nombre": "Coyaguaima"
+    },
+    {
+        "ID": 1293,
+        "Nombre": "Cusi-Cusi"
+    },
+    {
+        "ID": 2458,
+        "Nombre": "Dr Manuel Belgrano"
+    },
+    {
+        "ID": 4520,
+        "Nombre": "Don Emilio"
+    },
+    {
+        "ID": 4521,
+        "Nombre": "El Acheral"
+    },
+    {
+        "ID": 1294,
+        "Nombre": "El Aguilar"
+    },
+    {
+        "ID": 4522,
+        "Nombre": "El Angosto"
+    },
+    {
+        "ID": 1295,
+        "Nombre": "El Carmen"
+    },
+    {
+        "ID": 4523,
+        "Nombre": "El Ceibal"
+    },
+    {
+        "ID": 1296,
+        "Nombre": "El Cóndor"
+    },
+    {
+        "ID": 1297,
+        "Nombre": "El Fuerte"
+    },
+    {
+        "ID": 4524,
+        "Nombre": "El Moreno"
+    },
+    {
+        "ID": 1298,
+        "Nombre": "El Piquete"
+    },
+    {
+        "ID": 4525,
+        "Nombre": "El Puesto"
+    },
+    {
+        "ID": 4526,
+        "Nombre": "El Quemado"
+    },
+    {
+        "ID": 1299,
+        "Nombre": "El Talar"
+    },
+    {
+        "ID": 4527,
+        "Nombre": "El Toro"
+    },
+    {
+        "ID": 1300,
+        "Nombre": "Fraile Pintado"
+    },
+    {
+        "ID": 4528,
+        "Nombre": "Guerrero"
+    },
+    {
+        "ID": 1301,
+        "Nombre": "Hipólito Yrigoyen"
+    },
+    {
+        "ID": 1302,
+        "Nombre": "Huacalera"
+    },
+    {
+        "ID": 1303,
+        "Nombre": "Humahuaca"
+    },
+    {
+        "ID": 4529,
+        "Nombre": "Huáncar"
+    },
+    {
+        "ID": 4530,
+        "Nombre": "Jama"
+    },
+    {
+        "ID": 4531,
+        "Nombre": "Juella"
+    },
+    {
+        "ID": 4532,
+        "Nombre": "La Almona"
+    },
+    {
+        "ID": 4533,
+        "Nombre": "La Ciénega"
+    },
+    {
+        "ID": 1304,
+        "Nombre": "La Esperanza"
+    },
+    {
+        "ID": 4534,
+        "Nombre": "Lagunillas de Farallón"
+    },
+    {
+        "ID": 4535,
+        "Nombre": "La Intermedia"
+    },
+    {
+        "ID": 4536,
+        "Nombre": "La Manga"
+    },
+    {
+        "ID": 1305,
+        "Nombre": "La Mendieta"
+    },
+    {
+        "ID": 1306,
+        "Nombre": "La Quiaca"
+    },
+    {
+        "ID": 4537,
+        "Nombre": "La Redonda"
+    },
+    {
+        "ID": 1307,
+        "Nombre": "Ledesma"
+    },
+    {
+        "ID": 4538,
+        "Nombre": "León"
+    },
+    {
+        "ID": 4539,
+        "Nombre": "Libertad"
+    },
+    {
+        "ID": 1308,
+        "Nombre": "Libertador Gral. San Martin"
+    },
+    {
+        "ID": 4541,
+        "Nombre": "Liviara"
+    },
+    {
+        "ID": 4542,
+        "Nombre": "Llulluchayoc"
+    },
+    {
+        "ID": 4543,
+        "Nombre": "Loma Blanca"
+    },
+    {
+        "ID": 4544,
+        "Nombre": "Los Alisos"
+    },
+    {
+        "ID": 4545,
+        "Nombre": "Los Lapachos"
+    },
+    {
+        "ID": 4546,
+        "Nombre": "Loteo Navea"
+    },
+    {
+        "ID": 4547,
+        "Nombre": "Loteo San Vicente"
+    },
+    {
+        "ID": 2404,
+        "Nombre": "Lozano"
+    },
+    {
+        "ID": 1309,
+        "Nombre": "Maimara"
+    },
+    {
+        "ID": 4548,
+        "Nombre": "Manantiales"
+    },
+    {
+        "ID": 1310,
+        "Nombre": "Mina Pirquitas"
+    },
+    {
+        "ID": 4549,
+        "Nombre": "Mina Providencia"
+    },
+    {
+        "ID": 4550,
+        "Nombre": "Miraflores"
+    },
+    {
+        "ID": 4551,
+        "Nombre": "Misarrumi"
+    },
+    {
+        "ID": 1311,
+        "Nombre": "Monterrico"
+    },
+    {
+        "ID": 4552,
+        "Nombre": "Nuestra Señora del Rosario"
+    },
+    {
+        "ID": 4553,
+        "Nombre": "Nuevo Pirquitas"
+    },
+    {
+        "ID": 4554,
+        "Nombre": "Ocloyas"
+    },
+    {
+        "ID": 4555,
+        "Nombre": "Olacapato"
+    },
+    {
+        "ID": 4556,
+        "Nombre": "Olaroz Chico"
+    },
+    {
+        "ID": 4557,
+        "Nombre": "Oratorio"
+    },
+    {
+        "ID": 4558,
+        "Nombre": "Orosmayo"
+    },
+    {
+        "ID": 4559,
+        "Nombre": "Paicone"
+    },
+    {
+        "ID": 4560,
+        "Nombre": "Palca de Aparzo"
+    },
+    {
+        "ID": 4561,
+        "Nombre": "Palca de Varas"
+    },
+    {
+        "ID": 1312,
+        "Nombre": "Palma Sola"
+    },
+    {
+        "ID": 4562,
+        "Nombre": "Palos Blancos"
+    },
+    {
+        "ID": 1313,
+        "Nombre": "Palpalá"
+    },
+    {
+        "ID": 1314,
+        "Nombre": "Pampa Blanca"
+    },
+    {
+        "ID": 1315,
+        "Nombre": "Pampichuela"
+    },
+    {
+        "ID": 4563,
+        "Nombre": "Parapetí"
+    },
+    {
+        "ID": 4564,
+        "Nombre": "Pastos Chicos"
+    },
+    {
+        "ID": 4565,
+        "Nombre": "Paulina"
+    },
+    {
+        "ID": 1316,
+        "Nombre": "Perico"
+    },
+    {
+        "ID": 4566,
+        "Nombre": "Piedritas"
+    },
+    {
+        "ID": 4567,
+        "Nombre": "Puente Lavayén"
+    },
+    {
+        "ID": 4568,
+        "Nombre": "Puerta de Colorados"
+    },
+    {
+        "ID": 4570,
+        "Nombre": "Puesto Sey"
+    },
+    {
+        "ID": 1317,
+        "Nombre": "Puesto del Marqués"
+    },
+    {
+        "ID": 1318,
+        "Nombre": "Puesto Viejo"
+    },
+    {
+        "ID": 1319,
+        "Nombre": "Pumahuasi"
+    },
+    {
+        "ID": 1320,
+        "Nombre": "Purmamarca"
+    },
+    {
+        "ID": 4571,
+        "Nombre": "Quebraleña"
+    },
+    {
+        "ID": 4572,
+        "Nombre": "Quera"
+    },
+    {
+        "ID": 1321,
+        "Nombre": "Rinconada"
+    },
+    {
+        "ID": 4573,
+        "Nombre": "Rinconadillas"
+    },
+    {
+        "ID": 1322,
+        "Nombre": "Rodeitos"
+    },
+    {
+        "ID": 4574,
+        "Nombre": "Rodero"
+    },
+    {
+        "ID": 1323,
+        "Nombre": "Rosario de Río Grande"
+    },
+    {
+        "ID": 1324,
+        "Nombre": "San Antonio"
+    },
+    {
+        "ID": 1325,
+        "Nombre": "San Francisco"
+    },
+    {
+        "ID": 4575,
+        "Nombre": "San Isidro"
+    },
+    {
+        "ID": 4576,
+        "Nombre": "San Juancito"
+    },
+    {
+        "ID": 4577,
+        "Nombre": "San Juan de Oros"
+    },
+    {
+        "ID": 4578,
+        "Nombre": "San Juan de Quillaqués"
+    },
+    {
+        "ID": 4579,
+        "Nombre": "San Lucas"
+    },
+    {
+        "ID": 1326,
+        "Nombre": "San Pedro"
+    },
+    {
+        "ID": 1327,
+        "Nombre": "San Rafael"
+    },
+    {
+        "ID": 1328,
+        "Nombre": "San Salvador"
+    },
+    {
+        "ID": 1329,
+        "Nombre": "Santa Ana"
+    },
+    {
+        "ID": 1330,
+        "Nombre": "Santa Catalina"
+    },
+    {
+        "ID": 1331,
+        "Nombre": "Santa Clara"
+    },
+    {
+        "ID": 4580,
+        "Nombre": "Santuario de Tres Pozos"
+    },
+    {
+        "ID": 4581,
+        "Nombre": "Sauzal"
+    },
+    {
+        "ID": 1332,
+        "Nombre": "Susques"
+    },
+    {
+        "ID": 4582,
+        "Nombre": "Tambillos"
+    },
+    {
+        "ID": 4583,
+        "Nombre": "Tesorero"
+    },
+    {
+        "ID": 1333,
+        "Nombre": "Tilcara"
+    },
+    {
+        "ID": 1334,
+        "Nombre": "Tres Cruces"
+    },
+    {
+        "ID": 1335,
+        "Nombre": "Tumbaya"
+    },
+    {
+        "ID": 4584,
+        "Nombre": "Tusaquillas"
+    },
+    {
+        "ID": 4585,
+        "Nombre": "Uquía"
+    },
+    {
+        "ID": 4586,
+        "Nombre": "Valle Colorado"
+    },
+    {
+        "ID": 1336,
+        "Nombre": "Valle Grande"
+    },
+    {
+        "ID": 1337,
+        "Nombre": "Vinalito"
+    },
+    {
+        "ID": 1338,
+        "Nombre": "Volcán"
+    },
+    {
+        "ID": 1339,
+        "Nombre": "Yala"
+    },
+    {
+        "ID": 1340,
+        "Nombre": "Yaví"
+    },
+    {
+        "ID": 4587,
+        "Nombre": "Yoscaba"
+    },
+    {
+        "ID": 1341,
+        "Nombre": "Yuto"
+    }
+]

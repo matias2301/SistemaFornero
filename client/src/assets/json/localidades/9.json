@@ -1,0 +1,1162 @@
+[
+    {
+        "ID": 981,
+        "Nombre": "Alarcón"
+    },
+    {
+        "ID": 982,
+        "Nombre": "Alcaraz"
+    },
+    {
+        "ID": 983,
+        "Nombre": "Alcaraz N."
+    },
+    {
+        "ID": 984,
+        "Nombre": "Alcaraz S."
+    },
+    {
+        "ID": 994,
+        "Nombre": "Aldea 19"
+    },
+    {
+        "ID": 985,
+        "Nombre": "Aldea Asunción"
+    },
+    {
+        "ID": 986,
+        "Nombre": "Aldea Brasilera"
+    },
+    {
+        "ID": 987,
+        "Nombre": "Aldea Elgenfeld"
+    },
+    {
+        "ID": 988,
+        "Nombre": "Aldea Grapschental"
+    },
+    {
+        "ID": 989,
+        "Nombre": "Aldea Ma. Luisa"
+    },
+    {
+        "ID": 990,
+        "Nombre": "Aldea Protestante"
+    },
+    {
+        "ID": 991,
+        "Nombre": "Aldea Salto"
+    },
+    {
+        "ID": 992,
+        "Nombre": "Aldea San Antonio G)"
+    },
+    {
+        "ID": 993,
+        "Nombre": "Aldea San Antonio P)"
+    },
+    {
+        "ID": 4440,
+        "Nombre": "Aldea San Francisco"
+    },
+    {
+        "ID": 4441,
+        "Nombre": "Aldea San Isidro"
+    },
+    {
+        "ID": 4442,
+        "Nombre": "Aldea San Juan"
+    },
+    {
+        "ID": 995,
+        "Nombre": "Aldea San Miguel"
+    },
+    {
+        "ID": 996,
+        "Nombre": "Aldea San Rafael"
+    },
+    {
+        "ID": 997,
+        "Nombre": "Aldea Spatzenkutter"
+    },
+    {
+        "ID": 998,
+        "Nombre": "Aldea Sta. María"
+    },
+    {
+        "ID": 999,
+        "Nombre": "Aldea Sta. Rosa"
+    },
+    {
+        "ID": 1000,
+        "Nombre": "Aldea Valle María"
+    },
+    {
+        "ID": 1001,
+        "Nombre": "Altamirano Sur"
+    },
+    {
+        "ID": 1002,
+        "Nombre": "Antelo"
+    },
+    {
+        "ID": 1003,
+        "Nombre": "Antonio Tomás"
+    },
+    {
+        "ID": 1004,
+        "Nombre": "Aranguren"
+    },
+    {
+        "ID": 1005,
+        "Nombre": "Arroyo Barú"
+    },
+    {
+        "ID": 1006,
+        "Nombre": "Arroyo Burgos"
+    },
+    {
+        "ID": 1007,
+        "Nombre": "Arroyo Clé"
+    },
+    {
+        "ID": 1008,
+        "Nombre": "Arroyo Corralito"
+    },
+    {
+        "ID": 1009,
+        "Nombre": "Arroyo del Medio"
+    },
+    {
+        "ID": 1010,
+        "Nombre": "Arroyo Maturrango"
+    },
+    {
+        "ID": 1011,
+        "Nombre": "Arroyo Palo Seco"
+    },
+    {
+        "ID": 1012,
+        "Nombre": "Banderas"
+    },
+    {
+        "ID": 1013,
+        "Nombre": "Basavilbaso"
+    },
+    {
+        "ID": 1014,
+        "Nombre": "Betbeder"
+    },
+    {
+        "ID": 1015,
+        "Nombre": "Bovril"
+    },
+    {
+        "ID": 4443,
+        "Nombre": "Calabacilla"
+    },
+    {
+        "ID": 1016,
+        "Nombre": "Caseros"
+    },
+    {
+        "ID": 1017,
+        "Nombre": "Ceibas"
+    },
+    {
+        "ID": 1018,
+        "Nombre": "Cerrito"
+    },
+    {
+        "ID": 1019,
+        "Nombre": "Chajarí"
+    },
+    {
+        "ID": 1020,
+        "Nombre": "Chilcas"
+    },
+    {
+        "ID": 1021,
+        "Nombre": "Clodomiro Ledesma"
+    },
+    {
+        "ID": 1022,
+        "Nombre": "Col. Alemana"
+    },
+    {
+        "ID": 1023,
+        "Nombre": "Col. Avellaneda"
+    },
+    {
+        "ID": 1024,
+        "Nombre": "Col. Avigdor"
+    },
+    {
+        "ID": 1025,
+        "Nombre": "Col. Ayuí"
+    },
+    {
+        "ID": 1026,
+        "Nombre": "Col. Baylina"
+    },
+    {
+        "ID": 1027,
+        "Nombre": "Col. Carrasco"
+    },
+    {
+        "ID": 1028,
+        "Nombre": "Col. Celina"
+    },
+    {
+        "ID": 1029,
+        "Nombre": "Col. Cerrito"
+    },
+    {
+        "ID": 1030,
+        "Nombre": "Col. Crespo"
+    },
+    {
+        "ID": 1031,
+        "Nombre": "Col. Elia"
+    },
+    {
+        "ID": 1032,
+        "Nombre": "Col. Ensayo"
+    },
+    {
+        "ID": 1033,
+        "Nombre": "Col. Gral. Roca"
+    },
+    {
+        "ID": 1034,
+        "Nombre": "Col. La Argentina"
+    },
+    {
+        "ID": 1035,
+        "Nombre": "Col. Merou"
+    },
+    {
+        "ID": 1036,
+        "Nombre": "Col. Oficial Nª3"
+    },
+    {
+        "ID": 1037,
+        "Nombre": "Col. Oficial Nº13"
+    },
+    {
+        "ID": 1038,
+        "Nombre": "Col. Oficial Nº14"
+    },
+    {
+        "ID": 1039,
+        "Nombre": "Col. Oficial Nº5"
+    },
+    {
+        "ID": 1040,
+        "Nombre": "Col. Reffino"
+    },
+    {
+        "ID": 1041,
+        "Nombre": "Col. Tunas"
+    },
+    {
+        "ID": 1042,
+        "Nombre": "Col. Viraró"
+    },
+    {
+        "ID": 4445,
+        "Nombre": "Colonia Hugues"
+    },
+    {
+        "ID": 4446,
+        "Nombre": "Colonia Peña"
+    },
+    {
+        "ID": 1043,
+        "Nombre": "Colón"
+    },
+    {
+        "ID": 1044,
+        "Nombre": "Concepción del Uruguay"
+    },
+    {
+        "ID": 1045,
+        "Nombre": "Concordia"
+    },
+    {
+        "ID": 1046,
+        "Nombre": "Conscripto Bernardi"
+    },
+    {
+        "ID": 1047,
+        "Nombre": "Costa Grande"
+    },
+    {
+        "ID": 1048,
+        "Nombre": "Costa San Antonio"
+    },
+    {
+        "ID": 1049,
+        "Nombre": "Costa Uruguay N."
+    },
+    {
+        "ID": 1050,
+        "Nombre": "Costa Uruguay S."
+    },
+    {
+        "ID": 1051,
+        "Nombre": "Crespo"
+    },
+    {
+        "ID": 1052,
+        "Nombre": "Crucecitas 3ª"
+    },
+    {
+        "ID": 1053,
+        "Nombre": "Crucecitas 7ª"
+    },
+    {
+        "ID": 1054,
+        "Nombre": "Crucecitas 8ª"
+    },
+    {
+        "ID": 1055,
+        "Nombre": "Cuchilla Redonda"
+    },
+    {
+        "ID": 1056,
+        "Nombre": "Curtiembre"
+    },
+    {
+        "ID": 1057,
+        "Nombre": "Diamante"
+    },
+    {
+        "ID": 1058,
+        "Nombre": "Distrito 6º"
+    },
+    {
+        "ID": 1059,
+        "Nombre": "Distrito Chañar"
+    },
+    {
+        "ID": 1060,
+        "Nombre": "Distrito Chiqueros"
+    },
+    {
+        "ID": 1061,
+        "Nombre": "Distrito Cuarto"
+    },
+    {
+        "ID": 1062,
+        "Nombre": "Distrito Diego López"
+    },
+    {
+        "ID": 1063,
+        "Nombre": "Distrito Pajonal"
+    },
+    {
+        "ID": 1064,
+        "Nombre": "Distrito Sauce"
+    },
+    {
+        "ID": 1065,
+        "Nombre": "Distrito Tala"
+    },
+    {
+        "ID": 1066,
+        "Nombre": "Distrito Talitas"
+    },
+    {
+        "ID": 1067,
+        "Nombre": "Don Cristóbal 1ª Sección"
+    },
+    {
+        "ID": 1068,
+        "Nombre": "Don Cristóbal 2ª Sección"
+    },
+    {
+        "ID": 1069,
+        "Nombre": "Durazno"
+    },
+    {
+        "ID": 1070,
+        "Nombre": "El Cimarrón"
+    },
+    {
+        "ID": 1071,
+        "Nombre": "El Gramillal"
+    },
+    {
+        "ID": 1072,
+        "Nombre": "El Palenque"
+    },
+    {
+        "ID": 1073,
+        "Nombre": "El Pingo"
+    },
+    {
+        "ID": 1074,
+        "Nombre": "El Quebracho"
+    },
+    {
+        "ID": 4447,
+        "Nombre": "El Ramblón"
+    },
+    {
+        "ID": 1075,
+        "Nombre": "El Redomón"
+    },
+    {
+        "ID": 1076,
+        "Nombre": "El Solar"
+    },
+    {
+        "ID": 1077,
+        "Nombre": "Enrique Carbo"
+    },
+    {
+        "ID": 1078,
+        "Nombre": "Entre Ríos"
+    },
+    {
+        "ID": 1079,
+        "Nombre": "Espinillo N."
+    },
+    {
+        "ID": 4448,
+        "Nombre": "Estación Arroyo Clé"
+    },
+    {
+        "ID": 1080,
+        "Nombre": "Estación Campos"
+    },
+    {
+        "ID": 1081,
+        "Nombre": "Estación Escriña"
+    },
+    {
+        "ID": 1082,
+        "Nombre": "Estación Lazo"
+    },
+    {
+        "ID": 1083,
+        "Nombre": "Estación Raíces"
+    },
+    {
+        "ID": 1084,
+        "Nombre": "Estación Yerúa"
+    },
+    {
+        "ID": 1085,
+        "Nombre": "Estancia Grande"
+    },
+    {
+        "ID": 1086,
+        "Nombre": "Estancia Líbaros"
+    },
+    {
+        "ID": 1087,
+        "Nombre": "Estancia Racedo"
+    },
+    {
+        "ID": 1088,
+        "Nombre": "Estancia Solá"
+    },
+    {
+        "ID": 1089,
+        "Nombre": "Estancia Yuquerí"
+    },
+    {
+        "ID": 1090,
+        "Nombre": "Estaquitas"
+    },
+    {
+        "ID": 1091,
+        "Nombre": "Faustino M. Parera"
+    },
+    {
+        "ID": 1092,
+        "Nombre": "Febre"
+    },
+    {
+        "ID": 1093,
+        "Nombre": "Federación"
+    },
+    {
+        "ID": 1094,
+        "Nombre": "Federal"
+    },
+    {
+        "ID": 1095,
+        "Nombre": "Gdor. Echagüe"
+    },
+    {
+        "ID": 1096,
+        "Nombre": "Gdor. Mansilla"
+    },
+    {
+        "ID": 4449,
+        "Nombre": "General Racedo"
+    },
+    {
+        "ID": 1097,
+        "Nombre": "Gilbert"
+    },
+    {
+        "ID": 4450,
+        "Nombre": "Gobernador Sola"
+    },
+    {
+        "ID": 1098,
+        "Nombre": "González Calderón"
+    },
+    {
+        "ID": 1099,
+        "Nombre": "Gral. Almada"
+    },
+    {
+        "ID": 1100,
+        "Nombre": "Gral. Alvear"
+    },
+    {
+        "ID": 1101,
+        "Nombre": "Gral. Campos"
+    },
+    {
+        "ID": 1102,
+        "Nombre": "Gral. Galarza"
+    },
+    {
+        "ID": 1103,
+        "Nombre": "Gral. Ramírez"
+    },
+    {
+        "ID": 1104,
+        "Nombre": "Gualeguay"
+    },
+    {
+        "ID": 1105,
+        "Nombre": "Gualeguaychú"
+    },
+    {
+        "ID": 1106,
+        "Nombre": "Gualeguaycito"
+    },
+    {
+        "ID": 1107,
+        "Nombre": "Guardamonte"
+    },
+    {
+        "ID": 1108,
+        "Nombre": "Hambis"
+    },
+    {
+        "ID": 1109,
+        "Nombre": "Hasenkamp"
+    },
+    {
+        "ID": 1110,
+        "Nombre": "Hernandarias"
+    },
+    {
+        "ID": 1111,
+        "Nombre": "Hernández"
+    },
+    {
+        "ID": 1112,
+        "Nombre": "Herrera"
+    },
+    {
+        "ID": 1113,
+        "Nombre": "Hinojal"
+    },
+    {
+        "ID": 1114,
+        "Nombre": "Hocker"
+    },
+    {
+        "ID": 4451,
+        "Nombre": "Ibicuy"
+    },
+    {
+        "ID": 1115,
+        "Nombre": "Ing. Sajaroff"
+    },
+    {
+        "ID": 1116,
+        "Nombre": "Irazusta"
+    },
+    {
+        "ID": 1117,
+        "Nombre": "Isletas"
+    },
+    {
+        "ID": 1118,
+        "Nombre": "J.J De Urquiza"
+    },
+    {
+        "ID": 1119,
+        "Nombre": "Jubileo"
+    },
+    {
+        "ID": 1120,
+        "Nombre": "La Clarita"
+    },
+    {
+        "ID": 1121,
+        "Nombre": "La Criolla"
+    },
+    {
+        "ID": 1122,
+        "Nombre": "La Esmeralda"
+    },
+    {
+        "ID": 1123,
+        "Nombre": "La Florida"
+    },
+    {
+        "ID": 1124,
+        "Nombre": "La Fraternidad"
+    },
+    {
+        "ID": 1125,
+        "Nombre": "La Hierra"
+    },
+    {
+        "ID": 4452,
+        "Nombre": "La Juanita"
+    },
+    {
+        "ID": 1126,
+        "Nombre": "La Ollita"
+    },
+    {
+        "ID": 1127,
+        "Nombre": "La Paz"
+    },
+    {
+        "ID": 1128,
+        "Nombre": "La Picada"
+    },
+    {
+        "ID": 1129,
+        "Nombre": "La Providencia"
+    },
+    {
+        "ID": 1130,
+        "Nombre": "La Verbena"
+    },
+    {
+        "ID": 1131,
+        "Nombre": "Laguna Benítez"
+    },
+    {
+        "ID": 1132,
+        "Nombre": "Larroque"
+    },
+    {
+        "ID": 1133,
+        "Nombre": "Las Cuevas"
+    },
+    {
+        "ID": 1134,
+        "Nombre": "Las Garzas"
+    },
+    {
+        "ID": 1135,
+        "Nombre": "Las Guachas"
+    },
+    {
+        "ID": 4453,
+        "Nombre": "Las Jaulas"
+    },
+    {
+        "ID": 1136,
+        "Nombre": "Las Mercedes"
+    },
+    {
+        "ID": 1137,
+        "Nombre": "Las Moscas"
+    },
+    {
+        "ID": 1138,
+        "Nombre": "Las Mulitas"
+    },
+    {
+        "ID": 1139,
+        "Nombre": "Las Toscas"
+    },
+    {
+        "ID": 4454,
+        "Nombre": "Las Tunas"
+    },
+    {
+        "ID": 1140,
+        "Nombre": "Laurencena"
+    },
+    {
+        "ID": 1141,
+        "Nombre": "Libertador San Martín"
+    },
+    {
+        "ID": 1142,
+        "Nombre": "Loma Limpia"
+    },
+    {
+        "ID": 1143,
+        "Nombre": "Los Ceibos"
+    },
+    {
+        "ID": 1144,
+        "Nombre": "Los Charruas"
+    },
+    {
+        "ID": 1145,
+        "Nombre": "Los Conquistadores"
+    },
+    {
+        "ID": 1146,
+        "Nombre": "Lucas González"
+    },
+    {
+        "ID": 1147,
+        "Nombre": "Lucas N."
+    },
+    {
+        "ID": 1148,
+        "Nombre": "Lucas S. 1ª"
+    },
+    {
+        "ID": 1149,
+        "Nombre": "Lucas S. 2ª"
+    },
+    {
+        "ID": 4455,
+        "Nombre": "Líbaros"
+    },
+    {
+        "ID": 1150,
+        "Nombre": "Maciá"
+    },
+    {
+        "ID": 1151,
+        "Nombre": "María Grande"
+    },
+    {
+        "ID": 1152,
+        "Nombre": "María Grande 2ª"
+    },
+    {
+        "ID": 1153,
+        "Nombre": "Médanos"
+    },
+    {
+        "ID": 1154,
+        "Nombre": "Mojones N."
+    },
+    {
+        "ID": 1155,
+        "Nombre": "Mojones S."
+    },
+    {
+        "ID": 1156,
+        "Nombre": "Molino Doll"
+    },
+    {
+        "ID": 1157,
+        "Nombre": "Monte Redondo"
+    },
+    {
+        "ID": 1158,
+        "Nombre": "Montoya"
+    },
+    {
+        "ID": 1159,
+        "Nombre": "Mulas Grandes"
+    },
+    {
+        "ID": 1160,
+        "Nombre": "Ñancay"
+    },
+    {
+        "ID": 1161,
+        "Nombre": "Nogoyá"
+    },
+    {
+        "ID": 1162,
+        "Nombre": "Nueva Escocia"
+    },
+    {
+        "ID": 1163,
+        "Nombre": "Nueva Vizcaya"
+    },
+    {
+        "ID": 1164,
+        "Nombre": "Ombú"
+    },
+    {
+        "ID": 1165,
+        "Nombre": "Oro Verde"
+    },
+    {
+        "ID": 4456,
+        "Nombre": "Osvaldo Magnasco"
+    },
+    {
+        "ID": 4457,
+        "Nombre": "Paraje La Virgen"
+    },
+    {
+        "ID": 1166,
+        "Nombre": "Paraná"
+    },
+    {
+        "ID": 1167,
+        "Nombre": "Pasaje Guayaquil"
+    },
+    {
+        "ID": 1168,
+        "Nombre": "Pasaje Las Tunas"
+    },
+    {
+        "ID": 1169,
+        "Nombre": "Paso de La Arena"
+    },
+    {
+        "ID": 1170,
+        "Nombre": "Paso de La Laguna"
+    },
+    {
+        "ID": 1171,
+        "Nombre": "Paso de Las Piedras"
+    },
+    {
+        "ID": 1172,
+        "Nombre": "Paso Duarte"
+    },
+    {
+        "ID": 1173,
+        "Nombre": "Pastor Britos"
+    },
+    {
+        "ID": 1174,
+        "Nombre": "Pedernal"
+    },
+    {
+        "ID": 1175,
+        "Nombre": "Perdices"
+    },
+    {
+        "ID": 1176,
+        "Nombre": "Picada Berón"
+    },
+    {
+        "ID": 1177,
+        "Nombre": "Piedras Blancas"
+    },
+    {
+        "ID": 1178,
+        "Nombre": "Primer Distrito Cuchilla"
+    },
+    {
+        "ID": 1179,
+        "Nombre": "Primero de Mayo"
+    },
+    {
+        "ID": 1180,
+        "Nombre": "Pronunciamiento"
+    },
+    {
+        "ID": 1181,
+        "Nombre": "Pto. Algarrobo"
+    },
+    {
+        "ID": 1182,
+        "Nombre": "Pto. Ibicuy"
+    },
+    {
+        "ID": 4458,
+        "Nombre": "Pueblo Arrúa"
+    },
+    {
+        "ID": 4459,
+        "Nombre": "Pueblo Bellocq"
+    },
+    {
+        "ID": 1183,
+        "Nombre": "Pueblo Brugo"
+    },
+    {
+        "ID": 1184,
+        "Nombre": "Pueblo Cazes"
+    },
+    {
+        "ID": 4460,
+        "Nombre": "Pueblo General San Martín"
+    },
+    {
+        "ID": 1185,
+        "Nombre": "Pueblo Gral. Belgrano"
+    },
+    {
+        "ID": 1186,
+        "Nombre": "Pueblo Liebig"
+    },
+    {
+        "ID": 4461,
+        "Nombre": "Puerto Las Cuevas"
+    },
+    {
+        "ID": 4462,
+        "Nombre": "Puerto Ruiz"
+    },
+    {
+        "ID": 1187,
+        "Nombre": "Puerto Yeruá"
+    },
+    {
+        "ID": 1188,
+        "Nombre": "Punta del Monte"
+    },
+    {
+        "ID": 1189,
+        "Nombre": "Quebracho"
+    },
+    {
+        "ID": 1190,
+        "Nombre": "Quinto Distrito"
+    },
+    {
+        "ID": 1191,
+        "Nombre": "Raices Oeste"
+    },
+    {
+        "ID": 1192,
+        "Nombre": "Rincón de Nogoyá"
+    },
+    {
+        "ID": 1193,
+        "Nombre": "Rincón del Cinto"
+    },
+    {
+        "ID": 1194,
+        "Nombre": "Rincón del Doll"
+    },
+    {
+        "ID": 1195,
+        "Nombre": "Rincón del Gato"
+    },
+    {
+        "ID": 1196,
+        "Nombre": "Rocamora"
+    },
+    {
+        "ID": 1197,
+        "Nombre": "Rosario del Tala"
+    },
+    {
+        "ID": 1198,
+        "Nombre": "San Benito"
+    },
+    {
+        "ID": 1199,
+        "Nombre": "San Cipriano"
+    },
+    {
+        "ID": 1200,
+        "Nombre": "San Ernesto"
+    },
+    {
+        "ID": 1201,
+        "Nombre": "San Gustavo"
+    },
+    {
+        "ID": 1202,
+        "Nombre": "San Jaime"
+    },
+    {
+        "ID": 1203,
+        "Nombre": "San José"
+    },
+    {
+        "ID": 1204,
+        "Nombre": "San José de Feliciano"
+    },
+    {
+        "ID": 1205,
+        "Nombre": "San Justo"
+    },
+    {
+        "ID": 1206,
+        "Nombre": "San Marcial"
+    },
+    {
+        "ID": 1207,
+        "Nombre": "San Pedro"
+    },
+    {
+        "ID": 1208,
+        "Nombre": "San Ramírez"
+    },
+    {
+        "ID": 1209,
+        "Nombre": "San Ramón"
+    },
+    {
+        "ID": 1210,
+        "Nombre": "San Roque"
+    },
+    {
+        "ID": 1211,
+        "Nombre": "San Salvador"
+    },
+    {
+        "ID": 1212,
+        "Nombre": "San Víctor"
+    },
+    {
+        "ID": 1213,
+        "Nombre": "Santa Ana"
+    },
+    {
+        "ID": 1214,
+        "Nombre": "Santa Anita"
+    },
+    {
+        "ID": 1215,
+        "Nombre": "Santa Elena"
+    },
+    {
+        "ID": 1216,
+        "Nombre": "Santa Lucía"
+    },
+    {
+        "ID": 1217,
+        "Nombre": "Santa Luisa"
+    },
+    {
+        "ID": 1218,
+        "Nombre": "Sauce de Luna"
+    },
+    {
+        "ID": 1219,
+        "Nombre": "Sauce Montrull"
+    },
+    {
+        "ID": 1220,
+        "Nombre": "Sauce Pinto"
+    },
+    {
+        "ID": 1221,
+        "Nombre": "Sauce Sur"
+    },
+    {
+        "ID": 1222,
+        "Nombre": "Seguí"
+    },
+    {
+        "ID": 1223,
+        "Nombre": "Sir Leonard"
+    },
+    {
+        "ID": 1224,
+        "Nombre": "Sosa"
+    },
+    {
+        "ID": 1225,
+        "Nombre": "Tabossi"
+    },
+    {
+        "ID": 1226,
+        "Nombre": "Tezanos Pinto"
+    },
+    {
+        "ID": 1227,
+        "Nombre": "Ubajay"
+    },
+    {
+        "ID": 1228,
+        "Nombre": "Urdinarrain"
+    },
+    {
+        "ID": 1229,
+        "Nombre": "Veinte de Septiembre"
+    },
+    {
+        "ID": 1230,
+        "Nombre": "Viale"
+    },
+    {
+        "ID": 1231,
+        "Nombre": "Victoria"
+    },
+    {
+        "ID": 1232,
+        "Nombre": "Villa Clara"
+    },
+    {
+        "ID": 1234,
+        "Nombre": "Villa Domínguez"
+    },
+    {
+        "ID": 1235,
+        "Nombre": "Villa Elisa"
+    },
+    {
+        "ID": 1236,
+        "Nombre": "Villa Fontana"
+    },
+    {
+        "ID": 1237,
+        "Nombre": "Villa Gdor. Etchevehere"
+    },
+    {
+        "ID": 4465,
+        "Nombre": "Villa Libertador San Martín"
+    },
+    {
+        "ID": 1238,
+        "Nombre": "Villa Mantero"
+    },
+    {
+        "ID": 1239,
+        "Nombre": "Villa Paranacito"
+    },
+    {
+        "ID": 4467,
+        "Nombre": "Villa San Justo"
+    },
+    {
+        "ID": 4468,
+        "Nombre": "Villa San Marcial"
+    },
+    {
+        "ID": 1240,
+        "Nombre": "Villa Urquiza"
+    },
+    {
+        "ID": 1233,
+        "Nombre": "Villa del Rosario"
+    },
+    {
+        "ID": 1241,
+        "Nombre": "Villaguay"
+    },
+    {
+        "ID": 1242,
+        "Nombre": "Walter Moss"
+    },
+    {
+        "ID": 4469,
+        "Nombre": "XX de Setiembre"
+    },
+    {
+        "ID": 1243,
+        "Nombre": "Yacaré"
+    },
+    {
+        "ID": 1244,
+        "Nombre": "Yeso Oeste"
+    }
+]

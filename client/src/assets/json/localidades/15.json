@@ -1,0 +1,570 @@
+[
+    {
+        "ID": 4800,
+        "Nombre": "1 de Mayo"
+    },
+    {
+        "ID": 1461,
+        "Nombre": "Alba Posse"
+    },
+    {
+        "ID": 4801,
+        "Nombre": "Alicia Alta"
+    },
+    {
+        "ID": 4802,
+        "Nombre": "Alicia Baja"
+    },
+    {
+        "ID": 1462,
+        "Nombre": "Almafuerte"
+    },
+    {
+        "ID": 1463,
+        "Nombre": "Apóstoles"
+    },
+    {
+        "ID": 1464,
+        "Nombre": "Aristóbulo Del Valle"
+    },
+    {
+        "ID": 1465,
+        "Nombre": "Arroyo Del Medio"
+    },
+    {
+        "ID": 1466,
+        "Nombre": "Azara"
+    },
+    {
+        "ID": 4803,
+        "Nombre": "Barra Concepción"
+    },
+    {
+        "ID": 4804,
+        "Nombre": "Barrio Cuatro Bocas"
+    },
+    {
+        "ID": 4805,
+        "Nombre": "Barrio del Lago"
+    },
+    {
+        "ID": 4806,
+        "Nombre": "Barrio Escuela 461"
+    },
+    {
+        "ID": 4807,
+        "Nombre": "Barrio Escuela 633"
+    },
+    {
+        "ID": 4808,
+        "Nombre": "Barrio Guatambú"
+    },
+    {
+        "ID": 4809,
+        "Nombre": "Barrio Itá"
+    },
+    {
+        "ID": 4810,
+        "Nombre": "Barrio Nuevo Garupa"
+    },
+    {
+        "ID": 4811,
+        "Nombre": "Barrio Rural"
+    },
+    {
+        "ID": 4812,
+        "Nombre": "Barrio Tungoil"
+    },
+    {
+        "ID": 1467,
+        "Nombre": "Bdo. De Irigoyen"
+    },
+    {
+        "ID": 1468,
+        "Nombre": "Bonpland"
+    },
+    {
+        "ID": 4814,
+        "Nombre": "Caburei"
+    },
+    {
+        "ID": 1469,
+        "Nombre": "Caá Yari"
+    },
+    {
+        "ID": 1470,
+        "Nombre": "Campo Grande"
+    },
+    {
+        "ID": 1471,
+        "Nombre": "Campo Ramón"
+    },
+    {
+        "ID": 1472,
+        "Nombre": "Campo Viera"
+    },
+    {
+        "ID": 1473,
+        "Nombre": "Candelaria"
+    },
+    {
+        "ID": 1474,
+        "Nombre": "Capioví"
+    },
+    {
+        "ID": 1475,
+        "Nombre": "Caraguatay"
+    },
+    {
+        "ID": 1476,
+        "Nombre": "Cdte. Guacurarí"
+    },
+    {
+        "ID": 1477,
+        "Nombre": "Cerro Azul"
+    },
+    {
+        "ID": 1478,
+        "Nombre": "Cerro Corá"
+    },
+    {
+        "ID": 1479,
+        "Nombre": "Col. Alberdi"
+    },
+    {
+        "ID": 1480,
+        "Nombre": "Col. Aurora"
+    },
+    {
+        "ID": 1481,
+        "Nombre": "Col. Delicia"
+    },
+    {
+        "ID": 1482,
+        "Nombre": "Col. Polana"
+    },
+    {
+        "ID": 1483,
+        "Nombre": "Col. Victoria"
+    },
+    {
+        "ID": 1484,
+        "Nombre": "Col. Wanda"
+    },
+    {
+        "ID": 4815,
+        "Nombre": "Comandante Andresito"
+    },
+    {
+        "ID": 1485,
+        "Nombre": "Concepción De La Sierra"
+    },
+    {
+        "ID": 4816,
+        "Nombre": "Copioviciño"
+    },
+    {
+        "ID": 1486,
+        "Nombre": "Corpus"
+    },
+    {
+        "ID": 4817,
+        "Nombre": "Cruce Caballero"
+    },
+    {
+        "ID": 4818,
+        "Nombre": "Domingo Savio"
+    },
+    {
+        "ID": 1487,
+        "Nombre": "Dos Arroyos"
+    },
+    {
+        "ID": 4819,
+        "Nombre": "Dos Hermanas"
+    },
+    {
+        "ID": 1488,
+        "Nombre": "Dos de Mayo"
+    },
+    {
+        "ID": 1489,
+        "Nombre": "El Alcázar"
+    },
+    {
+        "ID": 1490,
+        "Nombre": "El Dorado"
+    },
+    {
+        "ID": 4820,
+        "Nombre": "El Salto"
+    },
+    {
+        "ID": 1491,
+        "Nombre": "El Soberbio"
+    },
+    {
+        "ID": 1492,
+        "Nombre": "Esperanza"
+    },
+    {
+        "ID": 4821,
+        "Nombre": "Estación Apóstoles"
+    },
+    {
+        "ID": 1493,
+        "Nombre": "F. Ameghino"
+    },
+    {
+        "ID": 1494,
+        "Nombre": "Fachinal"
+    },
+    {
+        "ID": 4822,
+        "Nombre": "Fracrán"
+    },
+    {
+        "ID": 1495,
+        "Nombre": "Garuhapé"
+    },
+    {
+        "ID": 1496,
+        "Nombre": "Garupá"
+    },
+    {
+        "ID": 1497,
+        "Nombre": "Gdor. López"
+    },
+    {
+        "ID": 1498,
+        "Nombre": "Gdor. Roca"
+    },
+    {
+        "ID": 1499,
+        "Nombre": "Gral. Alvear"
+    },
+    {
+        "ID": 1500,
+        "Nombre": "Gral. Urquiza"
+    },
+    {
+        "ID": 1501,
+        "Nombre": "Guaraní"
+    },
+    {
+        "ID": 1502,
+        "Nombre": "H. Yrigoyen"
+    },
+    {
+        "ID": 4823,
+        "Nombre": "Helvecia"
+    },
+    {
+        "ID": 1503,
+        "Nombre": "Iguazú"
+    },
+    {
+        "ID": 4824,
+        "Nombre": "Integración"
+    },
+    {
+        "ID": 1504,
+        "Nombre": "Itacaruaré"
+    },
+    {
+        "ID": 1505,
+        "Nombre": "Jardín América"
+    },
+    {
+        "ID": 4825,
+        "Nombre": "Kilómetro 17"
+    },
+    {
+        "ID": 4826,
+        "Nombre": "La Corita"
+    },
+    {
+        "ID": 4827,
+        "Nombre": "Laharrague"
+    },
+    {
+        "ID": 1506,
+        "Nombre": "Leandro N. Alem"
+    },
+    {
+        "ID": 1507,
+        "Nombre": "Libertad"
+    },
+    {
+        "ID": 1508,
+        "Nombre": "Loreto"
+    },
+    {
+        "ID": 1509,
+        "Nombre": "Los Helechos"
+    },
+    {
+        "ID": 4828,
+        "Nombre": "María Magdalena"
+    },
+    {
+        "ID": 4830,
+        "Nombre": "Mbopicuá"
+    },
+    {
+        "ID": 1511,
+        "Nombre": "Misiones"
+    },
+    {
+        "ID": 1512,
+        "Nombre": "Mojón Grande"
+    },
+    {
+        "ID": 1513,
+        "Nombre": "Montecarlo"
+    },
+    {
+        "ID": 1510,
+        "Nombre": "Mártires"
+    },
+    {
+        "ID": 4831,
+        "Nombre": "Nemesio Parma"
+    },
+    {
+        "ID": 4832,
+        "Nombre": "Nueva Delicia"
+    },
+    {
+        "ID": 1514,
+        "Nombre": "Nueve de Julio"
+    },
+    {
+        "ID": 4833,
+        "Nombre": "Oasis"
+    },
+    {
+        "ID": 1515,
+        "Nombre": "Oberá"
+    },
+    {
+        "ID": 1516,
+        "Nombre": "Olegario V. Andrade"
+    },
+    {
+        "ID": 1517,
+        "Nombre": "Panambí"
+    },
+    {
+        "ID": 4834,
+        "Nombre": "Paraíso"
+    },
+    {
+        "ID": 4835,
+        "Nombre": "Piñalito Norte"
+    },
+    {
+        "ID": 4836,
+        "Nombre": "Piñalito Sur"
+    },
+    {
+        "ID": 4837,
+        "Nombre": "Pindapoy"
+    },
+    {
+        "ID": 4838,
+        "Nombre": "Piray Kilómetro 18"
+    },
+    {
+        "ID": 1518,
+        "Nombre": "Posadas"
+    },
+    {
+        "ID": 1519,
+        "Nombre": "Profundidad"
+    },
+    {
+        "ID": 2395,
+        "Nombre": "Pto. Esperanza"
+    },
+    {
+        "ID": 1520,
+        "Nombre": "Pto. Iguazú"
+    },
+    {
+        "ID": 1521,
+        "Nombre": "Pto. Leoni"
+    },
+    {
+        "ID": 1522,
+        "Nombre": "Pto. Piray"
+    },
+    {
+        "ID": 1523,
+        "Nombre": "Pto. Rico"
+    },
+    {
+        "ID": 4839,
+        "Nombre": "Pueblo Illia"
+    },
+    {
+        "ID": 4840,
+        "Nombre": "Pueblo Nuevo"
+    },
+    {
+        "ID": 4841,
+        "Nombre": "Puerto Andresito"
+    },
+    {
+        "ID": 4842,
+        "Nombre": "Puerto Deseado"
+    },
+    {
+        "ID": 4843,
+        "Nombre": "Puerto Libertad"
+    },
+    {
+        "ID": 4844,
+        "Nombre": "Puerto Mado"
+    },
+    {
+        "ID": 4845,
+        "Nombre": "Puerto Pinares"
+    },
+    {
+        "ID": 4846,
+        "Nombre": "Puerto Santa Ana"
+    },
+    {
+        "ID": 4847,
+        "Nombre": "Rincón de Azara"
+    },
+    {
+        "ID": 4848,
+        "Nombre": "Roca Chica"
+    },
+    {
+        "ID": 1524,
+        "Nombre": "Ruiz de Montoya"
+    },
+    {
+        "ID": 4849,
+        "Nombre": "Salto Encantado"
+    },
+    {
+        "ID": 4850,
+        "Nombre": "San Alberto"
+    },
+    {
+        "ID": 1525,
+        "Nombre": "San Antonio"
+    },
+    {
+        "ID": 4851,
+        "Nombre": "San Francisco de Asís"
+    },
+    {
+        "ID": 4852,
+        "Nombre": "San Gotardo"
+    },
+    {
+        "ID": 1526,
+        "Nombre": "San Ignacio"
+    },
+    {
+        "ID": 1527,
+        "Nombre": "San Javier"
+    },
+    {
+        "ID": 1528,
+        "Nombre": "San José"
+    },
+    {
+        "ID": 1529,
+        "Nombre": "San Martín"
+    },
+    {
+        "ID": 4853,
+        "Nombre": "San Miguel"
+    },
+    {
+        "ID": 1530,
+        "Nombre": "San Pedro"
+    },
+    {
+        "ID": 1531,
+        "Nombre": "San Vicente"
+    },
+    {
+        "ID": 4854,
+        "Nombre": "Santa Rita"
+    },
+    {
+        "ID": 1532,
+        "Nombre": "Santiago De Liniers"
+    },
+    {
+        "ID": 1533,
+        "Nombre": "Santo Pipo"
+    },
+    {
+        "ID": 1534,
+        "Nombre": "Sta. Ana"
+    },
+    {
+        "ID": 1535,
+        "Nombre": "Sta. María"
+    },
+    {
+        "ID": 4858,
+        "Nombre": "Tarumá"
+    },
+    {
+        "ID": 4859,
+        "Nombre": "Tobuna"
+    },
+    {
+        "ID": 1536,
+        "Nombre": "Tres Capones"
+    },
+    {
+        "ID": 4860,
+        "Nombre": "Valle Hermoso"
+    },
+    {
+        "ID": 1537,
+        "Nombre": "Veinticinco de Mayo"
+    },
+    {
+        "ID": 4861,
+        "Nombre": "Villa Akerman"
+    },
+    {
+        "ID": 4862,
+        "Nombre": "Villa Bonita"
+    },
+    {
+        "ID": 4863,
+        "Nombre": "Villa Cooperativa"
+    },
+    {
+        "ID": 4864,
+        "Nombre": "Villa Libertad"
+    },
+    {
+        "ID": 4865,
+        "Nombre": "Villa Parodi"
+    },
+    {
+        "ID": 4866,
+        "Nombre": "Villa Roulet"
+    },
+    {
+        "ID": 4867,
+        "Nombre": "Villa Urrutia"
+    },
+    {
+        "ID": 1538,
+        "Nombre": "Wanda"
+    }
+]

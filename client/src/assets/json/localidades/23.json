@@ -1,0 +1,654 @@
+[
+    {
+        "ID": 5204,
+        "Nombre": "Abra Grande"
+    },
+    {
+        "ID": 5205,
+        "Nombre": "Aerolito"
+    },
+    {
+        "ID": 5206,
+        "Nombre": "Alhuampa"
+    },
+    {
+        "ID": 5207,
+        "Nombre": "Ancaján"
+    },
+    {
+        "ID": 5208,
+        "Nombre": "Antajé"
+    },
+    {
+        "ID": 2199,
+        "Nombre": "Añatuya"
+    },
+    {
+        "ID": 5209,
+        "Nombre": "Ardiles"
+    },
+    {
+        "ID": 5210,
+        "Nombre": "Argentina"
+    },
+    {
+        "ID": 2200,
+        "Nombre": "Árraga"
+    },
+    {
+        "ID": 5211,
+        "Nombre": "Averías"
+    },
+    {
+        "ID": 2201,
+        "Nombre": "Bandera"
+    },
+    {
+        "ID": 2202,
+        "Nombre": "Bandera Bajada"
+    },
+    {
+        "ID": 2203,
+        "Nombre": "Beltrán"
+    },
+    {
+        "ID": 2204,
+        "Nombre": "Brea Pozo"
+    },
+    {
+        "ID": 2205,
+        "Nombre": "Campo Gallo"
+    },
+    {
+        "ID": 2206,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 5213,
+        "Nombre": "Cañada Escobar"
+    },
+    {
+        "ID": 5214,
+        "Nombre": "Casares"
+    },
+    {
+        "ID": 5215,
+        "Nombre": "Caspi Corral"
+    },
+    {
+        "ID": 5216,
+        "Nombre": "Chañar Pozo de Abajo"
+    },
+    {
+        "ID": 5217,
+        "Nombre": "Chauchillas"
+    },
+    {
+        "ID": 5218,
+        "Nombre": "Chaupi Pozo"
+    },
+    {
+        "ID": 2207,
+        "Nombre": "Chilca Juliana"
+    },
+    {
+        "ID": 2208,
+        "Nombre": "Choya"
+    },
+    {
+        "ID": 2209,
+        "Nombre": "Clodomira"
+    },
+    {
+        "ID": 2210,
+        "Nombre": "Col. Alpina"
+    },
+    {
+        "ID": 2211,
+        "Nombre": "Col. Dora"
+    },
+    {
+        "ID": 2212,
+        "Nombre": "Col. El Simbolar Robles"
+    },
+    {
+        "ID": 5219,
+        "Nombre": "Colonia San Juan"
+    },
+    {
+        "ID": 5220,
+        "Nombre": "Colonia Tinco"
+    },
+    {
+        "ID": 5221,
+        "Nombre": "Coronel Manuel L. Rico"
+    },
+    {
+        "ID": 5222,
+        "Nombre": "Cuatro Bocas"
+    },
+    {
+        "ID": 5223,
+        "Nombre": "Donadeu"
+    },
+    {
+        "ID": 5224,
+        "Nombre": "El 49"
+    },
+    {
+        "ID": 5225,
+        "Nombre": "El Arenal"
+    },
+    {
+        "ID": 2213,
+        "Nombre": "El Bobadal"
+    },
+    {
+        "ID": 5226,
+        "Nombre": "El Caburé"
+    },
+    {
+        "ID": 2214,
+        "Nombre": "El Charco"
+    },
+    {
+        "ID": 5227,
+        "Nombre": "El Colorado"
+    },
+    {
+        "ID": 5228,
+        "Nombre": "El Crucero"
+    },
+    {
+        "ID": 5229,
+        "Nombre": "El Cuadrado"
+    },
+    {
+        "ID": 5230,
+        "Nombre": "El Deán"
+    },
+    {
+        "ID": 2215,
+        "Nombre": "El Mojón"
+    },
+    {
+        "ID": 5231,
+        "Nombre": "El Rincón"
+    },
+    {
+        "ID": 5232,
+        "Nombre": "El Sauzal"
+    },
+    {
+        "ID": 5233,
+        "Nombre": "El Zanjón"
+    },
+    {
+        "ID": 2216,
+        "Nombre": "Estación Atamisqui"
+    },
+    {
+        "ID": 5234,
+        "Nombre": "Estación La Punta"
+    },
+    {
+        "ID": 5235,
+        "Nombre": "Estación Robles"
+    },
+    {
+        "ID": 2217,
+        "Nombre": "Estación Simbolar"
+    },
+    {
+        "ID": 5236,
+        "Nombre": "Estación Taboada"
+    },
+    {
+        "ID": 5237,
+        "Nombre": "Estación Tacañitas"
+    },
+    {
+        "ID": 2218,
+        "Nombre": "Fernández"
+    },
+    {
+        "ID": 2219,
+        "Nombre": "Fortín Inca"
+    },
+    {
+        "ID": 2220,
+        "Nombre": "Frías"
+    },
+    {
+        "ID": 2221,
+        "Nombre": "Garza"
+    },
+    {
+        "ID": 2222,
+        "Nombre": "Gramilla"
+    },
+    {
+        "ID": 2223,
+        "Nombre": "Guardia Escolta"
+    },
+    {
+        "ID": 5238,
+        "Nombre": "Hasse"
+    },
+    {
+        "ID": 5239,
+        "Nombre": "Hernán Mejía Miraval"
+    },
+    {
+        "ID": 2224,
+        "Nombre": "Herrera"
+    },
+    {
+        "ID": 5240,
+        "Nombre": "Huyamampa"
+    },
+    {
+        "ID": 2225,
+        "Nombre": "Icaño"
+    },
+    {
+        "ID": 2226,
+        "Nombre": "Ing. Forres"
+    },
+    {
+        "ID": 5241,
+        "Nombre": "Isca Yacu"
+    },
+    {
+        "ID": 5242,
+        "Nombre": "Isca Yacu Semaul"
+    },
+    {
+        "ID": 5243,
+        "Nombre": "Kilómetro 30"
+    },
+    {
+        "ID": 5244,
+        "Nombre": "La Aurora"
+    },
+    {
+        "ID": 2227,
+        "Nombre": "La Banda"
+    },
+    {
+        "ID": 2228,
+        "Nombre": "La Cañada"
+    },
+    {
+        "ID": 5245,
+        "Nombre": "La Dársena"
+    },
+    {
+        "ID": 5246,
+        "Nombre": "La Firmeza"
+    },
+    {
+        "ID": 5247,
+        "Nombre": "La Invernada"
+    },
+    {
+        "ID": 5248,
+        "Nombre": "La Nena"
+    },
+    {
+        "ID": 5249,
+        "Nombre": "La Nueva Donosa"
+    },
+    {
+        "ID": 2229,
+        "Nombre": "Laprida"
+    },
+    {
+        "ID": 5250,
+        "Nombre": "Las Delicias"
+    },
+    {
+        "ID": 5251,
+        "Nombre": "Las Tinajas"
+    },
+    {
+        "ID": 2230,
+        "Nombre": "Lavalle"
+    },
+    {
+        "ID": 5252,
+        "Nombre": "Libertad"
+    },
+    {
+        "ID": 5253,
+        "Nombre": "Lilo Viejo"
+    },
+    {
+        "ID": 2231,
+        "Nombre": "Loreto"
+    },
+    {
+        "ID": 5254,
+        "Nombre": "Los Cardozos"
+    },
+    {
+        "ID": 2232,
+        "Nombre": "Los Juríes"
+    },
+    {
+        "ID": 5255,
+        "Nombre": "Los Miranda"
+    },
+    {
+        "ID": 2233,
+        "Nombre": "Los Núñez"
+    },
+    {
+        "ID": 2234,
+        "Nombre": "Los Pirpintos"
+    },
+    {
+        "ID": 2235,
+        "Nombre": "Los Quiroga"
+    },
+    {
+        "ID": 5257,
+        "Nombre": "Los Soria"
+    },
+    {
+        "ID": 2236,
+        "Nombre": "Los Telares"
+    },
+    {
+        "ID": 5258,
+        "Nombre": "Los Tigres"
+    },
+    {
+        "ID": 2237,
+        "Nombre": "Lugones"
+    },
+    {
+        "ID": 5259,
+        "Nombre": "Maco"
+    },
+    {
+        "ID": 2238,
+        "Nombre": "Malbrán"
+    },
+    {
+        "ID": 5260,
+        "Nombre": "Mansupa"
+    },
+    {
+        "ID": 5261,
+        "Nombre": "Maquito"
+    },
+    {
+        "ID": 2239,
+        "Nombre": "Matara"
+    },
+    {
+        "ID": 2240,
+        "Nombre": "Medellín"
+    },
+    {
+        "ID": 5262,
+        "Nombre": "Minerva"
+    },
+    {
+        "ID": 2241,
+        "Nombre": "Monte Quemado"
+    },
+    {
+        "ID": 5263,
+        "Nombre": "Morales"
+    },
+    {
+        "ID": 2242,
+        "Nombre": "Nueva Esperanza"
+    },
+    {
+        "ID": 2243,
+        "Nombre": "Nueva Francia"
+    },
+    {
+        "ID": 2244,
+        "Nombre": "Palo Negro"
+    },
+    {
+        "ID": 2245,
+        "Nombre": "Pampa de Los Guanacos"
+    },
+    {
+        "ID": 5264,
+        "Nombre": "Patay"
+    },
+    {
+        "ID": 2246,
+        "Nombre": "Pinto"
+    },
+    {
+        "ID": 5265,
+        "Nombre": "Pozo Betbeder"
+    },
+    {
+        "ID": 2247,
+        "Nombre": "Pozo Hondo"
+    },
+    {
+        "ID": 5266,
+        "Nombre": "Pozuelos"
+    },
+    {
+        "ID": 5267,
+        "Nombre": "Pueblo Pablo Torelo"
+    },
+    {
+        "ID": 5268,
+        "Nombre": "Puesto de San Antonio"
+    },
+    {
+        "ID": 2248,
+        "Nombre": "Quimilí"
+    },
+    {
+        "ID": 5269,
+        "Nombre": "Ramírez de Velazco"
+    },
+    {
+        "ID": 5270,
+        "Nombre": "Rapelli"
+    },
+    {
+        "ID": 2249,
+        "Nombre": "Real Sayana"
+    },
+    {
+        "ID": 5271,
+        "Nombre": "Rodeo de Valdez"
+    },
+    {
+        "ID": 5272,
+        "Nombre": "Roversi"
+    },
+    {
+        "ID": 2250,
+        "Nombre": "Sachayoj"
+    },
+    {
+        "ID": 5273,
+        "Nombre": "San José del Boquerón"
+    },
+    {
+        "ID": 2251,
+        "Nombre": "San Pedro de Guasayán"
+    },
+    {
+        "ID": 5274,
+        "Nombre": "Santa María"
+    },
+    {
+        "ID": 5275,
+        "Nombre": "Santiago del Estero"
+    },
+    {
+        "ID": 5276,
+        "Nombre": "Santo Domingo"
+    },
+    {
+        "ID": 5277,
+        "Nombre": "Santos Lugares"
+    },
+    {
+        "ID": 2252,
+        "Nombre": "Selva"
+    },
+    {
+        "ID": 5278,
+        "Nombre": "Simbol"
+    },
+    {
+        "ID": 5279,
+        "Nombre": "Simbolar"
+    },
+    {
+        "ID": 2253,
+        "Nombre": "Sol de Julio"
+    },
+    {
+        "ID": 5280,
+        "Nombre": "Sumamao"
+    },
+    {
+        "ID": 2254,
+        "Nombre": "Sumampa"
+    },
+    {
+        "ID": 5281,
+        "Nombre": "Sumampa Viejo"
+    },
+    {
+        "ID": 2255,
+        "Nombre": "Suncho Corral"
+    },
+    {
+        "ID": 2256,
+        "Nombre": "Taboada"
+    },
+    {
+        "ID": 2257,
+        "Nombre": "Tapso"
+    },
+    {
+        "ID": 2258,
+        "Nombre": "Termas de Rio Hondo"
+    },
+    {
+        "ID": 2259,
+        "Nombre": "Tintina"
+    },
+    {
+        "ID": 2260,
+        "Nombre": "Tomas Young"
+    },
+    {
+        "ID": 5282,
+        "Nombre": "Tramo 16"
+    },
+    {
+        "ID": 5283,
+        "Nombre": "Tramo 20"
+    },
+    {
+        "ID": 5284,
+        "Nombre": "Urutaú"
+    },
+    {
+        "ID": 5285,
+        "Nombre": "Vaca Huañuna"
+    },
+    {
+        "ID": 2261,
+        "Nombre": "Vilelas"
+    },
+    {
+        "ID": 2262,
+        "Nombre": "Villa Atamisqui"
+    },
+    {
+        "ID": 5287,
+        "Nombre": "Villa Figueroa"
+    },
+    {
+        "ID": 5288,
+        "Nombre": "Villa General Mitre"
+    },
+    {
+        "ID": 5289,
+        "Nombre": "Villa Giménez"
+    },
+    {
+        "ID": 2263,
+        "Nombre": "Villa La Punta"
+    },
+    {
+        "ID": 5290,
+        "Nombre": "Villa Mailín"
+    },
+    {
+        "ID": 5291,
+        "Nombre": "Villa Nueva"
+    },
+    {
+        "ID": 2264,
+        "Nombre": "Villa Ojo de Agua"
+    },
+    {
+        "ID": 2265,
+        "Nombre": "Villa Río Hondo"
+    },
+    {
+        "ID": 2266,
+        "Nombre": "Villa Salavina"
+    },
+    {
+        "ID": 5292,
+        "Nombre": "Villa San Martín"
+    },
+    {
+        "ID": 5293,
+        "Nombre": "Villa Silípica"
+    },
+    {
+        "ID": 5294,
+        "Nombre": "Villa Turística del Embalse"
+    },
+    {
+        "ID": 2267,
+        "Nombre": "Villa Unión"
+    },
+    {
+        "ID": 2268,
+        "Nombre": "Vilmer"
+    },
+    {
+        "ID": 5295,
+        "Nombre": "Vinará"
+    },
+    {
+        "ID": 5296,
+        "Nombre": "Vuelta de la Barranca"
+    },
+    {
+        "ID": 2269,
+        "Nombre": "Weisburd"
+    },
+    {
+        "ID": 5297,
+        "Nombre": "Yanda"
+    },
+    {
+        "ID": 5298,
+        "Nombre": "Yuchán"
+    }
+]

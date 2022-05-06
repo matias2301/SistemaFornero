@@ -1,0 +1,630 @@
+[
+    {
+        "ID": 1596,
+        "Nombre": "Aguada Cecilio"
+    },
+    {
+        "ID": 4879,
+        "Nombre": "Aguada Guzmán"
+    },
+    {
+        "ID": 1597,
+        "Nombre": "Aguada de Guerra"
+    },
+    {
+        "ID": 1598,
+        "Nombre": "Allén"
+    },
+    {
+        "ID": 4880,
+        "Nombre": "Arelauquen"
+    },
+    {
+        "ID": 1599,
+        "Nombre": "Arroyo de La Ventana"
+    },
+    {
+        "ID": 1600,
+        "Nombre": "Arroyo Los Berros"
+    },
+    {
+        "ID": 4881,
+        "Nombre": "Bahía Creek"
+    },
+    {
+        "ID": 4882,
+        "Nombre": "Barda del Medio"
+    },
+    {
+        "ID": 1601,
+        "Nombre": "Bariloche"
+    },
+    {
+        "ID": 4883,
+        "Nombre": "Barrio Blanco"
+    },
+    {
+        "ID": 4884,
+        "Nombre": "Barrio Calle Ciega Nº 10"
+    },
+    {
+        "ID": 4885,
+        "Nombre": "Barrio Calle Ciega Nº 6"
+    },
+    {
+        "ID": 4886,
+        "Nombre": "Barrio Canale"
+    },
+    {
+        "ID": 4887,
+        "Nombre": "Barrio Chacra Monte"
+    },
+    {
+        "ID": 4888,
+        "Nombre": "Barrio Colonia Conesa"
+    },
+    {
+        "ID": 4889,
+        "Nombre": "Barrio Costa Este"
+    },
+    {
+        "ID": 4890,
+        "Nombre": "Barrio Costa Linda"
+    },
+    {
+        "ID": 4891,
+        "Nombre": "Barrio Costa Oeste"
+    },
+    {
+        "ID": 4892,
+        "Nombre": "Barrio Destacamento"
+    },
+    {
+        "ID": 4893,
+        "Nombre": "Barrio El Labrador"
+    },
+    {
+        "ID": 4894,
+        "Nombre": "Barrio El Maruchito"
+    },
+    {
+        "ID": 4895,
+        "Nombre": "Barrio El Petróleo"
+    },
+    {
+        "ID": 4896,
+        "Nombre": "Barrio El Pilar"
+    },
+    {
+        "ID": 4897,
+        "Nombre": "Barrio Emergente"
+    },
+    {
+        "ID": 4898,
+        "Nombre": "Barrio Esperanza"
+    },
+    {
+        "ID": 4899,
+        "Nombre": "Barrio Fátima"
+    },
+    {
+        "ID": 4900,
+        "Nombre": "Barrio Frontera"
+    },
+    {
+        "ID": 4901,
+        "Nombre": "Barrio Guerrico"
+    },
+    {
+        "ID": 4902,
+        "Nombre": "Barrio Isla 10"
+    },
+    {
+        "ID": 4903,
+        "Nombre": "Barrio La Barda"
+    },
+    {
+        "ID": 4904,
+        "Nombre": "Barrio La Costa"
+    },
+    {
+        "ID": 4906,
+        "Nombre": "Barrio La Defensa"
+    },
+    {
+        "ID": 4907,
+        "Nombre": "Barrio la Herradura"
+    },
+    {
+        "ID": 4908,
+        "Nombre": "Barrio La Ribera - Barrio Apycar"
+    },
+    {
+        "ID": 4909,
+        "Nombre": "Barrio Luisillo"
+    },
+    {
+        "ID": 4910,
+        "Nombre": "Barrio Mar del Plata"
+    },
+    {
+        "ID": 4911,
+        "Nombre": "Barrio María Elvira"
+    },
+    {
+        "ID": 4912,
+        "Nombre": "Barrio Moño Azul"
+    },
+    {
+        "ID": 4913,
+        "Nombre": "Barrio Mosconi"
+    },
+    {
+        "ID": 4914,
+        "Nombre": "Barrio Norte"
+    },
+    {
+        "ID": 4915,
+        "Nombre": "Barrio Pinar"
+    },
+    {
+        "ID": 4916,
+        "Nombre": "Barrio Planta Compresora de Gas"
+    },
+    {
+        "ID": 4917,
+        "Nombre": "Barrio Porvenir"
+    },
+    {
+        "ID": 4918,
+        "Nombre": "Barrio Puente 83"
+    },
+    {
+        "ID": 4919,
+        "Nombre": "Barrio Santa Lucía"
+    },
+    {
+        "ID": 4920,
+        "Nombre": "Barrio Santa Rita"
+    },
+    {
+        "ID": 4921,
+        "Nombre": "Barrio Unión"
+    },
+    {
+        "ID": 1602,
+        "Nombre": "Calte. Cordero"
+    },
+    {
+        "ID": 1603,
+        "Nombre": "Campo Grande"
+    },
+    {
+        "ID": 1604,
+        "Nombre": "Catriel"
+    },
+    {
+        "ID": 4923,
+        "Nombre": "Cañadón Chileno"
+    },
+    {
+        "ID": 1605,
+        "Nombre": "Cerro Policía"
+    },
+    {
+        "ID": 1606,
+        "Nombre": "Cervantes"
+    },
+    {
+        "ID": 1607,
+        "Nombre": "Chelforo"
+    },
+    {
+        "ID": 1608,
+        "Nombre": "Chimpay"
+    },
+    {
+        "ID": 1609,
+        "Nombre": "Chinchinales"
+    },
+    {
+        "ID": 1610,
+        "Nombre": "Chipauquil"
+    },
+    {
+        "ID": 1611,
+        "Nombre": "Choele Choel"
+    },
+    {
+        "ID": 1612,
+        "Nombre": "Cinco Saltos"
+    },
+    {
+        "ID": 1613,
+        "Nombre": "Cipolletti"
+    },
+    {
+        "ID": 1614,
+        "Nombre": "Clemente Onelli"
+    },
+    {
+        "ID": 4925,
+        "Nombre": "Colonia Juliá y Echarren"
+    },
+    {
+        "ID": 4926,
+        "Nombre": "Colonia Suiza"
+    },
+    {
+        "ID": 1615,
+        "Nombre": "Colán Conhue"
+    },
+    {
+        "ID": 1616,
+        "Nombre": "Comallo"
+    },
+    {
+        "ID": 1617,
+        "Nombre": "Comicó"
+    },
+    {
+        "ID": 1618,
+        "Nombre": "Cona Niyeu"
+    },
+    {
+        "ID": 1619,
+        "Nombre": "Coronel Belisle"
+    },
+    {
+        "ID": 1620,
+        "Nombre": "Cubanea"
+    },
+    {
+        "ID": 1621,
+        "Nombre": "Darwin"
+    },
+    {
+        "ID": 1622,
+        "Nombre": "Dina Huapi"
+    },
+    {
+        "ID": 1623,
+        "Nombre": "El Bolsón"
+    },
+    {
+        "ID": 1624,
+        "Nombre": "El Caín"
+    },
+    {
+        "ID": 1625,
+        "Nombre": "El Manso"
+    },
+    {
+        "ID": 4927,
+        "Nombre": "El Cóndor"
+    },
+    {
+        "ID": 4928,
+        "Nombre": "El Cuy"
+    },
+    {
+        "ID": 4929,
+        "Nombre": "El Empalme"
+    },
+    {
+        "ID": 4930,
+        "Nombre": "El Foyel"
+    },
+    {
+        "ID": 4931,
+        "Nombre": "El Juncal"
+    },
+    {
+        "ID": 4932,
+        "Nombre": "Ferri"
+    },
+    {
+        "ID": 1626,
+        "Nombre": "Gral. Conesa"
+    },
+    {
+        "ID": 1627,
+        "Nombre": "Gral. Enrique Godoy"
+    },
+    {
+        "ID": 1628,
+        "Nombre": "Gral. Fernandez Oro"
+    },
+    {
+        "ID": 1629,
+        "Nombre": "Gral. Roca"
+    },
+    {
+        "ID": 1630,
+        "Nombre": "Guardia Mitre"
+    },
+    {
+        "ID": 1631,
+        "Nombre": "Ing. Huergo"
+    },
+    {
+        "ID": 1632,
+        "Nombre": "Ing. Jacobacci"
+    },
+    {
+        "ID": 4933,
+        "Nombre": "Ingeniero Jacobacci"
+    },
+    {
+        "ID": 4934,
+        "Nombre": "Ingeniero Otto Krause"
+    },
+    {
+        "ID": 4935,
+        "Nombre": "Juventud Unida"
+    },
+    {
+        "ID": 4936,
+        "Nombre": "La Lobería"
+    },
+    {
+        "ID": 1633,
+        "Nombre": "Laguna Blanca"
+    },
+    {
+        "ID": 1634,
+        "Nombre": "Lamarque"
+    },
+    {
+        "ID": 4937,
+        "Nombre": "Las Bayas"
+    },
+    {
+        "ID": 1635,
+        "Nombre": "Las Grutas"
+    },
+    {
+        "ID": 4938,
+        "Nombre": "Las Perlas"
+    },
+    {
+        "ID": 1636,
+        "Nombre": "Los Menucos"
+    },
+    {
+        "ID": 4939,
+        "Nombre": "Loteo Costa de Río"
+    },
+    {
+        "ID": 1637,
+        "Nombre": "Luis Beltrán"
+    },
+    {
+        "ID": 1638,
+        "Nombre": "Mainqué"
+    },
+    {
+        "ID": 4940,
+        "Nombre": "Mallin Ahogado"
+    },
+    {
+        "ID": 1639,
+        "Nombre": "Mamuel Choique"
+    },
+    {
+        "ID": 1640,
+        "Nombre": "Maquinchao"
+    },
+    {
+        "ID": 1641,
+        "Nombre": "Mencué"
+    },
+    {
+        "ID": 4941,
+        "Nombre": "Mina Santa Teresita"
+    },
+    {
+        "ID": 1642,
+        "Nombre": "Mtro. Ramos Mexia"
+    },
+    {
+        "ID": 1643,
+        "Nombre": "Nahuel Niyeu"
+    },
+    {
+        "ID": 1644,
+        "Nombre": "Naupa Huen"
+    },
+    {
+        "ID": 4942,
+        "Nombre": "Ñirihuau"
+    },
+    {
+        "ID": 1645,
+        "Nombre": "Ñorquinco"
+    },
+    {
+        "ID": 1646,
+        "Nombre": "Ojos de Agua"
+    },
+    {
+        "ID": 4943,
+        "Nombre": "Paraje Arroyón"
+    },
+    {
+        "ID": 4944,
+        "Nombre": "Paso Córdova"
+    },
+    {
+        "ID": 1647,
+        "Nombre": "Paso de Agua"
+    },
+    {
+        "ID": 1648,
+        "Nombre": "Paso Flores"
+    },
+    {
+        "ID": 4945,
+        "Nombre": "Península Ruca Co"
+    },
+    {
+        "ID": 1649,
+        "Nombre": "Peñas Blancas"
+    },
+    {
+        "ID": 1650,
+        "Nombre": "Pichi Mahuida"
+    },
+    {
+        "ID": 1651,
+        "Nombre": "Pilcaniyeu"
+    },
+    {
+        "ID": 4946,
+        "Nombre": "Pilquiniyeu"
+    },
+    {
+        "ID": 4947,
+        "Nombre": "Pilquiniyeu del Limay"
+    },
+    {
+        "ID": 4948,
+        "Nombre": "Playas Doradas"
+    },
+    {
+        "ID": 1652,
+        "Nombre": "Pomona"
+    },
+    {
+        "ID": 4949,
+        "Nombre": "Pozo Salado"
+    },
+    {
+        "ID": 1653,
+        "Nombre": "Prahuaniyeu"
+    },
+    {
+        "ID": 4950,
+        "Nombre": "Puente Cero"
+    },
+    {
+        "ID": 4951,
+        "Nombre": "Puerto San Antonio Este"
+    },
+    {
+        "ID": 4952,
+        "Nombre": "Punta Colorada"
+    },
+    {
+        "ID": 1654,
+        "Nombre": "Rincón Treneta"
+    },
+    {
+        "ID": 1655,
+        "Nombre": "Río Chico"
+    },
+    {
+        "ID": 1656,
+        "Nombre": "Río Colorado"
+    },
+    {
+        "ID": 4953,
+        "Nombre": "Río Villegas"
+    },
+    {
+        "ID": 1657,
+        "Nombre": "Roca"
+    },
+    {
+        "ID": 4954,
+        "Nombre": "Saco Viejo"
+    },
+    {
+        "ID": 4955,
+        "Nombre": "Salto Andersen"
+    },
+    {
+        "ID": 1658,
+        "Nombre": "San Antonio Oeste"
+    },
+    {
+        "ID": 4956,
+        "Nombre": "San Carlos de Bariloche"
+    },
+    {
+        "ID": 1659,
+        "Nombre": "San Javier"
+    },
+    {
+        "ID": 4957,
+        "Nombre": "Sargento Vidal"
+    },
+    {
+        "ID": 1660,
+        "Nombre": "Sierra Colorada"
+    },
+    {
+        "ID": 1661,
+        "Nombre": "Sierra Grande"
+    },
+    {
+        "ID": 1662,
+        "Nombre": "Sierra Pailemán"
+    },
+    {
+        "ID": 4958,
+        "Nombre": "Treneta"
+    },
+    {
+        "ID": 1663,
+        "Nombre": "Valcheta"
+    },
+    {
+        "ID": 1664,
+        "Nombre": "Valle Azul"
+    },
+    {
+        "ID": 1665,
+        "Nombre": "Viedma"
+    },
+    {
+        "ID": 4959,
+        "Nombre": "Villa Alberdi"
+    },
+    {
+        "ID": 4960,
+        "Nombre": "Villa Catedral"
+    },
+    {
+        "ID": 4961,
+        "Nombre": "Villa del Parque"
+    },
+    {
+        "ID": 1666,
+        "Nombre": "Villa Llanquín"
+    },
+    {
+        "ID": 4962,
+        "Nombre": "Villa Los Coihues"
+    },
+    {
+        "ID": 4963,
+        "Nombre": "Villa Manzano"
+    },
+    {
+        "ID": 1667,
+        "Nombre": "Villa Mascardi"
+    },
+    {
+        "ID": 1668,
+        "Nombre": "Villa Regina"
+    },
+    {
+        "ID": 4964,
+        "Nombre": "Villa San Isidro"
+    },
+    {
+        "ID": 1669,
+        "Nombre": "Yaminué"
+    }
+]

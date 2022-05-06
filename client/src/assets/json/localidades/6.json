@@ -1,0 +1,282 @@
+[
+    {
+        "ID": 439,
+        "Nombre": "Aldea Apeleg"
+    },
+    {
+        "ID": 440,
+        "Nombre": "Aldea Beleiro"
+    },
+    {
+        "ID": 441,
+        "Nombre": "Aldea Epulef"
+    },
+    {
+        "ID": 4292,
+        "Nombre": "Aldea Escolar"
+    },
+    {
+        "ID": 442,
+        "Nombre": "Alto Río Sengerr"
+    },
+    {
+        "ID": 4293,
+        "Nombre": "Arroyo Verde"
+    },
+    {
+        "ID": 4294,
+        "Nombre": "Astra"
+    },
+    {
+        "ID": 4295,
+        "Nombre": "Bahía Bustamante"
+    },
+    {
+        "ID": 4296,
+        "Nombre": "Blancuntre"
+    },
+    {
+        "ID": 443,
+        "Nombre": "Buen Pasto"
+    },
+    {
+        "ID": 4297,
+        "Nombre": "Buenos Aires Chico"
+    },
+    {
+        "ID": 444,
+        "Nombre": "Camarones"
+    },
+    {
+        "ID": 445,
+        "Nombre": "Carrenleufú"
+    },
+    {
+        "ID": 4298,
+        "Nombre": "Cerro Cóndor"
+    },
+    {
+        "ID": 446,
+        "Nombre": "Cholila"
+    },
+    {
+        "ID": 447,
+        "Nombre": "Co. Centinela"
+    },
+    {
+        "ID": 448,
+        "Nombre": "Colan Conhué"
+    },
+    {
+        "ID": 449,
+        "Nombre": "Comodoro Rivadavia"
+    },
+    {
+        "ID": 450,
+        "Nombre": "Corcovado"
+    },
+    {
+        "ID": 4299,
+        "Nombre": "Costa del Chubut"
+    },
+    {
+        "ID": 451,
+        "Nombre": "Cushamen"
+    },
+    {
+        "ID": 4300,
+        "Nombre": "Diadema Argentina"
+    },
+    {
+        "ID": 452,
+        "Nombre": "Dique F. Ameghino"
+    },
+    {
+        "ID": 4301,
+        "Nombre": "Doctor Oscar Atilio Viglione"
+    },
+    {
+        "ID": 453,
+        "Nombre": "Dolavón"
+    },
+    {
+        "ID": 454,
+        "Nombre": "Dr. R. Rojas"
+    },
+    {
+        "ID": 4302,
+        "Nombre": "El Escorial"
+    },
+    {
+        "ID": 455,
+        "Nombre": "El Hoyo"
+    },
+    {
+        "ID": 456,
+        "Nombre": "El Maitén"
+    },
+    {
+        "ID": 4303,
+        "Nombre": "El Mirasol"
+    },
+    {
+        "ID": 457,
+        "Nombre": "Epuyén"
+    },
+    {
+        "ID": 458,
+        "Nombre": "Esquel"
+    },
+    {
+        "ID": 459,
+        "Nombre": "Facundo"
+    },
+    {
+        "ID": 4304,
+        "Nombre": "Fofo Cahuel"
+    },
+    {
+        "ID": 460,
+        "Nombre": "Gaimán"
+    },
+    {
+        "ID": 461,
+        "Nombre": "Gan Gan"
+    },
+    {
+        "ID": 4305,
+        "Nombre": "Garayalde"
+    },
+    {
+        "ID": 462,
+        "Nombre": "Gastre"
+    },
+    {
+        "ID": 463,
+        "Nombre": "Gdor. Costa"
+    },
+    {
+        "ID": 464,
+        "Nombre": "Gualjaina"
+    },
+    {
+        "ID": 465,
+        "Nombre": "J. de San Martín"
+    },
+    {
+        "ID": 466,
+        "Nombre": "Lago Blanco"
+    },
+    {
+        "ID": 4306,
+        "Nombre": "Lago Epuyén"
+    },
+    {
+        "ID": 467,
+        "Nombre": "Lago Puelo"
+    },
+    {
+        "ID": 4307,
+        "Nombre": "Lago Rosario"
+    },
+    {
+        "ID": 468,
+        "Nombre": "Lagunita Salada"
+    },
+    {
+        "ID": 469,
+        "Nombre": "Las Plumas"
+    },
+    {
+        "ID": 4308,
+        "Nombre": "Leleque"
+    },
+    {
+        "ID": 470,
+        "Nombre": "Los Altares"
+    },
+    {
+        "ID": 4309,
+        "Nombre": "Los Cipreses"
+    },
+    {
+        "ID": 471,
+        "Nombre": "Paso de los Indios"
+    },
+    {
+        "ID": 472,
+        "Nombre": "Paso del Sapo"
+    },
+    {
+        "ID": 4310,
+        "Nombre": "Playa Magagna"
+    },
+    {
+        "ID": 4311,
+        "Nombre": "Playa Unión"
+    },
+    {
+        "ID": 473,
+        "Nombre": "Pto. Madryn"
+    },
+    {
+        "ID": 474,
+        "Nombre": "Pto. Pirámides"
+    },
+    {
+        "ID": 4312,
+        "Nombre": "Quinta El Mirador"
+    },
+    {
+        "ID": 475,
+        "Nombre": "Rada Tilly"
+    },
+    {
+        "ID": 476,
+        "Nombre": "Rawson"
+    },
+    {
+        "ID": 4313,
+        "Nombre": "Reserva Area Protegida El Doradillo"
+    },
+    {
+        "ID": 477,
+        "Nombre": "Río Mayo"
+    },
+    {
+        "ID": 478,
+        "Nombre": "Río Pico"
+    },
+    {
+        "ID": 479,
+        "Nombre": "Sarmiento"
+    },
+    {
+        "ID": 480,
+        "Nombre": "Tecka"
+    },
+    {
+        "ID": 481,
+        "Nombre": "Telsen"
+    },
+    {
+        "ID": 482,
+        "Nombre": "Trelew"
+    },
+    {
+        "ID": 483,
+        "Nombre": "Trevelin"
+    },
+    {
+        "ID": 484,
+        "Nombre": "Veintiocho de Julio"
+    },
+    {
+        "ID": 4314,
+        "Nombre": "Villa Futalaufquen"
+    },
+    {
+        "ID": 4315,
+        "Nombre": "Yala Laubat"
+    }
+]

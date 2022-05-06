@@ -1,0 +1,366 @@
+[
+    {
+        "ID": 1342,
+        "Nombre": "Abramo"
+    },
+    {
+        "ID": 1343,
+        "Nombre": "Adolfo Van Praet"
+    },
+    {
+        "ID": 1344,
+        "Nombre": "Agustoni"
+    },
+    {
+        "ID": 1345,
+        "Nombre": "Algarrobo del Aguila"
+    },
+    {
+        "ID": 1346,
+        "Nombre": "Alpachiri"
+    },
+    {
+        "ID": 1347,
+        "Nombre": "Alta Italia"
+    },
+    {
+        "ID": 1348,
+        "Nombre": "Anguil"
+    },
+    {
+        "ID": 4588,
+        "Nombre": "Anzoátegui"
+    },
+    {
+        "ID": 1349,
+        "Nombre": "Arata"
+    },
+    {
+        "ID": 1350,
+        "Nombre": "Ataliva Roca"
+    },
+    {
+        "ID": 1351,
+        "Nombre": "Bernardo Larroude"
+    },
+    {
+        "ID": 1352,
+        "Nombre": "Bernasconi"
+    },
+    {
+        "ID": 4589,
+        "Nombre": "Cachirulo"
+    },
+    {
+        "ID": 1353,
+        "Nombre": "Caleufú"
+    },
+    {
+        "ID": 1354,
+        "Nombre": "Carro Quemado"
+    },
+    {
+        "ID": 4590,
+        "Nombre": "Casa de Piedra"
+    },
+    {
+        "ID": 1355,
+        "Nombre": "Catriló"
+    },
+    {
+        "ID": 1356,
+        "Nombre": "Ceballos"
+    },
+    {
+        "ID": 1357,
+        "Nombre": "Chacharramendi"
+    },
+    {
+        "ID": 1358,
+        "Nombre": "Col. Barón"
+    },
+    {
+        "ID": 1359,
+        "Nombre": "Col. Santa María"
+    },
+    {
+        "ID": 4591,
+        "Nombre": "Colonia San José"
+    },
+    {
+        "ID": 1360,
+        "Nombre": "Conhelo"
+    },
+    {
+        "ID": 1361,
+        "Nombre": "Coronel Hilario Lagos"
+    },
+    {
+        "ID": 1362,
+        "Nombre": "Cuchillo-Có"
+    },
+    {
+        "ID": 4592,
+        "Nombre": "Damián Maisonave"
+    },
+    {
+        "ID": 1363,
+        "Nombre": "Doblas"
+    },
+    {
+        "ID": 1364,
+        "Nombre": "Dorila"
+    },
+    {
+        "ID": 1365,
+        "Nombre": "Eduardo Castex"
+    },
+    {
+        "ID": 1366,
+        "Nombre": "Embajador Martini"
+    },
+    {
+        "ID": 1367,
+        "Nombre": "Falucho"
+    },
+    {
+        "ID": 4593,
+        "Nombre": "General San Martín"
+    },
+    {
+        "ID": 4594,
+        "Nombre": "Gobernador Duval"
+    },
+    {
+        "ID": 1368,
+        "Nombre": "Gral. Acha"
+    },
+    {
+        "ID": 1369,
+        "Nombre": "Gral. Manuel Campos"
+    },
+    {
+        "ID": 1370,
+        "Nombre": "Gral. Pico"
+    },
+    {
+        "ID": 1371,
+        "Nombre": "Guatraché"
+    },
+    {
+        "ID": 4595,
+        "Nombre": "Hucal"
+    },
+    {
+        "ID": 1372,
+        "Nombre": "Ing. Luiggi"
+    },
+    {
+        "ID": 4596,
+        "Nombre": "Ingeniero Foster"
+    },
+    {
+        "ID": 1373,
+        "Nombre": "Intendente Alvear"
+    },
+    {
+        "ID": 1374,
+        "Nombre": "Jacinto Arauz"
+    },
+    {
+        "ID": 1375,
+        "Nombre": "La Adela"
+    },
+    {
+        "ID": 4597,
+        "Nombre": "La Gloria"
+    },
+    {
+        "ID": 1376,
+        "Nombre": "La Humada"
+    },
+    {
+        "ID": 1377,
+        "Nombre": "La Maruja"
+    },
+    {
+        "ID": 1378,
+        "Nombre": "La Pampa"
+    },
+    {
+        "ID": 1379,
+        "Nombre": "La Reforma"
+    },
+    {
+        "ID": 1380,
+        "Nombre": "Limay Mahuida"
+    },
+    {
+        "ID": 1381,
+        "Nombre": "Lonquimay"
+    },
+    {
+        "ID": 1382,
+        "Nombre": "Loventuel"
+    },
+    {
+        "ID": 1383,
+        "Nombre": "Luan Toro"
+    },
+    {
+        "ID": 1384,
+        "Nombre": "Macachín"
+    },
+    {
+        "ID": 1385,
+        "Nombre": "Maisonnave"
+    },
+    {
+        "ID": 1386,
+        "Nombre": "Mauricio Mayer"
+    },
+    {
+        "ID": 1387,
+        "Nombre": "Metileo"
+    },
+    {
+        "ID": 1388,
+        "Nombre": "Miguel Cané"
+    },
+    {
+        "ID": 1389,
+        "Nombre": "Miguel Riglos"
+    },
+    {
+        "ID": 1390,
+        "Nombre": "Monte Nievas"
+    },
+    {
+        "ID": 4598,
+        "Nombre": "Naicó"
+    },
+    {
+        "ID": 4599,
+        "Nombre": "Ojeda"
+    },
+    {
+        "ID": 1391,
+        "Nombre": "Parera"
+    },
+    {
+        "ID": 1392,
+        "Nombre": "Perú"
+    },
+    {
+        "ID": 1393,
+        "Nombre": "Pichi-Huinca"
+    },
+    {
+        "ID": 1394,
+        "Nombre": "Puelches"
+    },
+    {
+        "ID": 1395,
+        "Nombre": "Puelén"
+    },
+    {
+        "ID": 1396,
+        "Nombre": "Quehue"
+    },
+    {
+        "ID": 1397,
+        "Nombre": "Quemú Quemú"
+    },
+    {
+        "ID": 1398,
+        "Nombre": "Quetrequén"
+    },
+    {
+        "ID": 1399,
+        "Nombre": "Rancul"
+    },
+    {
+        "ID": 1400,
+        "Nombre": "Realicó"
+    },
+    {
+        "ID": 1401,
+        "Nombre": "Relmo"
+    },
+    {
+        "ID": 1402,
+        "Nombre": "Rolón"
+    },
+    {
+        "ID": 1403,
+        "Nombre": "Rucanelo"
+    },
+    {
+        "ID": 1404,
+        "Nombre": "Sarah"
+    },
+    {
+        "ID": 1405,
+        "Nombre": "Speluzzi"
+    },
+    {
+        "ID": 1406,
+        "Nombre": "Sta. Isabel"
+    },
+    {
+        "ID": 1407,
+        "Nombre": "Sta. Rosa"
+    },
+    {
+        "ID": 1408,
+        "Nombre": "Sta. Teresa"
+    },
+    {
+        "ID": 1409,
+        "Nombre": "Telén"
+    },
+    {
+        "ID": 1410,
+        "Nombre": "Toay"
+    },
+    {
+        "ID": 1411,
+        "Nombre": "Tomas M. de Anchorena"
+    },
+    {
+        "ID": 4600,
+        "Nombre": "Trebolares"
+    },
+    {
+        "ID": 1412,
+        "Nombre": "Trenel"
+    },
+    {
+        "ID": 1413,
+        "Nombre": "Unanue"
+    },
+    {
+        "ID": 1414,
+        "Nombre": "Uriburu"
+    },
+    {
+        "ID": 1415,
+        "Nombre": "Veinticinco de Mayo"
+    },
+    {
+        "ID": 1416,
+        "Nombre": "Vertiz"
+    },
+    {
+        "ID": 1417,
+        "Nombre": "Victorica"
+    },
+    {
+        "ID": 1418,
+        "Nombre": "Villa Mirasol"
+    },
+    {
+        "ID": 1419,
+        "Nombre": "Winifreda"
+    }
+]

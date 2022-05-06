@@ -1,0 +1,354 @@
+[
+    {
+        "ID": 1752,
+        "Nombre": "Alto Pelado"
+    },
+    {
+        "ID": 1753,
+        "Nombre": "Alto Pencoso"
+    },
+    {
+        "ID": 1754,
+        "Nombre": "Anchorena"
+    },
+    {
+        "ID": 1755,
+        "Nombre": "Arizona"
+    },
+    {
+        "ID": 1756,
+        "Nombre": "Bagual"
+    },
+    {
+        "ID": 1757,
+        "Nombre": "Balde"
+    },
+    {
+        "ID": 1758,
+        "Nombre": "Batavia"
+    },
+    {
+        "ID": 1759,
+        "Nombre": "Beazley"
+    },
+    {
+        "ID": 1760,
+        "Nombre": "Buena Esperanza"
+    },
+    {
+        "ID": 1761,
+        "Nombre": "Candelaria"
+    },
+    {
+        "ID": 1762,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 1763,
+        "Nombre": "Carolina"
+    },
+    {
+        "ID": 1764,
+        "Nombre": "Carpintería"
+    },
+    {
+        "ID": 5112,
+        "Nombre": "Cazador"
+    },
+    {
+        "ID": 5113,
+        "Nombre": "Cerro de Oro"
+    },
+    {
+        "ID": 5114,
+        "Nombre": "Chosmes"
+    },
+    {
+        "ID": 1765,
+        "Nombre": "Concarán"
+    },
+    {
+        "ID": 1766,
+        "Nombre": "Cortaderas"
+    },
+    {
+        "ID": 5115,
+        "Nombre": "Desaguadero"
+    },
+    {
+        "ID": 1767,
+        "Nombre": "El Morro"
+    },
+    {
+        "ID": 1768,
+        "Nombre": "El Trapiche"
+    },
+    {
+        "ID": 1769,
+        "Nombre": "El Volcán"
+    },
+    {
+        "ID": 5116,
+        "Nombre": "Estancia Grande"
+    },
+    {
+        "ID": 1770,
+        "Nombre": "Fortín El Patria"
+    },
+    {
+        "ID": 1771,
+        "Nombre": "Fortuna"
+    },
+    {
+        "ID": 1772,
+        "Nombre": "Fraga"
+    },
+    {
+        "ID": 5117,
+        "Nombre": "Jarilla"
+    },
+    {
+        "ID": 1773,
+        "Nombre": "Juan Jorba"
+    },
+    {
+        "ID": 1774,
+        "Nombre": "Juan Llerena"
+    },
+    {
+        "ID": 1775,
+        "Nombre": "Juana Koslay"
+    },
+    {
+        "ID": 1776,
+        "Nombre": "Justo Daract"
+    },
+    {
+        "ID": 5118,
+        "Nombre": "La Bajada"
+    },
+    {
+        "ID": 1777,
+        "Nombre": "La Calera"
+    },
+    {
+        "ID": 1778,
+        "Nombre": "La Florida"
+    },
+    {
+        "ID": 5119,
+        "Nombre": "La Maroma"
+    },
+    {
+        "ID": 1779,
+        "Nombre": "La Punilla"
+    },
+    {
+        "ID": 2425,
+        "Nombre": "La Punta"
+    },
+    {
+        "ID": 1780,
+        "Nombre": "La Toma"
+    },
+    {
+        "ID": 1781,
+        "Nombre": "Lafinur"
+    },
+    {
+        "ID": 1782,
+        "Nombre": "Las Aguadas"
+    },
+    {
+        "ID": 1783,
+        "Nombre": "Las Chacras"
+    },
+    {
+        "ID": 1784,
+        "Nombre": "Las Lagunas"
+    },
+    {
+        "ID": 1785,
+        "Nombre": "Las Vertientes"
+    },
+    {
+        "ID": 1786,
+        "Nombre": "Lavaisse"
+    },
+    {
+        "ID": 1787,
+        "Nombre": "Leandro N. Alem"
+    },
+    {
+        "ID": 5120,
+        "Nombre": "Los Cajones"
+    },
+    {
+        "ID": 1788,
+        "Nombre": "Los Molles"
+    },
+    {
+        "ID": 5121,
+        "Nombre": "Los Overos"
+    },
+    {
+        "ID": 1789,
+        "Nombre": "Luján"
+    },
+    {
+        "ID": 5122,
+        "Nombre": "Martín de Loyola"
+    },
+    {
+        "ID": 1790,
+        "Nombre": "Mercedes"
+    },
+    {
+        "ID": 1791,
+        "Nombre": "Merlo"
+    },
+    {
+        "ID": 5124,
+        "Nombre": "Mosmota"
+    },
+    {
+        "ID": 5125,
+        "Nombre": "Nación Ranquel"
+    },
+    {
+        "ID": 5126,
+        "Nombre": "Nahuel Mapá"
+    },
+    {
+        "ID": 1792,
+        "Nombre": "Naschel"
+    },
+    {
+        "ID": 1793,
+        "Nombre": "Navia"
+    },
+    {
+        "ID": 1794,
+        "Nombre": "Nogolí"
+    },
+    {
+        "ID": 1795,
+        "Nombre": "Nueva Galia"
+    },
+    {
+        "ID": 1796,
+        "Nombre": "Papagayos"
+    },
+    {
+        "ID": 1797,
+        "Nombre": "Paso Grande"
+    },
+    {
+        "ID": 5128,
+        "Nombre": "Potrerillo"
+    },
+    {
+        "ID": 1798,
+        "Nombre": "Potrero de Los Funes"
+    },
+    {
+        "ID": 1799,
+        "Nombre": "Quines"
+    },
+    {
+        "ID": 1800,
+        "Nombre": "Renca"
+    },
+    {
+        "ID": 5129,
+        "Nombre": "Riocito"
+    },
+    {
+        "ID": 5130,
+        "Nombre": "Río Grande"
+    },
+    {
+        "ID": 1801,
+        "Nombre": "Saladillo"
+    },
+    {
+        "ID": 5131,
+        "Nombre": "Salinas del Bebedero"
+    },
+    {
+        "ID": 1802,
+        "Nombre": "San Francisco"
+    },
+    {
+        "ID": 1803,
+        "Nombre": "San Gerónimo"
+    },
+    {
+        "ID": 5132,
+        "Nombre": "San José del Morro"
+    },
+    {
+        "ID": 2416,
+        "Nombre": "San Luis"
+    },
+    {
+        "ID": 1804,
+        "Nombre": "San Martín"
+    },
+    {
+        "ID": 1805,
+        "Nombre": "San Pablo"
+    },
+    {
+        "ID": 1806,
+        "Nombre": "Santa Rosa de Conlara"
+    },
+    {
+        "ID": 1807,
+        "Nombre": "Talita"
+    },
+    {
+        "ID": 1808,
+        "Nombre": "Tilisarao"
+    },
+    {
+        "ID": 1809,
+        "Nombre": "Unión"
+    },
+    {
+        "ID": 1810,
+        "Nombre": "Villa de La Quebrada"
+    },
+    {
+        "ID": 1811,
+        "Nombre": "Villa de Praga"
+    },
+    {
+        "ID": 1812,
+        "Nombre": "Villa del Carmen"
+    },
+    {
+        "ID": 1813,
+        "Nombre": "Villa Gral. Roca"
+    },
+    {
+        "ID": 1814,
+        "Nombre": "Villa Larca"
+    },
+    {
+        "ID": 1815,
+        "Nombre": "Villa Mercedes"
+    },
+    {
+        "ID": 5133,
+        "Nombre": "Villa Reynolds"
+    },
+    {
+        "ID": 5134,
+        "Nombre": "Villa Salles"
+    },
+    {
+        "ID": 1816,
+        "Nombre": "Zanjitas"
+    }
+]

@@ -1,0 +1,338 @@
+[
+    {
+        "ID": 968,
+        "Nombre": "20 del Palmar"
+    },
+    {
+        "ID": 915,
+        "Nombre": "Alvear"
+    },
+    {
+        "ID": 916,
+        "Nombre": "Bella Vista"
+    },
+    {
+        "ID": 917,
+        "Nombre": "Berón de Astrada"
+    },
+    {
+        "ID": 918,
+        "Nombre": "Bonpland"
+    },
+    {
+        "ID": 919,
+        "Nombre": "Caá Cati"
+    },
+    {
+        "ID": 920,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 4422,
+        "Nombre": "Carolina"
+    },
+    {
+        "ID": 4423,
+        "Nombre": "Cazadores Correntinos"
+    },
+    {
+        "ID": 921,
+        "Nombre": "Chavarría"
+    },
+    {
+        "ID": 922,
+        "Nombre": "Col. C. Pellegrini"
+    },
+    {
+        "ID": 923,
+        "Nombre": "Col. Libertad"
+    },
+    {
+        "ID": 924,
+        "Nombre": "Col. Liebig"
+    },
+    {
+        "ID": 925,
+        "Nombre": "Col. Sta Rosa"
+    },
+    {
+        "ID": 4424,
+        "Nombre": "Colonia Pando"
+    },
+    {
+        "ID": 926,
+        "Nombre": "Concepción"
+    },
+    {
+        "ID": 4425,
+        "Nombre": "Corrientes"
+    },
+    {
+        "ID": 927,
+        "Nombre": "Cruz de Los Milagros"
+    },
+    {
+        "ID": 928,
+        "Nombre": "Curuzú-Cuatiá"
+    },
+    {
+        "ID": 4426,
+        "Nombre": "El Sombrero"
+    },
+    {
+        "ID": 929,
+        "Nombre": "Empedrado"
+    },
+    {
+        "ID": 930,
+        "Nombre": "Esquina"
+    },
+    {
+        "ID": 4427,
+        "Nombre": "Estación Libertad"
+    },
+    {
+        "ID": 931,
+        "Nombre": "Estación Torrent"
+    },
+    {
+        "ID": 932,
+        "Nombre": "Felipe Yofré"
+    },
+    {
+        "ID": 933,
+        "Nombre": "Garruchos"
+    },
+    {
+        "ID": 934,
+        "Nombre": "Gdor. Agrónomo"
+    },
+    {
+        "ID": 935,
+        "Nombre": "Gdor. Martínez"
+    },
+    {
+        "ID": 4428,
+        "Nombre": "Gobernador Igr. Valentín Virasoro"
+    },
+    {
+        "ID": 936,
+        "Nombre": "Goya"
+    },
+    {
+        "ID": 937,
+        "Nombre": "Guaviravi"
+    },
+    {
+        "ID": 938,
+        "Nombre": "Herlitzka"
+    },
+    {
+        "ID": 4429,
+        "Nombre": "Ingenio Primer Correntino"
+    },
+    {
+        "ID": 939,
+        "Nombre": "Ita-Ibate"
+    },
+    {
+        "ID": 940,
+        "Nombre": "Itatí"
+    },
+    {
+        "ID": 941,
+        "Nombre": "Ituzaingó"
+    },
+    {
+        "ID": 942,
+        "Nombre": "José Rafael Gómez"
+    },
+    {
+        "ID": 943,
+        "Nombre": "Juan Pujol"
+    },
+    {
+        "ID": 944,
+        "Nombre": "La Cruz"
+    },
+    {
+        "ID": 4430,
+        "Nombre": "Laguna Brava"
+    },
+    {
+        "ID": 945,
+        "Nombre": "Lavalle"
+    },
+    {
+        "ID": 946,
+        "Nombre": "Lomas de Vallejos"
+    },
+    {
+        "ID": 947,
+        "Nombre": "Loreto"
+    },
+    {
+        "ID": 948,
+        "Nombre": "Mariano I. Loza"
+    },
+    {
+        "ID": 949,
+        "Nombre": "Mburucuyá"
+    },
+    {
+        "ID": 950,
+        "Nombre": "Mercedes"
+    },
+    {
+        "ID": 951,
+        "Nombre": "Mocoretá"
+    },
+    {
+        "ID": 952,
+        "Nombre": "Mte. Caseros"
+    },
+    {
+        "ID": 4431,
+        "Nombre": "Nuestra Señora del Rosario de Caá Catí"
+    },
+    {
+        "ID": 953,
+        "Nombre": "Nueve de Julio"
+    },
+    {
+        "ID": 954,
+        "Nombre": "Palmar Grande"
+    },
+    {
+        "ID": 4432,
+        "Nombre": "Parada Acuña"
+    },
+    {
+        "ID": 4433,
+        "Nombre": "Parada Labougle"
+    },
+    {
+        "ID": 955,
+        "Nombre": "Parada Pucheta"
+    },
+    {
+        "ID": 956,
+        "Nombre": "Paso de La Patria"
+    },
+    {
+        "ID": 957,
+        "Nombre": "Paso de Los Libres"
+    },
+    {
+        "ID": 958,
+        "Nombre": "Pedro R. Fernandez"
+    },
+    {
+        "ID": 959,
+        "Nombre": "Perugorría"
+    },
+    {
+        "ID": 960,
+        "Nombre": "Pueblo Libertador"
+    },
+    {
+        "ID": 961,
+        "Nombre": "Ramada Paso"
+    },
+    {
+        "ID": 962,
+        "Nombre": "Riachuelo"
+    },
+    {
+        "ID": 963,
+        "Nombre": "Saladas"
+    },
+    {
+        "ID": 964,
+        "Nombre": "San Antonio"
+    },
+    {
+        "ID": 965,
+        "Nombre": "San Carlos"
+    },
+    {
+        "ID": 4434,
+        "Nombre": "San Cayetano"
+    },
+    {
+        "ID": 966,
+        "Nombre": "San Cosme"
+    },
+    {
+        "ID": 967,
+        "Nombre": "San Lorenzo"
+    },
+    {
+        "ID": 4435,
+        "Nombre": "San Luis del Palmar"
+    },
+    {
+        "ID": 969,
+        "Nombre": "San Miguel"
+    },
+    {
+        "ID": 970,
+        "Nombre": "San Roque"
+    },
+    {
+        "ID": 971,
+        "Nombre": "Santa Ana"
+    },
+    {
+        "ID": 972,
+        "Nombre": "Santa Lucía"
+    },
+    {
+        "ID": 4436,
+        "Nombre": "Santa Rosa"
+    },
+    {
+        "ID": 973,
+        "Nombre": "Santo Tomé"
+    },
+    {
+        "ID": 974,
+        "Nombre": "Sauce"
+    },
+    {
+        "ID": 975,
+        "Nombre": "Tabay"
+    },
+    {
+        "ID": 976,
+        "Nombre": "Tapebicuá"
+    },
+    {
+        "ID": 977,
+        "Nombre": "Tatacua"
+    },
+    {
+        "ID": 4437,
+        "Nombre": "Villa Córdoba"
+    },
+    {
+        "ID": 4438,
+        "Nombre": "Villa Olivari"
+    },
+    {
+        "ID": 978,
+        "Nombre": "Virasoro"
+    },
+    {
+        "ID": 4439,
+        "Nombre": "Yahapé"
+    },
+    {
+        "ID": 979,
+        "Nombre": "Yapeyú"
+    },
+    {
+        "ID": 980,
+        "Nombre": "Yataití Calle"
+    }
+]

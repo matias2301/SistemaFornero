@@ -1,0 +1,102 @@
+[
+    {
+        "ID": "1",
+        "StateName": "Buenos Aires"
+    },
+    {
+        "ID": "2",
+        "StateName": "Buenos Aires-GBA"
+    },
+    {
+        "ID": "3",
+        "StateName": "Capital Federal"
+    },
+    {
+        "ID": "4",
+        "StateName": "Catamarca"
+    },
+    {
+        "ID": "5",
+        "StateName": "Chaco"
+    },
+    {
+        "ID": "6",
+        "StateName": "Chubut"
+    },
+    {
+        "ID": "7",
+        "StateName": "Córdoba"
+    },
+    {
+        "ID": "8",
+        "StateName": "Corrientes"
+    },
+    {
+        "ID": "9",
+        "StateName": "Entre Ríos"
+    },
+    {
+        "ID": "10",
+        "StateName": "Formosa"
+    },
+    {
+        "ID": "11",
+        "StateName": "Jujuy"
+    },
+    {
+        "ID": "12",
+        "StateName": "La Pampa"
+    },
+    {
+        "ID": "13",
+        "StateName": "La Rioja"
+    },
+    {
+        "ID": "14",
+        "StateName": "Mendoza"
+    },
+    {
+        "ID": "15",
+        "StateName": "Misiones"
+    },
+    {
+        "ID": "16",
+        "StateName": "Neuquén"
+    },
+    {
+        "ID": "17",
+        "StateName": "Río Negro"
+    },
+    {
+        "ID": "18",
+        "StateName": "Salta"
+    },
+    {
+        "ID": "19",
+        "StateName": "San Juan"
+    },
+    {
+        "ID": "20",
+        "StateName": "San Luis"
+    },
+    {
+        "ID": "21",
+        "StateName": "Santa Cruz"
+    },
+    {
+        "ID": "22",
+        "StateName": "Santa Fe"
+    },
+    {
+        "ID": "23",
+        "StateName": "Santiago del Estero"
+    },
+    {
+        "ID": "24",
+        "StateName": "Tierra del Fuego"
+    },
+    {
+        "ID": "25",
+        "StateName": "Tucumán"
+    }
+]

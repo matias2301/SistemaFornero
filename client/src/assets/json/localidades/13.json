@@ -1,0 +1,346 @@
+[
+    {
+        "ID": 4601,
+        "Nombre": "Aicuña"
+    },
+    {
+        "ID": 4602,
+        "Nombre": "Aimogasta"
+    },
+    {
+        "ID": 4603,
+        "Nombre": "Alto Carrizal"
+    },
+    {
+        "ID": 4604,
+        "Nombre": "Amaná"
+    },
+    {
+        "ID": 4605,
+        "Nombre": "Ambil"
+    },
+    {
+        "ID": 4606,
+        "Nombre": "Aminga"
+    },
+    {
+        "ID": 4607,
+        "Nombre": "Angulos"
+    },
+    {
+        "ID": 4608,
+        "Nombre": "Anillaco"
+    },
+    {
+        "ID": 4609,
+        "Nombre": "Anjullón"
+    },
+    {
+        "ID": 4610,
+        "Nombre": "Antinaco"
+    },
+    {
+        "ID": 1420,
+        "Nombre": "Arauco"
+    },
+    {
+        "ID": 4611,
+        "Nombre": "Bajo Carrizal"
+    },
+    {
+        "ID": 4612,
+        "Nombre": "Bañado de los Pantanos"
+    },
+    {
+        "ID": 4613,
+        "Nombre": "Campanas"
+    },
+    {
+        "ID": 1421,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 1422,
+        "Nombre": "Castro Barros"
+    },
+    {
+        "ID": 1423,
+        "Nombre": "Chamical"
+    },
+    {
+        "ID": 4614,
+        "Nombre": "Chañar"
+    },
+    {
+        "ID": 4615,
+        "Nombre": "Chañarmuyo"
+    },
+    {
+        "ID": 4616,
+        "Nombre": "Chepes"
+    },
+    {
+        "ID": 1424,
+        "Nombre": "Chilecito"
+    },
+    {
+        "ID": 4617,
+        "Nombre": "Chuquis"
+    },
+    {
+        "ID": 4618,
+        "Nombre": "Colonia Anguinán"
+    },
+    {
+        "ID": 4619,
+        "Nombre": "Colonia Catinzaco"
+    },
+    {
+        "ID": 4620,
+        "Nombre": "Colonia Malligasta"
+    },
+    {
+        "ID": 4621,
+        "Nombre": "Colonia Ortiz de Ocampo"
+    },
+    {
+        "ID": 4622,
+        "Nombre": "Colonia Vichigasta"
+    },
+    {
+        "ID": 1425,
+        "Nombre": "Coronel F. Varela"
+    },
+    {
+        "ID": 4623,
+        "Nombre": "Desiderio Tello"
+    },
+    {
+        "ID": 2449,
+        "Nombre": "El Milagro"
+    },
+    {
+        "ID": 4624,
+        "Nombre": "Estación Mazán"
+    },
+    {
+        "ID": 1426,
+        "Nombre": "Famatina"
+    },
+    {
+        "ID": 1427,
+        "Nombre": "Gral. A.V.Peñaloza"
+    },
+    {
+        "ID": 1428,
+        "Nombre": "Gral. Belgrano"
+    },
+    {
+        "ID": 1429,
+        "Nombre": "Gral. J.F. Quiroga"
+    },
+    {
+        "ID": 1430,
+        "Nombre": "Gral. Lamadrid"
+    },
+    {
+        "ID": 1431,
+        "Nombre": "Gral. Ocampo"
+    },
+    {
+        "ID": 1432,
+        "Nombre": "Gral. San Martín"
+    },
+    {
+        "ID": 4625,
+        "Nombre": "Guanchín"
+    },
+    {
+        "ID": 2455,
+        "Nombre": "Guandacol"
+    },
+    {
+        "ID": 1433,
+        "Nombre": "Independencia"
+    },
+    {
+        "ID": 4626,
+        "Nombre": "Jagüé"
+    },
+    {
+        "ID": 4627,
+        "Nombre": "La Cuadra"
+    },
+    {
+        "ID": 4628,
+        "Nombre": "La Rioja"
+    },
+    {
+        "ID": 4629,
+        "Nombre": "Loma Blanca"
+    },
+    {
+        "ID": 4630,
+        "Nombre": "Los Molinos"
+    },
+    {
+        "ID": 4631,
+        "Nombre": "Los Palacios"
+    },
+    {
+        "ID": 4632,
+        "Nombre": "Malanzán"
+    },
+    {
+        "ID": 4633,
+        "Nombre": "Malligasta"
+    },
+    {
+        "ID": 4634,
+        "Nombre": "Milagro"
+    },
+    {
+        "ID": 4635,
+        "Nombre": "Miranda"
+    },
+    {
+        "ID": 4637,
+        "Nombre": "Nonogasta"
+    },
+    {
+        "ID": 4636,
+        "Nombre": "Nácate"
+    },
+    {
+        "ID": 4638,
+        "Nombre": "Olpas"
+    },
+    {
+        "ID": 4639,
+        "Nombre": "Olta"
+    },
+    {
+        "ID": 4640,
+        "Nombre": "Pagancillo"
+    },
+    {
+        "ID": 4641,
+        "Nombre": "Patquía"
+    },
+    {
+        "ID": 4642,
+        "Nombre": "Pinchas"
+    },
+    {
+        "ID": 4643,
+        "Nombre": "Pituil"
+    },
+    {
+        "ID": 4644,
+        "Nombre": "Plaza Vieja"
+    },
+    {
+        "ID": 4645,
+        "Nombre": "Polco"
+    },
+    {
+        "ID": 4646,
+        "Nombre": "Portezuelo"
+    },
+    {
+        "ID": 4647,
+        "Nombre": "Punta de los Llanos"
+    },
+    {
+        "ID": 1434,
+        "Nombre": "Rosario Penaloza"
+    },
+    {
+        "ID": 4648,
+        "Nombre": "San Antonio"
+    },
+    {
+        "ID": 1435,
+        "Nombre": "San Blas de Los Sauces"
+    },
+    {
+        "ID": 4649,
+        "Nombre": "San Nicolás"
+    },
+    {
+        "ID": 4650,
+        "Nombre": "Sañogasta"
+    },
+    {
+        "ID": 4651,
+        "Nombre": "San Pedro"
+    },
+    {
+        "ID": 1436,
+        "Nombre": "Sanagasta"
+    },
+    {
+        "ID": 4652,
+        "Nombre": "Santa Cruz"
+    },
+    {
+        "ID": 4653,
+        "Nombre": "Santa Florentina"
+    },
+    {
+        "ID": 4654,
+        "Nombre": "Santa Rita de Catuna"
+    },
+    {
+        "ID": 4655,
+        "Nombre": "Santa Vera Cruz"
+    },
+    {
+        "ID": 4656,
+        "Nombre": "Santo Domingo"
+    },
+    {
+        "ID": 4657,
+        "Nombre": "Tama"
+    },
+    {
+        "ID": 4658,
+        "Nombre": "Termas Santa Teresita"
+    },
+    {
+        "ID": 4659,
+        "Nombre": "Tilimuqui"
+    },
+    {
+        "ID": 4660,
+        "Nombre": "Ulapes"
+    },
+    {
+        "ID": 4661,
+        "Nombre": "Vichigasta"
+    },
+    {
+        "ID": 4662,
+        "Nombre": "Villa Castelli"
+    },
+    {
+        "ID": 4663,
+        "Nombre": "Villa Mazán"
+    },
+    {
+        "ID": 4665,
+        "Nombre": "Villa San José de Vinchina"
+    },
+    {
+        "ID": 4664,
+        "Nombre": "Villa Sanagasta"
+    },
+    {
+        "ID": 4666,
+        "Nombre": "Villa Unión"
+    },
+    {
+        "ID": 1437,
+        "Nombre": "Vinchina"
+    }
+]

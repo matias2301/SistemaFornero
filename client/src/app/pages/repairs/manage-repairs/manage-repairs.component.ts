@@ -36,6 +36,8 @@ export class ManageRepairsComponent implements OnInit {
   edit: boolean = false;
   displayedColumns: string[] = ['code', 'descrip', 'amount', 'iconDelete'];  
 
+  todayDate:Date = new Date();
+
   constructor(
     public formBuilder: FormBuilder,    
     private _manageDataService: ManageDataService,

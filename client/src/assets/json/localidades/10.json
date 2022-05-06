@@ -1,0 +1,262 @@
+[
+    {
+        "ID": 4470,
+        "Nombre": "Banco Payaguá"
+    },
+    {
+        "ID": 4471,
+        "Nombre": "Bartolomé de las Casas"
+    },
+    {
+        "ID": 1245,
+        "Nombre": "Buena Vista"
+    },
+    {
+        "ID": 1246,
+        "Nombre": "Clorinda"
+    },
+    {
+        "ID": 1247,
+        "Nombre": "Col. Pastoril"
+    },
+    {
+        "ID": 4472,
+        "Nombre": "Colonia Campo Villafañe"
+    },
+    {
+        "ID": 4473,
+        "Nombre": "Colonia Sarmiento"
+    },
+    {
+        "ID": 1248,
+        "Nombre": "Cte. Fontana"
+    },
+    {
+        "ID": 1249,
+        "Nombre": "El Colorado"
+    },
+    {
+        "ID": 1250,
+        "Nombre": "El Espinillo"
+    },
+    {
+        "ID": 4474,
+        "Nombre": "El Potrillo"
+    },
+    {
+        "ID": 4475,
+        "Nombre": "El Quebracho"
+    },
+    {
+        "ID": 4476,
+        "Nombre": "El Recreo"
+    },
+    {
+        "ID": 1251,
+        "Nombre": "Estanislao Del Campo"
+    },
+    {
+        "ID": 1252,
+        "Nombre": "Formosa"
+    },
+    {
+        "ID": 1253,
+        "Nombre": "Fortín Lugones"
+    },
+    {
+        "ID": 4477,
+        "Nombre": "Fortín Sargento 1º Leyes"
+    },
+    {
+        "ID": 4478,
+        "Nombre": "Fortín Soledad"
+    },
+    {
+        "ID": 1254,
+        "Nombre": "Gral. Lucio V. Mansilla"
+    },
+    {
+        "ID": 1255,
+        "Nombre": "Gral. Manuel Belgrano"
+    },
+    {
+        "ID": 1256,
+        "Nombre": "Gral. Mosconi"
+    },
+    {
+        "ID": 1257,
+        "Nombre": "Gran Guardia"
+    },
+    {
+        "ID": 4479,
+        "Nombre": "Guadalcazar"
+    },
+    {
+        "ID": 1258,
+        "Nombre": "Herradura"
+    },
+    {
+        "ID": 1259,
+        "Nombre": "Ibarreta"
+    },
+    {
+        "ID": 1260,
+        "Nombre": "Ing. Juárez"
+    },
+    {
+        "ID": 4480,
+        "Nombre": "Juan G. Bazán"
+    },
+    {
+        "ID": 1261,
+        "Nombre": "Laguna Blanca"
+    },
+    {
+        "ID": 4481,
+        "Nombre": "Laguna Gallo"
+    },
+    {
+        "ID": 1262,
+        "Nombre": "Laguna Naick Neck"
+    },
+    {
+        "ID": 1263,
+        "Nombre": "Laguna Yema"
+    },
+    {
+        "ID": 4482,
+        "Nombre": "Lamadrid"
+    },
+    {
+        "ID": 4483,
+        "Nombre": "La Rinconada"
+    },
+    {
+        "ID": 1264,
+        "Nombre": "Las Lomitas"
+    },
+    {
+        "ID": 1265,
+        "Nombre": "Los Chiriguanos"
+    },
+    {
+        "ID": 4484,
+        "Nombre": "Mariano Boedo"
+    },
+    {
+        "ID": 1266,
+        "Nombre": "Mayor V. Villafañe"
+    },
+    {
+        "ID": 1267,
+        "Nombre": "Misión San Fco."
+    },
+    {
+        "ID": 4485,
+        "Nombre": "Misión Tacaaglé"
+    },
+    {
+        "ID": 4486,
+        "Nombre": "Mojón de Fierro"
+    },
+    {
+        "ID": 4487,
+        "Nombre": "Palma Sola"
+    },
+    {
+        "ID": 1268,
+        "Nombre": "Palo Santo"
+    },
+    {
+        "ID": 1269,
+        "Nombre": "Pirané"
+    },
+    {
+        "ID": 4488,
+        "Nombre": "Portón Negro"
+    },
+    {
+        "ID": 4489,
+        "Nombre": "Posta Cambio Zalazar"
+    },
+    {
+        "ID": 1270,
+        "Nombre": "Pozo del Maza"
+    },
+    {
+        "ID": 4490,
+        "Nombre": "Pozo del Mortero"
+    },
+    {
+        "ID": 2401,
+        "Nombre": "Pozo del Tigre"
+    },
+    {
+        "ID": 4491,
+        "Nombre": "Puerto Pilcomayo"
+    },
+    {
+        "ID": 1271,
+        "Nombre": "Riacho He-He"
+    },
+    {
+        "ID": 4492,
+        "Nombre": "Riacho Negro"
+    },
+    {
+        "ID": 4493,
+        "Nombre": "San Francisco de Laishi"
+    },
+    {
+        "ID": 1272,
+        "Nombre": "San Hilario"
+    },
+    {
+        "ID": 4494,
+        "Nombre": "San Martín I"
+    },
+    {
+        "ID": 1273,
+        "Nombre": "San Martín II"
+    },
+    {
+        "ID": 1274,
+        "Nombre": "Siete Palmas"
+    },
+    {
+        "ID": 1275,
+        "Nombre": "Subteniente Perín"
+    },
+    {
+        "ID": 4495,
+        "Nombre": "Tatané"
+    },
+    {
+        "ID": 1276,
+        "Nombre": "Tres Lagunas"
+    },
+    {
+        "ID": 4496,
+        "Nombre": "Vaca Perdida"
+    },
+    {
+        "ID": 1277,
+        "Nombre": "Villa Dos Trece"
+    },
+    {
+        "ID": 1278,
+        "Nombre": "Villa Escolar"
+    },
+    {
+        "ID": 4497,
+        "Nombre": "Villa del Carmen"
+    },
+    {
+        "ID": 4498,
+        "Nombre": "Villa General Manuel Belgrano"
+    },
+    {
+        "ID": 1279,
+        "Nombre": "Villa Gral. Güemes"
+    }
+]

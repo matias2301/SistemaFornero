@@ -1,0 +1,630 @@
+[
+    {
+        "ID": 4667,
+        "Nombre": "25 de Mayo"
+    },
+    {
+        "ID": 4668,
+        "Nombre": "3 de Mayo"
+    },
+    {
+        "ID": 4669,
+        "Nombre": "Agrelo"
+    },
+    {
+        "ID": 4670,
+        "Nombre": "Agua Escondida"
+    },
+    {
+        "ID": 4671,
+        "Nombre": "Alto Verde"
+    },
+    {
+        "ID": 4672,
+        "Nombre": "Andrade"
+    },
+    {
+        "ID": 4673,
+        "Nombre": "Barrancas"
+    },
+    {
+        "ID": 4674,
+        "Nombre": "Barrio 12 de Octubre"
+    },
+    {
+        "ID": 4675,
+        "Nombre": "Barrio Alto del Olvido"
+    },
+    {
+        "ID": 4676,
+        "Nombre": "Barrio Belgrano Norte"
+    },
+    {
+        "ID": 4677,
+        "Nombre": "Barrio Campos El Toledano"
+    },
+    {
+        "ID": 4678,
+        "Nombre": "Barrio Carrasco"
+    },
+    {
+        "ID": 4679,
+        "Nombre": "Barrio Chivilcoy"
+    },
+    {
+        "ID": 4680,
+        "Nombre": "Barrio Cooperativa Los Campamentos"
+    },
+    {
+        "ID": 4681,
+        "Nombre": "Barrio El Cepillo"
+    },
+    {
+        "ID": 4682,
+        "Nombre": "Barrio El Nevado"
+    },
+    {
+        "ID": 4683,
+        "Nombre": "Barrio Emanuel"
+    },
+    {
+        "ID": 4684,
+        "Nombre": "Barrio Empleados de Comercio"
+    },
+    {
+        "ID": 4685,
+        "Nombre": "Barrio Intendencia"
+    },
+    {
+        "ID": 4686,
+        "Nombre": "Barrio Jesús de Nazaret"
+    },
+    {
+        "ID": 4687,
+        "Nombre": "Barrio Jocolí II"
+    },
+    {
+        "ID": 4688,
+        "Nombre": "Barrio la Estación"
+    },
+    {
+        "ID": 4689,
+        "Nombre": "Barrio Lagunas de Bartoluzzi"
+    },
+    {
+        "ID": 4690,
+        "Nombre": "Barrio La Palmera"
+    },
+    {
+        "ID": 4691,
+        "Nombre": "Barrio La Pega"
+    },
+    {
+        "ID": 4692,
+        "Nombre": "Barrio Los Charabones"
+    },
+    {
+        "ID": 4693,
+        "Nombre": "Barrio Los Jarilleros"
+    },
+    {
+        "ID": 4694,
+        "Nombre": "Barrio Los Olivos"
+    },
+    {
+        "ID": 4695,
+        "Nombre": "Barrio María Auxiliadora"
+    },
+    {
+        "ID": 4696,
+        "Nombre": "Barrio Molina Cabrera"
+    },
+    {
+        "ID": 4697,
+        "Nombre": "Barrio Nuestra Señora de Fátima"
+    },
+    {
+        "ID": 4698,
+        "Nombre": "Barrio Perdriel IV"
+    },
+    {
+        "ID": 4699,
+        "Nombre": "Barrio Rivadavia"
+    },
+    {
+        "ID": 4700,
+        "Nombre": "Barrio San Cayetano"
+    },
+    {
+        "ID": 4701,
+        "Nombre": "Barrio Virgen del Rosario"
+    },
+    {
+        "ID": 4702,
+        "Nombre": "Blanco Encalada"
+    },
+    {
+        "ID": 4703,
+        "Nombre": "Bowen"
+    },
+    {
+        "ID": 4704,
+        "Nombre": "Cacheuta"
+    },
+    {
+        "ID": 4705,
+        "Nombre": "Campo Los Andes"
+    },
+    {
+        "ID": 1438,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 4706,
+        "Nombre": "Capitán Montoya"
+    },
+    {
+        "ID": 4707,
+        "Nombre": "Carmensa"
+    },
+    {
+        "ID": 1439,
+        "Nombre": "Chacras de Coria"
+    },
+    {
+        "ID": 4708,
+        "Nombre": "Chapanay"
+    },
+    {
+        "ID": 4709,
+        "Nombre": "Chilecito"
+    },
+    {
+        "ID": 4710,
+        "Nombre": "Chivilcoy"
+    },
+    {
+        "ID": 4711,
+        "Nombre": "Colonia Las Rosas"
+    },
+    {
+        "ID": 4712,
+        "Nombre": "Colonia Segovia"
+    },
+    {
+        "ID": 4713,
+        "Nombre": "Cordón del Plata"
+    },
+    {
+        "ID": 4714,
+        "Nombre": "Costa de Araujo"
+    },
+    {
+        "ID": 4715,
+        "Nombre": "Costa Flores"
+    },
+    {
+        "ID": 4716,
+        "Nombre": "Cruz de Piedra"
+    },
+    {
+        "ID": 4717,
+        "Nombre": "Cuadro Benegas"
+    },
+    {
+        "ID": 4718,
+        "Nombre": "Desaguadero"
+    },
+    {
+        "ID": 1440,
+        "Nombre": "Dorrego"
+    },
+    {
+        "ID": 4719,
+        "Nombre": "El Carrizal"
+    },
+    {
+        "ID": 4720,
+        "Nombre": "El Espino"
+    },
+    {
+        "ID": 4721,
+        "Nombre": "El Manzano"
+    },
+    {
+        "ID": 4722,
+        "Nombre": "El Mirador"
+    },
+    {
+        "ID": 4723,
+        "Nombre": "El Nihuil"
+    },
+    {
+        "ID": 4724,
+        "Nombre": "El Paramillo"
+    },
+    {
+        "ID": 4725,
+        "Nombre": "El Pedregal"
+    },
+    {
+        "ID": 4726,
+        "Nombre": "El Peral"
+    },
+    {
+        "ID": 4727,
+        "Nombre": "El Ramblón"
+    },
+    {
+        "ID": 4728,
+        "Nombre": "El Salto"
+    },
+    {
+        "ID": 4729,
+        "Nombre": "El Sosneado"
+    },
+    {
+        "ID": 4730,
+        "Nombre": "El Tropezón"
+    },
+    {
+        "ID": 4731,
+        "Nombre": "El Vergel"
+    },
+    {
+        "ID": 4732,
+        "Nombre": "El Zampal"
+    },
+    {
+        "ID": 4733,
+        "Nombre": "Eugenio Bustos"
+    },
+    {
+        "ID": 4734,
+        "Nombre": "Fray Luis Beltrán"
+    },
+    {
+        "ID": 4735,
+        "Nombre": "General Alvear"
+    },
+    {
+        "ID": 1441,
+        "Nombre": "Gllen"
+    },
+    {
+        "ID": 1442,
+        "Nombre": "Godoy Cruz"
+    },
+    {
+        "ID": 4736,
+        "Nombre": "Goudge"
+    },
+    {
+        "ID": 1443,
+        "Nombre": "Gral. Alvear"
+    },
+    {
+        "ID": 1444,
+        "Nombre": "Guaymallén"
+    },
+    {
+        "ID": 4737,
+        "Nombre": "Ingeniero Giagnoni"
+    },
+    {
+        "ID": 4738,
+        "Nombre": "Ingeniero Gustavo André"
+    },
+    {
+        "ID": 4739,
+        "Nombre": "Jaime Prats"
+    },
+    {
+        "ID": 4740,
+        "Nombre": "Jocolí"
+    },
+    {
+        "ID": 4741,
+        "Nombre": "Jocolí Viejo"
+    },
+    {
+        "ID": 1445,
+        "Nombre": "Junín"
+    },
+    {
+        "ID": 4742,
+        "Nombre": "La Arboleda"
+    },
+    {
+        "ID": 4743,
+        "Nombre": "La Central"
+    },
+    {
+        "ID": 4744,
+        "Nombre": "La Colonia"
+    },
+    {
+        "ID": 4745,
+        "Nombre": "La Consulta"
+    },
+    {
+        "ID": 4746,
+        "Nombre": "La Dormida"
+    },
+    {
+        "ID": 4747,
+        "Nombre": "La Esperanza"
+    },
+    {
+        "ID": 4748,
+        "Nombre": "La Florida"
+    },
+    {
+        "ID": 4749,
+        "Nombre": "La Libertad"
+    },
+    {
+        "ID": 4750,
+        "Nombre": "La Llave Nueva"
+    },
+    {
+        "ID": 1446,
+        "Nombre": "La Paz"
+    },
+    {
+        "ID": 4751,
+        "Nombre": "La Primavera"
+    },
+    {
+        "ID": 4752,
+        "Nombre": "Las Catitas"
+    },
+    {
+        "ID": 4753,
+        "Nombre": "Las Compuertas"
+    },
+    {
+        "ID": 4754,
+        "Nombre": "Las Cuevas"
+    },
+    {
+        "ID": 1447,
+        "Nombre": "Las Heras"
+    },
+    {
+        "ID": 4755,
+        "Nombre": "Las Leñas"
+    },
+    {
+        "ID": 4756,
+        "Nombre": "Las Malvinas"
+    },
+    {
+        "ID": 4757,
+        "Nombre": "Las Vegas"
+    },
+    {
+        "ID": 4758,
+        "Nombre": "Las Violetas"
+    },
+    {
+        "ID": 1448,
+        "Nombre": "Lavalle"
+    },
+    {
+        "ID": 4759,
+        "Nombre": "Los Árboles"
+    },
+    {
+        "ID": 4760,
+        "Nombre": "Los Barriales"
+    },
+    {
+        "ID": 4761,
+        "Nombre": "Los Campamentos"
+    },
+    {
+        "ID": 4762,
+        "Nombre": "Los Compartos"
+    },
+    {
+        "ID": 4763,
+        "Nombre": "Los Corralitos"
+    },
+    {
+        "ID": 4764,
+        "Nombre": "Los Penitentes"
+    },
+    {
+        "ID": 4765,
+        "Nombre": "Los Reyunos"
+    },
+    {
+        "ID": 4766,
+        "Nombre": "Los Sauces"
+    },
+    {
+        "ID": 1449,
+        "Nombre": "Luján"
+    },
+    {
+        "ID": 1450,
+        "Nombre": "Luján De Cuyo"
+    },
+    {
+        "ID": 1451,
+        "Nombre": "Maipú"
+    },
+    {
+        "ID": 1452,
+        "Nombre": "Malargüe"
+    },
+    {
+        "ID": 4767,
+        "Nombre": "Medrano"
+    },
+    {
+        "ID": 4768,
+        "Nombre": "Mendoza"
+    },
+    {
+        "ID": 4769,
+        "Nombre": "Montecaseros"
+    },
+    {
+        "ID": 4770,
+        "Nombre": "Monte Comán"
+    },
+    {
+        "ID": 4771,
+        "Nombre": "Mundo Nuevo"
+    },
+    {
+        "ID": 4772,
+        "Nombre": "Nueva California"
+    },
+    {
+        "ID": 4773,
+        "Nombre": "Pareditas"
+    },
+    {
+        "ID": 4774,
+        "Nombre": "Perdriel"
+    },
+    {
+        "ID": 4775,
+        "Nombre": "Phillips"
+    },
+    {
+        "ID": 4776,
+        "Nombre": "Pobre Diablo"
+    },
+    {
+        "ID": 4777,
+        "Nombre": "Polvaredas"
+    },
+    {
+        "ID": 4778,
+        "Nombre": "Potrerillos"
+    },
+    {
+        "ID": 4779,
+        "Nombre": "Puente de Hierro"
+    },
+    {
+        "ID": 4780,
+        "Nombre": "Puente del Inca"
+    },
+    {
+        "ID": 4781,
+        "Nombre": "Punta del Agua"
+    },
+    {
+        "ID": 4782,
+        "Nombre": "Punta de Vacas"
+    },
+    {
+        "ID": 4783,
+        "Nombre": "Rama Caída"
+    },
+    {
+        "ID": 4784,
+        "Nombre": "Real del Padre"
+    },
+    {
+        "ID": 4785,
+        "Nombre": "Reducción de Abajo"
+    },
+    {
+        "ID": 1453,
+        "Nombre": "Rivadavia"
+    },
+    {
+        "ID": 4786,
+        "Nombre": "Rodeo del Medio"
+    },
+    {
+        "ID": 4787,
+        "Nombre": "Rodríguez Peña"
+    },
+    {
+        "ID": 4788,
+        "Nombre": "Russell"
+    },
+    {
+        "ID": 4789,
+        "Nombre": "Salto de las Rosas"
+    },
+    {
+        "ID": 1454,
+        "Nombre": "San Carlos"
+    },
+    {
+        "ID": 4790,
+        "Nombre": "San José"
+    },
+    {
+        "ID": 1455,
+        "Nombre": "San Martín"
+    },
+    {
+        "ID": 1456,
+        "Nombre": "San Rafael"
+    },
+    {
+        "ID": 4791,
+        "Nombre": "San Roque"
+    },
+    {
+        "ID": 4792,
+        "Nombre": "Santa María de Oro"
+    },
+    {
+        "ID": 1457,
+        "Nombre": "Sta. Rosa"
+    },
+    {
+        "ID": 4793,
+        "Nombre": "Tres Porteñas"
+    },
+    {
+        "ID": 1458,
+        "Nombre": "Tunuyán"
+    },
+    {
+        "ID": 1459,
+        "Nombre": "Tupungato"
+    },
+    {
+        "ID": 4794,
+        "Nombre": "Ugarteche"
+    },
+    {
+        "ID": 4795,
+        "Nombre": "Uspallata"
+    },
+    {
+        "ID": 4796,
+        "Nombre": "Villa Antigua"
+    },
+    {
+        "ID": 2509,
+        "Nombre": "Villa Atuel"
+    },
+    {
+        "ID": 1460,
+        "Nombre": "Villa Nueva"
+    },
+    {
+        "ID": 4797,
+        "Nombre": "Villa Teresa"
+    },
+    {
+        "ID": 4798,
+        "Nombre": "Villa Tulumaya"
+    },
+    {
+        "ID": 4799,
+        "Nombre": "Vista Flores"
+    }
+]

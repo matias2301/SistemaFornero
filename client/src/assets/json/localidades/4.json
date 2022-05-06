@@ -1,0 +1,618 @@
+[
+    {
+        "ID": 330,
+        "Nombre": "Aconquija"
+    },
+    {
+        "ID": 4153,
+        "Nombre": "Adolfo E. Carranza"
+    },
+    {
+        "ID": 4154,
+        "Nombre": "Alijilán"
+    },
+    {
+        "ID": 4155,
+        "Nombre": "Amadores"
+    },
+    {
+        "ID": 4156,
+        "Nombre": "Amanao"
+    },
+    {
+        "ID": 331,
+        "Nombre": "Ancasti"
+    },
+    {
+        "ID": 332,
+        "Nombre": "Andalgalá"
+    },
+    {
+        "ID": 4157,
+        "Nombre": "Andalhualá"
+    },
+    {
+        "ID": 4158,
+        "Nombre": "Anillaco"
+    },
+    {
+        "ID": 4159,
+        "Nombre": "Anquincila"
+    },
+    {
+        "ID": 4160,
+        "Nombre": "Antinaco"
+    },
+    {
+        "ID": 333,
+        "Nombre": "Antofagasta"
+    },
+    {
+        "ID": 4161,
+        "Nombre": "Antofalla"
+    },
+    {
+        "ID": 4162,
+        "Nombre": "Apoyaco"
+    },
+    {
+        "ID": 4163,
+        "Nombre": "Balde de la Punta"
+    },
+    {
+        "ID": 4164,
+        "Nombre": "Bañado de Ovanta"
+    },
+    {
+        "ID": 4165,
+        "Nombre": "Banda de Lucero"
+    },
+    {
+        "ID": 4166,
+        "Nombre": "Barranca Larga"
+    },
+    {
+        "ID": 334,
+        "Nombre": "Belén"
+    },
+    {
+        "ID": 335,
+        "Nombre": "Capayán"
+    },
+    {
+        "ID": 336,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 4167,
+        "Nombre": "Casa de Piedra"
+    },
+    {
+        "ID": 4168,
+        "Nombre": "Caspichango"
+    },
+    {
+        "ID": 337,
+        "Nombre": "Catamarca"
+    },
+    {
+        "ID": 4169,
+        "Nombre": "Cerro Negro"
+    },
+    {
+        "ID": 4171,
+        "Nombre": "Chaquiago"
+    },
+    {
+        "ID": 4170,
+        "Nombre": "Chañar Punco"
+    },
+    {
+        "ID": 4172,
+        "Nombre": "Choya"
+    },
+    {
+        "ID": 4173,
+        "Nombre": "Chuchucaruana"
+    },
+    {
+        "ID": 4174,
+        "Nombre": "Chumbicha"
+    },
+    {
+        "ID": 4175,
+        "Nombre": "Colana"
+    },
+    {
+        "ID": 4176,
+        "Nombre": "Collagasta"
+    },
+    {
+        "ID": 4177,
+        "Nombre": "Colonia del Valle"
+    },
+    {
+        "ID": 4178,
+        "Nombre": "Colonia Nueva Coneta"
+    },
+    {
+        "ID": 4179,
+        "Nombre": "Colpes"
+    },
+    {
+        "ID": 4180,
+        "Nombre": "Concepción"
+    },
+    {
+        "ID": 4181,
+        "Nombre": "Cóndor Huasi"
+    },
+    {
+        "ID": 4182,
+        "Nombre": "Coneta"
+    },
+    {
+        "ID": 4183,
+        "Nombre": "Copacabana"
+    },
+    {
+        "ID": 4184,
+        "Nombre": "Cordobita"
+    },
+    {
+        "ID": 338,
+        "Nombre": "Corral Quemado"
+    },
+    {
+        "ID": 4185,
+        "Nombre": "Costa de Reyes"
+    },
+    {
+        "ID": 4186,
+        "Nombre": "El Alamito"
+    },
+    {
+        "ID": 339,
+        "Nombre": "El Alto"
+    },
+    {
+        "ID": 4187,
+        "Nombre": "El Aybal"
+    },
+    {
+        "ID": 4188,
+        "Nombre": "El Bañado"
+    },
+    {
+        "ID": 4189,
+        "Nombre": "El Bolsón"
+    },
+    {
+        "ID": 4190,
+        "Nombre": "El Cajón"
+    },
+    {
+        "ID": 4191,
+        "Nombre": "El Desmonte"
+    },
+    {
+        "ID": 4192,
+        "Nombre": "El Divisadero"
+    },
+    {
+        "ID": 4193,
+        "Nombre": "El Durazno"
+    },
+    {
+        "ID": 4194,
+        "Nombre": "El Lindero"
+    },
+    {
+        "ID": 4195,
+        "Nombre": "El Pajonal"
+    },
+    {
+        "ID": 4196,
+        "Nombre": "El Pantanillo"
+    },
+    {
+        "ID": 4197,
+        "Nombre": "El Peñón"
+    },
+    {
+        "ID": 4198,
+        "Nombre": "El Portezuelo"
+    },
+    {
+        "ID": 4199,
+        "Nombre": "El Potrero"
+    },
+    {
+        "ID": 4200,
+        "Nombre": "El Pueblito"
+    },
+    {
+        "ID": 4201,
+        "Nombre": "El Puesto"
+    },
+    {
+        "ID": 4202,
+        "Nombre": "El Quimilo"
+    },
+    {
+        "ID": 340,
+        "Nombre": "El Rodeo"
+    },
+    {
+        "ID": 4203,
+        "Nombre": "El Rosario"
+    },
+    {
+        "ID": 4204,
+        "Nombre": "El Salado"
+    },
+    {
+        "ID": 4205,
+        "Nombre": "Esquiú"
+    },
+    {
+        "ID": 341,
+        "Nombre": "F.Mamerto Esquiú"
+    },
+    {
+        "ID": 4206,
+        "Nombre": "Famatanca"
+    },
+    {
+        "ID": 4207,
+        "Nombre": "Farallón Negro"
+    },
+    {
+        "ID": 342,
+        "Nombre": "Fiambalá"
+    },
+    {
+        "ID": 4208,
+        "Nombre": "Fuerte Quemado"
+    },
+    {
+        "ID": 4209,
+        "Nombre": "Guayamba"
+    },
+    {
+        "ID": 343,
+        "Nombre": "Hualfín"
+    },
+    {
+        "ID": 4210,
+        "Nombre": "Huaycama"
+    },
+    {
+        "ID": 344,
+        "Nombre": "Huillapima"
+    },
+    {
+        "ID": 345,
+        "Nombre": "Icaño"
+    },
+    {
+        "ID": 4211,
+        "Nombre": "Infanzón"
+    },
+    {
+        "ID": 4212,
+        "Nombre": "Jacipunco"
+    },
+    {
+        "ID": 4213,
+        "Nombre": "Joyango"
+    },
+    {
+        "ID": 4214,
+        "Nombre": "La Aguada"
+    },
+    {
+        "ID": 4215,
+        "Nombre": "La Bajada"
+    },
+    {
+        "ID": 4216,
+        "Nombre": "La Candelaria"
+    },
+    {
+        "ID": 4217,
+        "Nombre": "La Dorada"
+    },
+    {
+        "ID": 4218,
+        "Nombre": "La Guardia"
+    },
+    {
+        "ID": 4219,
+        "Nombre": "La Higuera"
+    },
+    {
+        "ID": 4220,
+        "Nombre": "La Hoyada"
+    },
+    {
+        "ID": 4221,
+        "Nombre": "La Loma"
+    },
+    {
+        "ID": 4222,
+        "Nombre": "La Majada"
+    },
+    {
+        "ID": 4223,
+        "Nombre": "La Merced"
+    },
+    {
+        "ID": 346,
+        "Nombre": "La Puerta"
+    },
+    {
+        "ID": 4224,
+        "Nombre": "La Puntilla"
+    },
+    {
+        "ID": 4225,
+        "Nombre": "Las Cañas"
+    },
+    {
+        "ID": 4226,
+        "Nombre": "Las Chacritas"
+    },
+    {
+        "ID": 4227,
+        "Nombre": "Las Esquinas"
+    },
+    {
+        "ID": 4228,
+        "Nombre": "Las Lajas"
+    },
+    {
+        "ID": 4229,
+        "Nombre": "Las Mojarras"
+    },
+    {
+        "ID": 4230,
+        "Nombre": "Las Palmitas"
+    },
+    {
+        "ID": 4231,
+        "Nombre": "Las Tejas"
+    },
+    {
+        "ID": 4232,
+        "Nombre": "Lavalle"
+    },
+    {
+        "ID": 4233,
+        "Nombre": "La Viña"
+    },
+    {
+        "ID": 347,
+        "Nombre": "Las Juntas"
+    },
+    {
+        "ID": 348,
+        "Nombre": "Londres"
+    },
+    {
+        "ID": 4234,
+        "Nombre": "Loro Huasi"
+    },
+    {
+        "ID": 349,
+        "Nombre": "Los Altos"
+    },
+    {
+        "ID": 4235,
+        "Nombre": "Los Ángeles"
+    },
+    {
+        "ID": 4236,
+        "Nombre": "Los Balverdis"
+    },
+    {
+        "ID": 4237,
+        "Nombre": "Los Castillos"
+    },
+    {
+        "ID": 4238,
+        "Nombre": "Los Corrales"
+    },
+    {
+        "ID": 4239,
+        "Nombre": "Los Nacimientos"
+    },
+    {
+        "ID": 4240,
+        "Nombre": "Los Talas"
+    },
+    {
+        "ID": 350,
+        "Nombre": "Los Varela"
+    },
+    {
+        "ID": 4241,
+        "Nombre": "Manantiales"
+    },
+    {
+        "ID": 4242,
+        "Nombre": "Medanitos"
+    },
+    {
+        "ID": 4243,
+        "Nombre": "Miraflores"
+    },
+    {
+        "ID": 4244,
+        "Nombre": "Monte Potrero"
+    },
+    {
+        "ID": 351,
+        "Nombre": "Mutquín"
+    },
+    {
+        "ID": 352,
+        "Nombre": "Paclín"
+    },
+    {
+        "ID": 4245,
+        "Nombre": "Palo Blanco"
+    },
+    {
+        "ID": 4246,
+        "Nombre": "Palo Labrado"
+    },
+    {
+        "ID": 353,
+        "Nombre": "Poman"
+    },
+    {
+        "ID": 4247,
+        "Nombre": "Pomancillo Este"
+    },
+    {
+        "ID": 4248,
+        "Nombre": "Pomancillo Oeste"
+    },
+    {
+        "ID": 354,
+        "Nombre": "Pozo de La Piedra"
+    },
+    {
+        "ID": 355,
+        "Nombre": "Puerta de Corral"
+    },
+    {
+        "ID": 356,
+        "Nombre": "Puerta San José"
+    },
+    {
+        "ID": 4249,
+        "Nombre": "Punta de Balasto"
+    },
+    {
+        "ID": 4250,
+        "Nombre": "Punta del Agua"
+    },
+    {
+        "ID": 4251,
+        "Nombre": "Quirós"
+    },
+    {
+        "ID": 4252,
+        "Nombre": "Ramblones"
+    },
+    {
+        "ID": 357,
+        "Nombre": "Recreo"
+    },
+    {
+        "ID": 4253,
+        "Nombre": "Rincón"
+    },
+    {
+        "ID": 358,
+        "Nombre": "S.F.V de Catamarca"
+    },
+    {
+        "ID": 4254,
+        "Nombre": "San Antonio"
+    },
+    {
+        "ID": 359,
+        "Nombre": "San Fernando"
+    },
+    {
+        "ID": 360,
+        "Nombre": "San Fernando del Valle"
+    },
+    {
+        "ID": 4255,
+        "Nombre": "San Isidro"
+    },
+    {
+        "ID": 361,
+        "Nombre": "San José"
+    },
+    {
+        "ID": 4256,
+        "Nombre": "San Martín"
+    },
+    {
+        "ID": 4257,
+        "Nombre": "San Miguel"
+    },
+    {
+        "ID": 4258,
+        "Nombre": "San Pablo"
+    },
+    {
+        "ID": 4259,
+        "Nombre": "San Pedro"
+    },
+    {
+        "ID": 4260,
+        "Nombre": "Santa Cruz"
+    },
+    {
+        "ID": 362,
+        "Nombre": "Santa María"
+    },
+    {
+        "ID": 363,
+        "Nombre": "Santa Rosa"
+    },
+    {
+        "ID": 364,
+        "Nombre": "Saujil"
+    },
+    {
+        "ID": 4261,
+        "Nombre": "Siján"
+    },
+    {
+        "ID": 4262,
+        "Nombre": "Singuil"
+    },
+    {
+        "ID": 365,
+        "Nombre": "Tapso"
+    },
+    {
+        "ID": 4263,
+        "Nombre": "Tatón"
+    },
+    {
+        "ID": 366,
+        "Nombre": "Tinogasta"
+    },
+    {
+        "ID": 367,
+        "Nombre": "Valle Viejo"
+    },
+    {
+        "ID": 4264,
+        "Nombre": "Vilismán"
+    },
+    {
+        "ID": 4265,
+        "Nombre": "Villa de Balcozna"
+    },
+    {
+        "ID": 4266,
+        "Nombre": "Villa Las Pirquitas"
+    },
+    {
+        "ID": 368,
+        "Nombre": "Villa Vil"
+    },
+    {
+        "ID": 4267,
+        "Nombre": "Yapes"
+    }
+]

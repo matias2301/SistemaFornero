@@ -1,0 +1,574 @@
+[
+    {
+        "ID": 2273,
+        "Nombre": "Acheral"
+    },
+    {
+        "ID": 2274,
+        "Nombre": "Agua Dulce"
+    },
+    {
+        "ID": 2275,
+        "Nombre": "Aguilares"
+    },
+    {
+        "ID": 2276,
+        "Nombre": "Alderetes"
+    },
+    {
+        "ID": 2277,
+        "Nombre": "Alpachiri"
+    },
+    {
+        "ID": 2278,
+        "Nombre": "Alto Verde"
+    },
+    {
+        "ID": 2279,
+        "Nombre": "Amaicha del Valle"
+    },
+    {
+        "ID": 2280,
+        "Nombre": "Amberes"
+    },
+    {
+        "ID": 2281,
+        "Nombre": "Ancajuli"
+    },
+    {
+        "ID": 2282,
+        "Nombre": "Arcadia"
+    },
+    {
+        "ID": 2283,
+        "Nombre": "Atahona"
+    },
+    {
+        "ID": 2284,
+        "Nombre": "Banda del Río Sali"
+    },
+    {
+        "ID": 5300,
+        "Nombre": "Barrio Casa Rosada"
+    },
+    {
+        "ID": 5301,
+        "Nombre": "Barrio El Cruce"
+    },
+    {
+        "ID": 5302,
+        "Nombre": "Barrio Lomas de Tafí"
+    },
+    {
+        "ID": 5303,
+        "Nombre": "Barrio Mutual San Martín"
+    },
+    {
+        "ID": 5304,
+        "Nombre": "Barrio Parada 14"
+    },
+    {
+        "ID": 5305,
+        "Nombre": "Barrio San Felipe"
+    },
+    {
+        "ID": 5306,
+        "Nombre": "Barrio San Jorge"
+    },
+    {
+        "ID": 5307,
+        "Nombre": "Barrio San José III"
+    },
+    {
+        "ID": 5308,
+        "Nombre": "Barrio San Roque"
+    },
+    {
+        "ID": 5309,
+        "Nombre": "Barrio U.T.A. II"
+    },
+    {
+        "ID": 2285,
+        "Nombre": "Bella Vista"
+    },
+    {
+        "ID": 2286,
+        "Nombre": "Buena Vista"
+    },
+    {
+        "ID": 2287,
+        "Nombre": "Burruyacú"
+    },
+    {
+        "ID": 5310,
+        "Nombre": "Campo de Herrera"
+    },
+    {
+        "ID": 2288,
+        "Nombre": "Capitán Cáceres"
+    },
+    {
+        "ID": 2289,
+        "Nombre": "Cevil Redondo"
+    },
+    {
+        "ID": 2290,
+        "Nombre": "Choromoro"
+    },
+    {
+        "ID": 2291,
+        "Nombre": "Ciudacita"
+    },
+    {
+        "ID": 2292,
+        "Nombre": "Colalao del Valle"
+    },
+    {
+        "ID": 2293,
+        "Nombre": "Colombres"
+    },
+    {
+        "ID": 5312,
+        "Nombre": "Colonia Mayo"
+    },
+    {
+        "ID": 2294,
+        "Nombre": "Concepción"
+    },
+    {
+        "ID": 2295,
+        "Nombre": "Delfín Gallo"
+    },
+    {
+        "ID": 5313,
+        "Nombre": "Diagonal Norte"
+    },
+    {
+        "ID": 2296,
+        "Nombre": "El Bracho"
+    },
+    {
+        "ID": 2297,
+        "Nombre": "El Cadillal"
+    },
+    {
+        "ID": 2298,
+        "Nombre": "El Cercado"
+    },
+    {
+        "ID": 2299,
+        "Nombre": "El Chañar"
+    },
+    {
+        "ID": 2300,
+        "Nombre": "El Manantial"
+    },
+    {
+        "ID": 2301,
+        "Nombre": "El Mojón"
+    },
+    {
+        "ID": 2302,
+        "Nombre": "El Mollar"
+    },
+    {
+        "ID": 2303,
+        "Nombre": "El Naranjito"
+    },
+    {
+        "ID": 2304,
+        "Nombre": "El Naranjo"
+    },
+    {
+        "ID": 2305,
+        "Nombre": "El Polear"
+    },
+    {
+        "ID": 2306,
+        "Nombre": "El Puestito"
+    },
+    {
+        "ID": 2307,
+        "Nombre": "El Sacrificio"
+    },
+    {
+        "ID": 2308,
+        "Nombre": "El Timbó"
+    },
+    {
+        "ID": 2309,
+        "Nombre": "Escaba"
+    },
+    {
+        "ID": 2310,
+        "Nombre": "Esquina"
+    },
+    {
+        "ID": 2311,
+        "Nombre": "Estación Aráoz"
+    },
+    {
+        "ID": 2312,
+        "Nombre": "Famaillá"
+    },
+    {
+        "ID": 2313,
+        "Nombre": "Gastone"
+    },
+    {
+        "ID": 2314,
+        "Nombre": "Gdor. Garmendia"
+    },
+    {
+        "ID": 2315,
+        "Nombre": "Gdor. Piedrabuena"
+    },
+    {
+        "ID": 2316,
+        "Nombre": "Graneros"
+    },
+    {
+        "ID": 2317,
+        "Nombre": "Huasa Pampa"
+    },
+    {
+        "ID": 5314,
+        "Nombre": "Iltico"
+    },
+    {
+        "ID": 5315,
+        "Nombre": "Ingenio Fronterita"
+    },
+    {
+        "ID": 5316,
+        "Nombre": "Ingenio San Pablo"
+    },
+    {
+        "ID": 2318,
+        "Nombre": "J. B. Alberdi"
+    },
+    {
+        "ID": 2319,
+        "Nombre": "La Cocha"
+    },
+    {
+        "ID": 2320,
+        "Nombre": "La Esperanza"
+    },
+    {
+        "ID": 2321,
+        "Nombre": "La Florida"
+    },
+    {
+        "ID": 2322,
+        "Nombre": "La Ramada"
+    },
+    {
+        "ID": 5318,
+        "Nombre": "La Reducción"
+    },
+    {
+        "ID": 2323,
+        "Nombre": "La Trinidad"
+    },
+    {
+        "ID": 2324,
+        "Nombre": "Lamadrid"
+    },
+    {
+        "ID": 2325,
+        "Nombre": "Las Cejas"
+    },
+    {
+        "ID": 2326,
+        "Nombre": "Las Talas"
+    },
+    {
+        "ID": 2327,
+        "Nombre": "Las Talitas"
+    },
+    {
+        "ID": 2328,
+        "Nombre": "Los Bulacio"
+    },
+    {
+        "ID": 2329,
+        "Nombre": "Los Gómez"
+    },
+    {
+        "ID": 2330,
+        "Nombre": "Los Nogales"
+    },
+    {
+        "ID": 2331,
+        "Nombre": "Los Pereyra"
+    },
+    {
+        "ID": 2332,
+        "Nombre": "Los Pérez"
+    },
+    {
+        "ID": 2333,
+        "Nombre": "Los Puestos"
+    },
+    {
+        "ID": 2334,
+        "Nombre": "Los Ralos"
+    },
+    {
+        "ID": 2335,
+        "Nombre": "Los Sarmientos"
+    },
+    {
+        "ID": 2336,
+        "Nombre": "Los Sosa"
+    },
+    {
+        "ID": 2337,
+        "Nombre": "Lules"
+    },
+    {
+        "ID": 2338,
+        "Nombre": "M. García Fernández"
+    },
+    {
+        "ID": 5319,
+        "Nombre": "Macomitas"
+    },
+    {
+        "ID": 2339,
+        "Nombre": "Manuela Pedraza"
+    },
+    {
+        "ID": 2340,
+        "Nombre": "Medinas"
+    },
+    {
+        "ID": 2341,
+        "Nombre": "Monte Bello"
+    },
+    {
+        "ID": 2342,
+        "Nombre": "Monteagudo"
+    },
+    {
+        "ID": 2343,
+        "Nombre": "Monteros"
+    },
+    {
+        "ID": 5320,
+        "Nombre": "Nueva Trinidad"
+    },
+    {
+        "ID": 5321,
+        "Nombre": "Pacará"
+    },
+    {
+        "ID": 2344,
+        "Nombre": "Padre Monti"
+    },
+    {
+        "ID": 5322,
+        "Nombre": "Pala Pala"
+    },
+    {
+        "ID": 2345,
+        "Nombre": "Pampa Mayo"
+    },
+    {
+        "ID": 5323,
+        "Nombre": "Pueblo Independencia"
+    },
+    {
+        "ID": 2346,
+        "Nombre": "Quilmes"
+    },
+    {
+        "ID": 2347,
+        "Nombre": "Raco"
+    },
+    {
+        "ID": 2348,
+        "Nombre": "Ranchillos"
+    },
+    {
+        "ID": 2349,
+        "Nombre": "Río Chico"
+    },
+    {
+        "ID": 2350,
+        "Nombre": "Río Colorado"
+    },
+    {
+        "ID": 2351,
+        "Nombre": "Río Seco"
+    },
+    {
+        "ID": 2352,
+        "Nombre": "Rumi Punco"
+    },
+    {
+        "ID": 2353,
+        "Nombre": "San Andrés"
+    },
+    {
+        "ID": 2354,
+        "Nombre": "San Felipe"
+    },
+    {
+        "ID": 2355,
+        "Nombre": "San Ignacio"
+    },
+    {
+        "ID": 2356,
+        "Nombre": "San Javier"
+    },
+    {
+        "ID": 2357,
+        "Nombre": "San José"
+    },
+    {
+        "ID": 2358,
+        "Nombre": "San Miguel de Tucumán"
+    },
+    {
+        "ID": 2359,
+        "Nombre": "San Pedro"
+    },
+    {
+        "ID": 2360,
+        "Nombre": "San Pedro de Colalao"
+    },
+    {
+        "ID": 5324,
+        "Nombre": "Santa Ana"
+    },
+    {
+        "ID": 5325,
+        "Nombre": "Santa Cruz"
+    },
+    {
+        "ID": 5326,
+        "Nombre": "Santa Lucía"
+    },
+    {
+        "ID": 2361,
+        "Nombre": "Santa Rosa de Leales"
+    },
+    {
+        "ID": 2362,
+        "Nombre": "Sgto. Moya"
+    },
+    {
+        "ID": 2363,
+        "Nombre": "Siete de Abril"
+    },
+    {
+        "ID": 2364,
+        "Nombre": "Simoca"
+    },
+    {
+        "ID": 2365,
+        "Nombre": "Soldado Maldonado"
+    },
+    {
+        "ID": 2366,
+        "Nombre": "Sta. Ana"
+    },
+    {
+        "ID": 2367,
+        "Nombre": "Sta. Cruz"
+    },
+    {
+        "ID": 2368,
+        "Nombre": "Sta. Lucía"
+    },
+    {
+        "ID": 2369,
+        "Nombre": "Taco Ralo"
+    },
+    {
+        "ID": 2370,
+        "Nombre": "Tafí del Valle"
+    },
+    {
+        "ID": 2371,
+        "Nombre": "Tafí Viejo"
+    },
+    {
+        "ID": 2372,
+        "Nombre": "Tapia"
+    },
+    {
+        "ID": 2373,
+        "Nombre": "Teniente Berdina"
+    },
+    {
+        "ID": 2374,
+        "Nombre": "Trancas"
+    },
+    {
+        "ID": 2375,
+        "Nombre": "Villa Belgrano"
+    },
+    {
+        "ID": 2376,
+        "Nombre": "Villa Benjamín Araoz"
+    },
+    {
+        "ID": 5327,
+        "Nombre": "Villa Burruyacú"
+    },
+    {
+        "ID": 5328,
+        "Nombre": "Villa Carmela"
+    },
+    {
+        "ID": 2377,
+        "Nombre": "Villa Chiligasta"
+    },
+    {
+        "ID": 5329,
+        "Nombre": "Villa Clodomiro Hileret"
+    },
+    {
+        "ID": 2378,
+        "Nombre": "Villa de Leales"
+    },
+    {
+        "ID": 5330,
+        "Nombre": "Villa de Trancas"
+    },
+    {
+        "ID": 5331,
+        "Nombre": "Villa Fiad"
+    },
+    {
+        "ID": 5332,
+        "Nombre": "Villa Las Flores"
+    },
+    {
+        "ID": 5333,
+        "Nombre": "Villa Mariano Moreno"
+    },
+    {
+        "ID": 5334,
+        "Nombre": "Villa Padre Monti"
+    },
+    {
+        "ID": 2379,
+        "Nombre": "Villa Quinteros"
+    },
+    {
+        "ID": 2380,
+        "Nombre": "Yánima"
+    },
+    {
+        "ID": 2381,
+        "Nombre": "Yerba Buena"
+    },
+    {
+        "ID": 2382,
+        "Nombre": "Yerba Buena S"
+    }
+]

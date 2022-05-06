@@ -40,13 +40,18 @@
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Email</mat-label>
         <input
-            matInput            
+            matInput     
+            type="email"  
+            max="40" maxlength="40"     
             formControlName="email"
             placeholder="cliente@email.com"            
         >        
-        <mat-error *ngIf="clientForm.controls['email'].invalid">
+        <mat-error *ngIf="clientForm.controls['email'].errors.required">
             El email es <strong>requerido</strong>
         </mat-error>   
+        <mat-error *ngIf="clientForm.controls['email'].errors.pattern">
+          Debés ingresar un email <strong>válido</strong>
+        </mat-error>  
     </mat-form-field>
 
     <!-- <div class="text-divider">Phone Number Info</div> -->
@@ -199,7 +204,7 @@
                 [value]="checkValue"
                 (change)="checkValue = !checkValue"
             >
-                No encuentro en la lista {{checkValue}}
+                No encuentro en la lista
             </mat-checkbox>
         </div> 
     </div>

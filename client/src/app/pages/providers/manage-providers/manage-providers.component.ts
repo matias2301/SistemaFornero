@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 
 import { CountriesService } from '../../../services/countries.service';
+import { JSONLoaderHelper } from '../../../services/getJson.service';
 import { ManageDataService } from '../../../services/manage-data.service';
 import { AlertsService } from '../../../services/alerts.service';
 
@@ -18,14 +19,15 @@ export class ManageProvidersComponent implements OnInit {
   providerForm: FormGroup;
   provider: any;
   countries: any[] = [];
-  states: any[] = [];
-  cities: any[] = [];
+  states: any;
+  cities: any;
   edit: boolean = false;
   checkValue: boolean = false;
 
   constructor(
     public formBuilder: FormBuilder,
     private _countriesService: CountriesService,
+    private _JSONLoaderHelper: JSONLoaderHelper,
     private _manageDataService: ManageDataService,
     private _alertsService: AlertsService,
     private activatedRoute: ActivatedRoute,  
@@ -47,7 +49,11 @@ export class ManageProvidersComponent implements OnInit {
     this.providerForm = this.formBuilder.group({
       name: new FormControl('', Validators.compose([Validators.required ])),
       lastName: new FormControl(''),
-      email: new FormControl('', Validators.compose([Validators.required ])),
+      email: new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.pattern("^[\\w]+(?:\\.[\\w])*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$"),
+        Validators.maxLength(40)
+      ])),
       phone: new FormControl('', Validators.compose([Validators.required ])),      
       country: new FormControl('', Validators.compose([Validators.required ])),    
       state: new FormControl('', Validators.compose([Validators.required ])),
@@ -71,19 +77,40 @@ export class ManageProvidersComponent implements OnInit {
     this._countriesService.allCountries().
     subscribe(
       res => {
-        this.countries = res.Countries;        
+        this.countries = res.Countries;    
+        
+        if (!this.edit) {
+          this.providerForm.controls['country'].patchValue('Argentina');
+          this.setStates(9);
+        }  
       },
       err => console.log(err),
     )
   }
 
   setStates(i: number) {    
-    this.states = this.countries[i].States;
-    this.cities = this.states[0].Cities;    
+    if (i == 9) {
+      this._JSONLoaderHelper.get('provincias').then( data => {
+        this.states = data;
+        this._JSONLoaderHelper.get('localidades', '1').then( (ciudades: any) => {
+          this.cities = ciudades.map( ciudad => ciudad.Nombre);
+        });
+
+      });
+    } else {
+      this.states = this.countries[i].States;
+      this.cities = this.states[0].Cities;  
+    }  
   }
 
-  setCities(i: number) {          
-    this.cities = this.states[i].Cities;    
+  setCities(i: string) {         
+    if (this.providerForm.controls['country'].value == 'Argentina') {
+      this._JSONLoaderHelper.get('localidades', i+1).then( (ciudades: any) => {
+        this.cities = ciudades.map( ciudad => ciudad.Nombre);
+      });
+    } else {
+      this.cities = this.states[i].Cities;   
+    }
   }
   
   onSubmit(values: Provider) {

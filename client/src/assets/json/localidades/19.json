@@ -1,0 +1,362 @@
+[
+    {
+        "ID": 1732,
+        "Nombre": "Albardón"
+    },
+    {
+        "ID": 5038,
+        "Nombre": "Alto de Sierra"
+    },
+    {
+        "ID": 1733,
+        "Nombre": "Angaco"
+    },
+    {
+        "ID": 5039,
+        "Nombre": "Angualasto"
+    },
+    {
+        "ID": 5040,
+        "Nombre": "Astica"
+    },
+    {
+        "ID": 5041,
+        "Nombre": "Balde del Rosario"
+    },
+    {
+        "ID": 5042,
+        "Nombre": "Barreal"
+    },
+    {
+        "ID": 5043,
+        "Nombre": "Barrio Justo P. Castro IV"
+    },
+    {
+        "ID": 5044,
+        "Nombre": "Barrio Municipal"
+    },
+    {
+        "ID": 5045,
+        "Nombre": "Barrio Ruta 40"
+    },
+    {
+        "ID": 5046,
+        "Nombre": "Barrio Sadop"
+    },
+    {
+        "ID": 5047,
+        "Nombre": "Bella Vista"
+    },
+    {
+        "ID": 5048,
+        "Nombre": "Bermejo"
+    },
+    {
+        "ID": 1734,
+        "Nombre": "Calingasta"
+    },
+    {
+        "ID": 1735,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 5049,
+        "Nombre": "Cañada Honda"
+    },
+    {
+        "ID": 5050,
+        "Nombre": "Carpintería"
+    },
+    {
+        "ID": 1736,
+        "Nombre": "Caucete"
+    },
+    {
+        "ID": 1737,
+        "Nombre": "Chimbas"
+    },
+    {
+        "ID": 5051,
+        "Nombre": "Chucuma"
+    },
+    {
+        "ID": 5052,
+        "Nombre": "Cienaguita"
+    },
+    {
+        "ID": 5053,
+        "Nombre": "Colonia Fiorito"
+    },
+    {
+        "ID": 5054,
+        "Nombre": "Colonia Fiscal"
+    },
+    {
+        "ID": 5055,
+        "Nombre": "Divisadero"
+    },
+    {
+        "ID": 5056,
+        "Nombre": "Dos Acequias"
+    },
+    {
+        "ID": 5057,
+        "Nombre": "El Encón"
+    },
+    {
+        "ID": 5058,
+        "Nombre": "El Médano"
+    },
+    {
+        "ID": 5059,
+        "Nombre": "El Rincón"
+    },
+    {
+        "ID": 5061,
+        "Nombre": "Gran China"
+    },
+    {
+        "ID": 5062,
+        "Nombre": "Guanacache"
+    },
+    {
+        "ID": 5063,
+        "Nombre": "Huaco"
+    },
+    {
+        "ID": 1738,
+        "Nombre": "Iglesia"
+    },
+    {
+        "ID": 1739,
+        "Nombre": "Jachal"
+    },
+    {
+        "ID": 5064,
+        "Nombre": "Las Chacritas"
+    },
+    {
+        "ID": 5065,
+        "Nombre": "Las Flores"
+    },
+    {
+        "ID": 5066,
+        "Nombre": "Las Lagunas"
+    },
+    {
+        "ID": 5067,
+        "Nombre": "Las Piedritas"
+    },
+    {
+        "ID": 5068,
+        "Nombre": "Las Talas"
+    },
+    {
+        "ID": 5069,
+        "Nombre": "Las Tapias"
+    },
+    {
+        "ID": 5070,
+        "Nombre": "Los Baldecitos"
+    },
+    {
+        "ID": 5071,
+        "Nombre": "Los Berros"
+    },
+    {
+        "ID": 5072,
+        "Nombre": "Marayes"
+    },
+    {
+        "ID": 5073,
+        "Nombre": "Mogna"
+    },
+    {
+        "ID": 5074,
+        "Nombre": "Niquivil"
+    },
+    {
+        "ID": 1740,
+        "Nombre": "Nueve de Julio"
+    },
+    {
+        "ID": 5075,
+        "Nombre": "Pampa Vieja"
+    },
+    {
+        "ID": 5076,
+        "Nombre": "Pedernal"
+    },
+    {
+        "ID": 5077,
+        "Nombre": "Pie de Palo"
+    },
+    {
+        "ID": 5078,
+        "Nombre": "Pismanta"
+    },
+    {
+        "ID": 1741,
+        "Nombre": "Pocito"
+    },
+    {
+        "ID": 5079,
+        "Nombre": "Punta del Médano"
+    },
+    {
+        "ID": 5080,
+        "Nombre": "Quinto Cuartel"
+    },
+    {
+        "ID": 1742,
+        "Nombre": "Rawson"
+    },
+    {
+        "ID": 1743,
+        "Nombre": "Rivadavia"
+    },
+    {
+        "ID": 5082,
+        "Nombre": "Rodeo"
+    },
+    {
+        "ID": 5083,
+        "Nombre": "San Isidro"
+    },
+    {
+        "ID": 5085,
+        "Nombre": "San José de Jáchal"
+    },
+    {
+        "ID": 1744,
+        "Nombre": "San Juan"
+    },
+    {
+        "ID": 1745,
+        "Nombre": "San Martín"
+    },
+    {
+        "ID": 1746,
+        "Nombre": "Santa Lucía"
+    },
+    {
+        "ID": 1747,
+        "Nombre": "Sarmiento"
+    },
+    {
+        "ID": 5086,
+        "Nombre": "Tamberías"
+    },
+    {
+        "ID": 5088,
+        "Nombre": "Tudcum"
+    },
+    {
+        "ID": 5089,
+        "Nombre": "Tupelí"
+    },
+    {
+        "ID": 1748,
+        "Nombre": "Ullum"
+    },
+    {
+        "ID": 5090,
+        "Nombre": "Usno"
+    },
+    {
+        "ID": 1749,
+        "Nombre": "Valle Fértil"
+    },
+    {
+        "ID": 5091,
+        "Nombre": "Vallecito"
+    },
+    {
+        "ID": 1750,
+        "Nombre": "Veinticinco de Mayo"
+    },
+    {
+        "ID": 5092,
+        "Nombre": "Villa Aberastain"
+    },
+    {
+        "ID": 5093,
+        "Nombre": "Villa Barboza"
+    },
+    {
+        "ID": 5094,
+        "Nombre": "Villa Basilio Nievas"
+    },
+    {
+        "ID": 5095,
+        "Nombre": "Villa Bolaños"
+    },
+    {
+        "ID": 5096,
+        "Nombre": "Villa Borjas"
+    },
+    {
+        "ID": 5097,
+        "Nombre": "Villa Centenario"
+    },
+    {
+        "ID": 5098,
+        "Nombre": "Villa del Salvador"
+    },
+    {
+        "ID": 5099,
+        "Nombre": "Villa Dominguito"
+    },
+    {
+        "ID": 5100,
+        "Nombre": "Villa Don Bosco"
+    },
+    {
+        "ID": 5101,
+        "Nombre": "Villa El Salvador"
+    },
+    {
+        "ID": 5102,
+        "Nombre": "Villa El Tango"
+    },
+    {
+        "ID": 5103,
+        "Nombre": "Villa General San Martín"
+    },
+    {
+        "ID": 5104,
+        "Nombre": "Villa Ibáñez"
+    },
+    {
+        "ID": 5105,
+        "Nombre": "Villa Independencia"
+    },
+    {
+        "ID": 5106,
+        "Nombre": "Villa Malvinas Argentinas"
+    },
+    {
+        "ID": 5107,
+        "Nombre": "Villa Media Agua"
+    },
+    {
+        "ID": 5108,
+        "Nombre": "Villa Mercedes"
+    },
+    {
+        "ID": 5109,
+        "Nombre": "Villa San Agustín"
+    },
+    {
+        "ID": 5110,
+        "Nombre": "Villa San Martín"
+    },
+    {
+        "ID": 5111,
+        "Nombre": "Villa Santa Rosa"
+    },
+    {
+        "ID": 1751,
+        "Nombre": "Zonda"
+    }
+]

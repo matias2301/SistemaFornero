@@ -1,0 +1,278 @@
+[
+    {
+        "ID": 4868,
+        "Nombre": "11 de Octubre"
+    },
+    {
+        "ID": 1539,
+        "Nombre": "Aguada San Roque"
+    },
+    {
+        "ID": 1540,
+        "Nombre": "Aluminé"
+    },
+    {
+        "ID": 1541,
+        "Nombre": "Andacollo"
+    },
+    {
+        "ID": 4869,
+        "Nombre": "Arroyito"
+    },
+    {
+        "ID": 1542,
+        "Nombre": "Añelo"
+    },
+    {
+        "ID": 1543,
+        "Nombre": "Bajada del Agrio"
+    },
+    {
+        "ID": 1544,
+        "Nombre": "Barrancas"
+    },
+    {
+        "ID": 4870,
+        "Nombre": "Barrio Ruca Luhé"
+    },
+    {
+        "ID": 1545,
+        "Nombre": "Buta Ranquil"
+    },
+    {
+        "ID": 1546,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 1547,
+        "Nombre": "Caviahué"
+    },
+    {
+        "ID": 1548,
+        "Nombre": "Centenario"
+    },
+    {
+        "ID": 1549,
+        "Nombre": "Chorriaca"
+    },
+    {
+        "ID": 1550,
+        "Nombre": "Chos Malal"
+    },
+    {
+        "ID": 1551,
+        "Nombre": "Cipolletti"
+    },
+    {
+        "ID": 4871,
+        "Nombre": "Copahue"
+    },
+    {
+        "ID": 1552,
+        "Nombre": "Covunco Abajo"
+    },
+    {
+        "ID": 1553,
+        "Nombre": "Coyuco Cochico"
+    },
+    {
+        "ID": 1554,
+        "Nombre": "Cutral Có"
+    },
+    {
+        "ID": 4872,
+        "Nombre": "El Chocón"
+    },
+    {
+        "ID": 1555,
+        "Nombre": "El Cholar"
+    },
+    {
+        "ID": 1556,
+        "Nombre": "El Huecú"
+    },
+    {
+        "ID": 1557,
+        "Nombre": "El Sauce"
+    },
+    {
+        "ID": 1558,
+        "Nombre": "Guañacos"
+    },
+    {
+        "ID": 1559,
+        "Nombre": "Huinganco"
+    },
+    {
+        "ID": 2461,
+        "Nombre": "Junin de los Andes"
+    },
+    {
+        "ID": 4873,
+        "Nombre": "La Buitrera"
+    },
+    {
+        "ID": 1560,
+        "Nombre": "Las Coloradas"
+    },
+    {
+        "ID": 1561,
+        "Nombre": "Las Lajas"
+    },
+    {
+        "ID": 1562,
+        "Nombre": "Las Ovejas"
+    },
+    {
+        "ID": 1563,
+        "Nombre": "Loncopué"
+    },
+    {
+        "ID": 1564,
+        "Nombre": "Los Catutos"
+    },
+    {
+        "ID": 1565,
+        "Nombre": "Los Chihuidos"
+    },
+    {
+        "ID": 1566,
+        "Nombre": "Los Miches"
+    },
+    {
+        "ID": 1567,
+        "Nombre": "Manzano Amargo"
+    },
+    {
+        "ID": 4874,
+        "Nombre": "Mariano Moreno"
+    },
+    {
+        "ID": 4875,
+        "Nombre": "Mari Menuco"
+    },
+    {
+        "ID": 4876,
+        "Nombre": "Moquehue"
+    },
+    {
+        "ID": 1568,
+        "Nombre": "Neuquén"
+    },
+    {
+        "ID": 1569,
+        "Nombre": "Octavio Pico"
+    },
+    {
+        "ID": 1570,
+        "Nombre": "Paso Aguerre"
+    },
+    {
+        "ID": 1571,
+        "Nombre": "Picún Leufú"
+    },
+    {
+        "ID": 1572,
+        "Nombre": "Piedra del Aguila"
+    },
+    {
+        "ID": 1573,
+        "Nombre": "Pilo Lil"
+    },
+    {
+        "ID": 1574,
+        "Nombre": "Plaza Huincul"
+    },
+    {
+        "ID": 1575,
+        "Nombre": "Plottier"
+    },
+    {
+        "ID": 1576,
+        "Nombre": "Quili Malal"
+    },
+    {
+        "ID": 1577,
+        "Nombre": "Ramón Castro"
+    },
+    {
+        "ID": 1578,
+        "Nombre": "Rincón de Los Sauces"
+    },
+    {
+        "ID": 1579,
+        "Nombre": "San Martín de Los Andes"
+    },
+    {
+        "ID": 1580,
+        "Nombre": "San Patricio del Chañar"
+    },
+    {
+        "ID": 1581,
+        "Nombre": "Santo Tomás"
+    },
+    {
+        "ID": 1582,
+        "Nombre": "Sauzal Bonito"
+    },
+    {
+        "ID": 1583,
+        "Nombre": "Senillosa"
+    },
+    {
+        "ID": 1584,
+        "Nombre": "Taquimilán"
+    },
+    {
+        "ID": 1585,
+        "Nombre": "Tricao Malal"
+    },
+    {
+        "ID": 1586,
+        "Nombre": "Varvarco"
+    },
+    {
+        "ID": 1587,
+        "Nombre": "Villa Curí Leuvu"
+    },
+    {
+        "ID": 1588,
+        "Nombre": "Villa del Nahueve"
+    },
+    {
+        "ID": 1589,
+        "Nombre": "Villa del Puente Picún Leuvú"
+    },
+    {
+        "ID": 1590,
+        "Nombre": "Villa El Chocón"
+    },
+    {
+        "ID": 1591,
+        "Nombre": "Villa La Angostura"
+    },
+    {
+        "ID": 4877,
+        "Nombre": "Villa Lago Meliquina"
+    },
+    {
+        "ID": 4878,
+        "Nombre": "Villa Nahueve"
+    },
+    {
+        "ID": 1592,
+        "Nombre": "Villa Pehuenia"
+    },
+    {
+        "ID": 1593,
+        "Nombre": "Villa Traful"
+    },
+    {
+        "ID": 1594,
+        "Nombre": "Vista Alegre"
+    },
+    {
+        "ID": 1595,
+        "Nombre": "Zapala"
+    }
+]

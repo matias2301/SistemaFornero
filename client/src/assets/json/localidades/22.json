@@ -1,0 +1,1642 @@
+[
+    {
+        "ID": 1839,
+        "Nombre": "Aarón Castellanos"
+    },
+    {
+        "ID": 1840,
+        "Nombre": "Acebal"
+    },
+    {
+        "ID": 1841,
+        "Nombre": "Aguará Grande"
+    },
+    {
+        "ID": 1842,
+        "Nombre": "Albarellos"
+    },
+    {
+        "ID": 1843,
+        "Nombre": "Alcorta"
+    },
+    {
+        "ID": 1844,
+        "Nombre": "Aldao"
+    },
+    {
+        "ID": 1845,
+        "Nombre": "Alejandra"
+    },
+    {
+        "ID": 1846,
+        "Nombre": "Álvarez"
+    },
+    {
+        "ID": 5143,
+        "Nombre": "Alvear"
+    },
+    {
+        "ID": 1847,
+        "Nombre": "Ambrosetti"
+    },
+    {
+        "ID": 1848,
+        "Nombre": "Amenábar"
+    },
+    {
+        "ID": 5144,
+        "Nombre": "Ángel Gallardo"
+    },
+    {
+        "ID": 1849,
+        "Nombre": "Angélica"
+    },
+    {
+        "ID": 1850,
+        "Nombre": "Angeloni"
+    },
+    {
+        "ID": 5145,
+        "Nombre": "Arbilla"
+    },
+    {
+        "ID": 1851,
+        "Nombre": "Arequito"
+    },
+    {
+        "ID": 1852,
+        "Nombre": "Arminda"
+    },
+    {
+        "ID": 1853,
+        "Nombre": "Armstrong"
+    },
+    {
+        "ID": 1854,
+        "Nombre": "Arocena"
+    },
+    {
+        "ID": 1855,
+        "Nombre": "Arroyo Aguiar"
+    },
+    {
+        "ID": 1856,
+        "Nombre": "Arroyo Ceibal"
+    },
+    {
+        "ID": 1857,
+        "Nombre": "Arroyo Leyes"
+    },
+    {
+        "ID": 1858,
+        "Nombre": "Arroyo Seco"
+    },
+    {
+        "ID": 1859,
+        "Nombre": "Arrufó"
+    },
+    {
+        "ID": 1860,
+        "Nombre": "Arteaga"
+    },
+    {
+        "ID": 1861,
+        "Nombre": "Ataliva"
+    },
+    {
+        "ID": 1862,
+        "Nombre": "Aurelia"
+    },
+    {
+        "ID": 1863,
+        "Nombre": "Avellaneda"
+    },
+    {
+        "ID": 5146,
+        "Nombre": "Balneario La Verde"
+    },
+    {
+        "ID": 5147,
+        "Nombre": "Balneario Monje"
+    },
+    {
+        "ID": 1864,
+        "Nombre": "Barrancas"
+    },
+    {
+        "ID": 5148,
+        "Nombre": "Barrio Arroyo del Medio"
+    },
+    {
+        "ID": 5149,
+        "Nombre": "Barrio Caima"
+    },
+    {
+        "ID": 5150,
+        "Nombre": "Barrio Cicarelli"
+    },
+    {
+        "ID": 5151,
+        "Nombre": "Barrio El Pacaá"
+    },
+    {
+        "ID": 5152,
+        "Nombre": "Barrio Mitre"
+    },
+    {
+        "ID": 5153,
+        "Nombre": "Barrios Acapulco y Veracruz"
+    },
+    {
+        "ID": 1865,
+        "Nombre": "Bauer Y Sigel"
+    },
+    {
+        "ID": 1866,
+        "Nombre": "Bella Italia"
+    },
+    {
+        "ID": 1867,
+        "Nombre": "Berabevú"
+    },
+    {
+        "ID": 1868,
+        "Nombre": "Berna"
+    },
+    {
+        "ID": 1869,
+        "Nombre": "Bernardo de Irigoyen"
+    },
+    {
+        "ID": 1870,
+        "Nombre": "Bigand"
+    },
+    {
+        "ID": 1871,
+        "Nombre": "Bombal"
+    },
+    {
+        "ID": 1872,
+        "Nombre": "Bouquet"
+    },
+    {
+        "ID": 1873,
+        "Nombre": "Bustinza"
+    },
+    {
+        "ID": 1874,
+        "Nombre": "Cabal"
+    },
+    {
+        "ID": 1875,
+        "Nombre": "Cacique Ariacaiquin"
+    },
+    {
+        "ID": 1876,
+        "Nombre": "Cafferata"
+    },
+    {
+        "ID": 1877,
+        "Nombre": "Calchaquí"
+    },
+    {
+        "ID": 1878,
+        "Nombre": "Campo Andino"
+    },
+    {
+        "ID": 1879,
+        "Nombre": "Campo Piaggio"
+    },
+    {
+        "ID": 1880,
+        "Nombre": "Cañada de Gómez"
+    },
+    {
+        "ID": 1881,
+        "Nombre": "Cañada del Ucle"
+    },
+    {
+        "ID": 5154,
+        "Nombre": "Cañada Ombú"
+    },
+    {
+        "ID": 1882,
+        "Nombre": "Cañada Rica"
+    },
+    {
+        "ID": 1883,
+        "Nombre": "Cañada Rosquín"
+    },
+    {
+        "ID": 1884,
+        "Nombre": "Candioti"
+    },
+    {
+        "ID": 1885,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 1886,
+        "Nombre": "Capitán Bermúdez"
+    },
+    {
+        "ID": 1887,
+        "Nombre": "Capivara"
+    },
+    {
+        "ID": 1888,
+        "Nombre": "Carcarañá"
+    },
+    {
+        "ID": 1889,
+        "Nombre": "Carlos Pellegrini"
+    },
+    {
+        "ID": 1890,
+        "Nombre": "Carmen"
+    },
+    {
+        "ID": 1891,
+        "Nombre": "Carmen Del Sauce"
+    },
+    {
+        "ID": 1892,
+        "Nombre": "Carreras"
+    },
+    {
+        "ID": 1893,
+        "Nombre": "Carrizales"
+    },
+    {
+        "ID": 1894,
+        "Nombre": "Casalegno"
+    },
+    {
+        "ID": 1895,
+        "Nombre": "Casas"
+    },
+    {
+        "ID": 1896,
+        "Nombre": "Casilda"
+    },
+    {
+        "ID": 1897,
+        "Nombre": "Castelar"
+    },
+    {
+        "ID": 1898,
+        "Nombre": "Castellanos"
+    },
+    {
+        "ID": 5155,
+        "Nombre": "Cavour"
+    },
+    {
+        "ID": 1899,
+        "Nombre": "Cayastá"
+    },
+    {
+        "ID": 1900,
+        "Nombre": "Cayastacito"
+    },
+    {
+        "ID": 1901,
+        "Nombre": "Centeno"
+    },
+    {
+        "ID": 1902,
+        "Nombre": "Cepeda"
+    },
+    {
+        "ID": 1903,
+        "Nombre": "Ceres"
+    },
+    {
+        "ID": 1904,
+        "Nombre": "Chabás"
+    },
+    {
+        "ID": 1905,
+        "Nombre": "Chañar Ladeado"
+    },
+    {
+        "ID": 1906,
+        "Nombre": "Chapuy"
+    },
+    {
+        "ID": 1907,
+        "Nombre": "Chovet"
+    },
+    {
+        "ID": 1908,
+        "Nombre": "Christophersen"
+    },
+    {
+        "ID": 1909,
+        "Nombre": "Classon"
+    },
+    {
+        "ID": 1910,
+        "Nombre": "Cnel. Arnold"
+    },
+    {
+        "ID": 1911,
+        "Nombre": "Cnel. Bogado"
+    },
+    {
+        "ID": 1912,
+        "Nombre": "Cnel. Dominguez"
+    },
+    {
+        "ID": 1913,
+        "Nombre": "Cnel. Fraga"
+    },
+    {
+        "ID": 1914,
+        "Nombre": "Col. Aldao"
+    },
+    {
+        "ID": 1915,
+        "Nombre": "Col. Ana"
+    },
+    {
+        "ID": 1916,
+        "Nombre": "Col. Belgrano"
+    },
+    {
+        "ID": 1917,
+        "Nombre": "Col. Bicha"
+    },
+    {
+        "ID": 1918,
+        "Nombre": "Col. Bigand"
+    },
+    {
+        "ID": 1919,
+        "Nombre": "Col. Bossi"
+    },
+    {
+        "ID": 1920,
+        "Nombre": "Col. Cavour"
+    },
+    {
+        "ID": 1921,
+        "Nombre": "Col. Cello"
+    },
+    {
+        "ID": 1922,
+        "Nombre": "Col. Dolores"
+    },
+    {
+        "ID": 1923,
+        "Nombre": "Col. Dos Rosas"
+    },
+    {
+        "ID": 1924,
+        "Nombre": "Col. Durán"
+    },
+    {
+        "ID": 1925,
+        "Nombre": "Col. Iturraspe"
+    },
+    {
+        "ID": 1926,
+        "Nombre": "Col. Margarita"
+    },
+    {
+        "ID": 1927,
+        "Nombre": "Col. Mascias"
+    },
+    {
+        "ID": 1928,
+        "Nombre": "Col. Raquel"
+    },
+    {
+        "ID": 1929,
+        "Nombre": "Col. Rosa"
+    },
+    {
+        "ID": 1930,
+        "Nombre": "Col. San José"
+    },
+    {
+        "ID": 5156,
+        "Nombre": "Colmena"
+    },
+    {
+        "ID": 5157,
+        "Nombre": "Colonia Ana"
+    },
+    {
+        "ID": 5158,
+        "Nombre": "Colonia Médici"
+    },
+    {
+        "ID": 1931,
+        "Nombre": "Constanza"
+    },
+    {
+        "ID": 1932,
+        "Nombre": "Coronda"
+    },
+    {
+        "ID": 1933,
+        "Nombre": "Correa"
+    },
+    {
+        "ID": 1934,
+        "Nombre": "Crispi"
+    },
+    {
+        "ID": 5159,
+        "Nombre": "Cuatro Esquinas"
+    },
+    {
+        "ID": 1935,
+        "Nombre": "Cululú"
+    },
+    {
+        "ID": 1936,
+        "Nombre": "Curupayti"
+    },
+    {
+        "ID": 1937,
+        "Nombre": "Desvio Arijón"
+    },
+    {
+        "ID": 1938,
+        "Nombre": "Diaz"
+    },
+    {
+        "ID": 1939,
+        "Nombre": "Diego de Alvear"
+    },
+    {
+        "ID": 1940,
+        "Nombre": "Egusquiza"
+    },
+    {
+        "ID": 1941,
+        "Nombre": "El Arazá"
+    },
+    {
+        "ID": 5160,
+        "Nombre": "El Caramelo"
+    },
+    {
+        "ID": 1942,
+        "Nombre": "El Rabón"
+    },
+    {
+        "ID": 1943,
+        "Nombre": "El Sombrerito"
+    },
+    {
+        "ID": 1944,
+        "Nombre": "El Trébol"
+    },
+    {
+        "ID": 1945,
+        "Nombre": "Elisa"
+    },
+    {
+        "ID": 1946,
+        "Nombre": "Elortondo"
+    },
+    {
+        "ID": 1947,
+        "Nombre": "Emilia"
+    },
+    {
+        "ID": 1948,
+        "Nombre": "Empalme San Carlos"
+    },
+    {
+        "ID": 1949,
+        "Nombre": "Empalme Villa Constitucion"
+    },
+    {
+        "ID": 1950,
+        "Nombre": "Esmeralda"
+    },
+    {
+        "ID": 1951,
+        "Nombre": "Esperanza"
+    },
+    {
+        "ID": 1952,
+        "Nombre": "Estación Alvear"
+    },
+    {
+        "ID": 1953,
+        "Nombre": "Estacion Clucellas"
+    },
+    {
+        "ID": 5161,
+        "Nombre": "Estación Saguier"
+    },
+    {
+        "ID": 1954,
+        "Nombre": "Esteban Rams"
+    },
+    {
+        "ID": 1955,
+        "Nombre": "Esther"
+    },
+    {
+        "ID": 1956,
+        "Nombre": "Esustolia"
+    },
+    {
+        "ID": 1957,
+        "Nombre": "Eusebia"
+    },
+    {
+        "ID": 1958,
+        "Nombre": "Felicia"
+    },
+    {
+        "ID": 1959,
+        "Nombre": "Fidela"
+    },
+    {
+        "ID": 1960,
+        "Nombre": "Fighiera"
+    },
+    {
+        "ID": 1961,
+        "Nombre": "Firmat"
+    },
+    {
+        "ID": 1962,
+        "Nombre": "Florencia"
+    },
+    {
+        "ID": 1963,
+        "Nombre": "Fortín Olmos"
+    },
+    {
+        "ID": 1964,
+        "Nombre": "Franck"
+    },
+    {
+        "ID": 1965,
+        "Nombre": "Fray Luis Beltrán"
+    },
+    {
+        "ID": 1966,
+        "Nombre": "Frontera"
+    },
+    {
+        "ID": 1967,
+        "Nombre": "Fuentes"
+    },
+    {
+        "ID": 1968,
+        "Nombre": "Funes"
+    },
+    {
+        "ID": 1969,
+        "Nombre": "Gaboto"
+    },
+    {
+        "ID": 1970,
+        "Nombre": "Galisteo"
+    },
+    {
+        "ID": 1971,
+        "Nombre": "Gálvez"
+    },
+    {
+        "ID": 1972,
+        "Nombre": "Garabalto"
+    },
+    {
+        "ID": 1973,
+        "Nombre": "Garibaldi"
+    },
+    {
+        "ID": 1974,
+        "Nombre": "Gato Colorado"
+    },
+    {
+        "ID": 1975,
+        "Nombre": "Gdor. Crespo"
+    },
+    {
+        "ID": 1976,
+        "Nombre": "Gessler"
+    },
+    {
+        "ID": 1977,
+        "Nombre": "Godoy"
+    },
+    {
+        "ID": 1978,
+        "Nombre": "Golondrina"
+    },
+    {
+        "ID": 1979,
+        "Nombre": "Gral. Gelly"
+    },
+    {
+        "ID": 1980,
+        "Nombre": "Gral. Lagos"
+    },
+    {
+        "ID": 1981,
+        "Nombre": "Granadero Baigorria"
+    },
+    {
+        "ID": 1982,
+        "Nombre": "Gregoria Perez De Denis"
+    },
+    {
+        "ID": 1983,
+        "Nombre": "Grutly"
+    },
+    {
+        "ID": 1984,
+        "Nombre": "Guadalupe N."
+    },
+    {
+        "ID": 1985,
+        "Nombre": "Gödeken"
+    },
+    {
+        "ID": 1986,
+        "Nombre": "Helvecia"
+    },
+    {
+        "ID": 1987,
+        "Nombre": "Hersilia"
+    },
+    {
+        "ID": 1988,
+        "Nombre": "Hipatía"
+    },
+    {
+        "ID": 1989,
+        "Nombre": "Huanqueros"
+    },
+    {
+        "ID": 1990,
+        "Nombre": "Hugentobler"
+    },
+    {
+        "ID": 1991,
+        "Nombre": "Hughes"
+    },
+    {
+        "ID": 1992,
+        "Nombre": "Humberto 1º"
+    },
+    {
+        "ID": 1993,
+        "Nombre": "Humboldt"
+    },
+    {
+        "ID": 1994,
+        "Nombre": "Ibarlucea"
+    },
+    {
+        "ID": 1995,
+        "Nombre": "Ing. Chanourdie"
+    },
+    {
+        "ID": 1996,
+        "Nombre": "Intiyaco"
+    },
+    {
+        "ID": 5164,
+        "Nombre": "Irigoyen"
+    },
+    {
+        "ID": 1997,
+        "Nombre": "Ituzaingó"
+    },
+    {
+        "ID": 1998,
+        "Nombre": "Jacinto L. Aráuz"
+    },
+    {
+        "ID": 1999,
+        "Nombre": "Josefina"
+    },
+    {
+        "ID": 2000,
+        "Nombre": "Juan B. Molina"
+    },
+    {
+        "ID": 2001,
+        "Nombre": "Juan de Garay"
+    },
+    {
+        "ID": 2002,
+        "Nombre": "Juncal"
+    },
+    {
+        "ID": 5165,
+        "Nombre": "Kilómetro 101"
+    },
+    {
+        "ID": 5166,
+        "Nombre": "Kilómetro 115"
+    },
+    {
+        "ID": 2003,
+        "Nombre": "La Brava"
+    },
+    {
+        "ID": 2004,
+        "Nombre": "La Cabral"
+    },
+    {
+        "ID": 2005,
+        "Nombre": "La Camila"
+    },
+    {
+        "ID": 2006,
+        "Nombre": "La Chispa"
+    },
+    {
+        "ID": 2007,
+        "Nombre": "La Clara"
+    },
+    {
+        "ID": 2008,
+        "Nombre": "La Criolla"
+    },
+    {
+        "ID": 2009,
+        "Nombre": "La Gallareta"
+    },
+    {
+        "ID": 5167,
+        "Nombre": "La Isleta"
+    },
+    {
+        "ID": 2010,
+        "Nombre": "La Lucila"
+    },
+    {
+        "ID": 2011,
+        "Nombre": "La Pelada"
+    },
+    {
+        "ID": 2012,
+        "Nombre": "La Penca"
+    },
+    {
+        "ID": 2013,
+        "Nombre": "La Rubia"
+    },
+    {
+        "ID": 2014,
+        "Nombre": "La Sarita"
+    },
+    {
+        "ID": 2015,
+        "Nombre": "La Vanguardia"
+    },
+    {
+        "ID": 2016,
+        "Nombre": "Labordeboy"
+    },
+    {
+        "ID": 2017,
+        "Nombre": "Laguna Paiva"
+    },
+    {
+        "ID": 2018,
+        "Nombre": "Landeta"
+    },
+    {
+        "ID": 2019,
+        "Nombre": "Lanteri"
+    },
+    {
+        "ID": 5168,
+        "Nombre": "Larguía"
+    },
+    {
+        "ID": 2020,
+        "Nombre": "Larrechea"
+    },
+    {
+        "ID": 2021,
+        "Nombre": "Las Avispas"
+    },
+    {
+        "ID": 2022,
+        "Nombre": "Las Bandurrias"
+    },
+    {
+        "ID": 2023,
+        "Nombre": "Las Garzas"
+    },
+    {
+        "ID": 2024,
+        "Nombre": "Las Palmeras"
+    },
+    {
+        "ID": 2025,
+        "Nombre": "Las Parejas"
+    },
+    {
+        "ID": 2026,
+        "Nombre": "Las Petacas"
+    },
+    {
+        "ID": 2027,
+        "Nombre": "Las Rosas"
+    },
+    {
+        "ID": 2028,
+        "Nombre": "Las Toscas"
+    },
+    {
+        "ID": 2029,
+        "Nombre": "Las Tunas"
+    },
+    {
+        "ID": 2030,
+        "Nombre": "Lazzarino"
+    },
+    {
+        "ID": 2031,
+        "Nombre": "Lehmann"
+    },
+    {
+        "ID": 2032,
+        "Nombre": "Llambi Campbell"
+    },
+    {
+        "ID": 2033,
+        "Nombre": "Logroño"
+    },
+    {
+        "ID": 2034,
+        "Nombre": "Loma Alta"
+    },
+    {
+        "ID": 2035,
+        "Nombre": "López"
+    },
+    {
+        "ID": 2036,
+        "Nombre": "Los Amores"
+    },
+    {
+        "ID": 2037,
+        "Nombre": "Los Cardos"
+    },
+    {
+        "ID": 2038,
+        "Nombre": "Los Laureles"
+    },
+    {
+        "ID": 2039,
+        "Nombre": "Los Molinos"
+    },
+    {
+        "ID": 5171,
+        "Nombre": "Los Muchachos"
+    },
+    {
+        "ID": 5172,
+        "Nombre": "Los Nogales"
+    },
+    {
+        "ID": 2040,
+        "Nombre": "Los Quirquinchos"
+    },
+    {
+        "ID": 5173,
+        "Nombre": "Los Zapallos"
+    },
+    {
+        "ID": 2041,
+        "Nombre": "Lucio V. Lopez"
+    },
+    {
+        "ID": 2042,
+        "Nombre": "Luis Palacios"
+    },
+    {
+        "ID": 2043,
+        "Nombre": "Ma. Juana"
+    },
+    {
+        "ID": 2044,
+        "Nombre": "Ma. Luisa"
+    },
+    {
+        "ID": 2045,
+        "Nombre": "Ma. Susana"
+    },
+    {
+        "ID": 2046,
+        "Nombre": "Ma. Teresa"
+    },
+    {
+        "ID": 2047,
+        "Nombre": "Maciel"
+    },
+    {
+        "ID": 2048,
+        "Nombre": "Maggiolo"
+    },
+    {
+        "ID": 2049,
+        "Nombre": "Malabrigo"
+    },
+    {
+        "ID": 2050,
+        "Nombre": "Marcelino Escalada"
+    },
+    {
+        "ID": 2051,
+        "Nombre": "Margarita"
+    },
+    {
+        "ID": 2052,
+        "Nombre": "Matilde"
+    },
+    {
+        "ID": 2053,
+        "Nombre": "Mauá"
+    },
+    {
+        "ID": 2054,
+        "Nombre": "Máximo Paz"
+    },
+    {
+        "ID": 2055,
+        "Nombre": "Melincué"
+    },
+    {
+        "ID": 2056,
+        "Nombre": "Miguel Torres"
+    },
+    {
+        "ID": 2057,
+        "Nombre": "Moisés Ville"
+    },
+    {
+        "ID": 2058,
+        "Nombre": "Monigotes"
+    },
+    {
+        "ID": 2059,
+        "Nombre": "Monje"
+    },
+    {
+        "ID": 5176,
+        "Nombre": "Monte Flores"
+    },
+    {
+        "ID": 2060,
+        "Nombre": "Monte Obscuridad"
+    },
+    {
+        "ID": 2061,
+        "Nombre": "Monte Vera"
+    },
+    {
+        "ID": 2062,
+        "Nombre": "Montefiore"
+    },
+    {
+        "ID": 2063,
+        "Nombre": "Montes de Oca"
+    },
+    {
+        "ID": 2064,
+        "Nombre": "Murphy"
+    },
+    {
+        "ID": 2065,
+        "Nombre": "Ñanducita"
+    },
+    {
+        "ID": 2066,
+        "Nombre": "Naré"
+    },
+    {
+        "ID": 2067,
+        "Nombre": "Nelson"
+    },
+    {
+        "ID": 2068,
+        "Nombre": "Nicanor E. Molinas"
+    },
+    {
+        "ID": 5177,
+        "Nombre": "Nueva Lehmann"
+    },
+    {
+        "ID": 2069,
+        "Nombre": "Nuevo Torino"
+    },
+    {
+        "ID": 2070,
+        "Nombre": "Oliveros"
+    },
+    {
+        "ID": 2071,
+        "Nombre": "Palacios"
+    },
+    {
+        "ID": 5178,
+        "Nombre": "Paraje 29"
+    },
+    {
+        "ID": 5179,
+        "Nombre": "Paraje Chaco Chico"
+    },
+    {
+        "ID": 5180,
+        "Nombre": "Paraje La Costa"
+    },
+    {
+        "ID": 5181,
+        "Nombre": "Paraje San Manuel"
+    },
+    {
+        "ID": 2072,
+        "Nombre": "Pavón"
+    },
+    {
+        "ID": 2073,
+        "Nombre": "Pavón Arriba"
+    },
+    {
+        "ID": 2074,
+        "Nombre": "Pedro Gómez Cello"
+    },
+    {
+        "ID": 2075,
+        "Nombre": "Pérez"
+    },
+    {
+        "ID": 2076,
+        "Nombre": "Peyrano"
+    },
+    {
+        "ID": 2077,
+        "Nombre": "Piamonte"
+    },
+    {
+        "ID": 2078,
+        "Nombre": "Pilar"
+    },
+    {
+        "ID": 2079,
+        "Nombre": "Piñero"
+    },
+    {
+        "ID": 2080,
+        "Nombre": "Plaza Clucellas"
+    },
+    {
+        "ID": 5183,
+        "Nombre": "Plaza Matilde"
+    },
+    {
+        "ID": 5184,
+        "Nombre": "Plaza Saguier"
+    },
+    {
+        "ID": 2081,
+        "Nombre": "Portugalete"
+    },
+    {
+        "ID": 2082,
+        "Nombre": "Pozo Borrado"
+    },
+    {
+        "ID": 5185,
+        "Nombre": "Pozo de los Indios"
+    },
+    {
+        "ID": 2083,
+        "Nombre": "Progreso"
+    },
+    {
+        "ID": 2084,
+        "Nombre": "Providencia"
+    },
+    {
+        "ID": 2085,
+        "Nombre": "Pte. Roca"
+    },
+    {
+        "ID": 2086,
+        "Nombre": "Pueblo Andino"
+    },
+    {
+        "ID": 2087,
+        "Nombre": "Pueblo Esther"
+    },
+    {
+        "ID": 2088,
+        "Nombre": "Pueblo Gral. San Martín"
+    },
+    {
+        "ID": 2089,
+        "Nombre": "Pueblo Irigoyen"
+    },
+    {
+        "ID": 2090,
+        "Nombre": "Pueblo Marini"
+    },
+    {
+        "ID": 2091,
+        "Nombre": "Pueblo Muñoz"
+    },
+    {
+        "ID": 5187,
+        "Nombre": "Pueblo Santa Lucía"
+    },
+    {
+        "ID": 2092,
+        "Nombre": "Pueblo Uranga"
+    },
+    {
+        "ID": 5188,
+        "Nombre": "Puerto Aragón"
+    },
+    {
+        "ID": 5189,
+        "Nombre": "Puerto Arroyo Seco"
+    },
+    {
+        "ID": 5190,
+        "Nombre": "Puerto Reconquista"
+    },
+    {
+        "ID": 2093,
+        "Nombre": "Pujato"
+    },
+    {
+        "ID": 2094,
+        "Nombre": "Pujato N."
+    },
+    {
+        "ID": 2095,
+        "Nombre": "Rafaela"
+    },
+    {
+        "ID": 2096,
+        "Nombre": "Ramayón"
+    },
+    {
+        "ID": 2097,
+        "Nombre": "Ramona"
+    },
+    {
+        "ID": 2098,
+        "Nombre": "Reconquista"
+    },
+    {
+        "ID": 2099,
+        "Nombre": "Recreo"
+    },
+    {
+        "ID": 2100,
+        "Nombre": "Ricardone"
+    },
+    {
+        "ID": 5191,
+        "Nombre": "Rincón Potrero"
+    },
+    {
+        "ID": 2101,
+        "Nombre": "Rivadavia"
+    },
+    {
+        "ID": 2102,
+        "Nombre": "Roldán"
+    },
+    {
+        "ID": 2103,
+        "Nombre": "Romang"
+    },
+    {
+        "ID": 2104,
+        "Nombre": "Rosario"
+    },
+    {
+        "ID": 2105,
+        "Nombre": "Rueda"
+    },
+    {
+        "ID": 2106,
+        "Nombre": "Rufino"
+    },
+    {
+        "ID": 2107,
+        "Nombre": "Sa Pereira"
+    },
+    {
+        "ID": 2108,
+        "Nombre": "Saguier"
+    },
+    {
+        "ID": 2109,
+        "Nombre": "Saladero M. Cabal"
+    },
+    {
+        "ID": 2110,
+        "Nombre": "Salto Grande"
+    },
+    {
+        "ID": 2111,
+        "Nombre": "San Agustín"
+    },
+    {
+        "ID": 5192,
+        "Nombre": "San Antonio"
+    },
+    {
+        "ID": 2112,
+        "Nombre": "San Antonio de Obligado"
+    },
+    {
+        "ID": 2113,
+        "Nombre": "San Bernardo N.J.)"
+    },
+    {
+        "ID": 2114,
+        "Nombre": "San Bernardo S.J.)"
+    },
+    {
+        "ID": 2115,
+        "Nombre": "San Carlos Centro"
+    },
+    {
+        "ID": 2116,
+        "Nombre": "San Carlos N."
+    },
+    {
+        "ID": 2117,
+        "Nombre": "San Carlos S."
+    },
+    {
+        "ID": 2118,
+        "Nombre": "San Cristóbal"
+    },
+    {
+        "ID": 2119,
+        "Nombre": "San Eduardo"
+    },
+    {
+        "ID": 2120,
+        "Nombre": "San Eugenio"
+    },
+    {
+        "ID": 2121,
+        "Nombre": "San Fabián"
+    },
+    {
+        "ID": 2122,
+        "Nombre": "San Fco. de Santa Fé"
+    },
+    {
+        "ID": 2123,
+        "Nombre": "San Genaro"
+    },
+    {
+        "ID": 2124,
+        "Nombre": "San Genaro N."
+    },
+    {
+        "ID": 2125,
+        "Nombre": "San Gregorio"
+    },
+    {
+        "ID": 2126,
+        "Nombre": "San Guillermo"
+    },
+    {
+        "ID": 2127,
+        "Nombre": "San Javier"
+    },
+    {
+        "ID": 2128,
+        "Nombre": "San Jerónimo del Sauce"
+    },
+    {
+        "ID": 2129,
+        "Nombre": "San Jerónimo N."
+    },
+    {
+        "ID": 2130,
+        "Nombre": "San Jerónimo S."
+    },
+    {
+        "ID": 2131,
+        "Nombre": "San Jorge"
+    },
+    {
+        "ID": 2132,
+        "Nombre": "San José de La Esquina"
+    },
+    {
+        "ID": 2133,
+        "Nombre": "San José del Rincón"
+    },
+    {
+        "ID": 2134,
+        "Nombre": "San Justo"
+    },
+    {
+        "ID": 2135,
+        "Nombre": "San Lorenzo"
+    },
+    {
+        "ID": 2136,
+        "Nombre": "San Mariano"
+    },
+    {
+        "ID": 2137,
+        "Nombre": "San Martín de Las Escobas"
+    },
+    {
+        "ID": 2138,
+        "Nombre": "San Martín N."
+    },
+    {
+        "ID": 2139,
+        "Nombre": "San Vicente"
+    },
+    {
+        "ID": 2140,
+        "Nombre": "Sancti Spititu"
+    },
+    {
+        "ID": 2141,
+        "Nombre": "Sanford"
+    },
+    {
+        "ID": 5193,
+        "Nombre": "Santa Fe"
+    },
+    {
+        "ID": 2142,
+        "Nombre": "Santo Domingo"
+    },
+    {
+        "ID": 2143,
+        "Nombre": "Santo Tomé"
+    },
+    {
+        "ID": 2144,
+        "Nombre": "Santurce"
+    },
+    {
+        "ID": 2145,
+        "Nombre": "Sargento Cabral"
+    },
+    {
+        "ID": 2146,
+        "Nombre": "Sarmiento"
+    },
+    {
+        "ID": 2147,
+        "Nombre": "Sastre"
+    },
+    {
+        "ID": 2148,
+        "Nombre": "Sauce Viejo"
+    },
+    {
+        "ID": 2149,
+        "Nombre": "Serodino"
+    },
+    {
+        "ID": 2150,
+        "Nombre": "Silva"
+    },
+    {
+        "ID": 2151,
+        "Nombre": "Soldini"
+    },
+    {
+        "ID": 2152,
+        "Nombre": "Soledad"
+    },
+    {
+        "ID": 2153,
+        "Nombre": "Soutomayor"
+    },
+    {
+        "ID": 2154,
+        "Nombre": "Sta. Clara de Buena Vista"
+    },
+    {
+        "ID": 2155,
+        "Nombre": "Sta. Clara de Saguier"
+    },
+    {
+        "ID": 2156,
+        "Nombre": "Sta. Isabel"
+    },
+    {
+        "ID": 2157,
+        "Nombre": "Sta. Margarita"
+    },
+    {
+        "ID": 2158,
+        "Nombre": "Sta. Maria Centro"
+    },
+    {
+        "ID": 2159,
+        "Nombre": "Sta. María N."
+    },
+    {
+        "ID": 2160,
+        "Nombre": "Sta. Rosa"
+    },
+    {
+        "ID": 2161,
+        "Nombre": "Sta. Teresa"
+    },
+    {
+        "ID": 5195,
+        "Nombre": "Stephenson"
+    },
+    {
+        "ID": 2162,
+        "Nombre": "Suardi"
+    },
+    {
+        "ID": 2163,
+        "Nombre": "Sunchales"
+    },
+    {
+        "ID": 2164,
+        "Nombre": "Susana"
+    },
+    {
+        "ID": 2165,
+        "Nombre": "Tacuarendí"
+    },
+    {
+        "ID": 2166,
+        "Nombre": "Tacural"
+    },
+    {
+        "ID": 2167,
+        "Nombre": "Tartagal"
+    },
+    {
+        "ID": 2168,
+        "Nombre": "Teodelina"
+    },
+    {
+        "ID": 2169,
+        "Nombre": "Theobald"
+    },
+    {
+        "ID": 2170,
+        "Nombre": "Timbúes"
+    },
+    {
+        "ID": 2171,
+        "Nombre": "Toba"
+    },
+    {
+        "ID": 2172,
+        "Nombre": "Tortugas"
+    },
+    {
+        "ID": 2173,
+        "Nombre": "Tostado"
+    },
+    {
+        "ID": 2174,
+        "Nombre": "Totoras"
+    },
+    {
+        "ID": 2175,
+        "Nombre": "Traill"
+    },
+    {
+        "ID": 2176,
+        "Nombre": "Venado Tuerto"
+    },
+    {
+        "ID": 2177,
+        "Nombre": "Vera"
+    },
+    {
+        "ID": 2178,
+        "Nombre": "Vera y Pintado"
+    },
+    {
+        "ID": 2179,
+        "Nombre": "Videla"
+    },
+    {
+        "ID": 2180,
+        "Nombre": "Vila"
+    },
+    {
+        "ID": 2181,
+        "Nombre": "Villa Amelia"
+    },
+    {
+        "ID": 2182,
+        "Nombre": "Villa Ana"
+    },
+    {
+        "ID": 2183,
+        "Nombre": "Villa Cañas"
+    },
+    {
+        "ID": 2184,
+        "Nombre": "Villa Constitución"
+    },
+    {
+        "ID": 5197,
+        "Nombre": "Villa del Plata"
+    },
+    {
+        "ID": 2185,
+        "Nombre": "Villa Eloísa"
+    },
+    {
+        "ID": 5198,
+        "Nombre": "Villa Elvira"
+    },
+    {
+        "ID": 2186,
+        "Nombre": "Villa Gdor. Gálvez"
+    },
+    {
+        "ID": 2187,
+        "Nombre": "Villa Guillermina"
+    },
+    {
+        "ID": 5199,
+        "Nombre": "Villa Josefina"
+    },
+    {
+        "ID": 5200,
+        "Nombre": "Villa la Rivera"
+    },
+    {
+        "ID": 5202,
+        "Nombre": "Villa Laura"
+    },
+    {
+        "ID": 2188,
+        "Nombre": "Villa Minetti"
+    },
+    {
+        "ID": 2189,
+        "Nombre": "Villa Mugueta"
+    },
+    {
+        "ID": 2190,
+        "Nombre": "Villa Ocampo"
+    },
+    {
+        "ID": 2191,
+        "Nombre": "Villa San José"
+    },
+    {
+        "ID": 2192,
+        "Nombre": "Villa Saralegui"
+    },
+    {
+        "ID": 2193,
+        "Nombre": "Villa Trinidad"
+    },
+    {
+        "ID": 2194,
+        "Nombre": "Villada"
+    },
+    {
+        "ID": 2195,
+        "Nombre": "Virginia"
+    },
+    {
+        "ID": 2196,
+        "Nombre": "Wheelwright"
+    },
+    {
+        "ID": 5203,
+        "Nombre": "Wildermuth"
+    },
+    {
+        "ID": 2197,
+        "Nombre": "Zavalla"
+    },
+    {
+        "ID": 2198,
+        "Nombre": "Zenón Pereira"
+    }
+]

@@ -1,0 +1,534 @@
+[
+    {
+        "ID": 1670,
+        "Nombre": "A. Saravia"
+    },
+    {
+        "ID": 4965,
+        "Nombre": "Acoyte"
+    },
+    {
+        "ID": 1671,
+        "Nombre": "Aguaray"
+    },
+    {
+        "ID": 4966,
+        "Nombre": "Aguas Blancas"
+    },
+    {
+        "ID": 4967,
+        "Nombre": "Alto de la Sierra"
+    },
+    {
+        "ID": 4968,
+        "Nombre": "Ampascachi"
+    },
+    {
+        "ID": 1672,
+        "Nombre": "Angastaco"
+    },
+    {
+        "ID": 1673,
+        "Nombre": "Animaná"
+    },
+    {
+        "ID": 4969,
+        "Nombre": "Antilla"
+    },
+    {
+        "ID": 4970,
+        "Nombre": "Atocha"
+    },
+    {
+        "ID": 4971,
+        "Nombre": "Barrio Finca la Maroma"
+    },
+    {
+        "ID": 4972,
+        "Nombre": "Barrio la Rotonda"
+    },
+    {
+        "ID": 4973,
+        "Nombre": "Barrio Santa Teresita"
+    },
+    {
+        "ID": 4974,
+        "Nombre": "Cabra Corral"
+    },
+    {
+        "ID": 1674,
+        "Nombre": "Cachi"
+    },
+    {
+        "ID": 1675,
+        "Nombre": "Cafayate"
+    },
+    {
+        "ID": 4975,
+        "Nombre": "Campamento Vespucio"
+    },
+    {
+        "ID": 4976,
+        "Nombre": "Campichuelo"
+    },
+    {
+        "ID": 4977,
+        "Nombre": "Campo Durán"
+    },
+    {
+        "ID": 4978,
+        "Nombre": "Campo La Cruz"
+    },
+    {
+        "ID": 1676,
+        "Nombre": "Campo Quijano"
+    },
+    {
+        "ID": 1677,
+        "Nombre": "Campo Santo"
+    },
+    {
+        "ID": 4979,
+        "Nombre": "Capiazuti"
+    },
+    {
+        "ID": 1678,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 4980,
+        "Nombre": "Capitán Juan Pagé"
+    },
+    {
+        "ID": 4981,
+        "Nombre": "Carboncito"
+    },
+    {
+        "ID": 4982,
+        "Nombre": "Ceibalito"
+    },
+    {
+        "ID": 4983,
+        "Nombre": "Centro 25 de Junio"
+    },
+    {
+        "ID": 1679,
+        "Nombre": "Cerrillos"
+    },
+    {
+        "ID": 1680,
+        "Nombre": "Chicoana"
+    },
+    {
+        "ID": 4984,
+        "Nombre": "Cobos"
+    },
+    {
+        "ID": 4985,
+        "Nombre": "Cobres"
+    },
+    {
+        "ID": 1681,
+        "Nombre": "Col. Sta. Rosa"
+    },
+    {
+        "ID": 4986,
+        "Nombre": "Copo Quile"
+    },
+    {
+        "ID": 4987,
+        "Nombre": "Coronel Cornejo"
+    },
+    {
+        "ID": 4988,
+        "Nombre": "Coronel Juan Solá"
+    },
+    {
+        "ID": 1682,
+        "Nombre": "Coronel Moldes"
+    },
+    {
+        "ID": 4989,
+        "Nombre": "Coronel Mollinedo"
+    },
+    {
+        "ID": 4990,
+        "Nombre": "Coronel Olleros"
+    },
+    {
+        "ID": 4991,
+        "Nombre": "Dragones"
+    },
+    {
+        "ID": 4992,
+        "Nombre": "El Barrial"
+    },
+    {
+        "ID": 1683,
+        "Nombre": "El Bordo"
+    },
+    {
+        "ID": 1684,
+        "Nombre": "El Carril"
+    },
+    {
+        "ID": 1685,
+        "Nombre": "El Galpón"
+    },
+    {
+        "ID": 1686,
+        "Nombre": "El Jardín"
+    },
+    {
+        "ID": 4993,
+        "Nombre": "El Naranjo"
+    },
+    {
+        "ID": 1687,
+        "Nombre": "El Potrero"
+    },
+    {
+        "ID": 1688,
+        "Nombre": "El Quebrachal"
+    },
+    {
+        "ID": 4994,
+        "Nombre": "El Tabacal"
+    },
+    {
+        "ID": 1689,
+        "Nombre": "El Tala"
+    },
+    {
+        "ID": 4995,
+        "Nombre": "El Tunal"
+    },
+    {
+        "ID": 1690,
+        "Nombre": "Embarcación"
+    },
+    {
+        "ID": 4996,
+        "Nombre": "Gaona"
+    },
+    {
+        "ID": 1691,
+        "Nombre": "Gral. Ballivian"
+    },
+    {
+        "ID": 1692,
+        "Nombre": "Gral. Güemes"
+    },
+    {
+        "ID": 1693,
+        "Nombre": "Gral. Mosconi"
+    },
+    {
+        "ID": 1694,
+        "Nombre": "Gral. Pizarro"
+    },
+    {
+        "ID": 1695,
+        "Nombre": "Guachipas"
+    },
+    {
+        "ID": 4997,
+        "Nombre": "Hickman"
+    },
+    {
+        "ID": 1696,
+        "Nombre": "Hipólito Yrigoyen"
+    },
+    {
+        "ID": 4998,
+        "Nombre": "Hito 1"
+    },
+    {
+        "ID": 1697,
+        "Nombre": "Iruyá"
+    },
+    {
+        "ID": 1698,
+        "Nombre": "Isla De Cañas"
+    },
+    {
+        "ID": 1699,
+        "Nombre": "J. V. Gonzalez"
+    },
+    {
+        "ID": 1700,
+        "Nombre": "La Caldera"
+    },
+    {
+        "ID": 1701,
+        "Nombre": "La Candelaria"
+    },
+    {
+        "ID": 4999,
+        "Nombre": "La Ciénaga y Barrio San Rafael"
+    },
+    {
+        "ID": 1702,
+        "Nombre": "La Merced"
+    },
+    {
+        "ID": 5000,
+        "Nombre": "La Merced del Encón"
+    },
+    {
+        "ID": 1703,
+        "Nombre": "La Poma"
+    },
+    {
+        "ID": 5001,
+        "Nombre": "La Puerta"
+    },
+    {
+        "ID": 5002,
+        "Nombre": "Las Costas"
+    },
+    {
+        "ID": 5003,
+        "Nombre": "La Silleta"
+    },
+    {
+        "ID": 5005,
+        "Nombre": "La Unión"
+    },
+    {
+        "ID": 1704,
+        "Nombre": "La Viña"
+    },
+    {
+        "ID": 1705,
+        "Nombre": "Las Lajitas"
+    },
+    {
+        "ID": 5006,
+        "Nombre": "Los Blancos"
+    },
+    {
+        "ID": 1706,
+        "Nombre": "Los Toldos"
+    },
+    {
+        "ID": 5007,
+        "Nombre": "Luis Burela"
+    },
+    {
+        "ID": 5008,
+        "Nombre": "Lumbreras"
+    },
+    {
+        "ID": 5009,
+        "Nombre": "Macapillo"
+    },
+    {
+        "ID": 1707,
+        "Nombre": "Metán"
+    },
+    {
+        "ID": 5010,
+        "Nombre": "Misión Chaqueña"
+    },
+    {
+        "ID": 5011,
+        "Nombre": "Misión El Cruce"
+    },
+    {
+        "ID": 5012,
+        "Nombre": "Misión Kilómetro 6"
+    },
+    {
+        "ID": 1708,
+        "Nombre": "Molinos"
+    },
+    {
+        "ID": 1709,
+        "Nombre": "Nazareno"
+    },
+    {
+        "ID": 5013,
+        "Nombre": "Nuestra Señora de Talavera"
+    },
+    {
+        "ID": 5014,
+        "Nombre": "Olacapato"
+    },
+    {
+        "ID": 1710,
+        "Nombre": "Orán"
+    },
+    {
+        "ID": 5015,
+        "Nombre": "Pacará"
+    },
+    {
+        "ID": 1711,
+        "Nombre": "Payogasta"
+    },
+    {
+        "ID": 2413,
+        "Nombre": "Pedro Padre Lozano"
+    },
+    {
+        "ID": 1712,
+        "Nombre": "Pichanal"
+    },
+    {
+        "ID": 5017,
+        "Nombre": "Piquete Cabado"
+    },
+    {
+        "ID": 5018,
+        "Nombre": "Piquirenda"
+    },
+    {
+        "ID": 5019,
+        "Nombre": "Pluma de Pato"
+    },
+    {
+        "ID": 5020,
+        "Nombre": "Poscaya"
+    },
+    {
+        "ID": 1713,
+        "Nombre": "Prof. S. Mazza"
+    },
+    {
+        "ID": 5021,
+        "Nombre": "Pueblo Viejo"
+    },
+    {
+        "ID": 1714,
+        "Nombre": "Río Piedras"
+    },
+    {
+        "ID": 1715,
+        "Nombre": "Rivadavia Banda Norte"
+    },
+    {
+        "ID": 1716,
+        "Nombre": "Rivadavia Banda Sur"
+    },
+    {
+        "ID": 1717,
+        "Nombre": "Rosario de La Frontera"
+    },
+    {
+        "ID": 1718,
+        "Nombre": "Rosario de Lerma"
+    },
+    {
+        "ID": 5022,
+        "Nombre": "Río del Valle"
+    },
+    {
+        "ID": 1719,
+        "Nombre": "Saclantás"
+    },
+    {
+        "ID": 1720,
+        "Nombre": "Salta"
+    },
+    {
+        "ID": 5024,
+        "Nombre": "San Agustín"
+    },
+    {
+        "ID": 1721,
+        "Nombre": "San Antonio"
+    },
+    {
+        "ID": 1722,
+        "Nombre": "San Carlos"
+    },
+    {
+        "ID": 5025,
+        "Nombre": "San Felipe"
+    },
+    {
+        "ID": 1723,
+        "Nombre": "San José De Metán"
+    },
+    {
+        "ID": 5026,
+        "Nombre": "San José de Orquera"
+    },
+    {
+        "ID": 5027,
+        "Nombre": "San Marcos"
+    },
+    {
+        "ID": 1724,
+        "Nombre": "San Ramón"
+    },
+    {
+        "ID": 5028,
+        "Nombre": "Santa María"
+    },
+    {
+        "ID": 5029,
+        "Nombre": "Santa Rosa"
+    },
+    {
+        "ID": 5030,
+        "Nombre": "Santa Rosa de los Pastos Grandes"
+    },
+    {
+        "ID": 1725,
+        "Nombre": "Santa Victoria E."
+    },
+    {
+        "ID": 1726,
+        "Nombre": "Santa Victoria O."
+    },
+    {
+        "ID": 5031,
+        "Nombre": "Talapampa"
+    },
+    {
+        "ID": 1727,
+        "Nombre": "Tartagal"
+    },
+    {
+        "ID": 5032,
+        "Nombre": "Tobantirenda"
+    },
+    {
+        "ID": 1728,
+        "Nombre": "Tolar Grande"
+    },
+    {
+        "ID": 5033,
+        "Nombre": "Tolloche"
+    },
+    {
+        "ID": 5034,
+        "Nombre": "Tolombóm"
+    },
+    {
+        "ID": 5035,
+        "Nombre": "Tranquitas"
+    },
+    {
+        "ID": 1729,
+        "Nombre": "Urundel"
+    },
+    {
+        "ID": 1730,
+        "Nombre": "Vaqueros"
+    },
+    {
+        "ID": 5036,
+        "Nombre": "Villa Los Álamos"
+    },
+    {
+        "ID": 1731,
+        "Nombre": "Villa San Lorenzo"
+    },
+    {
+        "ID": 5037,
+        "Nombre": "Yacuy"
+    }
+]

@@ -1,0 +1,378 @@
+[
+    {
+        "ID": 369,
+        "Nombre": "Aviá Teraí"
+    },
+    {
+        "ID": 370,
+        "Nombre": "Barranqueras"
+    },
+    {
+        "ID": 4268,
+        "Nombre": "Barrio de los Pescadores"
+    },
+    {
+        "ID": 371,
+        "Nombre": "Basail"
+    },
+    {
+        "ID": 372,
+        "Nombre": "Campo Largo"
+    },
+    {
+        "ID": 373,
+        "Nombre": "Capital"
+    },
+    {
+        "ID": 374,
+        "Nombre": "Capitán Solari"
+    },
+    {
+        "ID": 375,
+        "Nombre": "Charadai"
+    },
+    {
+        "ID": 376,
+        "Nombre": "Charata"
+    },
+    {
+        "ID": 377,
+        "Nombre": "Chorotis"
+    },
+    {
+        "ID": 378,
+        "Nombre": "Ciervo Petiso"
+    },
+    {
+        "ID": 379,
+        "Nombre": "Cnel. Du Graty"
+    },
+    {
+        "ID": 380,
+        "Nombre": "Col. Benítez"
+    },
+    {
+        "ID": 381,
+        "Nombre": "Col. Elisa"
+    },
+    {
+        "ID": 382,
+        "Nombre": "Col. Popular"
+    },
+    {
+        "ID": 4269,
+        "Nombre": "Colonia Aborigen"
+    },
+    {
+        "ID": 4270,
+        "Nombre": "Colonia Baranda"
+    },
+    {
+        "ID": 4271,
+        "Nombre": "Colonia Benítez"
+    },
+    {
+        "ID": 383,
+        "Nombre": "Colonias Unidas"
+    },
+    {
+        "ID": 384,
+        "Nombre": "Concepción"
+    },
+    {
+        "ID": 4272,
+        "Nombre": "Concepción del Bermejo"
+    },
+    {
+        "ID": 385,
+        "Nombre": "Corzuela"
+    },
+    {
+        "ID": 386,
+        "Nombre": "Cote Lai"
+    },
+    {
+        "ID": 4273,
+        "Nombre": "El Espinillo"
+    },
+    {
+        "ID": 4274,
+        "Nombre": "El Sauzal"
+    },
+    {
+        "ID": 387,
+        "Nombre": "El Sauzalito"
+    },
+    {
+        "ID": 388,
+        "Nombre": "Enrique Urien"
+    },
+    {
+        "ID": 4275,
+        "Nombre": "Estación General Obligado"
+    },
+    {
+        "ID": 389,
+        "Nombre": "Fontana"
+    },
+    {
+        "ID": 4276,
+        "Nombre": "Fortín Las Chuñas"
+    },
+    {
+        "ID": 4277,
+        "Nombre": "Fortín Lavalle"
+    },
+    {
+        "ID": 390,
+        "Nombre": "Fte. Esperanza"
+    },
+    {
+        "ID": 391,
+        "Nombre": "Gancedo"
+    },
+    {
+        "ID": 392,
+        "Nombre": "Gral. Capdevila"
+    },
+    {
+        "ID": 393,
+        "Nombre": "Gral. Pinero"
+    },
+    {
+        "ID": 394,
+        "Nombre": "Gral. San Martín"
+    },
+    {
+        "ID": 395,
+        "Nombre": "Gral. Vedia"
+    },
+    {
+        "ID": 4278,
+        "Nombre": "Haumonía"
+    },
+    {
+        "ID": 396,
+        "Nombre": "Hermoso Campo"
+    },
+    {
+        "ID": 4279,
+        "Nombre": "Horquilla"
+    },
+    {
+        "ID": 397,
+        "Nombre": "I. del Cerrito"
+    },
+    {
+        "ID": 4280,
+        "Nombre": "Ingeniero Barbet"
+    },
+    {
+        "ID": 4281,
+        "Nombre": "Itín"
+    },
+    {
+        "ID": 398,
+        "Nombre": "J.J. Castelli"
+    },
+    {
+        "ID": 399,
+        "Nombre": "La Clotilde"
+    },
+    {
+        "ID": 400,
+        "Nombre": "La Eduvigis"
+    },
+    {
+        "ID": 401,
+        "Nombre": "La Escondida"
+    },
+    {
+        "ID": 402,
+        "Nombre": "La Leonesa"
+    },
+    {
+        "ID": 4282,
+        "Nombre": "La Sabana"
+    },
+    {
+        "ID": 403,
+        "Nombre": "La Tigra"
+    },
+    {
+        "ID": 404,
+        "Nombre": "La Verde"
+    },
+    {
+        "ID": 405,
+        "Nombre": "Laguna Blanca"
+    },
+    {
+        "ID": 406,
+        "Nombre": "Laguna Limpia"
+    },
+    {
+        "ID": 407,
+        "Nombre": "Lapachito"
+    },
+    {
+        "ID": 408,
+        "Nombre": "Las Breñas"
+    },
+    {
+        "ID": 409,
+        "Nombre": "Las Garcitas"
+    },
+    {
+        "ID": 410,
+        "Nombre": "Las Palmas"
+    },
+    {
+        "ID": 411,
+        "Nombre": "Los Frentones"
+    },
+    {
+        "ID": 412,
+        "Nombre": "Machagai"
+    },
+    {
+        "ID": 413,
+        "Nombre": "Makallé"
+    },
+    {
+        "ID": 414,
+        "Nombre": "Margarita Belén"
+    },
+    {
+        "ID": 4283,
+        "Nombre": "Mesón de Fierro"
+    },
+    {
+        "ID": 415,
+        "Nombre": "Miraflores"
+    },
+    {
+        "ID": 416,
+        "Nombre": "Misión N. Pompeya"
+    },
+    {
+        "ID": 4284,
+        "Nombre": "Napalpí"
+    },
+    {
+        "ID": 417,
+        "Nombre": "Napenay"
+    },
+    {
+        "ID": 418,
+        "Nombre": "Pampa Almirón"
+    },
+    {
+        "ID": 4285,
+        "Nombre": "Pampa Landriel"
+    },
+    {
+        "ID": 419,
+        "Nombre": "Pampa del Indio"
+    },
+    {
+        "ID": 420,
+        "Nombre": "Pampa del Infierno"
+    },
+    {
+        "ID": 421,
+        "Nombre": "Pdcia. de La Plaza"
+    },
+    {
+        "ID": 422,
+        "Nombre": "Pdcia. Roca"
+    },
+    {
+        "ID": 423,
+        "Nombre": "Pdcia. Roque Sáenz Peña"
+    },
+    {
+        "ID": 424,
+        "Nombre": "Pto. Bermejo"
+    },
+    {
+        "ID": 425,
+        "Nombre": "Pto. Eva Perón"
+    },
+    {
+        "ID": 426,
+        "Nombre": "Puero Tirol"
+    },
+    {
+        "ID": 427,
+        "Nombre": "Puerto Vilelas"
+    },
+    {
+        "ID": 428,
+        "Nombre": "Quitilipi"
+    },
+    {
+        "ID": 429,
+        "Nombre": "Resistencia"
+    },
+    {
+        "ID": 4286,
+        "Nombre": "Río Muerto"
+    },
+    {
+        "ID": 430,
+        "Nombre": "Sáenz Peña"
+    },
+    {
+        "ID": 431,
+        "Nombre": "Samuhú"
+    },
+    {
+        "ID": 432,
+        "Nombre": "San Bernardo"
+    },
+    {
+        "ID": 433,
+        "Nombre": "Santa Sylvina"
+    },
+    {
+        "ID": 4287,
+        "Nombre": "Selvas del Río de Oro"
+    },
+    {
+        "ID": 434,
+        "Nombre": "Taco Pozo"
+    },
+    {
+        "ID": 435,
+        "Nombre": "Tres Isletas"
+    },
+    {
+        "ID": 4288,
+        "Nombre": "Venados Grandes"
+    },
+    {
+        "ID": 436,
+        "Nombre": "Villa Ángela"
+    },
+    {
+        "ID": 437,
+        "Nombre": "Villa Berthet"
+    },
+    {
+        "ID": 4289,
+        "Nombre": "Villa El Palmar"
+    },
+    {
+        "ID": 438,
+        "Nombre": "Villa R. Bermejito"
+    },
+    {
+        "ID": 4290,
+        "Nombre": "Wichí"
+    },
+    {
+        "ID": 4291,
+        "Nombre": "Zaparinqui"
+    }
+]
