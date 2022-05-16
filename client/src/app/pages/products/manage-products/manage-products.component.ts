@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 
 import { ManageDataService } from '../../../services/manage-data.service';
 import { AlertsService } from '../../../services/alerts.service';
+import { AuthService } from '../../../services/auth.service';
 
 import { Product } from '../../../interfaces/product.interface';
 
@@ -37,6 +38,7 @@ export class ManageProductsComponent implements OnInit {
     public formBuilder: FormBuilder,
     private _manageDataService: ManageDataService,
     private _alertsService: AlertsService,
+    private _authService: AuthService,
     private activatedRoute: ActivatedRoute, 
     private router: Router,   
   ) {
@@ -107,9 +109,11 @@ export class ManageProductsComponent implements OnInit {
       }
 
     }, ( err ) => {
-      
-        let errorMsg = '';
-        
+        if (err.error && err.error.code == 999) {
+          this._authService.logout()
+        }
+
+        let errorMsg = '';        
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
@@ -132,9 +136,11 @@ export class ManageProductsComponent implements OnInit {
           });      
 
     }, ( err ) => {
+        if (err.error && err.error.code == 999) {
+          this._authService.logout()
+        }
       
-        let errorMsg = '';
-        
+        let errorMsg = '';        
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {

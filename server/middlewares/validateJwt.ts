@@ -9,7 +9,8 @@ export const validateJWT = async ( req: Request, res: Response, next: NextFuncti
     
     if ( !token ) {
         return res.status(401).json({
-            msg: 'No hay token en la petición'
+          code: 999,
+          msg: 'No hay token en la petición'
         });
     }
 
@@ -22,14 +23,16 @@ export const validateJWT = async ( req: Request, res: Response, next: NextFuncti
 
         if( !user ) {
             return res.status(401).json({
-                msg: 'Token no válido - el usuario no existe'
+              code: 999,
+              msg: 'Token no válido - el usuario no existe'
             })
         }
 
         // Verificar si el uid tiene estado true
         if ( !user.state ) {
             return res.status(401).json({
-                msg: 'Token no válido - usuario con estado: false'
+              code: 999,
+              msg: 'Token no válido - usuario con estado: false'
             })
         }       
         
@@ -41,7 +44,8 @@ export const validateJWT = async ( req: Request, res: Response, next: NextFuncti
 
         console.log(error);
         res.status(401).json({
-            msg: 'Token no válido'
+          code: 999,
+          msg: 'Token no válido'
         })
     }
 

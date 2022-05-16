@@ -6,7 +6,8 @@ import { ClientsRoutingModule } from './clients-routing.module';
 import { ListClientsComponent } from './list-clients/list-clients.component';
 import { ManageClientsComponent } from './manage-clients/manage-clients.component';
 import { TableModule } from '../../components/table/table.module';
-import { AngularMaterialModule } from './client-material.module'
+import { AngularMaterialModule } from './client-material.module';
+import { NgxMaskModule } from 'ngx-mask'
 
 @NgModule({
   declarations: [ListClientsComponent, ManageClientsComponent],
@@ -16,7 +17,8 @@ import { AngularMaterialModule } from './client-material.module'
     TableModule,
     AngularMaterialModule,
     FormsModule,
-    ReactiveFormsModule       
+    ReactiveFormsModule,
+    NgxMaskModule.forRoot()
   ]
 })
 export class ClientsModule { }

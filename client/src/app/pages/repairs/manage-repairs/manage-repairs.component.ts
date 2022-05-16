@@ -213,6 +213,9 @@ export class ManageRepairsComponent implements OnInit {
       }
 
     }, ( err ) => {
+        if (err.error && err.error.code == 999) {
+          this._authService.logout()
+        }
       
         let errorMsg = '';        
         if( err.error.msg ){
@@ -239,9 +242,11 @@ export class ManageRepairsComponent implements OnInit {
           }); 
 
     }, ( err ) => {
+        if (err.error && err.error.code == 999) {
+          this._authService.logout()
+        }
       
-        let errorMsg = '';
-        
+        let errorMsg = '';        
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {
@@ -270,6 +275,9 @@ export class ManageRepairsComponent implements OnInit {
         this.repairForm.controls['observations'].reset();
       }
     }, ( err ) => {
+        if (err.error && err.error.code == 999) {
+          this._authService.logout()
+        }
       
         let errorMsg = '';        
         if( err.error.msg ){

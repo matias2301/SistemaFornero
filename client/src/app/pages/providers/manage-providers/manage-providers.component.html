@@ -59,10 +59,11 @@
         <input
             matInput 
             formControlName="phone"
-            placeholder="Ingresá un número de teléfono"
+            mask="(000) 000-0000"
+            placeholder="Ejemplo: (341) 512-3456"
         >
         <mat-icon matSuffix>phone</mat-icon>
-        <mat-hint>Incluir código de área</mat-hint>
+        <mat-hint>Incluir código de área - No ingresar el '15'</mat-hint>
         <mat-error *ngIf="providerForm.controls['phone'].invalid">
             El número de teléfono es <strong>requerido</strong>
         </mat-error>

@@ -13,11 +13,6 @@ table {
   .text-right {
     text-align: right !important;
   }
-  .button-add {
-    margin-right: 5px;
-    width: 100px;
-    max-height: 40px;    
-  }
   tr.example-detail-row {
     height: 0;    
   }
@@ -52,4 +47,28 @@ table {
   }
   h5 {
     font-weight: 600;
+  }
+  .filter-buttomAdd {
+    display: flex;
+    justify-content: space-between;
+    flex: 10;
+  }
+  .filter {
+    display: flex;
+    justify-content: flex-start;
+    flex: 6;
+  }
+  .button-add {
+    margin-right: 5px;
+    max-width: 100px;
+    max-height: 40px;    
+    flex: 2;
+  }
+  .filterKey {
+    margin-left: 10px;
+    max-width: 200px;
+  }
+  .filterValue {
+    margin-left: 25px;
+    max-width: 500px;
   }

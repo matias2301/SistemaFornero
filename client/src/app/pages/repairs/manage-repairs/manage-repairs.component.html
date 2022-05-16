@@ -192,7 +192,7 @@
                 <mat-panel-title>                    
                     {{ edit ? 'Mostrar observaciones' : 'Agregar observación'}}
                     <span class="spacer"></span>
-                    <mat-chip-list aria-label="Fish selection">
+                    <mat-chip-list *ngIf="edit" aria-label="Fish selection">
                         <mat-chip>{{ observations.length }} comentario{{ observations.length == 1 ? '' : 's' }}</mat-chip>
                     </mat-chip-list>
                 </mat-panel-title>                       

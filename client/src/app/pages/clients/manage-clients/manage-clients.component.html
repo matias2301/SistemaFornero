@@ -46,10 +46,10 @@
             formControlName="email"
             placeholder="cliente@email.com"            
         >        
-        <mat-error *ngIf="clientForm.controls['email'].errors.required">
+        <mat-error *ngIf="clientForm.controls['email'].hasError('required')">
             El email es <strong>requerido</strong>
         </mat-error>   
-        <mat-error *ngIf="clientForm.controls['email'].errors.pattern">
+        <mat-error *ngIf="clientForm.controls['email'].hasError('pattern')">
           Debés ingresar un email <strong>válido</strong>
         </mat-error>  
     </mat-form-field>
@@ -60,10 +60,11 @@
         <input
             matInput 
             formControlName="phone"
-            placeholder="Ingresá un número de teléfono"
+            mask="(000) 000-0000"
+            placeholder="Ejemplo: (341) 512-3456"
         >
         <mat-icon matSuffix>phone</mat-icon>
-        <mat-hint>Incluir código de área</mat-hint>
+        <mat-hint>Incluir código de área - No ingresar el '15'</mat-hint>
         <mat-error *ngIf="clientForm.controls['phone'].invalid">
             El número de teléfono es <strong>requerido</strong>
         </mat-error>

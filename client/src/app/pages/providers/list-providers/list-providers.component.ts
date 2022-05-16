@@ -5,6 +5,7 @@ import {Sort} from "@angular/material/sort";
 
 import { ManageDataService } from '../../../services/manage-data.service';
 import { AlertsService } from '../../../services/alerts.service';
+import { AuthService } from '../../../services/auth.service';
 
 import { ColumnTable } from '../../../interfaces/columnTable';
 import { Provider } from '../../../interfaces/provider.interface';
@@ -23,6 +24,7 @@ export class ListProvidersComponent implements OnInit {
   constructor(
     private _manageDataService: ManageDataService,
     private _alertsService: AlertsService,
+    private _authService: AuthService,
     private router: Router,
   ) {}
 
@@ -54,16 +56,22 @@ export class ListProvidersComponent implements OnInit {
       }
     );
   }
-  deleteProvider(provider: Provider) {
 
-    this._manageDataService.deleteRecord('providers', provider.id)
-      .subscribe((res: any) => {
+  async deleteProvider(provider: Provider) {
+    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el proveedor ${provider.name} ${provider.lastName}`, 'warning')
 
-        if( res.success ){            
-          this._alertsService.alertToast(res.msg, 'success')
-          this.providersRows = this.providersRows.filter(item => item.id !== provider.id)    
-        }
-      }, ( err ) => {
+    if (confirm) { 
+      this._manageDataService.deleteRecord('providers', provider.id)
+        .subscribe((res: any) => {
+
+          if( res.success ){            
+            this._alertsService.alertToast(res.msg, 'success')
+            this.providersRows = this.providersRows.filter(item => item.id !== provider.id)    
+          }
+        }, ( err ) => {
+          if (err.error && err.error.code == 999) {
+            this._authService.logout()
+          }
 
           let errorMsg = '';          
           if( err.error ){
@@ -73,8 +81,9 @@ export class ListProvidersComponent implements OnInit {
           }
 
           this._alertsService.alertToast(errorMsg, 'error');
-      }
-    ); 
+        }
+      ); 
+    }
   }
 
   initializeColumns(): void {
@@ -95,7 +104,7 @@ export class ListProvidersComponent implements OnInit {
         name: 'Email',
         dataKey: 'email',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
       {
         name: 'Telefóno',
@@ -107,7 +116,7 @@ export class ListProvidersComponent implements OnInit {
         name: 'Ciudad',
         dataKey: 'city',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
       {
         name: 'Provincia',

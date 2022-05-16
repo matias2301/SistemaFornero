@@ -5,6 +5,7 @@ import {Sort} from "@angular/material/sort";
 
 import { ManageDataService } from '../../../services/manage-data.service';
 import { AlertsService } from '../../../services/alerts.service';
+import { AuthService } from '../../../services/auth.service';
 
 import { ColumnTable } from '../../../interfaces/columnTable';
 import { Product } from '../../../interfaces/product.interface';
@@ -23,6 +24,7 @@ export class ListProductsComponent implements OnInit {
   constructor(
     private _manageDataService: ManageDataService,
     private _alertsService: AlertsService,
+    private _authService: AuthService,
     private router: Router,
   ) {}
 
@@ -45,6 +47,7 @@ export class ListProductsComponent implements OnInit {
   addProduct() {    
     this.router.navigateByUrl('products/manage-products');
   }
+
   editProduct(product: Product) {
     this._manageDataService.getDataById('products', product.id)
       .subscribe((res: Product) => {        
@@ -54,16 +57,23 @@ export class ListProductsComponent implements OnInit {
       }
     );
   }
-  deleteProduct(product: Product) {
-    this._manageDataService.deleteRecord('products', product.id)
-      .subscribe((res: any) => {
 
-        if( res.success ){            
-          this._alertsService.alertToast(res.msg, 'success')
-          this.productsRows = this.productsRows.filter(item => item.id !== product.id)    
-        }
-      }, ( err ) => {
-        
+  async deleteProduct(product: Product) {
+    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el producto "${product.description}"`, 'warning')
+    
+    if (confirm) {
+      this._manageDataService.deleteRecord('products', product.id)
+        .subscribe((res: any) => {
+
+          if( res.success ){            
+            this._alertsService.alertToast(res.msg, 'success')
+            this.productsRows = this.productsRows.filter(item => item.id !== product.id)    
+          }
+        }, ( err ) => {    
+          if (err.error && err.error.code == 999) {
+            this._authService.logout()
+          }
+          
           let errorMsg = '';          
           if( err.error ){
             errorMsg = err.error.msg
@@ -72,8 +82,9 @@ export class ListProductsComponent implements OnInit {
           }
 
           this._alertsService.alertToast(errorMsg, 'error');
-      }
-    );
+        }
+      );
+    }
   }
 
   initializeColumns(): void {
@@ -82,7 +93,7 @@ export class ListProductsComponent implements OnInit {
         name: 'Código',
         dataKey: 'code',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
       {
         name: 'Descripción',

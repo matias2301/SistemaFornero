@@ -5,6 +5,7 @@ import { MatSort, Sort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 
 import { ColumnTable } from '../../interfaces/columnTable';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-table',
@@ -19,6 +20,11 @@ import { ColumnTable } from '../../interfaces/columnTable';
   ],
 })
 export class TableComponent implements OnInit, AfterViewInit {
+
+  public role: string;
+  public filterKey: string;
+  public filterValue: string;
+  private defaultFilterPredicate?: (data: any, filter: string) => boolean;
 
   public tableDataSource = new MatTableDataSource([]);
   public displayedColumns: string[];
@@ -40,11 +46,14 @@ export class TableComponent implements OnInit, AfterViewInit {
 
   // this property needs to have a setter, to dynamically get changes from parent component
   @Input() set tableData(data: any[]) {
-    console.log('tableData', data)
     this.setTableDataSource(data);
   }
 
-  constructor() {}
+  constructor(
+    private _authService: AuthService,
+  ) {
+    this.role = this._authService.authSubject.value.role;
+  }
 
   ngOnInit(): void {
     
@@ -54,6 +63,8 @@ export class TableComponent implements OnInit, AfterViewInit {
     } else {
       this.displayedColumns = columnNames;
     }
+
+    this.defaultFilterPredicate = this.tableDataSource.filterPredicate;
   }
 
   // we need this, in order to make pagination work with *ngIf
@@ -67,9 +78,25 @@ export class TableComponent implements OnInit, AfterViewInit {
     this.tableDataSource.sort = this.matSort;
   }
 
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.tableDataSource.filter = filterValue.trim().toLowerCase();
+  applyFilter(event?: Event) {
+    if (event) {
+      const filterValue = (event.target as HTMLInputElement).value;
+      this.filterValue = filterValue.trim().toLowerCase();
+    }
+     
+    this.tableDataSource.filter = this.filterValue
+  }
+
+  setFilter(filter?: string) {
+    this.filterKey = filter;
+    if (this.filterKey) {
+      this.tableDataSource.filterPredicate = (data: any, filter: string) => {
+        return data[this.filterKey].indexOf(filter) != -1;
+      };
+    } else {
+      this.tableDataSource.filterPredicate = this.defaultFilterPredicate;
+    }
+    this.applyFilter();
   }
 
   sortTable(sortParameters: Sort) {

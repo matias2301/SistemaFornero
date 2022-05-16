@@ -5,6 +5,7 @@ import {Sort} from "@angular/material/sort";
 
 import { ManageDataService } from '../../../services/manage-data.service';
 import { AlertsService } from '../../../services/alerts.service';
+import { AuthService } from '../../../services/auth.service';
 
 import { ColumnTable } from '../../../interfaces/columnTable';
 // import { Repair } from '../../../interfaces/repair.interface';
@@ -37,6 +38,7 @@ export class ListRepairsComponent implements OnInit {
   constructor(
     private _manageDataService: ManageDataService,
     private _alertsService: AlertsService,
+    private _authService: AuthService,
     private router: Router,
   ) { }
 
@@ -59,20 +61,26 @@ export class ListRepairsComponent implements OnInit {
   addRepair() {    
     this.router.navigateByUrl('repairs/manage-repairs');
   }
-  editRepair(repair: any) {    
-    
+
+  editRepair(repair: any) {        
     this.router.navigate(['repairs/manage-repairs', repair]);
   }
-  deleteRepair(repair: any) {
 
-    this._manageDataService.deleteRecord('repairs', repair.idRepair)
-      .subscribe((res: any) => {
+  async deleteRepair(repair: any) {
+    const confirm = await this._alertsService.alertModal('Confirmar eliminación', 'Se eliminará la reparación seleccionada', 'warning')
 
-        if( res.success ){            
-          this._alertsService.alertToast(res.msg, 'success')
-          this.repairsRows = this.repairsRows.filter(item => item.idRepair !== repair.idRepair)    
-        }
-      }, ( err ) => {
+    if (confirm) {
+      this._manageDataService.deleteRecord('repairs', repair.idRepair)
+        .subscribe((res: any) => {
+
+          if( res.success ){            
+            this._alertsService.alertToast(res.msg, 'success')
+            this.repairsRows = this.repairsRows.filter(item => item.idRepair !== repair.idRepair)    
+          }
+        }, ( err ) => {
+          if (err.error && err.error.code == 999) {
+            this._authService.logout()
+          }
 
           let errorMsg = '';          
           if( err.error ){
@@ -82,8 +90,9 @@ export class ListRepairsComponent implements OnInit {
           }
 
           this._alertsService.alertToast(errorMsg, 'error');
-      }
-    ); 
+        }
+      ); 
+    }
   }
 
   initializeColumns(): void {
@@ -104,25 +113,25 @@ export class ListRepairsComponent implements OnInit {
         name: 'Motivo',
         dataKey: 'subject',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
       {
         name: 'Estado',
         dataKey: 'state',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
       {
         name: 'Asignado a',
         dataKey: 'assigned',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
       {
         name: 'Fecha ingreso',
         dataKey: 'createdAt',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
     ];
   }
@@ -130,7 +139,6 @@ export class ListRepairsComponent implements OnInit {
   getRepairs() {
     this._manageDataService.getData('repairs')
     .subscribe((res: any) => {
-      console.log('repairs', res)
       if( res.repairs.length > 0 ){
         
         res.repairs.map( repair => {               

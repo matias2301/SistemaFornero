@@ -11,9 +11,11 @@ export class AlertsService {
 
   constructor () { }
 
-    async alertModal(message, icon) {      
+    async alertModal(title: string, message: string, icon: any) {      // por ahora sólo se usa para confirmar eliminación
+      let confirm = '';
+      
       await Swal.fire({
-        // title: title,
+        title: title,
         text: message,        
         icon: icon,
         showClass: {
@@ -24,9 +26,13 @@ export class AlertsService {
         },        
         heightAuto: false,
         width: 400,
-        timer: 5000,
-        confirmButtonText: 'Ok',
-      });
+        // timer: 5000,
+        confirmButtonText: 'Eliminar',
+        cancelButtonText: 'Cancelar',
+        showCancelButton: true,
+      }).then( data => confirm = data.value);
+
+      return confirm;
     }
 
     async alertToast(message, icon) {

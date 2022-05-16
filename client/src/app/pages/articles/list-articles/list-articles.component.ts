@@ -5,6 +5,7 @@ import {Sort} from "@angular/material/sort";
 
 import { ManageDataService } from '../../../services/manage-data.service';
 import { AlertsService } from '../../../services/alerts.service';
+import { AuthService } from '../../../services/auth.service';
 
 import { ColumnTable } from '../../../interfaces/columnTable';
 import { Article } from '../../../interfaces/article.interface';
@@ -23,6 +24,7 @@ export class ListArticlesComponent implements OnInit {
   constructor(
     private _manageDataService: ManageDataService,
     private _alertsService: AlertsService,
+    private _authService: AuthService,
     private router: Router,
   ) {}
 
@@ -45,6 +47,7 @@ export class ListArticlesComponent implements OnInit {
   addArticle() {    
     this.router.navigateByUrl('articles/manage-articles');
   }
+
   editArticle(article: Article) {
     this._manageDataService.getDataById('articles', article.id)
       .subscribe((res: Article) => {        
@@ -54,16 +57,23 @@ export class ListArticlesComponent implements OnInit {
       }
     );
   }
-  deleteArticle(article: Article) {
-    this._manageDataService.deleteRecord('articles', article.id)
-      .subscribe((res: any) => {
 
-        if( res.success ){            
-          this._alertsService.alertToast(res.msg, 'success')
-          this.articlesRows = this.articlesRows.filter(item => item.id !== article.id)    
-        }
-      }, ( err ) => {
-        
+  async deleteArticle(article: Article) {
+    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el artículo "${article.description}"`, 'warning')
+
+    if (confirm) {
+      this._manageDataService.deleteRecord('articles', article.id)
+        .subscribe((res: any) => {
+
+          if( res.success ){            
+            this._alertsService.alertToast(res.msg, 'success')
+            this.articlesRows = this.articlesRows.filter(item => item.id !== article.id)    
+          }
+        }, ( err ) => {      
+          if (err.error && err.error.code == 999) {
+            this._authService.logout()
+          }    
+
           let errorMsg = '';          
           if( err.error ){
             errorMsg = err.error.msg
@@ -72,8 +82,9 @@ export class ListArticlesComponent implements OnInit {
           }
 
           this._alertsService.alertToast(errorMsg, 'error');
-      }
-    );
+        }
+      );
+    }
   }
 
   initializeColumns(): void {
@@ -82,7 +93,7 @@ export class ListArticlesComponent implements OnInit {
         name: 'Código',
         dataKey: 'code',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
       {
         name: 'Descripción',

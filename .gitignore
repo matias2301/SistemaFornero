@@ -10,6 +10,7 @@
 # dependencies
 /node_modules
 /client/node_modules
+/client/.angular
 /server/node_modules
 
 # profiling files

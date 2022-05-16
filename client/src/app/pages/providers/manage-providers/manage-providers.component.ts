@@ -6,6 +6,7 @@ import { CountriesService } from '../../../services/countries.service';
 import { JSONLoaderHelper } from '../../../services/getJson.service';
 import { ManageDataService } from '../../../services/manage-data.service';
 import { AlertsService } from '../../../services/alerts.service';
+import { AuthService } from '../../../services/auth.service';
 
 import { Provider } from '../../../interfaces/provider.interface';
 
@@ -30,6 +31,7 @@ export class ManageProvidersComponent implements OnInit {
     private _JSONLoaderHelper: JSONLoaderHelper,
     private _manageDataService: ManageDataService,
     private _alertsService: AlertsService,
+    private _authService: AuthService,
     private activatedRoute: ActivatedRoute,  
     private router: Router, 
   ) {
@@ -145,6 +147,9 @@ export class ManageProvidersComponent implements OnInit {
       }
 
     }, ( err ) => {
+        if (err.error && err.error.code == 999) {
+          this._authService.logout()
+        }
       
         let errorMsg = '';        
         if( err.error.msg ){
@@ -169,9 +174,11 @@ export class ManageProvidersComponent implements OnInit {
           }); 
 
     }, ( err ) => {
+        if (err.error && err.error.code == 999) {
+          this._authService.logout()
+        }
       
-        let errorMsg = '';
-        
+        let errorMsg = '';        
         if( err.error.msg ){
           errorMsg = err.error.msg
         } else {

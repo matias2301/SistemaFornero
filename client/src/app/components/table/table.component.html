@@ -2,11 +2,27 @@
 
   <!-- Filter -->
   <ng-container *ngIf="isFilterable" [matColumnDef]="this.rowActionIcon">
-    <div fxLayout="row" fxLayoutAlign="space-between">
-      <mat-form-field>
-        <mat-label>Filtrar</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Ingresá tu búsqueda">      
-      </mat-form-field>
+    <div class="filter-buttomAdd">
+      <div class="filter">
+        <mat-form-field class="filterKey">
+            <mat-label>Filtrar por...</mat-label>
+            <mat-select>
+                <mat-option (click)="setFilter()">--</mat-option>
+                <mat-option
+                    *ngFor="let tableColumn of tableColumns"                    
+                    [value]="tableColumn.dataKey"
+                    (click)="setFilter(tableColumn.dataKey)"
+                >
+                    {{tableColumn.name}}
+                </mat-option>
+            </mat-select>             
+        </mat-form-field>
+
+        <mat-form-field class="filterValue">
+          <mat-label>Filtrar</mat-label>
+          <input matInput (keyup)="applyFilter($event)" [(ngModel)]="filterValue" placeholder="Ingresá tu búsqueda">      
+        </mat-form-field>
+      </div>
 
       <button
         *ngIf="rowAction?.length"
@@ -65,10 +81,10 @@
     <ng-container *ngIf="rowAction?.length" [matColumnDef]="rowAction">
       <th mat-header-cell *matHeaderCellDef></th>
       <td mat-cell *matCellDef="let element" [id]="rowAction">
-        <button mat-button (click)="emitRowActionEdit(element)">
+        <button *ngIf="role == 'admin'" mat-button (click)="emitRowActionEdit(element)">
           <mat-icon>edit</mat-icon>
         </button>
-        <button mat-button (click)="emitRowActionDelete(element)">
+        <button *ngIf="role == 'admin'" mat-button (click)="emitRowActionDelete(element)">
           <mat-icon>delete</mat-icon>
         </button>
       </td>

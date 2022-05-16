@@ -5,6 +5,7 @@ import {Sort} from "@angular/material/sort";
 
 import { ManageDataService } from '../../../services/manage-data.service';
 import { AlertsService } from '../../../services/alerts.service';
+import { AuthService } from '../../../services/auth.service';
 
 import { ColumnTable } from '../../../interfaces/columnTable';
 import { Client } from '../../../interfaces/client.interface';
@@ -23,6 +24,7 @@ export class ListClientsComponent implements OnInit {
   constructor(
     private _manageDataService: ManageDataService,
     private _alertsService: AlertsService,
+    private _authService: AuthService,
     private router: Router,
   ) {}
 
@@ -45,6 +47,7 @@ export class ListClientsComponent implements OnInit {
   addClient() {    
     this.router.navigateByUrl('clients/manage-clients');
   }
+
   editClient(client: Client) {
     this._manageDataService.getDataById('clients', client.id)
       .subscribe((res: Client) => {        
@@ -54,17 +57,23 @@ export class ListClientsComponent implements OnInit {
       }
     );
   }
-  deleteClient(client: Client) {
-    
-    this._manageDataService.deleteRecord('clients', client.id)
-      .subscribe((res: any) => {
 
-        if( res.success ){            
-          this._alertsService.alertToast(res.msg, 'success')
-          this.clientsRows = this.clientsRows.filter(item => item.id !== client.id)    
-        }
-      }, ( err ) => {
-        
+  async deleteClient(client: Client) {
+    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el cliente ${client.firstName} ${client.lastName}`, 'warning')
+    
+    if (confirm) {
+      this._manageDataService.deleteRecord('clients', client.id)
+        .subscribe((res: any) => {
+
+          if( res.success ){            
+            this._alertsService.alertToast(res.msg, 'success')
+            this.clientsRows = this.clientsRows.filter(item => item.id !== client.id)    
+          }
+        }, ( err ) => {       
+          if (err.error && err.error.code == 999) {
+            this._authService.logout()
+          }   
+
           let errorMsg = '';          
           if( err.error ){
             errorMsg = err.error.msg
@@ -73,8 +82,9 @@ export class ListClientsComponent implements OnInit {
           }
 
           this._alertsService.alertToast(errorMsg, 'error');
-      }
-    );    
+        }
+      ); 
+    }   
   }
 
   initializeColumns(): void {
@@ -95,7 +105,7 @@ export class ListClientsComponent implements OnInit {
         name: 'Email',
         dataKey: 'email',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
       {
         name: 'Telefóno',
@@ -119,7 +129,7 @@ export class ListClientsComponent implements OnInit {
         name: 'Ciudad',
         dataKey: 'city',
         position: 'left',
-        isSortable: false
+        isSortable: true
       },
     ];
   }

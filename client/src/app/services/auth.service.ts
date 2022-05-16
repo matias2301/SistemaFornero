@@ -18,6 +18,7 @@ export class AuthService {
   authSubject = new BehaviorSubject({
     id: '',
     name: '',
+    role: '',
     logged: false
   });
 
@@ -36,6 +37,7 @@ export class AuthService {
       this.authSubject.next({
         id: localStorage.getItem('ID'),
         name: localStorage.getItem('NAME'),
+        role: localStorage.getItem('ROLE'),
         logged: true
       });
     }    
@@ -60,10 +62,12 @@ export class AuthService {
           localStorage.setItem(this.ACCESS_TOKEN, res.token);
           localStorage.setItem('ID', `${res.user.id}`);
           localStorage.setItem('NAME', `${res.user.name}`);
+          localStorage.setItem('ROLE', `${res.user.role}`);
           
           this.authSubject.next({
-            id: localStorage.getItem('ID'),
-            name: localStorage.getItem('NAME'),
+            id: String(res.user.id),
+            name: res.user.name,
+            role: res.user.role,
             logged: true
           });                            
         }  
@@ -77,7 +81,8 @@ export class AuthService {
     localStorage.removeItem(this.ACCESS_TOKEN)
     this.authSubject.next({
       id: '',
-      name: "",
+      name: '',
+      role: '',
       logged: false
     });
     this.router.navigateByUrl('login');    
