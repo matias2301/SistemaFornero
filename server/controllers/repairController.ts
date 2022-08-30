@@ -65,26 +65,29 @@ export const getRepair = async( req: Request , res: Response ) => {
 
 export const createRepair = async( req: Request , res: Response ) => {
 
-    const { clientId, description, state, estDate, takenId, assignedId, articles, observations } = req.body;
+    const { clientId, description, state, estDate, budget, paidNumber, paidState, takenId, assignedId, articles, observations } = req.body;
 
     const repair = new Repairs({
-        ClientId: clientId,
-        description,        
-        estDate: estDate || '',
-        state,
-        assignedId,
-        takenId,        
+      ClientId: clientId,
+      description,        
+      estDate: estDate || '',
+      state,
+      assignedId,
+      takenId,     
+      budget,   
+      paidNumber,
+      paidState
     });
 
     repair.save()
         .then( (repair: any) => {
             
             if(observations){
-                const obs = new Observations({
-                    description: observations,
-                    RepairId: repair.id
-                })
-                obs.save();
+              const obs = new Observations({
+                description: observations,
+                RepairId: repair.id
+              })
+              obs.save();
             }
 
             if( articles.length > 0 ){

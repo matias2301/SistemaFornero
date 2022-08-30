@@ -3,6 +3,9 @@ export interface RepairAddModel{
     description: string;
     state: string;
     estDate?: Date;
+    budget?: string;
+    paidNumber?: string;
+    paidState: boolean;
     createdAt?: Date;
     updatedAt?: Date;
 }

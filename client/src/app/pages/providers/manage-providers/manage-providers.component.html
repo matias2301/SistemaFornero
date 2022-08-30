@@ -44,12 +44,12 @@
             formControlName="email"
             placeholder="cliente@email.com"            
         >       
-        <mat-error *ngIf="providerForm.controls['email'].errors.required">
+        <mat-error *ngIf="providerForm.controls['email'].hasError('required')">
           El email es <strong>requerido</strong>
         </mat-error>   
-        <mat-error *ngIf="providerForm.controls['email'].errors.pattern">
+        <mat-error *ngIf="providerForm.controls['email'].hasError('pattern')">
           Debés ingresar un email <strong>válido</strong>
-        </mat-error>   
+        </mat-error>  
     </mat-form-field>
 
 

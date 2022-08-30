@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DashboardComponent } from './dashboard.component';
-import {HomeMaterialModule  } from './dashboard-material.module'
+import { HomeMaterialModule  } from './dashboard-material.module'
 
 export const routes = [
   {
@@ -23,6 +24,7 @@ export const routes = [
   ],
   imports: [
     CommonModule,    
+    FormsModule,
     FlexLayoutModule,
     HomeMaterialModule,
     RouterModule.forChild(routes)

@@ -1,13 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatCardModule } from '@angular/material/card';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 const materialModules = [
-  MatProgressSpinnerModule,
-  MatCardModule,
+  MatButtonToggleModule
 ];
 
 @NgModule({

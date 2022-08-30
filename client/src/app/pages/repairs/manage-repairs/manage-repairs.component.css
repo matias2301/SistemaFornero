@@ -17,7 +17,8 @@ table {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;          
+  align-items: center;
+  flex-wrap: wrap;       
 }
 .row-input {
   flex-grow: 1;
@@ -43,6 +44,9 @@ textarea {
 }
 .infix {  
   margin-bottom: -10px;
+}
+.checkPaid {
+  margin: 0 10px;
 }
 .spacer {
   flex: 1 1 auto;

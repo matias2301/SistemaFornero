@@ -1,1 +1,11 @@
-<p>manage-articles works!</p>
+<div class="reportFilter">
+  <p>Informes disponibles:</p>    
+  <mat-button-toggle-group class="buttons" [(ngModel)]="report" (change)="onValChange($event.value)">
+    <mat-button-toggle value="stocks" checked="true">Artículos con faltantes</mat-button-toggle>
+    <mat-button-toggle value="repairs">Reparaciones</mat-button-toggle>
+    <mat-button-toggle value="paids"> Clientes con confirmación de pago pendiente</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+
+
+<div class="text-divider">{{ title }}</div>

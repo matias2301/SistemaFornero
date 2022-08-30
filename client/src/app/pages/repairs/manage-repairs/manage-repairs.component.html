@@ -47,7 +47,7 @@
     <div class="row-form">        
         <mat-form-field color="accent" appearance="outline">
             <mat-label>Fecha estimada de finalización</mat-label>
-            <input matInput [min]="todayDate" [matDatepicker]="datePicker" formControlName="estDate">
+            <input matInput readonly="true" [min]="todayDate" [matDatepicker]="datePicker" formControlName="estDate">
             <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
             <mat-datepicker #datePicker></mat-datepicker>
         </mat-form-field>
@@ -88,6 +88,41 @@
         </mat-error>               
         </mat-form-field> 
     </div>
+
+    <div class="text-divider">Presupuesto / Información del pago</div>
+      <div class="row-form">
+        <mat-form-field
+          appearance="outline"
+          class="row-input"            
+        >   
+        <mat-label>Presupuesto</mat-label>
+        <input
+          matInput
+          formControlName="budget"
+          placeholder="Precio presupuestado"                    
+        >
+        </mat-form-field>
+
+        <mat-form-field
+          appearance="outline"
+          class="row-input"            
+        >   
+        <mat-label>Número de transacción</mat-label>
+        <input
+          matInput
+          formControlName="paidNumber"
+          placeholder="Número de transacción de pago"                    
+        >
+        </mat-form-field>
+
+        <mat-checkbox
+          class="checkPaid"
+          [value]="paidState"
+          (change)="paidState = !paidState"
+        >
+          Pagado
+        </mat-checkbox>
+      </div>
 
     <div class="text-divider">Artículos usados (opcional)</div>
     <form [formGroup]="articlesForm">

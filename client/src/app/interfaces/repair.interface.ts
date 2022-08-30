@@ -6,6 +6,9 @@ export interface Repair{
     takenId: number;
     assignedId: number;
     estDate: Date;
+    budget: string;
+    paidNumber: string;
+    paidState: boolean;
     articles: string[];
     observations: string[];    
 }

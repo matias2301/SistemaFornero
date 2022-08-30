@@ -9,7 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MatChipsModule } from '@angular/material/chips';
@@ -26,16 +26,19 @@ const materialModules = [
   MatNativeDateModule,
   MatExpansionModule,
   MatTableModule,
-  MatChipsModule
+  MatChipsModule  
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    ...materialModules
+    ...materialModules    
   ],
   exports: [
     ...materialModules
+  ],
+  providers: [
+    {provide: MAT_DATE_LOCALE, useValue: 'en-GB'},
   ],
 })
 

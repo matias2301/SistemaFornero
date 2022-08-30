@@ -33,6 +33,7 @@ export class ManageRepairsComponent implements OnInit {
   observations: any[] = [];
   articleSelected: boolean = false;
   articleRepair = [];
+  paidState: boolean = false;
   edit: boolean = false;
   displayedColumns: string[] = ['code', 'descrip', 'amount', 'iconDelete'];  
 
@@ -108,6 +109,8 @@ export class ManageRepairsComponent implements OnInit {
       estDate: new FormControl('', Validators.compose([Validators.required ])),      
       state: new FormControl('', Validators.compose([Validators.required ])),   
       assignedId: new FormControl('', Validators.compose([Validators.required ])),
+      budget: new FormControl(''),
+      paidNumber: new FormControl(''),
       observations: new FormControl(''),          
     });
 
@@ -129,7 +132,8 @@ export class ManageRepairsComponent implements OnInit {
       assignedId: this.repair.assignedId,            
     });    
     this.email = this.repair.Client.email;
-    this.observations = this.repair.Observations;    
+    this.observations = this.repair.Observations;   
+    this.paidState = this.repair.paidState 
   }
 
   selectArticle(code: string, descrip: string){
@@ -140,6 +144,7 @@ export class ManageRepairsComponent implements OnInit {
 
   cancelArticle() {
     this.articleSelected = false;
+    this.paidState = false;
     this.articlesForm.reset();
   }
 
@@ -187,6 +192,7 @@ export class ManageRepairsComponent implements OnInit {
     values.takenId = Number(this.takenId);
     values = {
       ...values,
+      paidState: this.paidState,
       articles: this.articleRepair
     }
 
