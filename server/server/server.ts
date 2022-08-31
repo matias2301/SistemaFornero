@@ -14,6 +14,7 @@ import productRoute from '../routes/productRoute';
 import providerRoute from '../routes/providerRoute';
 import repairRoute from '../routes/repairRoute';
 import observationRoute from '../routes/observationRoute';
+import reportsRoute from '../routes/reportsRoute';
 
 class Server {
 
@@ -27,7 +28,8 @@ class Server {
         products: '/api/products',
         providers: '/api/providers',
         repairs: '/api/repairs',
-        observations: '/api/observations',        
+        observations: '/api/observations',
+        reports: '/api/reports'      
     }   
 
     constructor() {
@@ -74,6 +76,7 @@ class Server {
         this.app.use( this.apiPaths.providers, providerRoute );
         this.app.use( this.apiPaths.repairs, repairRoute );
         this.app.use( this.apiPaths.observations, observationRoute );
+        this.app.use( this.apiPaths.reports, reportsRoute );
     }
 
     listen() {
