@@ -141,6 +141,7 @@ export class ManageProvidersComponent implements OnInit {
         this._alertsService.alertToast(res.msg, 'success')
           .then( () => {
             this.providerForm.reset();
+            this.providerForm.controls['country'].patchValue('Argentina');
           });
       } else {
         this._alertsService.alertToast(res.msg, 'error');
@@ -170,6 +171,7 @@ export class ManageProvidersComponent implements OnInit {
           .then( () => {
             this.router.navigateByUrl('providers/list-providers');
             this.providerForm.reset();
+            this.providerForm.controls['country'].patchValue('Argentina');
             this.edit = false;    
           }); 
 

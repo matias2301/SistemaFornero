@@ -27,7 +27,7 @@ export const routes = [
     FormsModule,
     FlexLayoutModule,
     HomeMaterialModule,
-    RouterModule.forChild(routes)
+    // RouterModule.forChild(routes)
   ]
 })
 export class DashboardModule {

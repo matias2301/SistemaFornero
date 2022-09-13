@@ -33,15 +33,15 @@ const Repairs = sequelize.define<RepairModel, RepairAddModel>('Repairs', {
       allowNull: true,
   },
   budget: {
-    type: DataTypes.DATE,
+    type: DataTypes.STRING,
     allowNull: true,
   },
   paidNumber: {
-    type: DataTypes.DATE,
+    type: DataTypes.STRING,
     allowNull: true,
   },
   paidState: {
-    type: DataTypes.DATE,
+    type: DataTypes.BOOLEAN,
   },
 })
 

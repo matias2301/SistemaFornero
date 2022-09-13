@@ -8,6 +8,7 @@ import { ManageProvidersComponent } from './manage-providers/manage-providers.co
 
 import { TableModule } from '../../components/table/table.module';
 import { AngularMaterialModule } from './provider-material.module'
+import { NgxMaskModule } from 'ngx-mask'
 
 @NgModule({
   declarations: [ListProvidersComponent, ManageProvidersComponent],
@@ -17,7 +18,8 @@ import { AngularMaterialModule } from './provider-material.module'
     TableModule,
     AngularMaterialModule,
     FormsModule,
-    ReactiveFormsModule   
+    ReactiveFormsModule,
+    NgxMaskModule.forRoot()   
   ]
 })
 export class ProvidersModule { }

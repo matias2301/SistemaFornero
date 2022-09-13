@@ -129,11 +129,13 @@ export class ManageRepairsComponent implements OnInit {
       description: this.repair.description,
       estDate: this.repair.estDate,
       state: this.repair.state,      
-      assignedId: this.repair.assignedId,            
+      assignedId: this.repair.assignedId,   
+      budget: this.repair.budget,
+      paidNumber: this.repair.paidNumber
     });    
     this.email = this.repair.Client.email;
     this.observations = this.repair.Observations;   
-    this.paidState = this.repair.paidState 
+    this.paidState = this.repair.paidState
   }
 
   selectArticle(code: string, descrip: string){
@@ -235,8 +237,7 @@ export class ManageRepairsComponent implements OnInit {
     );
   }
 
-  updateRepair(values: Repair) {
-    
+  updateRepair(values: Repair) {    
     this._manageDataService.updateRecord('repairs', this.repair.id, values)
     .subscribe((res: any) => {
       

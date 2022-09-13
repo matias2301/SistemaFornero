@@ -145,6 +145,7 @@ export class ManageClientsComponent implements OnInit {
         this._alertsService.alertToast(res.msg, 'success')
           .then( () => {
             this.clientForm.reset();
+            this.clientForm.controls['country'].patchValue('Argentina');
           });
       } else {
         this._alertsService.alertToast(res.msg, 'error');
@@ -174,6 +175,7 @@ export class ManageClientsComponent implements OnInit {
           .then( () => {
             this.router.navigateByUrl('clients/list-clients');
             this.clientForm.reset();
+            this.clientForm.controls['country'].patchValue('Argentina');
             this.edit = false;            
           });      
 

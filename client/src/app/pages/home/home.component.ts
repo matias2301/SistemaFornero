@@ -31,9 +31,9 @@ export class HomeComponent implements OnDestroy {
         private _authService: AuthService,
         private _manageDataService: ManageDataService,
         ) {
-        this.mediaWatcher = this.media.media$.subscribe((mediaChange: MediaChange) => {
-            this.handleMediaChange(mediaChange);            
-        });
+        // this.mediaWatcher = this.media.media$.subscribe((mediaChange: MediaChange) => {
+        //     this.handleMediaChange(mediaChange);            
+        // });
 
         this.getUserLogged();
 
@@ -47,6 +47,11 @@ export class HomeComponent implements OnDestroy {
                 });
             }
         });
+    }
+
+    ngOnInit() {
+      this._manageDataService.getData('articles')
+        .subscribe((res: any) => console.log('get articles'));
     }
 
     private handleMediaChange(mediaChange: MediaChange) {

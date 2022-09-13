@@ -26,7 +26,18 @@ export const getRepairs = async( req: Request , res: Response ) => {
 
 export const getPendingPaids = async( req: Request , res: Response ) => {
 
-  const pendingPaids = await Repairs.findAll({});
+  const pendingPaids = await Repairs.findAll({
+    where: {       
+      [Op.and]: [
+        {
+          paidNumber: {
+            [Op.eq]: ""
+          }
+        },
+        { paidState: false }
+      ]    
+    },
+  });
 
   res.json({ pendingPaids });
 }

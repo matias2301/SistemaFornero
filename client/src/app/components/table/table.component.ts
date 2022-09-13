@@ -52,7 +52,7 @@ export class TableComponent implements OnInit, AfterViewInit {
   constructor(
     private _authService: AuthService,
   ) {
-    this.role = this._authService.authSubject.value.role;
+    this.role = this._authService.authSubject.value.role;    
   }
 
   ngOnInit(): void {
@@ -65,6 +65,8 @@ export class TableComponent implements OnInit, AfterViewInit {
     }
 
     this.defaultFilterPredicate = this.tableDataSource.filterPredicate;
+
+    console.log(this.tableColumns)
   }
 
   // we need this, in order to make pagination work with *ngIf
