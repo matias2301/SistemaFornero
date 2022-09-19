@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, OnDestroy } from '@angular/core';
-import { MediaChange, MediaObserver } from "@angular/flex-layout";
-import { Subscription } from 'rxjs';
+// import { MediaChange, MediaObserver } from "@angular/flex-layout";
+// import { Subscription } from 'rxjs';
 import { menu } from '../../interfaces/menu';
 import { NavItem } from '../../interfaces/navItem';
 
@@ -21,13 +21,13 @@ export class HomeComponent implements OnDestroy {
 
     public userName: string;
     public opened: boolean = true;
-    private mediaWatcher: Subscription;
+    // private mediaWatcher: Subscription;
     public menu: NavItem[] = menu;
     
     public alertsMsg : string[] = []
 
     constructor(
-        private media: MediaObserver,
+        // private media: MediaObserver,
         private _authService: AuthService,
         private _manageDataService: ManageDataService,
         ) {
@@ -54,13 +54,13 @@ export class HomeComponent implements OnDestroy {
         .subscribe((res: any) => console.log('get articles'));
     }
 
-    private handleMediaChange(mediaChange: MediaChange) {
-        if (this.media.isActive('lt-md')) {
-            this.opened = false;
-        } else {
-            this.opened = true;
-        }
-    }
+    // private handleMediaChange(mediaChange: MediaChange) {
+    //     if (this.media.isActive('lt-md')) {
+    //         this.opened = false;
+    //     } else {
+    //         this.opened = true;
+    //     }
+    // }
 
     // CHECK LOGIN STATE
     getUserLogged(){
@@ -76,6 +76,6 @@ export class HomeComponent implements OnDestroy {
     }
 
     ngOnDestroy() {
-        this.mediaWatcher.unsubscribe();
+        // this.mediaWatcher.unsubscribe();
     }
 }

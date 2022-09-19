@@ -1,0 +1,47 @@
+<div class="reportFilter">
+  <p>Informes disponibles:</p>    
+  <mat-button-toggle-group class="buttons" [(ngModel)]="report" (change)="onValChange($event.value)">
+    <mat-button-toggle value="stocks" checked="true">Artículos con faltantes</mat-button-toggle>
+    <mat-button-toggle value="repairs">Reparaciones</mat-button-toggle>
+    <mat-button-toggle value="paids"> Clientes con confirmación de pago pendiente</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+
+<div class="text-divider">{{ title }}</div>
+
+<div *ngIf="report == 'stocks'" class="container">
+  <div *ngFor="let data of barChartData" class="graph">
+    <canvas baseChart
+      [data]="data"
+      [options]="barChartOptions"
+      [plugins]="barChartPlugins"
+      [type]="barChartType"
+    ></canvas>
+    <!-- (chartHover)="chartHovered($event)"
+    (chartClick)="chartClicked($event)" -->
+  </div>
+</div>
+
+
+<div *ngIf="report == 'paids' && data.length > 0">
+  <div *ngFor="let column of initColumns">
+    <mat-checkbox
+      [checked]="column.checked"
+      [value]="column.checked"
+      (change)="column.checked = !column.checked"
+    >
+      {{column.nombre}}
+    </mat-checkbox>
+  </div>
+
+  <table mat-table [dataSource]="data" class="mat-elevation-z8">
+    <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+      <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+      <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+</div>
+

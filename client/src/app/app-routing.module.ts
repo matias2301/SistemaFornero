@@ -12,7 +12,7 @@ const routes: Routes = [
         path: '',
         component: HomeComponent,
         children: [
-          { path: 'dashboard', canActivate: [AuthGuard], loadChildren: () => import('./components/dashboard/dashboard.module').then(m => m.DashboardModule) },
+          { path: 'dashboard', canActivate: [AuthGuard], loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule) },
           { path: 'clients', canActivate: [AuthGuard], loadChildren: () => import('./pages/clients/clients.module').then(m => m.ClientsModule) },
           { path: 'providers', canActivate: [AuthGuard], loadChildren: () => import('./pages/providers/providers.module').then(m => m.ProvidersModule) },
           { path: 'products', canActivate: [AuthGuard], loadChildren: () => import('./pages/products/products.module').then(m => m.ProductsModule) },

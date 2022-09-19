@@ -1,3 +1,4 @@
+/* Estilos del grupo de botones de reportes */
 .reportFilter {
   padding: 15px 50px;  
   margin-bottom: 20px;
@@ -12,6 +13,7 @@
 }
 
 mat-button-toggle-group {
+  justify-content: center;
   background-color: transparent;
   border: none !important;
   flex-wrap: wrap;
@@ -38,10 +40,48 @@ mat-button-toggle-group {
   color: #67ec79 !important;
 }
 
+
+/* Barra divisora */
+.text-divider {
+  margin-bottom: 25px;
+}
+
+
+/* Estilos del grafico de stocks con faltantes */
+.container {
+  display: flex;
+  flex-direction: column;  
+  flex-wrap: wrap;  
+}
+.graph {
+  width: 100%;
+  margin-bottom: 25px;
+}  
+
 @media(min-width: 768px){
   .reportFilter {
     display: flex;
     flex-direction: row;
   }
-  
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }  
+}
+
+@media(min-width: 1024px){
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }  
+  .graph {
+    width: 45%;
+    margin-right: 10px;
+  } 
+}
+
+
+/* Estilos de la tabla de pagos pendientes */
+table {
+  width: 100%;
 }

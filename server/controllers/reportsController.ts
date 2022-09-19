@@ -1,6 +1,10 @@
 import { Request, Response } from 'express';
-import Articles from '../models/Articles';
+
 import Repairs from '../models/Repairs';
+import Clients from '../models/Clients';
+import Users from '../models/Users';
+import Articles from '../models/Articles';
+import Observations from '../models/Observations';
 
 const { Op, Sequelize } = require("sequelize");
 
@@ -37,6 +41,21 @@ export const getPendingPaids = async( req: Request , res: Response ) => {
         { paidState: false }
       ]    
     },
+    include: [
+      Clients,
+      Observations,
+      Articles,
+      {
+          model: Users,
+          as: 'taken',
+          attributes: ["name"],
+      },
+      {
+          model: Users,
+          as: 'assigned',
+          attributes: ["name"],
+      },
+  ]
   });
 
   res.json({ pendingPaids });

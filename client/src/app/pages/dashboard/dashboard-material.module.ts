@@ -2,10 +2,13 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTableModule } from '@angular/material/table';
 
 const materialModules = [
-  MatButtonToggleModule
+  MatButtonToggleModule,
+  MatTableModule,
+  MatCheckboxModule,
 ];
 
 @NgModule({
@@ -18,4 +21,4 @@ const materialModules = [
   ],
 })
 
-export class HomeMaterialModule { }
+export class DashboardMaterialModule { }
