@@ -82,6 +82,16 @@ mat-button-toggle-group {
 
 
 /* Estilos de la tabla de pagos pendientes */
+.groupChecks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 5px 15px 5px;
+}
+.check {
+  margin-right: 35px;
+}
+
 table {
   width: 100%;
 }

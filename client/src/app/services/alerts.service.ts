@@ -11,7 +11,7 @@ export class AlertsService {
 
   constructor () { }
 
-    async alertModal(title: string, message: string, icon: any) {      // por ahora sólo se usa para confirmar eliminación
+    async alertModal(title: string, message: string, icon: any, eliminar: boolean) {      // por ahora sólo se usa para confirmar eliminación
       let confirm = '';
       
       await Swal.fire({
@@ -27,7 +27,7 @@ export class AlertsService {
         heightAuto: false,
         width: 400,
         // timer: 5000,
-        confirmButtonText: 'Eliminar',
+        confirmButtonText: eliminar ? 'Eliminar' : 'Continuar',
         cancelButtonText: 'Cancelar',
         showCancelButton: true,
       }).then( data => confirm = data.value);

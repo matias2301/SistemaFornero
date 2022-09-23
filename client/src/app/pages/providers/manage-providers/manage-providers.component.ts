@@ -36,6 +36,13 @@ export class ManageProvidersComponent implements OnInit {
     private router: Router, 
   ) {
     this.createForm();
+
+    this.router.events.subscribe((ev: any) => {
+      if (ev.url === '/providers/manage-providers') {
+        this.providerForm.reset();
+        this.edit = false;
+      }
+    })
   }
 
   ngOnInit(){
@@ -53,7 +60,7 @@ export class ManageProvidersComponent implements OnInit {
       lastName: new FormControl(''),
       email: new FormControl('', Validators.compose([
         Validators.required,
-        Validators.pattern("^[\\w]+(?:\\.[\\w])*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$"),
+        Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"),
         Validators.maxLength(40)
       ])),
       phone: new FormControl('', Validators.compose([Validators.required ])),      

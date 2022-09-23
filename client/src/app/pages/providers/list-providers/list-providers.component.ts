@@ -49,8 +49,9 @@ export class ListProvidersComponent implements OnInit {
   }
   editProvider(provider: Provider) {
     this._manageDataService.getDataById('providers', provider.id)
-      .subscribe((res: Provider) => {        
-          this.router.navigate(['providers/manage-providers', res]);        
+      .subscribe((res: Provider) => {
+        if (!res.lastName) delete res.lastName;
+        this.router.navigate(['providers/manage-providers', res]);        
       }, ( err ) => {        
         console.log(err)
       }
@@ -58,7 +59,7 @@ export class ListProvidersComponent implements OnInit {
   }
 
   async deleteProvider(provider: Provider) {
-    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el proveedor ${provider.name} ${provider.lastName}`, 'warning')
+    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el proveedor ${provider.name} ${provider.lastName}`, 'warning', true)
 
     if (confirm) { 
       this._manageDataService.deleteRecord('providers', provider.id)

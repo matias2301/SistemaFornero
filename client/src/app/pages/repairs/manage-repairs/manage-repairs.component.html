@@ -60,9 +60,9 @@
             <mat-select
                 formControlName="state"                
             >                
-                <mat-option value="open">Abierto</mat-option>
-                <mat-option value="pending">Pendiente</mat-option>
-                <mat-option value="closed">Cerrado</mat-option>
+                <mat-option value="Abierta">Abierta</mat-option>
+                <mat-option value="Pendiente">Pendiente</mat-option>
+                <mat-option value="Cerrada">Cerrada</mat-option>
             </mat-select>  
             <mat-error *ngIf="repairForm.controls['state'].invalid">
               Este campo es <strong>requerido</strong>
@@ -158,7 +158,8 @@
                 <mat-label>Cantidad</mat-label>
                 <input
                     matInput  
-                    formControlName="amount"                                        
+                    formControlName="amount"      
+                    (keydown)="validateNumber($event)"                                  
                 >
                 <mat-error *ngIf="articlesForm.controls['amount'].invalid">
                   Este campo es <strong>requerido</strong>

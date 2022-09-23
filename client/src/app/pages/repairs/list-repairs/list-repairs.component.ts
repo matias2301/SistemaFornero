@@ -67,7 +67,7 @@ export class ListRepairsComponent implements OnInit {
   }
 
   async deleteRepair(repair: any) {
-    const confirm = await this._alertsService.alertModal('Confirmar eliminación', 'Se eliminará la reparación seleccionada', 'warning')
+    const confirm = await this._alertsService.alertModal('Confirmar eliminación', 'Se eliminará la reparación seleccionada', 'warning', true)
 
     if (confirm) {
       this._manageDataService.deleteRecord('repairs', repair.idRepair)

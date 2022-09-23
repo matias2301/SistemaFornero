@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
 
 import { AuthService } from '../../services/auth.service';
@@ -15,6 +15,8 @@ import { UserLogin, LoginResponse } from '../../interfaces/authUser';
 })
 
 export class LoginComponent implements OnInit {
+  @ViewChild('inputPassword') inputPassword: ElementRef;
+
   emailFormGroup: FormGroup;
   passFormGroup: FormGroup;  
   hide: boolean = true;  
@@ -32,11 +34,11 @@ export class LoginComponent implements OnInit {
   }
 
   createForms() {
-
     this.emailFormGroup = new FormGroup({      
       email: new FormControl('', Validators.compose([
         Validators.required,
-        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
+        Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"),
+        Validators.maxLength(40)
       ])),
       remember: new FormControl(''),
     });
@@ -50,8 +52,18 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  onSubmitLogin(){
-    
+  next() {
+    setTimeout(() => {
+      this.inputPassword.nativeElement.focus();
+    }, 250);    
+  }  
+
+  onSubmitLogin($ev?: any){
+    if ($ev) {
+      $ev.preventDefault();
+      this.passFormGroup.controls.password.markAsTouched();
+    }
+
     if( !this.passFormGroup.controls.password.errors ){
       
       const user: UserLogin = {        
@@ -90,23 +102,22 @@ export class LoginComponent implements OnInit {
     }
   }
 
-    // CHECK LOGIN STATE
-    checkLoginState(){
-
-      const email = localStorage.getItem('remember');
-      
-      if ( email ) {        
-        this.emailFormGroup.reset({
-          email,
-          remember: true
-        });        
-      }
-      
-      this._authService.authSubject.subscribe( state => {
-        if (state.logged) {
-          this.router.navigateByUrl('dashboard');
-        }
-      });
+  // CHECK LOGIN STATE
+  checkLoginState(){
+    const email = localStorage.getItem('remember');
+    
+    if ( email ) {        
+      this.emailFormGroup.reset({
+        email,
+        remember: true
+      });        
     }
+    
+    this._authService.authSubject.subscribe( state => {
+      if (state.logged) {
+        this.router.navigateByUrl('dashboard');
+      }
+    });
+  }
 
 }

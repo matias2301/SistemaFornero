@@ -7,6 +7,8 @@ import { AlertsService } from '../../../services/alerts.service';
 import { AuthService } from '../../../services/auth.service';
 
 import { Product } from '../../../interfaces/product.interface';
+import { MontoPipe } from '../../../pipes/monto.pipe'
+import { MilesPipe } from '../../../pipes/miles.pipe';
 
 interface codeProduct {
   code: string;
@@ -41,8 +43,17 @@ export class ManageProductsComponent implements OnInit {
     private _authService: AuthService,
     private activatedRoute: ActivatedRoute, 
     private router: Router,   
+    private montoPipe: MontoPipe, 
+    private milesPipe: MilesPipe, 
   ) {
     this.createForm();
+
+    this.router.events.subscribe((ev: any) => {
+      if (ev.url === '/products/manage-products') {
+        this.productForm.reset();
+        this.edit = false;
+      }
+    })
   }
 
 
@@ -64,17 +75,36 @@ export class ManageProductsComponent implements OnInit {
   }
 
   loadForm() {
-
     this.productForm.reset({
       code: this.product.code,
       description: this.product.description,
-      price: this.product.price,
-      stock: this.product.stock,
+      price: this.milesPipe.transform(this.product.price.replace('.', ',')),
+      stock: this.milesPipe.transform(this.product.stock),
     });
   }
 
   setDescription(descrip: string) {
     this.productForm.controls.description.setValue(descrip);  
+  }
+
+  validateNumber(ev: any, decimal: boolean) {
+    if( !/^\d+$/.test(ev.key) && ev.keyCode != 8 && ev.keyCode != 9 && ev.keyCode != 37 && ev.keyCode != 39 && ev.keyCode != 46 && ev.keyCode != 188 ) ev.preventDefault();
+    if (decimal) {
+      const price = this.productForm.controls.price.value || '';      
+      if ( /^\d+$/.test(ev.key) && price.split(',')[1] && price.split(',')[1].length > 1) ev.preventDefault();
+    }
+    else if (ev.keyCode == 188) ev.preventDefault();
+  }
+
+  formatNumber(field: string) {
+    if (field == 'price' && this.productForm.controls.price.value) {
+      const formattedNumber = this.montoPipe.transform(this.productForm.controls.price.value.replace(',', '.'));
+      this.productForm.controls.price.patchValue(formattedNumber)
+    }
+    if (field == 'stock' && this.productForm.controls.stock.value) {
+      const formattedNumber = this.milesPipe.transform(this.productForm.controls.stock.value);
+      this.productForm.controls.stock.patchValue(formattedNumber)
+    }
   }
 
   onSubmit(values: Product) {
@@ -88,6 +118,12 @@ export class ManageProductsComponent implements OnInit {
       });
       return
     }
+
+    const stringPrice = String(values.price)
+    values.price = Number(stringPrice.replace('.','').replace(',','.'));
+    const stringStock = String(values.stock)
+    values.stock = Number(stringStock.replace('.','').replace(',','.'));
+    
     if( !this.edit) {
       this.addProduct(values)
     } else {

@@ -7,18 +7,22 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 
 import { DataPropertyGetterPipe } from '../../pipes/data-property-getter.pipe'
+import { MontoPipe } from '../../pipes/monto.pipe'
+import { MilesPipe } from '../../pipes/miles.pipe'
 
 @NgModule({
   declarations: [
     TableComponent,
-    DataPropertyGetterPipe
+    DataPropertyGetterPipe,
+    MontoPipe,
+    MilesPipe
   ],
   imports: [
     CommonModule,
     AngularMaterialModule,
     FlexLayoutModule,
     MatSelectModule,
-    MatFormFieldModule,
+    MatFormFieldModule    
   ],
   exports: [TableComponent],
 })

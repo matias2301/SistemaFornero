@@ -3,8 +3,6 @@ import { NavItem } from '../../interfaces/navItem';
 import { Router } from '@angular/router';
 import { SideNavService } from '../../services/sideNav.service';
 import { AuthService } from '../../services/auth.service';
-// import { ConfirmationDialogComponent } from '../../../ui/confirmation-dialog/confirmation-dialog.component';
-// import { ConfirmationDialogModel } from '../../../ui/confirmation-dialog/confirmation-dialog';
 import { MatDialog } from '@angular/material/dialog';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
@@ -72,20 +70,7 @@ export class MenuListItemComponent implements OnInit {
         }
     }
 
-    handleSignOut() {
-        // const dialogData = new ConfirmationDialogModel('Confirm', 'Are you sure you want to logout?');
-        // const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
-        //     maxWidth: '400px',
-        //     closeOnNavigation: true,
-        //     data: dialogData
-        // })
-
-        // dialogRef.afterClosed().subscribe(dialogResult => {
-        //     if (dialogResult) {
-        //         this.authenticationService.logout();
-        //     }
-        // });
-        
+    handleSignOut() {        
         this._authService.logout();   
         
     }

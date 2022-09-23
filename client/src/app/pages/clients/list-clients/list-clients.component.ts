@@ -59,7 +59,7 @@ export class ListClientsComponent implements OnInit {
   }
 
   async deleteClient(client: Client) {
-    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el cliente ${client.firstName} ${client.lastName}`, 'warning')
+    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el cliente ${client.firstName} ${client.lastName}`, 'warning', true)
     
     if (confirm) {
       this._manageDataService.deleteRecord('clients', client.id)

@@ -11,7 +11,6 @@
           <ng-template matStepLabel>Ingresá el email</ng-template>
 
           <mat-form-field class="field-full-width">
-            <!-- <mat-label>Email</mat-label> -->
             <input matInput formControlName="email" placeholder="Ingresá tu email">
             <mat-hint>usuario@email.com</mat-hint>
             
@@ -28,8 +27,7 @@
           <p>Creá una cuenta nueva <a [routerLink]="['/register']"><strong>aquí</strong></a></p>
 
           <div class="buttons">
-            <!-- <button mat-raised-button color="primary" matStepperNext>Next</button> -->
-            <button mat-raised-button color="primary" matStepperNext>Siguiente</button>
+            <button mat-raised-button color="primary" matStepperNext (click)="next()">Siguiente</button>
           </div>
 
         </form>
@@ -39,16 +37,13 @@
         <form fxLayout="column" [formGroup]="passFormGroup">          
           <ng-template matStepLabel>Ingresá la contraseña</ng-template>
 
-
           <button fxLayoutAlign="start stretch" class="arrowBack" mat-icon-button matSuffix matStepperPrevious>
             <mat-icon>arrow_back</mat-icon>
             {{ emailFormGroup.controls.email.value }}
           </button>
-          <!-- <span></span> -->
 
           <mat-form-field class="field-full-width">
-            <!-- <mat-label>Password</mat-label> -->
-            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Ingresá tu contraseña">
+            <input #inputPassword matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Ingresá tu contraseña" (keydown.enter)="onSubmitLogin($event)">
             
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
@@ -69,7 +64,6 @@
           <p>Si olvidaste la contraseña <a href="#">ingresá aquí</a></p>
           
           <div class="buttons">
-            <!-- <button mat-raised-button color="accent" matStepperPrevious>Back</button> -->
             <button mat-raised-button color="primary" (click)="onSubmitLogin()">Ingresar</button>          
           </div>
 

@@ -25,7 +25,7 @@ const Products = sequelize.define<ProductModel, ProductAddModel>('Products', {
         allowNull: false,       
     },
     price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
         allowNull: false,
     },   
     stock: {

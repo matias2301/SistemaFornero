@@ -8,6 +8,8 @@ import { AuthService } from '../../../services/auth.service';
 
 import { Article } from '../../../interfaces/article.interface'
 import { Provider } from '../../../interfaces/provider.interface';
+import { MontoPipe } from '../../../pipes/monto.pipe'
+import { MilesPipe } from '../../../pipes/miles.pipe';
 
 interface codeArticle {
   code: string;
@@ -42,10 +44,19 @@ export class ManageArticlesComponent implements OnInit {
     private _alertsService: AlertsService,
     private _authService: AuthService,
     private activatedRoute: ActivatedRoute,
-    private router: Router,    
+    private router: Router,   
+    private montoPipe: MontoPipe, 
+    private milesPipe: MilesPipe, 
   ) {
     this.getProviders();
     this.createForm();
+
+    this.router.events.subscribe((ev: any) => {
+      if (ev.url === '/articles/manage-articles') {
+        this.articleForm.reset();
+        this.edit = false;
+      }
+    })
   }
 
   ngOnInit() {
@@ -68,14 +79,13 @@ export class ManageArticlesComponent implements OnInit {
   }
 
   loadForm() {
-
     this.articleForm.reset({
       code: this.article.code,
       description: this.article.description,
-      price: this.article.price,
+      price: this.milesPipe.transform(this.article.price.replace('.', ',')),
       providers: this.article.provider,
-      stock: this.article.stock,
-      poo: this.article.poo
+      stock: this.milesPipe.transform(this.article.stock),
+      poo: this.milesPipe.transform(this.article.poo)
     });
   }
 
@@ -90,8 +100,31 @@ export class ManageArticlesComponent implements OnInit {
     this.articleForm.controls.description.setValue(descrip);
   }
 
-  onSubmit(values: Article) {
-    
+  validateNumber(ev: any, decimal: boolean) {
+    if( !/^\d+$/.test(ev.key) && ev.keyCode != 8 && ev.keyCode != 9 && ev.keyCode != 37 && ev.keyCode != 39 && ev.keyCode != 46 && ev.keyCode != 188 ) ev.preventDefault();
+    if (decimal) {
+      const price = this.articleForm.controls.price.value || '';      
+      if ( /^\d+$/.test(ev.key) && price.split(',')[1] && price.split(',')[1].length > 1) ev.preventDefault();
+    }
+    else if (ev.keyCode == 188) ev.preventDefault();
+  }
+
+  formatNumber(field: string) {
+    if (field == 'price' && this.articleForm.controls.price.value) {
+      const formattedNumber = this.montoPipe.transform(this.articleForm.controls.price.value.replace(',', '.'));
+      this.articleForm.controls.price.patchValue(formattedNumber)
+    }
+    if (field == 'stock' && this.articleForm.controls.stock.value) {
+      const formattedNumber = this.milesPipe.transform(this.articleForm.controls.stock.value);
+      this.articleForm.controls.stock.patchValue(formattedNumber)
+    }
+    if (field == 'poo' && this.articleForm.controls.poo.value) {
+      const formattedNumber = this.milesPipe.transform(this.articleForm.controls.poo.value);
+      this.articleForm.controls.poo.patchValue(formattedNumber)
+    }
+  }
+
+  onSubmit(values: Article) {    
     if( this.articleForm.invalid ){
       Object.values( this.articleForm.controls ).forEach( control => {
         if ( control instanceof FormGroup ) {
@@ -102,6 +135,14 @@ export class ManageArticlesComponent implements OnInit {
       });
       return
     }
+
+    const stringPrice = String(values.price)
+    values.price = Number(stringPrice.replace('.','').replace(',','.'));
+    const stringStock = String(values.stock)
+    values.stock = Number(stringStock.replace('.','').replace(',','.'));
+    const stringPoo = String(values.poo)
+    values.poo = Number(stringPoo.replace('.','').replace(',','.'));
+
     if( !this.edit) {
       this.addArticle(values)
     } else {

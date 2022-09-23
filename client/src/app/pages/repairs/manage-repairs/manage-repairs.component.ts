@@ -48,6 +48,16 @@ export class ManageRepairsComponent implements OnInit {
     private router: Router, 
   ) {
     this.createForm();
+
+    this.router.events.subscribe((ev: any) => {
+      if (ev.url === '/repairs/manage-repairs') {
+        this.repairForm.reset();
+        this.articlesForm.reset();
+        this.articleRepair = [];
+        this.email = '';
+        this.edit = false;
+      }
+    })
   }
 
   ngOnInit(){
@@ -151,25 +161,29 @@ export class ManageRepairsComponent implements OnInit {
   }
 
   addArticle(values: any) {
+    let articleAdded = this.articles.find( article => article.id == values.id)
+
     if( this.articlesForm.invalid ) {
       this.articlesForm.controls.amount.markAsTouched();
       return
     }
-    if( this.articleRepair.length > 0 ){
-      let match = false;
+
+    let match = false;
+    if( this.articleRepair.length > 0 ){      
       this.articleRepair.map( art => {
         if( art.id == values.id ) {
           art.amount = Number(art.amount) + Number(values.amount);
           match = true;
+
+          if (articleAdded.stock < Number(art.amount)) art.stockNegative = true;
         }
       })
-      if( !match ) {
-        this.articleRepair.push(values);
-        this.articleRepair = [...this.articleRepair];
-      }
-    } else {
+    } 
+    if (this.articleRepair.length == 0 || !match) {
+      if (articleAdded.stock < Number(values.amount)) values.stockNegative = true;
+
       this.articleRepair.push(values);
-      this.articleRepair = [...this.articleRepair];
+      this.articleRepair = [...this.articleRepair];      
     }
 
     this.cancelArticle();     
@@ -179,8 +193,12 @@ export class ManageRepairsComponent implements OnInit {
     this.articleRepair = this.articleRepair.filter( e => e.id !== article.id );
     this.articleRepair = [...this.articleRepair];
   }
+
+  validateNumber(ev: any) {
+    if( !/^\d+$/.test(ev.key) && ev.keyCode != 8 && ev.keyCode != 9 && ev.keyCode != 46 ) ev.preventDefault();
+  }
   
-  onSubmit(values: Repair) {
+  async onSubmit(values: Repair) {
     if( this.repairForm.invalid ){
       Object.values( this.repairForm.controls ).forEach( control => {
         if ( control instanceof FormGroup ) {
@@ -191,6 +209,13 @@ export class ManageRepairsComponent implements OnInit {
       });
       return
     }
+
+    const showStockAlert = this.articleRepair.some( article => article.stockNegative);
+    if (showStockAlert) {
+      const confirm = await this._alertsService.alertModal('¿Continuar carga?', 'No contás con stock suficiente en alguno de los artículos agregados', 'warning', false)
+      if (!confirm) return;
+    }
+
     values.takenId = Number(this.takenId);
     values = {
       ...values,
