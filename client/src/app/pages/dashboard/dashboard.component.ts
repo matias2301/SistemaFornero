@@ -148,7 +148,7 @@ export class DashboardComponent implements OnInit {
               Stock: article.stock,
               Punto_Pedido: article.poo,
               Precio: article.price,
-              Proveedor: article.Providers[0]?.name + ' ' + article.Providers[0]?.lastName,
+              Proveedor: article.Providers[0]?.name + ' ' + (article.Providers[0]?.lastName ? article.Providers[0]?.lastName : ''),
               Email: article.Providers[0]?.email,
               Teléfono: article.Providers[0]?.phone,
             };

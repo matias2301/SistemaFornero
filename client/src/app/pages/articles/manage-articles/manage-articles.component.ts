@@ -39,6 +39,7 @@ export class ManageArticlesComponent implements OnInit {
     {code: 'to-80', descrip: 'tornillo 80mm'},
     {code: 'ca-00', descrip: 'cadena'},
     {code: 'fr-00', descrip: 'freno'},
+    {code: 'cam-00', descrip: 'cámara'},
   ];
 
   constructor(
