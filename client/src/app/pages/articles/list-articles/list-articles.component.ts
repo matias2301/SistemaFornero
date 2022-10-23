@@ -48,14 +48,17 @@ export class ListArticlesComponent implements OnInit {
     this.router.navigateByUrl('articles/manage-articles');
   }
 
-  editArticle(article: Article) {
-    this._manageDataService.getDataById('articles', article.id)
-      .subscribe((res: Article) => {        
-          this.router.navigate(['articles/manage-articles', res]);        
-      }, ( err ) => {        
-        console.log(err)
-      }
-    );
+  editArticle(article: any) {
+    
+    const providers = article.Providers;
+    delete article.Providers;
+
+    this.router.navigate(['articles/manage-articles', {
+      data: JSON.stringify({
+        article,
+        providers
+      })
+    }]);
   }
 
   async deleteArticle(article: Article) {

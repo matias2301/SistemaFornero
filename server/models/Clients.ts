@@ -9,8 +9,8 @@ export interface ClientModel extends Sequelize.Model<ClientModel, ClientAddModel
     lastName: string;
     email: string;
     phone: string;
-    streetName: string;
-    streetNumber: string;
+    address: string;
+    // streetNumber: string;
     city: string;
     state: string;
     country: string;    
@@ -41,14 +41,14 @@ const Clients = sequelize.define<ClientModel, ClientAddModel>('Clients', {
         type: DataTypes.STRING,
         allowNull: false,     
     },
-    streetName: {
+    address: {
         type: DataTypes.STRING,
         allowNull: false,      
     },
-    streetNumber: {
-        type: DataTypes.STRING,
-        allowNull: false,       
-    },
+    // streetNumber: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,       
+    // },
     city: {
         type: DataTypes.STRING,
         allowNull: false,     

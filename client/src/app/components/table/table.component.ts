@@ -65,8 +65,6 @@ export class TableComponent implements OnInit, AfterViewInit {
     }
 
     this.defaultFilterPredicate = this.tableDataSource.filterPredicate;
-
-    console.log(this.tableColumns)
   }
 
   // we need this, in order to make pagination work with *ngIf

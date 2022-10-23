@@ -22,6 +22,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 })
 export class MenuListItemComponent implements OnInit {
     expanded: boolean = false;
+    public role: string;
 
     @HostBinding('attr.aria-expanded') ariaExpanded = this.expanded;
     @Input() item: NavItem;
@@ -33,6 +34,7 @@ export class MenuListItemComponent implements OnInit {
         private _authService: AuthService,
         private dialog: MatDialog
         ) {
+          this.role = this._authService.authSubject.value.role;
 
         if (this.depth === undefined) {
             this.depth = 0;

@@ -24,6 +24,8 @@ export class ManageClientsComponent implements OnInit {
   cities: any;
   edit: boolean = false;
   checkValue: boolean = false;
+  public disabled: boolean = false;
+  public role = '';
 
   constructor(
     public formBuilder: FormBuilder,
@@ -35,6 +37,8 @@ export class ManageClientsComponent implements OnInit {
     private activatedRoute: ActivatedRoute, 
     private router: Router, 
   ) {
+    this.role = this._authService.authSubject.value.role;
+    this.disabled = this.role != 'admin';
     this.createForm();
 
     this.router.events.subscribe((ev: any) => {
@@ -56,19 +60,19 @@ export class ManageClientsComponent implements OnInit {
 
   createForm() {
     this.clientForm = this.formBuilder.group({
-      firstName: new FormControl('', Validators.compose([Validators.required ])),
-      lastName: new FormControl('', Validators.compose([Validators.required ])),
-      email: new FormControl('', Validators.compose([
+      firstName: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      lastName: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      email: new FormControl({value: '', disabled: this.disabled}, Validators.compose([
         Validators.required,
         Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"),
         Validators.maxLength(40)
       ])),
-      phone: new FormControl('', Validators.compose([Validators.required ])),
-      streetName: new FormControl('', Validators.compose([Validators.required ])),
-      streetNumber: new FormControl('', Validators.compose([Validators.required ])),
-      country: new FormControl('', Validators.compose([Validators.required ])),   
-      state: new FormControl('', Validators.compose([Validators.required ])),
-      city: new FormControl('', Validators.compose([Validators.required ])), 
+      phone: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      address: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      // streetNumber: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      country: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),   
+      state: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      city: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])), 
     });
   }
 
@@ -78,8 +82,8 @@ export class ManageClientsComponent implements OnInit {
       lastName: this.client.lastName,
       email: this.client.email,
       phone: this.client.phone,
-      streetName: this.client.streetName,
-      streetNumber: this.client.streetNumber,
+      address: this.client.address,
+      // streetNumber: this.client.streetNumber,
       country: this.client.country,
       state: this.client.state,
       city: this.client.city,
@@ -92,10 +96,13 @@ export class ManageClientsComponent implements OnInit {
       res => {
         this.countries = res.Countries;
 
-        if (!this.edit) {
+        if (this.edit) {
+          const index = this.countries.findIndex(country => country.CountryName == this.client.country);
+          if (index) this.setStates(index);
+        } else {
           this.clientForm.controls['country'].patchValue('Argentina');
           this.setStates(9);
-        }        
+        }      
       },
       err => console.log(err),
     )
@@ -105,20 +112,40 @@ export class ManageClientsComponent implements OnInit {
     if (i == 9) {
       this._JSONLoaderHelper.get('provincias').then( data => {
         this.states = data;
-        this._JSONLoaderHelper.get('localidades', '1').then( (ciudades: any) => {
-          this.cities = ciudades.map( ciudad => ciudad.Nombre);
-        });
 
-      });
+        if (this.edit) {
+          const index = this.states.findIndex(state => state.StateName == this.client.state);
+          if (index != -1) {
+            this.clientForm.controls['city'].patchValue(this.client.city);
+            this._JSONLoaderHelper.get('localidades', String(index+1)).then( (ciudades: any) => {
+              this.cities = ciudades.map( ciudad => ciudad.Nombre);
+            }); 
+          }
+       
+        } else {
+          this.clientForm.controls['state'].patchValue('Santa Fe');
+          this._JSONLoaderHelper.get('localidades', '22').then( (ciudades: any) => {
+            this.cities = ciudades.map( ciudad => ciudad.Nombre);
+          });        
+          this.clientForm.controls['city'].patchValue('Rosario');
+        }
+      });      
     } else {
       this.states = this.countries[i].States;
-      this.cities = this.states[0].Cities;  
+      this.cities = this.states[0].Cities;   
+      if (this.edit) {
+        const index = this.states.findIndex(state => state.StateName == this.client.state);
+        if (index != -1) {
+          this.clientForm.controls['city'].patchValue(this.client.city);
+          this.setCities(index);
+        }
+      }
     }
   }
 
-  setCities(i: string) {         
+  setCities(i: number) {         
     if (this.clientForm.controls['country'].value == 'Argentina') {
-      this._JSONLoaderHelper.get('localidades', i+1).then( (ciudades: any) => {
+      this._JSONLoaderHelper.get('localidades', String(i+1)).then( (ciudades: any) => {
         this.cities = ciudades.map( ciudad => ciudad.Nombre);
       });
     } else {

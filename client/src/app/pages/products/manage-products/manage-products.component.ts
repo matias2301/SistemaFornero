@@ -26,6 +26,8 @@ export class ManageProductsComponent implements OnInit {
   productForm: FormGroup;  
   product: any;
   edit: boolean = false;
+  public disabled: boolean = false;
+  public role = '';
   products: codeProduct[] = [
     {code: 'p-001', descrip: 'description product 1'},
     {code: 'p-002', descrip: 'description product 2'},
@@ -46,6 +48,8 @@ export class ManageProductsComponent implements OnInit {
     private montoPipe: MontoPipe, 
     private milesPipe: MilesPipe, 
   ) {
+    this.role = this._authService.authSubject.value.role;
+    this.disabled = this.role != 'admin';
     this.createForm();
 
     this.router.events.subscribe((ev: any) => {
@@ -67,10 +71,10 @@ export class ManageProductsComponent implements OnInit {
 
   createForm() {
     this.productForm = this.formBuilder.group({
-      code: new FormControl('', Validators.compose([Validators.required ])),
-      description: new FormControl('', Validators.compose([Validators.required ])),
-      price: new FormControl('', Validators.compose([Validators.required ])),
-      stock: new FormControl('', Validators.compose([Validators.required ])),
+      code: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      description: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      price: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      stock: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
     });
   }
 

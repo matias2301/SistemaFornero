@@ -24,6 +24,8 @@ export class ManageProvidersComponent implements OnInit {
   cities: any;
   edit: boolean = false;
   checkValue: boolean = false;
+  public disabled: boolean = false;
+  public role = '';
 
   constructor(
     public formBuilder: FormBuilder,
@@ -35,12 +37,15 @@ export class ManageProvidersComponent implements OnInit {
     private activatedRoute: ActivatedRoute,  
     private router: Router, 
   ) {
+    this.role = this._authService.authSubject.value.role;
+    this.disabled = this.role != 'admin';
     this.createForm();
 
     this.router.events.subscribe((ev: any) => {
       if (ev.url === '/providers/manage-providers') {
         this.providerForm.reset();
         this.edit = false;
+        this.getCountries();
       }
     })
   }
@@ -56,17 +61,17 @@ export class ManageProvidersComponent implements OnInit {
 
   createForm() {
     this.providerForm = this.formBuilder.group({
-      name: new FormControl('', Validators.compose([Validators.required ])),
-      lastName: new FormControl(''),
-      email: new FormControl('', Validators.compose([
+      name: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      lastName: new FormControl({value: '', disabled: this.disabled}),
+      email: new FormControl({value: '', disabled: this.disabled}, Validators.compose([
         Validators.required,
         Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"),
         Validators.maxLength(40)
       ])),
-      phone: new FormControl('', Validators.compose([Validators.required ])),      
-      country: new FormControl('', Validators.compose([Validators.required ])),    
-      state: new FormControl('', Validators.compose([Validators.required ])),
-      city: new FormControl('', Validators.compose([Validators.required ])),          
+      phone: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),      
+      country: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),    
+      state: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      city: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),          
     });
   }
 
@@ -79,42 +84,65 @@ export class ManageProvidersComponent implements OnInit {
       country: this.provider.country,
       state: this.provider.state,
       city: this.provider.city,
-    });    
+    });
   }
 
   getCountries(){
     this._countriesService.allCountries().
     subscribe(
       res => {
-        this.countries = res.Countries;    
+        this.countries = res.Countries;
         
-        if (!this.edit) {
+        if (this.edit) {
+          const index = this.countries.findIndex(country => country.CountryName == this.provider.country);
+          if (index != -1) this.setStates(index);
+        } else {
           this.providerForm.controls['country'].patchValue('Argentina');
           this.setStates(9);
-        }  
+        }
       },
       err => console.log(err),
     )
   }
 
-  setStates(i: number) {    
+  setStates(i: number) {
     if (i == 9) {
       this._JSONLoaderHelper.get('provincias').then( data => {
         this.states = data;
-        this._JSONLoaderHelper.get('localidades', '1').then( (ciudades: any) => {
-          this.cities = ciudades.map( ciudad => ciudad.Nombre);
-        });
 
-      });
+        if (this.edit) {
+          const index = this.states.findIndex(state => state.StateName == this.provider.state);
+          if (index != -1) {
+            this.providerForm.controls['city'].patchValue(this.provider.city);
+            this._JSONLoaderHelper.get('localidades', String(index+1)).then( (ciudades: any) => {
+              this.cities = ciudades.map( ciudad => ciudad.Nombre);
+            }); 
+          }
+       
+        } else {
+          this.providerForm.controls['state'].patchValue('Santa Fe');
+          this._JSONLoaderHelper.get('localidades', '22').then( (ciudades: any) => {
+            this.cities = ciudades.map( ciudad => ciudad.Nombre);
+          });        
+          this.providerForm.controls['city'].patchValue('Rosario');
+        }
+      });      
     } else {
       this.states = this.countries[i].States;
-      this.cities = this.states[0].Cities;  
-    }  
+      this.cities = this.states[0].Cities;   
+      if (this.edit) {
+        const index = this.states.findIndex(state => state.StateName == this.provider.state);
+        if (index != -1) {
+          this.providerForm.controls['city'].patchValue(this.provider.city);
+          this.setCities(index);
+        }
+      }
+    }
   }
 
-  setCities(i: string) {         
+  setCities(i: number) {
     if (this.providerForm.controls['country'].value == 'Argentina') {
-      this._JSONLoaderHelper.get('localidades', i+1).then( (ciudades: any) => {
+      this._JSONLoaderHelper.get('localidades', String(i+1)).then( (ciudades: any) => {
         this.cities = ciudades.map( ciudad => ciudad.Nombre);
       });
     } else {
@@ -148,7 +176,9 @@ export class ManageProvidersComponent implements OnInit {
         this._alertsService.alertToast(res.msg, 'success')
           .then( () => {
             this.providerForm.reset();
-            this.providerForm.controls['country'].patchValue('Argentina');
+            this.providerForm.controls['country'].patchValue('Argentina')
+            this.providerForm.controls['state'].patchValue('Santa Fe')
+            this.providerForm.controls['city'].patchValue('Rosario')
           });
       } else {
         this._alertsService.alertToast(res.msg, 'error');
@@ -174,11 +204,10 @@ export class ManageProvidersComponent implements OnInit {
   updateProvider(values) {
     this._manageDataService.updateRecord('providers', this.provider.id, values)
     .subscribe((res: any) => {
-        this._alertsService.alertToast('¡El provedor se agregó con éxito!', 'success')
+        this._alertsService.alertToast('¡El provedor se actualizó con éxito!', 'success')
           .then( () => {
             this.router.navigateByUrl('providers/list-providers');
             this.providerForm.reset();
-            this.providerForm.controls['country'].patchValue('Argentina');
             this.edit = false;    
           }); 
 

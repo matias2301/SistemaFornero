@@ -4,8 +4,8 @@ export interface ClientAddModel{
     lastName: string;
     email: string;
     phone: string;
-    streetName: string;
-    streetNumber: string;
+    address: string;
+    // streetNumber: string;
     city: string;
     state: string;
     country: string;    

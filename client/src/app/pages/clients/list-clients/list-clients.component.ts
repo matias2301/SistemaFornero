@@ -114,17 +114,17 @@ export class ListClientsComponent implements OnInit {
         isSortable: false
       },
       {
-        name: 'Calle',
-        dataKey: 'streetName',
+        name: 'Domicilio',
+        dataKey: 'address',
         position: 'left',
         isSortable: false
       },
-      {
-        name: 'Número',
-        dataKey: 'streetNumber',
-        position: 'left',
-        isSortable: false
-      },
+      // {
+      //   name: 'Número',
+      //   dataKey: 'streetNumber',
+      //   position: 'left',
+      //   isSortable: false
+      // },
       {
         name: 'Ciudad',
         dataKey: 'city',

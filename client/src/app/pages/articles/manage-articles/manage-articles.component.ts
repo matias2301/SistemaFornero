@@ -26,8 +26,11 @@ export class ManageArticlesComponent implements OnInit {
 
   articleForm: FormGroup; 
   article: any;
+  articlesByProviders = [];
   providers: Provider[];
   edit: boolean = false;
+  public disabled: boolean = false;
+  public role = '';
   articles: codeArticle[] = [
     {code: 'ar-60', descrip: 'arandela 60mm'},
     {code: 'ar-70', descrip: 'arandela 70mm'},
@@ -48,6 +51,9 @@ export class ManageArticlesComponent implements OnInit {
     private montoPipe: MontoPipe, 
     private milesPipe: MilesPipe, 
   ) {
+    this.role = this._authService.authSubject.value.role;
+    this.disabled = this.role != 'admin';
+
     this.getProviders();
     this.createForm();
 
@@ -60,8 +66,11 @@ export class ManageArticlesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.article = this.activatedRoute.snapshot.params;
-    if( this.article.id ){
+    const data: any = JSON.parse(this.activatedRoute.snapshot.paramMap.get('data'));
+    
+    if( data && data.article.id ){
+      this.article = data.article;
+      this.articlesByProviders = data.providers.map(prov => prov.id);
       this.edit = true;
       this.loadForm();      
     }
@@ -69,12 +78,12 @@ export class ManageArticlesComponent implements OnInit {
 
   createForm() {
     this.articleForm = this.formBuilder.group({
-      code: new FormControl('', Validators.compose([Validators.required ])),
-      description: new FormControl('', Validators.compose([Validators.required ])),
-      price: new FormControl('', Validators.compose([Validators.required ])),
-      providers: new FormControl(''),
-      stock: new FormControl('', Validators.compose([Validators.required ])),
-      poo: new FormControl('', Validators.compose([Validators.required ]))
+      code: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      description: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      price: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      providers: new FormControl({value: '', disabled: this.disabled}),
+      stock: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ])),
+      poo: new FormControl({value: '', disabled: this.disabled}, Validators.compose([Validators.required ]))
     });
   }
 
@@ -82,17 +91,19 @@ export class ManageArticlesComponent implements OnInit {
     this.articleForm.reset({
       code: this.article.code,
       description: this.article.description,
-      price: this.milesPipe.transform(this.article.price.replace('.', ',')),
+      price: this.milesPipe.transform(String(this.article.price).replace('.', ',')),
       providers: this.article.provider,
       stock: this.milesPipe.transform(this.article.stock),
       poo: this.milesPipe.transform(this.article.poo)
     });
+
+    this.articleForm.controls.providers.patchValue(this.articlesByProviders);
   }
 
   getProviders() {
     this._manageDataService.getData('providers')
     .subscribe((res: any) => {      
-      this.providers = res.providers;      
+      this.providers = res.providers;
     });
   }
 
@@ -124,7 +135,7 @@ export class ManageArticlesComponent implements OnInit {
     }
   }
 
-  onSubmit(values: Article) {    
+  onSubmit(values: Article) {
     if( this.articleForm.invalid ){
       Object.values( this.articleForm.controls ).forEach( control => {
         if ( control instanceof FormGroup ) {

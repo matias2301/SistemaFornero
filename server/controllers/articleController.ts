@@ -82,14 +82,37 @@ export const updateArticle = async( req: Request , res: Response ) => {
 
     try {
         
-        const article = await Articles.findByPk( id );
+        const article = await Articles.findOne({
+          where: {
+              id        
+          },
+          include: [
+            Providers,
+          ]
+        });
+
         if ( !article ) {
             return res.status(404).json({
                 msg: 'No existe un articulo con el id ' + id
             });
         }
 
-        await article.update( body );
+        await article.update( body )
+          .then((article: any) => {
+            article.Providers.map( (provider: any) => {  
+              Providers.findByPk(provider.id).then( prov => {
+                if( prov ) article.removeProvider(prov);
+              });
+            });
+
+            if( body.providers.length > 0 ){
+              body.providers.map( (provider: any) => {
+                Providers.findByPk(provider).then( prov => {
+                  article.addProvider(prov)
+                });              
+              })
+            }
+          });
 
         res.json( article );
 

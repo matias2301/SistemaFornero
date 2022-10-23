@@ -78,18 +78,18 @@
             appearance="outline"
             class="row-input"             
         >   
-        <mat-label>Calle</mat-label>
+        <mat-label>Calle - Número - Piso/Dpto/Torre</mat-label>
         <input
             matInput
-            formControlName="streetName"
-            placeholder="Ingresá la calle"            
+            formControlName="address"
+            placeholder="Ingresá la dirección del domicilio completa"            
         >
-        <mat-error *ngIf="clientForm.controls['streetName'].invalid">
-            La calle es <strong>requerida</strong>
+        <mat-error *ngIf="clientForm.controls['address'].invalid">
+            El domicilio es <strong>requerido</strong>
         </mat-error>
         </mat-form-field>
 
-        <mat-form-field
+        <!-- <mat-form-field
             appearance="outline"
             class="stNumber"            
         >
@@ -102,7 +102,7 @@
             <mat-error *ngIf="clientForm.controls['streetNumber'].invalid">
                 El número es <strong>requerido</strong>
             </mat-error>
-        </mat-form-field>
+        </mat-form-field> -->
     </div>
 
 
@@ -203,6 +203,7 @@
 
             <mat-checkbox
                 class="checkCity"
+                [disabled]="disabled"
                 [value]="checkValue"
                 (change)="checkValue = !checkValue"
             >
@@ -213,6 +214,7 @@
 
     <button
         mat-raised-button
+        *ngIf="!disabled"
         type="button"
         color="primary"
         class="btn-submit full-width"  

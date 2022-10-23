@@ -35,9 +35,11 @@ export class ManageRepairsComponent implements OnInit {
   articleRepair = [];
   paidState: boolean = false;
   edit: boolean = false;
+  disabled: boolean = false;
   displayedColumns: string[] = ['code', 'descrip', 'amount', 'iconDelete'];  
 
   todayDate:Date = new Date();
+  public role = '';
 
   constructor(
     public formBuilder: FormBuilder,    
@@ -47,6 +49,7 @@ export class ManageRepairsComponent implements OnInit {
     private activatedRoute: ActivatedRoute,  
     private router: Router, 
   ) {
+    this.role = this._authService.authSubject.value.role;
     this.createForm();
 
     this.router.events.subscribe((ev: any) => {
@@ -145,7 +148,9 @@ export class ManageRepairsComponent implements OnInit {
     });    
     this.email = this.repair.Client.email;
     this.observations = this.repair.Observations;   
-    this.paidState = this.repair.paidState
+    this.paidState = this.repair.paidState;
+
+    this.disabled = this.role != 'admin' || this.repairForm.controls['state'].value == 'Cerrada';
   }
 
   selectArticle(code: string, descrip: string){

@@ -6,7 +6,7 @@
     <div class="row-form">
         <mat-form-field appearance="outline">
             <mat-label>Nombre del cliente</mat-label>
-            <mat-select formControlName="clientId" required>
+            <mat-select formControlName="clientId" [disabled]="disabled" required>
               <mat-option (click)="email = ''">--</mat-option>
               <mat-option
                 *ngFor="let client of clients"
@@ -35,8 +35,9 @@
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Motivo</mat-label>
         <input
-            matInput 
-            formControlName="description"
+            matInput           
+            [attr.disabled]="disabled" 
+            formControlName="description"            
             placeholder="Ingresá el motivo/descripción de la reparación"
         >                
         <mat-error *ngIf="repairForm.controls['description'].invalid">
@@ -47,7 +48,7 @@
     <div class="row-form">        
         <mat-form-field color="accent" appearance="outline">
             <mat-label>Fecha estimada de finalización</mat-label>
-            <input matInput readonly="true" [min]="todayDate" [matDatepicker]="datePicker" formControlName="estDate">
+            <input matInput [disabled]="disabled" readonly="true" [min]="todayDate" [matDatepicker]="datePicker" formControlName="estDate">
             <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
             <mat-datepicker #datePicker></mat-datepicker>
         </mat-form-field>
@@ -58,7 +59,8 @@
         >
             <mat-label>Estado</mat-label>
             <mat-select
-                formControlName="state"                
+                formControlName="state"  
+                [disabled]="disabled"              
             >                
                 <mat-option value="Abierta">Abierta</mat-option>
                 <mat-option value="Pendiente">Pendiente</mat-option>
@@ -75,7 +77,8 @@
         >
         <mat-label>Asignado a</mat-label>
         <mat-select
-            formControlName="assignedId"                
+            formControlName="assignedId"    
+            [disabled]="disabled"            
         >
             <mat-option>--</mat-option>
             <mat-option
@@ -98,6 +101,7 @@
         <mat-label>Presupuesto</mat-label>
         <input
           matInput
+          [attr.disabled]="disabled" 
           formControlName="budget"
           placeholder="Precio presupuestado"                    
         >
@@ -108,17 +112,19 @@
           class="row-input"            
         >   
         <mat-label>Número de transacción</mat-label>
-        <input
-          matInput
-          formControlName="paidNumber"
-          placeholder="Número de transacción de pago"                    
-        >
+          <input
+            matInput
+            [attr.disabled]="disabled" 
+            formControlName="paidNumber"
+            placeholder="Número de transacción de pago"                    
+          >
         </mat-form-field>
 
         <mat-checkbox
           class="checkPaid"
           [checked]="paidState"
           [value]="paidState"
+          [disabled]="disabled" 
           (change)="paidState = !paidState"
         >
           Pagado
@@ -126,7 +132,7 @@
       </div>
 
     <div class="text-divider">Artículos usados (opcional)</div>
-    <form [formGroup]="articlesForm">
+    <form [formGroup]="articlesForm" *ngIf="!disabled">
         <div class="row-form">
             <mat-form-field>
                 <mat-label>Agregar artículo</mat-label>
@@ -212,7 +218,7 @@
         <ng-container matColumnDef="iconDelete">
             <th mat-header-cell *matHeaderCellDef></th>
             <td mat-cell *matCellDef="let element">
-                <button mat-button (click)="deleteArticle(element)">
+                <button mat-button *ngIf="!disabled" (click)="deleteArticle(element)">
                     <mat-icon>delete</mat-icon>
                 </button>
             </td>
@@ -225,51 +231,52 @@
     <div class="text-divider">Observaciones</div>
     <mat-accordion class="example-headers-align">
         <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>                    
-                    {{ edit ? 'Mostrar observaciones' : 'Agregar observación'}}
-                    <span class="spacer"></span>
-                    <mat-chip-list *ngIf="edit" aria-label="Fish selection">
-                        <mat-chip>{{ observations.length }} comentario{{ observations.length == 1 ? '' : 's' }}</mat-chip>
-                    </mat-chip-list>
-                </mat-panel-title>                       
-            </mat-expansion-panel-header>
-            
-            <div *ngIf="edit && observations && observations.length > 0">
-                <h5><strong>Ultimas observaciones</strong></h5>
-                <div *ngFor="let obs of observations" class="obsContainer">
-                    <div><span>Descripción: </span><i>{{ obs.description }}</i></div>
-                    <div><span>Creada: </span><i>{{ obs.createdAt | date: 'dd/MM/yyyy' }}</i></div>
-                    <div><span>Actualizada: </span><i>{{ obs.updatedAt | date: 'dd/MM/yyyy' }}</i></div>
-                </div>
-            </div>
+          <mat-expansion-panel-header>
+              <mat-panel-title>                    
+                  {{ edit ? 'Mostrar observaciones' : 'Agregar observación'}}
+                  <span class="spacer"></span>
+                  <mat-chip-list *ngIf="edit" aria-label="Fish selection">
+                      <mat-chip>{{ observations.length }} comentario{{ observations.length == 1 ? '' : 's' }}</mat-chip>
+                  </mat-chip-list>
+              </mat-panel-title>                       
+          </mat-expansion-panel-header>
+          
+          <div *ngIf="edit && observations && observations.length > 0">
+              <h5><strong>Ultimas observaciones</strong></h5>
+              <div *ngFor="let obs of observations" class="obsContainer">
+                  <div><span>Descripción: </span><i>{{ obs.description }}</i></div>
+                  <div><span>Creada: </span><i>{{ obs.createdAt | date: 'dd/MM/yyyy' }}</i></div>
+                  <div><span>Actualizada: </span><i>{{ obs.updatedAt | date: 'dd/MM/yyyy' }}</i></div>
+              </div>
+          </div>
 
-            <mat-form-field class="fieldTextarea" appearance="outline">
-                <mat-label>Descripción</mat-label>
-                <div class="infix">
-                <textarea
-                    matInput
-                    class="textarea"
-                    rows="3"
-                    formControlName="observations"
-                ></textarea>
-                <button                    
-                    mat-raised-button
-                    *ngIf="edit"
-                    type="button"
-                    class="btn-obs" 
-                    (click)="addObservation()"             
-                >
-                    Agregar
-                </button> 
-                </div>
-            </mat-form-field>
+          <mat-form-field class="fieldTextarea" appearance="outline" *ngIf="!disabled">
+              <mat-label>Descripción</mat-label>
+              <div class="infix">
+              <textarea
+                  matInput
+                  class="textarea"
+                  rows="3"
+                  formControlName="observations"
+              ></textarea>
+              <button                    
+                  mat-raised-button
+                  *ngIf="edit"
+                  type="button"
+                  class="btn-obs" 
+                  (click)="addObservation()"             
+              >
+                  Agregar
+              </button> 
+              </div>
+          </mat-form-field>
       
         </mat-expansion-panel>
     </mat-accordion>
 
     <button
         mat-raised-button
+        *ngIf="!disabled"
         type="button"
         color="primary"
         class="btn-submit full-width" 
