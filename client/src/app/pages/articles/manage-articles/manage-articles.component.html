@@ -5,13 +5,19 @@
 >
 
     <div class="text-divider">Código - Descripción</div> 
-    <div class="code-descrip">
+    <div class="column-fields">
         <mat-form-field
-            appearance="outline"
-            class="code marginRight"
+          appearance="outline"
+          class="code"
         >
-            <mat-label>Ingresá el código</mat-label>
-            <mat-select
+            <mat-label>Código</mat-label>
+            <input
+              matInput
+              formControlName="code"
+              placeholder="Código"
+              maxlength="12"
+            >
+            <!-- <mat-select
                 formControlName="code"                
             >
                 <mat-option>--</mat-option>
@@ -22,27 +28,26 @@
                 >
                     {{article.code}}
                 </mat-option>
-            </mat-select>
-            <mat-error *ngIf="articleForm.controls['code'].invalid">Seleccioná un código</mat-error>                
+            </mat-select> -->
+            <mat-error *ngIf="articleForm.controls['code'].invalid">La descrición es <strong>requerida</strong></mat-error>                
         </mat-form-field>
 
-        <mat-form-field
-            appearance="outline"
-            class="descrip"
-        >
-            <mat-label>Descripción</mat-label>
-            <input
-                matInput
-                formControlName="description"
-                placeholder="Descripción"
-                readonly
-            >
+        <mat-form-field class="fieldTextarea" appearance="outline" *ngIf="!disabled">
+          <mat-label>Descripción</mat-label>
+          <textarea
+              matInput
+              cdkTextareaAutosize
+              #autosize="cdkTextareaAutosize"
+              cdkAutosizeMinRows="1"
+              cdkAutosizeMaxRows="5"
+              formControlName="description"
+          ></textarea>
             <mat-error *ngIf="articleForm.controls['description'].invalid">Ingresá la descripción</mat-error>
         </mat-form-field>
     </div>
 
     <div class="text-divider">Precio - Provedor</div>
-    <div class="code-descrip">
+    <div class="row-fields">
         <mat-form-field appearance="outline" class="descrip marginRight">
             <mat-label>Precio</mat-label>
             <input
@@ -75,7 +80,7 @@
     </div>
 
     <div class="text-divider">Stock - Punto de Pedido</div>
-    <div class="code-descrip">
+    <div class="row-fields">
         <mat-form-field appearance="outline" class="descrip marginRight">
             <mat-label>Stock</mat-label>
             <input

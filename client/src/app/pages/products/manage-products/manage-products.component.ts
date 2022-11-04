@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {CdkTextareaAutosize} from '@angular/cdk/text-field';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 
@@ -10,11 +11,6 @@ import { Product } from '../../../interfaces/product.interface';
 import { MontoPipe } from '../../../pipes/monto.pipe'
 import { MilesPipe } from '../../../pipes/miles.pipe';
 
-interface codeProduct {
-  code: string;
-  descrip: string;
-}
-
 @Component({
   selector: 'app-manage-products',
   templateUrl: './manage-products.component.html',
@@ -23,20 +19,13 @@ interface codeProduct {
 
 export class ManageProductsComponent implements OnInit {
 
+  @ViewChild('autosize', {static: false}) autosize: CdkTextareaAutosize;
+
   productForm: FormGroup;  
   product: any;
   edit: boolean = false;
   public disabled: boolean = false;
   public role = '';
-  products: codeProduct[] = [
-    {code: 'p-001', descrip: 'description product 1'},
-    {code: 'p-002', descrip: 'description product 2'},
-    {code: 'p-003', descrip: 'description product 3'},
-    {code: 'p-004', descrip: 'description product 4'},
-    {code: 'p-005', descrip: 'description product 5'},
-    {code: 'p-006', descrip: 'description product 6'},
-    {code: 'p-007', descrip: 'description product 7'},
-  ];
 
   constructor(
     public formBuilder: FormBuilder,
@@ -87,9 +76,9 @@ export class ManageProductsComponent implements OnInit {
     });
   }
 
-  setDescription(descrip: string) {
-    this.productForm.controls.description.setValue(descrip);  
-  }
+  // setDescription(descrip: string) {
+  //   this.productForm.controls.description.setValue(descrip);  
+  // }
 
   validateNumber(ev: any, decimal: boolean) {
     if( !/^\d+$/.test(ev.key) && ev.keyCode != 8 && ev.keyCode != 9 && ev.keyCode != 37 && ev.keyCode != 39 && ev.keyCode != 46 && ev.keyCode != 188 ) ev.preventDefault();

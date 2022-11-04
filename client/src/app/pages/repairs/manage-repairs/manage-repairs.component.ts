@@ -134,6 +134,10 @@ export class ManageRepairsComponent implements OnInit {
       amount: new FormControl('', Validators.compose([Validators.required ])),        
     });
 
+    setTimeout(() => {
+      this.repairForm.controls.state.patchValue('Abierta'); 
+    }, 250);
+    
   }
 
   loadForm() {    
@@ -227,6 +231,8 @@ export class ManageRepairsComponent implements OnInit {
       paidState: this.paidState,
       articles: this.articleRepair
     }
+
+    if( values.paidNumber == '') values.paidNumber = null;
 
     if( !this.edit) {
       this.addRepair(values)

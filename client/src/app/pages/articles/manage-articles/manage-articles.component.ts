@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {CdkTextareaAutosize} from '@angular/cdk/text-field';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 
@@ -11,11 +12,6 @@ import { Provider } from '../../../interfaces/provider.interface';
 import { MontoPipe } from '../../../pipes/monto.pipe'
 import { MilesPipe } from '../../../pipes/miles.pipe';
 
-interface codeArticle {
-  code: string;
-  descrip: string;
-}
-
 @Component({
   selector: 'app-manage-articles',
   templateUrl: './manage-articles.component.html',
@@ -24,6 +20,8 @@ interface codeArticle {
 
 export class ManageArticlesComponent implements OnInit {
 
+  @ViewChild('autosize', {static: false}) autosize: CdkTextareaAutosize;
+
   articleForm: FormGroup; 
   article: any;
   articlesByProviders = [];
@@ -31,16 +29,6 @@ export class ManageArticlesComponent implements OnInit {
   edit: boolean = false;
   public disabled: boolean = false;
   public role = '';
-  articles: codeArticle[] = [
-    {code: 'ar-60', descrip: 'arandela 60mm'},
-    {code: 'ar-70', descrip: 'arandela 70mm'},
-    {code: 'to-60', descrip: 'tornillo 60mm'},
-    {code: 'to-70', descrip: 'tornillo 70mm'},
-    {code: 'to-80', descrip: 'tornillo 80mm'},
-    {code: 'ca-00', descrip: 'cadena'},
-    {code: 'fr-00', descrip: 'freno'},
-    {code: 'cam-00', descrip: 'cámara'},
-  ];
 
   constructor(
     public formBuilder: FormBuilder,
@@ -50,7 +38,7 @@ export class ManageArticlesComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,   
     private montoPipe: MontoPipe, 
-    private milesPipe: MilesPipe, 
+    private milesPipe: MilesPipe,
   ) {
     this.role = this._authService.authSubject.value.role;
     this.disabled = this.role != 'admin';
@@ -108,9 +96,9 @@ export class ManageArticlesComponent implements OnInit {
     });
   }
 
-  setDescription(descrip: string) {
-    this.articleForm.controls.description.setValue(descrip);
-  }
+  // setDescription(descrip: string) {
+  //   this.articleForm.controls.description.setValue(descrip);
+  // }
 
   validateNumber(ev: any, decimal: boolean) {
     if( !/^\d+$/.test(ev.key) && ev.keyCode != 8 && ev.keyCode != 9 && ev.keyCode != 37 && ev.keyCode != 39 && ev.keyCode != 46 && ev.keyCode != 188 ) ev.preventDefault();

@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import {FormGroup, FormControl} from '@angular/forms';
 
 import { ReportsService } from '../../services/reports.services';
 import { AlertsService } from '../../services/alerts.service';
@@ -13,6 +14,8 @@ import pdfFonts from 'pdfmake/build/vfs_fonts';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 import htmlToPdfmake from 'html-to-pdfmake';
 
+import { MatDatepicker } from '@angular/material/datepicker';
+
 @Component({
   selector: 'app-dashboard',
   encapsulation: ViewEncapsulation.None,
@@ -20,6 +23,8 @@ import htmlToPdfmake from 'html-to-pdfmake';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+
+  @ViewChild('picker') datePicker: MatDatepicker<Date>;
 
   // @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
 
@@ -57,14 +62,23 @@ export class DashboardComponent implements OnInit {
   // public chartHovered({ event, active }: { event?: ChartEvent, active?: {}[] }): void {
   //   console.log(event, active);
   // }
+  range = new FormGroup({
+    start: new FormControl<Date | null>(null),
+    end: new FormControl<Date | null>(null),
+  });
 
   initColumns = [];
   displayedColumns = [];
   columnsToDisplay = [];
   data: any[] = [];
-  // generarReporte = false;
+  allRepairs: any[] = [];
 
-
+  today: Date = new Date();
+  dateFocus: boolean = false;
+  totalPresupuestado: number;
+  parcialPresupuesto: number;
+  mostrarTotal: boolean = true;
+  filtroEstado = 'Todas';
   report?: string;
   title = 'Seleccioná uno de los informes del listado';
 
@@ -139,7 +153,6 @@ export class DashboardComponent implements OnInit {
     this._reportsService.getLackingArticles()    
       .subscribe((res: any) => {
         if (res) {
-          console.log('lacking_articles', res)
           this.data = [];
           res.articles.forEach((article: any) => {
             const newRecord: any = {
@@ -236,13 +249,16 @@ export class DashboardComponent implements OnInit {
     this._reportsService.getRepairs()
       .subscribe((res: any) => {
         if (res) {
-          console.log('repairs', res)
           this.data = [];
+          this.totalPresupuestado = 0;
+
           res.repairs.forEach((repair: any) => {
             const fecha_ingreso = new Date(repair.createdAt);
             const fecha_ingreso_formateada = fecha_ingreso.getDate()  + "/" + (fecha_ingreso.getMonth()+1) + "/" + fecha_ingreso.getFullYear();
             const fecha_finalizacion = new Date(repair.estDate);
             const fecha_finalizacion_formateada = fecha_finalizacion.getDate()  + "/" + (fecha_finalizacion.getMonth()+1) + "/" + fecha_finalizacion.getFullYear()
+
+            this.totalPresupuestado += Number(repair.budget);
 
             const newRecord: any = {
               Nombre_cliente: repair.Client.firstName + ' ' + repair.Client.lastName,
@@ -255,10 +271,12 @@ export class DashboardComponent implements OnInit {
               Presupuesto: repair.budget,
               Observaciones: repair.Observations[0]?.description,
               Artículos: repair.Articles[0] ? `${repair.Articles[0]?.description}(${repair.Articles[0]?.ArticlesRepairs.amount})` : null,
+              CreatedAt: repair.createdAt
             };
 
             this.data.push(newRecord)
           });
+          this.allRepairs = this.data;
 
         } else {
           let errorMsg = 'Lo sentimos, ha ocurrido un error. Intentá nuevamente.'
@@ -322,9 +340,9 @@ export class DashboardComponent implements OnInit {
           this.data = [];
           res.pendingPaids.forEach((paid: any) => {
             const fecha_ingreso = new Date(paid.createdAt);
-            const fecha_ingreso_formateada = fecha_ingreso.getDate()  + "/" + (fecha_ingreso.getMonth()+1) + "/" + fecha_ingreso.getFullYear();
+            const fecha_ingreso_formateada =  (fecha_ingreso.getDate()<10?'0':'') + fecha_ingreso.getDate() + "/" + (fecha_ingreso.getMonth()+1) + "/" + fecha_ingreso.getFullYear();
             const fecha_finalizacion = new Date(paid.estDate);
-            const fecha_finalizacion_formateada = fecha_finalizacion.getDate()  + "/" + (fecha_finalizacion.getMonth()+1) + "/" + fecha_finalizacion.getFullYear()
+            const fecha_finalizacion_formateada = (fecha_finalizacion.getDate()<10?'0':'') + fecha_finalizacion.getDate()  + "/" + (fecha_finalizacion.getMonth()+1) + "/" + fecha_finalizacion.getFullYear()
 
             const newRecord: any = {
               Nombre_cliente: paid.Client.firstName,
@@ -356,6 +374,46 @@ export class DashboardComponent implements OnInit {
     })
   }
 
+  filterReport($ev: any) {
+    if ($ev.value == 'Todas' && (!this.range.value.start || !this.range.value.end)) {
+      this.mostrarTotal = true;
+      this.data = this.allRepairs;
+      return
+    } 
+
+    this.mostrarTotal = false;
+    this.data = [];
+    this.parcialPresupuesto = 0;
+
+    if ($ev.value != 'Todas' && (!this.range.value.start || !this.range.value.end)) {
+      this.allRepairs.forEach( repair => {
+        if (repair.Estado == $ev.value) {
+          this.data.push(repair);
+          this.parcialPresupuesto += Number(repair.Presupuesto);
+        }
+      });
+      return
+    }
+
+    if (this.range.value.start && this.range.value.end) {
+      this.allRepairs.forEach( repair => {
+        const created = new Date(repair.CreatedAt)
+        if ((created >= this.range.value.start && created <= this.range.value.end) && (this.filtroEstado == 'Todas' || repair.Estado == this.filtroEstado)) {
+          this.data.push(repair);
+          this.parcialPresupuesto += Number(repair.Presupuesto);
+        }
+      })
+      return
+    }
+  }
+
+  resetearFiltros() {
+    this.filtroEstado = 'Todas';
+    this.range.reset();
+    this.mostrarTotal = true;
+    this.data = this.allRepairs;
+  }
+
 
   downloadReport() {
     const fechaActual = new Date();
@@ -363,9 +421,13 @@ export class DashboardComponent implements OnInit {
    
     let pdfReport = document.getElementById('pdfReport');
 
-    const p = document.createElement("p")
-    p.textContent = `Generado el dia: ${fechaActualFormateada}`;
-    pdfReport.insertAdjacentElement("afterbegin", p); 
+    const p1 = document.createElement("p")
+    p1.textContent = `Total presupuestado: $ ${this.totalPresupuestado}`;
+    pdfReport.insertAdjacentElement("afterbegin", p1); 
+
+    const p2 = document.createElement("p")
+    p2.textContent = `Generado el dia: ${fechaActualFormateada}`;
+    pdfReport.insertAdjacentElement("afterbegin", p2); 
 
     const div = document.createElement("div");
     div.textContent = this.title;
@@ -378,6 +440,7 @@ export class DashboardComponent implements OnInit {
     // pdfMake.createPdf(documentDefinition).download();
 
     div.remove();
-    p.remove();
+    p1.remove();
+    p2.remove();
   }
 }

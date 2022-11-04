@@ -1,12 +1,23 @@
-.code-descrip {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;            
+.row-fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;           
+}
+.column-fields {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;           
 }
 .code {
-    max-width: 125px;
-    margin-right: 15px;
+  max-width: 130px;    
 }
 .descrip {
-    flex-grow: 1;    
+  flex-grow: 1;    
+}
+.fieldTextarea {
+width: 100%;  
+}
+textarea {
+font-size: 13px;
+line-height: 1.5em !important;
 }

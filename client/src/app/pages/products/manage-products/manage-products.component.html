@@ -4,13 +4,19 @@
 >
 
     <div class="text-divider">Código - Descripción</div> 
-    <div class="code-descrip">
+    <div class="column-fields">
         <mat-form-field
-            appearance="outline"
-            class="code"
+          appearance="outline"
+          class="code"
         >
-            <mat-label>Seleccioná el código</mat-label>
-            <mat-select
+            <mat-label>Código</mat-label>
+            <input
+              matInput
+              formControlName="code"
+              placeholder="Código"
+              maxlength="12"
+            >
+            <!-- <mat-select
                 formControlName="code"                
             >
                 <mat-option>--</mat-option>
@@ -21,22 +27,21 @@
                 >
                     {{product.code}}
                 </mat-option>
-            </mat-select>
-            <mat-error *ngIf="productForm.controls['code'].invalid">Seleccióna una opción</mat-error>                
+            </mat-select> -->
+            <mat-error *ngIf="productForm.controls['code'].invalid">El código es <strong>requerido</strong></mat-error>                
         </mat-form-field>
 
-        <mat-form-field
-            appearance="outline"
-            class="descrip"
-        >
-            <mat-label>Descrición</mat-label>
-            <input
-                matInput
-                formControlName="description"
-                placeholder="Descripción"
-                readonly
-            >
-            <mat-error *ngIf="productForm.controls['description'].invalid">Ingresá una descripción</mat-error>
+        <mat-form-field class="fieldTextarea" appearance="outline" *ngIf="!disabled">
+          <mat-label>Descripción</mat-label>
+          <textarea
+              matInput
+              cdkTextareaAutosize
+              #autosize="cdkTextareaAutosize"
+              cdkAutosizeMinRows="1"
+              cdkAutosizeMaxRows="5"
+              formControlName="description"
+          ></textarea>
+            <mat-error *ngIf="productForm.controls['description'].invalid">La descrición es <strong>requerida</strong></mat-error>
         </mat-form-field>
     </div>
 

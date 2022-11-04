@@ -95,3 +95,29 @@ mat-button-toggle-group {
 table {
   width: 100%;
 }
+
+.totalPresupuesto {
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 16px;
+}
+.totalPresupuesto span {
+  font-weight: bold;
+}
+
+.repairsFilters {
+  display: flex;
+}
+.dateFilter {
+  margin: 0 25px 0 10px;
+}
+.errorDate {
+  color: #ec2c4c !important;
+  padding: 5px 0 0 10px;
+}
+.buttonReset {
+  margin-left: 75px;
+  transform: translateY(15%);
+}

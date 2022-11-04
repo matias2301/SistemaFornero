@@ -57,10 +57,10 @@ export const getPendingPaids = async( req: Request , res: Response ) => {
       [Op.and]: [
         {
           paidNumber: {
-            [Op.eq]: ""
+            [Op.eq]: null
           }
         },
-        { paidState: false }
+        { paidState: 0 }
       ]    
     },
     include: [

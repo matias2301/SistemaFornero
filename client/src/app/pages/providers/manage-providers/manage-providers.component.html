@@ -56,12 +56,12 @@
     <!-- <div class="text-divider">Phone Number Info</div> -->
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Número de teléfono / celular</mat-label>
+        <!-- mask="(000) 000-0000" -->
         <input
             matInput 
             type="decimal"
-            formControlName="phone"
-            mask="(000) 000-0000"
-            placeholder="Ejemplo: (341) 512-3456"
+            formControlName="phone"            
+            placeholder="Ejemplo: 3415-123456"
         >
         <mat-icon matSuffix>phone</mat-icon>
         <mat-hint>Incluir código de área - No ingresar el '15'</mat-hint>

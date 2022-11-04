@@ -72,3 +72,6 @@ table {
     margin-left: 25px;
     max-width: 500px;
   }
+  .selectProviders {
+    min-width: 150px;
+  }
