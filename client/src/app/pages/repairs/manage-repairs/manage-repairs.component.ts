@@ -221,8 +221,9 @@ export class ManageRepairsComponent implements OnInit {
 
     const showStockAlert = this.articleRepair.some( article => article.stockNegative);
     if (showStockAlert) {
-      const confirm = await this._alertsService.alertModal('¿Continuar carga?', 'No contás con stock suficiente en alguno de los artículos agregados', 'warning', false)
+      const confirm = await this._alertsService.alertModal('¿Continuar carga?', 'No contás con stock suficiente en alguno de los artículos agregados (se cargará con Estado "Pendiente")', 'warning', false)
       if (!confirm) return;
+      if (confirm) values.state = 'Pendiente';
     }
 
     values.takenId = Number(this.takenId);
