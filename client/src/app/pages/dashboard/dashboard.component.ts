@@ -420,10 +420,13 @@ export class DashboardComponent implements OnInit {
     const fechaActualFormateada = fechaActual.getDate()  + "/" + (fechaActual.getMonth()+1) + "/" + fechaActual.getFullYear();
    
     let pdfReport = document.getElementById('pdfReport');
+    let p1: any;
 
-    const p1 = document.createElement("p")
-    p1.textContent = `Total presupuestado: $ ${this.totalPresupuestado}`;
-    pdfReport.insertAdjacentElement("afterbegin", p1); 
+    if (this.report == 'repairs') {
+      p1 = document.createElement("p")
+      p1.textContent = `Total presupuestado: $ ${this.totalPresupuestado}`;
+      pdfReport.insertAdjacentElement("afterbegin", p1); 
+    }
 
     const p2 = document.createElement("p")
     p2.textContent = `Generado el dia: ${fechaActualFormateada}`;
@@ -440,7 +443,7 @@ export class DashboardComponent implements OnInit {
     // pdfMake.createPdf(documentDefinition).download();
 
     div.remove();
-    p1.remove();
+    if (this.report == 'repairs')  p1.remove();
     p2.remove();
   }
 }
