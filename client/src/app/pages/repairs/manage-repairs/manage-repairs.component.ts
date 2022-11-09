@@ -64,9 +64,9 @@ export class ManageRepairsComponent implements OnInit {
   }
 
   ngOnInit(){
+    this.getArticles();
     this.getUsers();
     this.getClients();
-    this.getArticles();
 
     this._authService.authSubject
       .subscribe( state => {        
@@ -80,18 +80,24 @@ export class ManageRepairsComponent implements OnInit {
       this._manageDataService.getDataById('repairs', repair.idRepair)
       .subscribe((res: any) => {
         this.repair = res[0];
-
-        this.repair.Articles.map( art => {
-          let article = {
-            id: art.id,
-            code: art.code,
-            descrip: art.description,
-            amount: art.ArticlesRepairs.amount
-          }
-          this.articleRepair.push(article);
-        })
-
-        this.loadForm();
+        
+        setTimeout(() => {
+          this.repair.Articles.map( art => {
+            let article = {
+              id: art.id,
+              code: art.code,
+              descrip: art.description,
+              amount: art.ArticlesRepairs.amount,
+              stockNegative: false
+            }
+            let articleAdded = this.articles.find( article => article.id == art.id);
+            if ((articleAdded.stock + Number(art.ArticlesRepairs.amount)) < Number(art.ArticlesRepairs.amount)) article.stockNegative = true;
+  
+            this.articleRepair.push(article);
+          })
+  
+          this.loadForm();
+        }, 250);
       });
     }
   }
@@ -135,7 +141,7 @@ export class ManageRepairsComponent implements OnInit {
     });
 
     setTimeout(() => {
-      this.repairForm.controls.state.patchValue('Abierta'); 
+      this.repairForm.controls.state.patchValue(this.repair?.state || 'Abierta'); 
     }, 250);
     
   }
@@ -154,7 +160,7 @@ export class ManageRepairsComponent implements OnInit {
     this.observations = this.repair.Observations;   
     this.paidState = this.repair.paidState;
 
-    this.disabled = this.role != 'admin' || this.repairForm.controls['state'].value == 'Cerrada';
+    this.disabled = this.role != 'admin' || this.repairForm.controls['state'].value == 'Cerrada' || this.repairForm.controls['state'].value == 'Cancelada';
   }
 
   selectArticle(code: string, descrip: string){
@@ -165,30 +171,33 @@ export class ManageRepairsComponent implements OnInit {
 
   cancelArticle() {
     this.articleSelected = false;
-    this.paidState = false;
     this.articlesForm.reset();
   }
 
   addArticle(values: any) {
-    let articleAdded = this.articles.find( article => article.id == values.id)
-
     if( this.articlesForm.invalid ) {
       this.articlesForm.controls.amount.markAsTouched();
       return
     }
 
+    let articleAdded = this.articles.find( article => article.id == values.id)
+
     let match = false;
     if( this.articleRepair.length > 0 ){      
       this.articleRepair.map( art => {
         if( art.id == values.id ) {
+          if (articleAdded.stock + Number(art.amount) < Number(art.amount) + Number(values.amount)) art.stockNegative = true;
+
           art.amount = Number(art.amount) + Number(values.amount);
           match = true;
-
-          if (articleAdded.stock < Number(art.amount)) art.stockNegative = true;
         }
       })
     } 
     if (this.articleRepair.length == 0 || !match) {
+      console.log('articleAdded.stock', articleAdded.stock)
+      console.log('Number(values.amount)', Number(values.amount))
+      // console.log('Number(art.amount)', Number(art.amount))
+
       if (articleAdded.stock < Number(values.amount)) values.stockNegative = true;
 
       this.articleRepair.push(values);
@@ -201,6 +210,11 @@ export class ManageRepairsComponent implements OnInit {
   deleteArticle(article: any){    
     this.articleRepair = this.articleRepair.filter( e => e.id !== article.id );
     this.articleRepair = [...this.articleRepair];
+
+    let articleRemoved = this.articles.find( art => art.id == article.id)
+    if (articleRemoved) {
+      articleRemoved.stock += Number(article.amount)
+    }
   }
 
   validateNumber(ev: any) {
@@ -221,9 +235,22 @@ export class ManageRepairsComponent implements OnInit {
 
     const showStockAlert = this.articleRepair.some( article => article.stockNegative);
     if (showStockAlert) {
-      const confirm = await this._alertsService.alertModal('¿Continuar carga?', 'No contás con stock suficiente en alguno de los artículos agregados (se cargará con Estado "Pendiente")', 'warning', false)
+      // const confirm = await this._alertsService.alertModal('¿Continuar carga?', 'No contás con stock suficiente en alguno de los artículos agregados.<br><br>¿Querés cargarla con Estado "Pendiente"?', 'warning', false)
+      const confirm = await this._alertsService.alertModal('¿Continuar carga?', 'No contás con stock suficiente en alguno de los artículos agregados.<br><br>¿Querés cargarla igualmente?', 'warning', false)
       if (!confirm) return;
-      if (confirm) values.state = 'Pendiente';
+      // if (confirm) values.state = 'Pendiente';
+    }
+
+    if (values.state == 'Cerrada' && (this.repairForm.controls.budget.value == '' || this.repairForm.controls.paidNumber.value == '' || !this.paidState)) {
+      const confirm = await this._alertsService.alertModal('Importante', 'No se puede cerrar una reparación sin haber ingresado el presupuesto ni una confirmación de pago.<br><br>¿Querés cargarla con Estado "Completada"?', 'warning', false);
+      if (!confirm) return;
+      if (confirm) values.state = 'Completada';
+    }
+
+    if (values.state == 'Cancelada') {
+      const confirm = await this._alertsService.alertModal('Importante', 'Si guardás la reparación con Estado "Cancelada" no podrás volver a editarla y los artículos utilizados se restituirán. ¿Querés continuar?', 'warning', false);
+      if (!confirm) return;
+      if (confirm) this.articleRepair = [];
     }
 
     values.takenId = Number(this.takenId);

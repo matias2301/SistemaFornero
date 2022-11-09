@@ -16,7 +16,7 @@ export class AlertsService {
       
       await Swal.fire({
         title: title,
-        text: message,        
+        html: message,        
         icon: icon,
         showClass: {
           popup: 'animate__animated animate__fadeInDown'

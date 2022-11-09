@@ -339,6 +339,7 @@ export class DashboardComponent implements OnInit {
         if (res) {
           this.data = [];
           res.pendingPaids.forEach((paid: any) => {
+            if(paid.state == 'Cancelada') return;
             const fecha_ingreso = new Date(paid.createdAt);
             const fecha_ingreso_formateada =  (fecha_ingreso.getDate()<10?'0':'') + fecha_ingreso.getDate() + "/" + (fecha_ingreso.getMonth()+1) + "/" + fecha_ingreso.getFullYear();
             const fecha_finalizacion = new Date(paid.estDate);

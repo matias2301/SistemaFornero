@@ -1,5 +1,5 @@
 <a
-  *ngIf="role == 'admin' || (role != 'admin' && !item.displayName.includes('Agregar'))"
+  *ngIf="role == 'admin' || (role != 'admin' && !item.displayName.includes('Agregar') || (role != 'admin' && item.displayName.includes('reparación')))"
   mat-list-item [ngStyle]="{'padding-left': (depth * 12) + 'px'}"
   (click)="onItemSelected(item)"
   [ngClass]="{'active': item.route ? router.isActive(item.route, true): false, 'expanded': expanded}"

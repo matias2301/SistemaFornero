@@ -22,6 +22,7 @@ import { AuthService } from '../../services/auth.service';
 export class TableComponent implements OnInit, AfterViewInit {
 
   public role: string;
+  public pageRepairs = false;
   public filterKey: string;
   public filterValue: string;
   private defaultFilterPredicate?: (data: any, filter: string) => boolean;
@@ -65,6 +66,7 @@ export class TableComponent implements OnInit, AfterViewInit {
     }
 
     this.defaultFilterPredicate = this.tableDataSource.filterPredicate;
+    if (this.tableColumns[2] && this.tableColumns[2].name == "Motivo") this.pageRepairs = true;
   }
 
   // we need this, in order to make pagination work with *ngIf

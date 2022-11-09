@@ -25,7 +25,7 @@ const Repairs = sequelize.define<RepairModel, RepairAddModel>('Repairs', {
   },
   state: {
       type: DataTypes.ENUM,
-      values: ['Abierta','Pendiente','Cerrada'],
+      values: ['Abierta', 'Pendiente', 'Completada', 'Cerrada', 'Cancelada'],
       defaultValue: 'Abierta',
   },
   estDate: {
