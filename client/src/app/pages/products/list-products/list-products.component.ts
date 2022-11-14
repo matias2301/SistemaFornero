@@ -59,7 +59,7 @@ export class ListProductsComponent implements OnInit {
   }
 
   async deleteProduct(product: Product) {
-    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el producto "${product.description}"`, 'warning', true)
+    const confirm = await this._alertsService.alertModal('Confirmar eliminación', `Se eliminará el producto "${product.code}"`, 'warning', true)
     
     if (confirm) {
       this._manageDataService.deleteRecord('products', product.id)
