@@ -398,7 +398,8 @@ export class DashboardComponent implements OnInit {
 
     if (this.range.value.start && this.range.value.end) {
       this.allRepairs.forEach( repair => {
-        const created = new Date(repair.CreatedAt)
+        let created = new Date(repair.CreatedAt)
+        created.setHours(0, 0, 0, 0);
         if ((created >= this.range.value.start && created <= this.range.value.end) && (this.filtroEstado == 'Todas' || repair.Estado == this.filtroEstado)) {
           this.data.push(repair);
           this.parcialPresupuesto += Number(repair.Presupuesto);
