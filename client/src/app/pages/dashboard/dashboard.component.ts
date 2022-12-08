@@ -306,11 +306,11 @@ export class DashboardComponent implements OnInit {
       },
       {
         nombre: 'Teléfono',
-        checked: true,
+        checked: false,
       },
       {
         nombre: 'Motivo',
-        checked: true,
+        checked: false,
       },
       {
         nombre: 'Estado',
@@ -318,7 +318,7 @@ export class DashboardComponent implements OnInit {
       },
       {
         nombre: 'Presupuesto',
-        checked: false,
+        checked: true,
       },
       {
         nombre: 'Fecha_ingreso',
@@ -338,12 +338,17 @@ export class DashboardComponent implements OnInit {
       .subscribe((res: any) => {
         if (res) {
           this.data = [];
+          this.mostrarTotal = true;
+          this.totalPresupuestado = 0;
+
           res.pendingPaids.forEach((paid: any) => {
             if(paid.state == 'Cancelada') return;
             const fecha_ingreso = new Date(paid.createdAt);
             const fecha_ingreso_formateada =  (fecha_ingreso.getDate()<10?'0':'') + fecha_ingreso.getDate() + "/" + (fecha_ingreso.getMonth()+1) + "/" + fecha_ingreso.getFullYear();
             const fecha_finalizacion = new Date(paid.estDate);
-            const fecha_finalizacion_formateada = (fecha_finalizacion.getDate()<10?'0':'') + fecha_finalizacion.getDate()  + "/" + (fecha_finalizacion.getMonth()+1) + "/" + fecha_finalizacion.getFullYear()
+            const fecha_finalizacion_formateada = (fecha_finalizacion.getDate()<10?'0':'') + fecha_finalizacion.getDate()  + "/" + (fecha_finalizacion.getMonth()+1) + "/" + fecha_finalizacion.getFullYear();
+
+            this.totalPresupuestado += Number(paid.budget);
 
             const newRecord: any = {
               Nombre_cliente: paid.Client.firstName,
@@ -424,9 +429,9 @@ export class DashboardComponent implements OnInit {
     let pdfReport = document.getElementById('pdfReport');
     let p1: any;
 
-    if (this.report == 'repairs') {
+    if (this.report == 'repairs' || this.report == 'paids') {
       p1 = document.createElement("p")
-      p1.textContent = `Total presupuestado: $ ${this.totalPresupuestado}`;
+      p1.textContent = `Total presupuestado: $ ${this.mostrarTotal ? this.totalPresupuestado : this.parcialPresupuesto}`;
       pdfReport.insertAdjacentElement("afterbegin", p1); 
     }
 

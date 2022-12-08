@@ -106,7 +106,7 @@
       <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
     </table>
   </div>
-  <div *ngIf="report == 'repairs'" class="mat-elevation-z8 totalPresupuesto">
+  <div *ngIf="report == 'repairs' || report == 'paids'" class="mat-elevation-z8 totalPresupuesto">
     Total presupuestado: <span>$ {{ mostrarTotal ? totalPresupuestado : parcialPresupuesto }}</span>
   </div>
 </div>

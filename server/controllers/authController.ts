@@ -20,14 +20,14 @@ export const login = async( req: Request , res: Response ) => {
         // Verify if email exists
         if ( !user ) {
             return res.status(400).json({
-                msg: 'Verificá el email y la constraseña ingresada'
+                msg: 'Verificá el email y la contraseña ingresada'
             });
         }
         
         // Verify if user is active
         if ( user.state !== 'active' ) {
             return res.status(400).json({
-                msg: 'Verificá el email y la constraseña ingresada'
+                msg: 'Verificá el email y la contraseña ingresada'
             });
         }
 
@@ -35,7 +35,7 @@ export const login = async( req: Request , res: Response ) => {
         const validPassword = bcryptjs.compareSync( password, user.password );
         if ( !validPassword ) {
             return res.status(400).json({
-                msg: 'Verificá el email y la constraseña ingresada'
+                msg: 'Verificá el email y la contraseña ingresada'
             });
         }
 
