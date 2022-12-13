@@ -241,7 +241,7 @@ export class ManageRepairsComponent implements OnInit {
       // if (confirm) values.state = 'Pendiente';
     }
 
-    if (values.state == 'Cerrada' && (this.repairForm.controls.budget.value == '' || this.repairForm.controls.paidNumber.value == '' || !this.paidState)) {
+    if (values.state == 'Cerrada' && this.repairForm.controls.budget.value == '' && this.repairForm.controls.paidNumber.value == '' && !this.paidState) {
       const confirm = await this._alertsService.alertModal('Importante', 'No se puede cerrar una reparación sin haber ingresado el presupuesto ni una confirmación de pago.<br><br>¿Querés cargarla con Estado "Completada"?', 'warning', false);
       if (!confirm) return;
       if (confirm) values.state = 'Completada';

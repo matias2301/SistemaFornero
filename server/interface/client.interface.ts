@@ -9,6 +9,7 @@ export interface ClientAddModel{
     city: string;
     state: string;
     country: string;    
+    enabled: boolean;
     createdAt?: Date;
     updatedAt?: Date;
 }

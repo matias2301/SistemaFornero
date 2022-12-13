@@ -13,7 +13,8 @@ export interface ClientModel extends Sequelize.Model<ClientModel, ClientAddModel
     // streetNumber: string;
     city: string;
     state: string;
-    country: string;    
+    country: string;   
+    enabled: boolean; 
     createdAt?: Date;
     updatedAt?: Date;
 }
@@ -61,6 +62,10 @@ const Clients = sequelize.define<ClientModel, ClientAddModel>('Clients', {
         type: DataTypes.STRING,
         allowNull: false,      
     },
+    enabled: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: true,   
+  },
 })
 
 export default Clients

@@ -3,7 +3,11 @@ import Clients from '../models/Clients';
 
 export const getClients = async( req: Request , res: Response ) => {
 
-    const clients = await Clients.findAll();
+    const clients = await Clients.findAll({
+      where: {
+        enabled: 1         
+      },
+    });
 
     res.json({ clients });
 }
@@ -95,10 +99,10 @@ export const deleteClient = async( req: Request , res: Response ) => {
         });
     }
 
-    // await client.update({ state: false });
+    await client.update({ enabled: 0 });
     // res.json(client);
 
-    await client.destroy();
+    // await client.destroy();
     res.json({
         success: true,
         msg: '¡El cliente se eliminó con éxito!'
